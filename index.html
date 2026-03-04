@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meyer Digital — AI-Powered Services for Modern Businesses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0a0f1e;
+      --navy2:  #0d1530;
+      --card:   #111827;
+      --card2:  #161f35;
+      --gold:   #c9a84c;
+      --gold2:  #e6c96a;
+      --white:  #f5f7ff;
+      --muted:  #8a95b0;
+      --border: rgba(201,168,76,0.18);
+      --radius: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ─── NAV ─────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 2rem;
+      background: rgba(10,15,30,0.85);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--muted); font-size: 0.9rem; font-weight: 500;
+      text-decoration: none; transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta {
+      background: var(--gold); color: var(--navy);
+      padding: .5rem 1.2rem; border-radius: 8px;
+      font-size: .875rem; font-weight: 700;
+      text-decoration: none; transition: background .2s, transform .15s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--gold2); transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; }
+    .mobile-menu {
+      display: none; flex-direction: column; gap: 1rem;
+      position: fixed; top: 64px; left: 0; right: 0; z-index: 99;
+      background: var(--navy2); padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-menu a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 1rem; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu.open { display: flex; }
+
+    /* ─── HERO ────────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 8rem 1.5rem 5rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-glow {
+      position: absolute; top: -180px; left: 50%; transform: translateX(-50%);
+      width: 800px; height: 600px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: rgba(201,168,76,0.1); border: 1px solid var(--border);
+      color: var(--gold); font-size: .8rem; font-weight: 600; letter-spacing: .08em;
+      text-transform: uppercase; padding: .35rem .9rem; border-radius: 100px;
+      margin-bottom: 1.8rem;
+    }
+    .hero-badge::before { content: "●"; font-size: .5rem; }
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 900; line-height: 1.08;
+      letter-spacing: -0.03em;
+      max-width: 800px;
+    }
+    h1 span { color: var(--gold); }
+    .hero-sub {
+      margin-top: 1.4rem;
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      color: var(--muted); max-width: 560px;
+    }
+    .hero-btns {
+      margin-top: 2.4rem;
+      display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;
+    }
+    .btn-primary {
+      background: var(--gold); color: var(--navy);
+      padding: .85rem 2rem; border-radius: 10px;
+      font-weight: 700; font-size: 1rem;
+      text-decoration: none; transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 24px rgba(201,168,76,0.25);
+    }
+    .btn-primary:hover { background: var(--gold2); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,168,76,0.35); }
+    .btn-outline {
+      border: 1.5px solid var(--border); color: var(--white);
+      padding: .85rem 2rem; border-radius: 10px;
+      font-weight: 600; font-size: 1rem;
+      text-decoration: none; transition: border-color .2s, color .2s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+    .hero-stats {
+      margin-top: 4rem;
+      display: flex; flex-wrap: wrap; gap: 2rem 3rem; justify-content: center;
+    }
+    .stat { text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--gold); }
+    .stat-label { font-size: .82rem; color: var(--muted); margin-top: .2rem; }
+
+    /* ─── SECTIONS ─────────────────────────────────────────── */
+    section { padding: 6rem 1.5rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: .75rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: .75rem;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800; letter-spacing: -0.025em; line-height: 1.15;
+    }
+    h2 span { color: var(--gold); }
+    .section-desc { color: var(--muted); margin-top: .8rem; max-width: 560px; font-size: 1.05rem; }
+
+    /* ─── SERVICES ──────────────────────────────────────────── */
+    #services { background: var(--navy2); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem; margin-top: 3rem;
+    }
+    .service-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem 1.75rem;
+      display: flex; flex-direction: column;
+      transition: border-color .25s, transform .25s, box-shadow .25s;
+    }
+    .service-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(201,168,76,0.1);
+    }
+    .service-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: rgba(201,168,76,0.12);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; margin-bottom: 1.2rem;
+    }
+    .service-card h3 { font-size: 1.15rem; font-weight: 700; }
+    .service-card p { color: var(--muted); font-size: .92rem; margin-top: .6rem; flex: 1; }
+    .service-price {
+      margin-top: 1.2rem;
+      font-size: 1.4rem; font-weight: 800; color: var(--gold);
+    }
+    .service-price small { font-size: .75rem; font-weight: 500; color: var(--muted); }
+    .service-cta {
+      display: block; margin-top: 1.2rem;
+      background: transparent; border: 1.5px solid var(--border);
+      color: var(--white); text-align: center;
+      padding: .65rem 1rem; border-radius: 8px;
+      font-weight: 600; font-size: .9rem;
+      text-decoration: none; cursor: pointer;
+      transition: background .2s, border-color .2s, color .2s;
+    }
+    .service-cta:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+
+    /* ─── PORTFOLIO ─────────────────────────────────────────── */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem; margin-top: 3rem;
+    }
+    .portfolio-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .portfolio-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    }
+    .portfolio-mockup {
+      height: 200px;
+      display: flex; flex-direction: column;
+      position: relative; overflow: hidden;
+    }
+    .mockup-bar {
+      height: 32px; display: flex; align-items: center; gap: 6px;
+      padding: 0 12px; flex-shrink: 0;
+    }
+    .mockup-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .mockup-content { flex: 1; display: flex; flex-direction: column; padding: 12px 16px; gap: 8px; }
+    .mockup-line { border-radius: 3px; }
+
+    /* Phoenix Dental */
+    .dental .portfolio-mockup { background: linear-gradient(135deg, #0f2044 0%, #1a3a6b 100%); }
+    .dental .mockup-bar { background: rgba(0,0,0,0.3); }
+    .dental .mockup-dot:nth-child(1) { background: #ff5f57; }
+    .dental .mockup-dot:nth-child(2) { background: #febc2e; }
+    .dental .mockup-dot:nth-child(3) { background: #28c840; }
+    .dental .mockup-line.hero { height: 36px; background: rgba(41,182,246,0.3); width: 65%; }
+    .dental .mockup-line.sub  { height: 10px; background: rgba(255,255,255,0.15); width: 80%; }
+    .dental .mockup-line.btn  { height: 22px; background: rgba(41,182,246,0.5); width: 35%; border-radius: 6px; }
+    .dental .mockup-line.sm   { height: 8px;  background: rgba(255,255,255,0.1); width: 55%; }
+
+    /* Iron Peak */
+    .gym .portfolio-mockup { background: linear-gradient(135deg, #1a0a00 0%, #3d1500 100%); }
+    .gym .mockup-bar { background: rgba(0,0,0,0.4); }
+    .gym .mockup-dot:nth-child(1) { background: #ff5f57; }
+    .gym .mockup-dot:nth-child(2) { background: #febc2e; }
+    .gym .mockup-dot:nth-child(3) { background: #28c840; }
+    .gym .mockup-line.hero { height: 40px; background: rgba(255,80,0,0.4); width: 70%; }
+    .gym .mockup-line.sub  { height: 10px; background: rgba(255,255,255,0.12); width: 85%; }
+    .gym .mockup-line.btn  { height: 24px; background: rgba(255,80,0,0.6); width: 38%; border-radius: 6px; }
+    .gym .mockup-line.sm   { height: 8px;  background: rgba(255,255,255,0.08); width: 60%; }
+
+    /* Desert Bloom */
+    .spa .portfolio-mockup { background: linear-gradient(135deg, #1a0f1e 0%, #2e1a38 100%); }
+    .spa .mockup-bar { background: rgba(0,0,0,0.3); }
+    .spa .mockup-dot:nth-child(1) { background: #ff5f57; }
+    .spa .mockup-dot:nth-child(2) { background: #febc2e; }
+    .spa .mockup-dot:nth-child(3) { background: #28c840; }
+    .spa .mockup-line.hero { height: 36px; background: rgba(200,150,220,0.3); width: 60%; }
+    .spa .mockup-line.sub  { height: 10px; background: rgba(255,255,255,0.12); width: 75%; }
+    .spa .mockup-line.btn  { height: 22px; background: rgba(200,150,220,0.5); width: 34%; border-radius: 6px; }
+    .spa .mockup-line.sm   { height: 8px;  background: rgba(255,255,255,0.08); width: 50%; }
+
+    .portfolio-info { padding: 1.5rem; }
+    .portfolio-info h3 { font-size: 1.05rem; font-weight: 700; }
+    .portfolio-info p { color: var(--muted); font-size: .88rem; margin-top: .4rem; }
+    .portfolio-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .9rem; }
+    .portfolio-tag {
+      font-size: .72rem; font-weight: 600; letter-spacing: .04em;
+      padding: .2rem .6rem; border-radius: 100px;
+      background: rgba(201,168,76,0.1); color: var(--gold);
+      border: 1px solid var(--border);
+    }
+
+    /* ─── WHY AI ─────────────────────────────────────────────── */
+    #why-ai { background: var(--navy2); }
+    .ai-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem; margin-top: 3rem;
+    }
+    .ai-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      transition: border-color .2s;
+    }
+    .ai-item:hover { border-color: var(--gold); }
+    .ai-item-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .ai-item h3 { font-size: 1.1rem; font-weight: 700; }
+    .ai-item p { color: var(--muted); font-size: .92rem; margin-top: .6rem; }
+    .ai-stat {
+      margin-top: 1rem;
+      font-size: .85rem; font-weight: 700;
+      color: var(--gold);
+      display: flex; align-items: center; gap: .4rem;
+    }
+    .ai-stat::before { content: "↑"; }
+
+    /* ─── TESTIMONIALS ──────────────────────────────────────── */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem; margin-top: 3rem;
+    }
+    .testimonial-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
+    .stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; margin-bottom: 1rem; }
+    .testimonial-text { font-size: .95rem; color: var(--white); line-height: 1.7; font-style: italic; }
+    .testimonial-author { margin-top: 1.4rem; display: flex; align-items: center; gap: .8rem; }
+    .author-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #6a4e1a);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: .9rem; color: var(--navy);
+    }
+    .author-name { font-weight: 600; font-size: .92rem; }
+    .author-biz { font-size: .8rem; color: var(--muted); }
+
+    /* ─── CONTACT ─────────────────────────────────────────────── */
+    #contact { background: var(--navy2); }
+    .contact-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      max-width: 640px; margin: 3rem auto 0;
+    }
+    .contact-box p { color: var(--muted); margin-top: .8rem; font-size: 1rem; }
+    .contact-email {
+      display: inline-flex; align-items: center; gap: .5rem;
+      margin-top: 1.8rem;
+      font-size: 1.1rem; font-weight: 700; color: var(--gold);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .contact-email:hover { color: var(--gold2); }
+    .contact-divider { color: var(--muted); font-size: .9rem; margin: 1.5rem 0; }
+    .contact-btn {
+      display: inline-block;
+      background: var(--gold); color: var(--navy);
+      padding: .9rem 2.2rem; border-radius: 10px;
+      font-weight: 700; font-size: 1rem;
+      text-decoration: none;
+      transition: background .2s, transform .15s;
+      box-shadow: 0 4px 24px rgba(201,168,76,0.25);
+    }
+    .contact-btn:hover { background: var(--gold2); transform: translateY(-2px); }
+
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+    footer {
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .85rem;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .ai-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      section { padding: 4rem 1rem; }
+      .contact-box { padding: 2rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ──────────────────────────────────────────────── -->
+<nav>
+  <a href="#hero" class="nav-logo">Meyer<span>Digital</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#why-ai">Why AI?</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get Started</a>
+  <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="#services" onclick="this.closest('.mobile-menu').classList.remove('open')">Services</a>
+  <a href="#portfolio" onclick="this.closest('.mobile-menu').classList.remove('open')">Portfolio</a>
+  <a href="#why-ai" onclick="this.closest('.mobile-menu').classList.remove('open')">Why AI?</a>
+  <a href="#testimonials" onclick="this.closest('.mobile-menu').classList.remove('open')">Reviews</a>
+  <a href="#contact" onclick="this.closest('.mobile-menu').classList.remove('open')">Get Started</a>
+</div>
+
+<!-- ─── HERO ──────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-badge">AI-powered services for modern businesses</div>
+  <h1>We Build the Tech.<br><span>You Run the Business.</span></h1>
+  <p class="hero-sub">Meyer Digital delivers AI phone agents, stunning websites, local SEO, and custom apps — so you can focus on what you do best.</p>
+  <div class="hero-btns">
+    <a href="#services" class="btn-primary">See Our Services</a>
+    <a href="#contact" class="btn-outline">Talk to Wolfgang →</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">48h</div>
+      <div class="stat-label">Average Response Time</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">2 wks</div>
+      <div class="stat-label">Site Live Guarantee</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">AI Phone Coverage</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">30%+</div>
+      <div class="stat-label">Avg. More Calls via SEO</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ──────────────────────────────────────────── -->
+<section id="services">
+  <div class="container">
+    <div class="section-label">What We Do</div>
+    <h2>Services Built to <span>Grow Your Business</span></h2>
+    <p class="section-desc">Every service is designed to get measurable results — more bookings, more visibility, more revenue.</p>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>SmartBook AI</h3>
+        <p>A 24/7 AI phone agent that answers calls, books appointments, and handles FAQs — so you never miss a lead, even after hours.</p>
+        <div class="service-price">$497 <small>/ month</small></div>
+        <a href="#contact" class="service-cta">Get SmartBook AI</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🖥️</div>
+        <h3>Website Redesign</h3>
+        <p>A professional, mobile-ready website built and launched in 2 weeks. Clean design, fast load times, and built to convert visitors into customers.</p>
+        <div class="service-price">$599 <small>one-time</small></div>
+        <a href="#contact" class="service-cta">Start My Site</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📍</div>
+        <h3>Local SEO & Reputation</h3>
+        <p>Get found first on Google Maps and local search. We manage your listings, build citations, and grow your reviews — fast.</p>
+        <div class="service-price">$400 <small>/ month</small></div>
+        <a href="#contact" class="service-cta">Boost My Rankings</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Custom App Development</h3>
+        <p>Mobile and web apps built for local businesses. Booking systems, loyalty programs, internal tools — whatever your business needs to scale.</p>
+        <div class="service-price">From $1,500</div>
+        <a href="#contact" class="service-cta">Discuss My App</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── PORTFOLIO ─────────────────────────────────────────── -->
+<section id="portfolio">
+  <div class="container">
+    <div class="section-label">Our Work</div>
+    <h2>Sites We've <span>Built &amp; Launched</span></h2>
+    <p class="section-desc">Real results for local businesses. Every site is custom-designed, fast, and conversion-focused.</p>
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card dental">
+        <div class="portfolio-mockup">
+          <div class="mockup-bar">
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+          </div>
+          <div class="mockup-content">
+            <div class="mockup-line hero"></div>
+            <div class="mockup-line sub"></div>
+            <div class="mockup-line btn"></div>
+            <div class="mockup-line sm"></div>
+            <div class="mockup-line sm" style="width:40%"></div>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Phoenix Dental Smiles</h3>
+          <p>Modern dental practice site with online appointment booking, patient portal login, insurance info, and a before/after gallery. Mobile-first and HIPAA-aware.</p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Appointment Booking</span>
+            <span class="portfolio-tag">Patient Portal</span>
+            <span class="portfolio-tag">Mobile-First</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card gym">
+        <div class="portfolio-mockup">
+          <div class="mockup-bar">
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+          </div>
+          <div class="mockup-content">
+            <div class="mockup-line hero"></div>
+            <div class="mockup-line sub"></div>
+            <div class="mockup-line btn"></div>
+            <div class="mockup-line sm"></div>
+            <div class="mockup-line sm" style="width:45%"></div>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Iron Peak CrossFit</h3>
+          <p>High-energy gym site with live class schedule, coach profiles, membership signup flow, and a free-trial CTA that converts visitors into members on day one.</p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Class Schedule</span>
+            <span class="portfolio-tag">Membership Signup</span>
+            <span class="portfolio-tag">Free Trial CTA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card spa">
+        <div class="portfolio-mockup">
+          <div class="mockup-bar">
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+          </div>
+          <div class="mockup-content">
+            <div class="mockup-line hero"></div>
+            <div class="mockup-line sub"></div>
+            <div class="mockup-line btn"></div>
+            <div class="mockup-line sm"></div>
+            <div class="mockup-line sm" style="width:38%"></div>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Desert Bloom Spa</h3>
+          <p>Elegant, minimal spa site with full service menu, staff bios, gift card purchasing, and seamless online booking — designed to reflect luxury at every scroll.</p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Service Menu</span>
+            <span class="portfolio-tag">Online Booking</span>
+            <span class="portfolio-tag">Gift Cards</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY AI ─────────────────────────────────────────────── -->
+<section id="why-ai">
+  <div class="container">
+    <div class="section-label">The Advantage</div>
+    <h2>Why <span>AI Changes</span> Everything</h2>
+    <p class="section-desc">Most local businesses lose leads after hours. AI fixes that — permanently, and affordably.</p>
+    <div class="ai-grid">
+
+      <div class="ai-item">
+        <div class="ai-item-icon">📞</div>
+        <h3>AI Phone Agents That Never Sleep</h3>
+        <p>SmartBook AI answers every call 24/7, books appointments in real time, handles common questions, and transfers urgent calls to you — all without hiring staff.</p>
+        <div class="ai-stat">67% of callers hang up if nobody answers. Stop losing leads.</div>
+      </div>
+
+      <div class="ai-item">
+        <div class="ai-item-icon">🔍</div>
+        <h3>Local SEO That Puts You on the Map</h3>
+        <p>We optimize your Google Business Profile, build local citations, and generate authentic reviews — so when someone searches your service in your city, you show up first.</p>
+        <div class="ai-stat">Clients see 30% more inbound calls within 90 days on average.</div>
+      </div>
+
+      <div class="ai-item">
+        <div class="ai-item-icon">⚡</div>
+        <h3>Speed-to-Lead Is Everything</h3>
+        <p>Studies show responding within 5 minutes increases close rates by 9×. An AI agent responds in seconds, every time, on every channel — while you focus on the work.</p>
+        <div class="ai-stat">9× higher close rate with instant response vs. 30-minute delay.</div>
+      </div>
+
+      <div class="ai-item">
+        <div class="ai-item-icon">📈</div>
+        <h3>Your Website Is Your #1 Sales Rep</h3>
+        <p>A poorly designed or slow website loses customers silently. We build fast, modern, mobile-first sites that guide visitors to action — and pair them with AI to close the loop.</p>
+        <div class="ai-stat">2-second load time improvement = 15% more conversions on average.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ──────────────────────────────────────── -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-label">Client Stories</div>
+    <h2>Real Results, <span>Real Businesses</span></h2>
+    <p class="section-desc">Don't take our word for it — hear from business owners who made the switch to smarter tech.</p>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"I was skeptical about the AI phone agent, but it recovered 6 bookings in the very first week — calls I would have missed overnight. It paid for itself before the first month was up."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">JM</div>
+          <div>
+            <div class="author-name">James M.</div>
+            <div class="author-biz">Owner, Phoenix Dental Smiles</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"They said 2 weeks and they meant it. My new site went live in 10 days and it looks 10× better than what I had before. Already getting compliments from customers walking in."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SR</div>
+          <div>
+            <div class="author-name">Sarah R.</div>
+            <div class="author-biz">Owner, Desert Bloom Spa</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Within 3 months of starting the SEO package, we were getting 30% more calls from Google. We used to be on page 2 — now we're the first result that pops up for our area."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">DK</div>
+          <div>
+            <div class="author-name">Derek K.</div>
+            <div class="author-biz">Head Coach, Iron Peak CrossFit</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">Let's Talk</div>
+    <h2>Ready to <span>Build Something?</span></h2>
+    <p class="section-desc">Drop us a line. We'll get back to you within 24 hours with a clear plan and honest pricing.</p>
+    <div class="contact-box">
+      <h3 style="font-size:1.4rem; font-weight:800;">Get a Free Consultation</h3>
+      <p>Tell us about your business and what you're looking to improve. No pressure, no sales pitch — just a real conversation about what's possible.</p>
+      <a href="mailto:hello@pantrymate.net" class="contact-email">
+        ✉ hello@pantrymate.net
+      </a>
+      <div class="contact-divider">— or —</div>
+      <a href="mailto:hello@pantrymate.net?subject=I%27d%20like%20to%20work%20with%20Meyer%20Digital" class="contact-btn">
+        Send a Message →
+      </a>
+      <p style="margin-top:1.5rem; font-size:.82rem; color:var(--muted);">Typically responds within a few hours during business hours (Mon–Fri, 9AM–6PM MST)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+  <p>© 2026 <strong>Meyer Digital</strong> · Crafted by Wolfgang Meyer · <a href="mailto:hello@pantrymate.net">hello@pantrymate.net</a></p>
+  <p style="margin-top:.4rem;">AI-powered services for modern businesses.</p>
+</footer>
+
+</body>
+</html>
