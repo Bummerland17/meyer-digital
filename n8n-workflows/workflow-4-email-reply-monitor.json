@@ -1,0 +1,125 @@
+{
+  "name": "New Email Reply → Alert Wolfgang",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "minutes", "minutesInterval": 30}]
+        }
+      },
+      "id": "node-schedule",
+      "name": "Every 30 Minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "mailbox": "INBOX",
+        "action": "read",
+        "limit": 20,
+        "downloadAttachments": false,
+        "options": {
+          "unseen": true,
+          "allowUnauthorizedCerts": false
+        }
+      },
+      "id": "node-imap",
+      "name": "Check Zoho IMAP",
+      "type": "n8n-nodes-base.emailReadImap",
+      "typeVersion": 2,
+      "position": [450, 300],
+      "credentials": {
+        "imap": {
+          "id": "zoho-imap-creds",
+          "name": "Zoho Mail IMAP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const emails = $input.all();\n\n// Filter out automated/no-reply messages\nconst automatedPatterns = [\n  /no.?reply/i,\n  /noreply/i,\n  /donotreply/i,\n  /notification/i,\n  /automated/i,\n  /mailer-daemon/i,\n  /postmaster/i,\n  /bounce/i,\n  /unsubscribe/i,\n  /auto-?generated/i\n];\n\nconst humanReplies = emails.filter(email => {\n  const from = email.json.from || '';\n  const subject = (email.json.subject || '').toLowerCase();\n  const isAutomated = automatedPatterns.some(p => p.test(from) || p.test(subject));\n  const isReply = subject.startsWith('re:') || subject.startsWith('fwd:') || email.json.inReplyTo;\n  return !isAutomated;\n});\n\nreturn humanReplies.map(email => ({\n  json: {\n    from: email.json.from,\n    subject: email.json.subject,\n    snippet: (email.json.text || email.json.html || '').slice(0, 300).replace(/<[^>]+>/g, '').trim(),\n    date: email.json.date,\n    messageId: email.json.messageId\n  }\n}));"
+      },
+      "id": "node-filter-humans",
+      "name": "Filter Human Replies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [700, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $input.all().length }}",
+              "operation": "larger",
+              "value2": 0
+            }
+          ]
+        }
+      },
+      "id": "node-if-replies",
+      "name": "IF New Human Replies",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [950, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "8654703697",
+        "text": "📬 *New Email Reply!*\n\n👤 From: {{ $json.from }}\n📌 Subject: {{ $json.subject }}\n🕐 Date: {{ $json.date }}\n\n{{ $json.snippet }}...",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "node-telegram-email",
+      "name": "Telegram Alert — Email Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [1200, 200],
+      "credentials": {
+        "telegramApi": {
+          "id": "telegram-creds",
+          "name": "Telegram Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const fs = require('fs');\nconst LOG_PATH = '/root/.openclaw/workspace/assets/email-replies.json';\n\nlet replies = [];\ntry { replies = JSON.parse(fs.readFileSync(LOG_PATH, 'utf8')); } catch(e) { replies = []; }\n\nconst newReplies = $input.all().map(item => ({\n  ...item.json,\n  logged_at: new Date().toISOString()\n}));\n\nreplies.push(...newReplies);\n\n// Keep last 500 entries\nif (replies.length > 500) replies = replies.slice(-500);\n\nfs.writeFileSync(LOG_PATH, JSON.stringify(replies, null, 2));\nreturn [{ json: { logged: newReplies.length, total: replies.length } }];"
+      },
+      "id": "node-log-replies",
+      "name": "Log to email-replies.json",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1200, 400]
+    }
+  ],
+  "connections": {
+    "Every 30 Minutes": {
+      "main": [[{"node": "Check Zoho IMAP", "type": "main", "index": 0}]]
+    },
+    "Check Zoho IMAP": {
+      "main": [[{"node": "Filter Human Replies", "type": "main", "index": 0}]]
+    },
+    "Filter Human Replies": {
+      "main": [[{"node": "IF New Human Replies", "type": "main", "index": 0}]]
+    },
+    "IF New Human Replies": {
+      "main": [
+        [
+          {"node": "Telegram Alert — Email Reply", "type": "main", "index": 0},
+          {"node": "Log to email-replies.json", "type": "main", "index": 0}
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": ["email", "zoho", "monitoring"],
+  "meta": {
+    "description": "Runs every 30 min. Checks Zoho IMAP for new non-automated replies. Alerts Wolfgang via Telegram with sender/subject/snippet. Logs all replies to email-replies.json. Set up Zoho IMAP credentials before activating."
+  }
+}

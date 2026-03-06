@@ -1,0 +1,503 @@
+[
+  {
+    "id": "pm-x-001",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "You open the fridge. Stare for 45 seconds. Close it. Open it again. Nothing changed. Order DoorDash. This is the meal planning crisis nobody talks about.",
+    "scheduledAt": "2026-03-06T07:00:00Z",
+    "hashtags": ["mealplanning", "foodwaste", "dinnerideas"]
+  },
+  {
+    "id": "pm-x-002",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "Real question: when you don't know what to make for dinner, how often do you actually have food at home?\n\n🔵 Always — full fridge, zero ideas\n🟣 Usually — something's there\n⚪ Rarely — genuinely empty\n🟡 I meal plan like an adult (respect)",
+    "scheduledAt": "2026-03-06T16:00:00Z",
+    "hashtags": ["cooking", "mealplanning", "foodie"]
+  },
+  {
+    "id": "uf-x-001",
+    "brand": "UnitFix",
+    "platform": "x",
+    "content": "your tenant doesn't care that it's sunday. the pipes don't either.\nbeing a small landlord is just being on call indefinitely with no HR department",
+    "scheduledAt": "2026-03-07T07:00:00Z",
+    "hashtags": ["landlord", "propertymanagement", "realestate"]
+  },
+  {
+    "id": "uf-x-002",
+    "brand": "UnitFix",
+    "platform": "x",
+    "content": "maintenance request management for landlords with 1-3 units:\n\n- text thread with no context\n- voicemail you'll \"listen to later\"\n- sticky note that fell behind the desk\n- vibes\n\nwe deserve better systems than this",
+    "scheduledAt": "2026-03-07T16:00:00Z",
+    "hashtags": ["landlord", "smalllandlord", "rentalproperty"]
+  },
+  {
+    "id": "pm-x-003",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "Building a startup from Namibia means my \"office\" is wherever the wifi holds. Right now: fixing a bug where the AI suggests \"pasta carbonara\" when you only have spaghetti and regret.",
+    "scheduledAt": "2026-03-08T07:00:00Z",
+    "hashtags": ["buildinpublic", "startuplife", "indiemaker"]
+  },
+  {
+    "id": "pm-x-004",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "The real problem isn't that people can't cook. It's that deciding *what* to cook with what you have takes more mental energy than the cooking itself. Decision fatigue hits before you even touch the stove.",
+    "scheduledAt": "2026-03-08T16:00:00Z",
+    "hashtags": ["decisionfatigue", "cooking", "mealplanning"]
+  },
+  {
+    "id": "uf-x-003",
+    "brand": "UnitFix",
+    "platform": "x",
+    "content": "if you're a small landlord, start documenting maintenance requests with timestamps the moment you get them\n\nnot because you expect a dispute\nbut because the one time you don't, that's when you need it\n\n(ask me how I know)",
+    "scheduledAt": "2026-03-09T07:00:00Z",
+    "hashtags": ["landlordtips", "propertymanagement", "rentalproperty"]
+  },
+  {
+    "id": "pm-x-005",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "Built pantrymate.net for this exact problem. Type what's in your fridge → get meals you can actually make. Takes 30 seconds. Free to try. No account needed to start.\n\nIt's not magic. It's just a faster brain for your pantry.",
+    "scheduledAt": "2026-03-09T16:00:00Z",
+    "hashtags": ["pantrymate", "mealplanning", "AIcooking", "foodtech"]
+  },
+  {
+    "id": "uf-x-004",
+    "brand": "UnitFix",
+    "platform": "x",
+    "content": "built a simple fix for this:\n\neach rental unit gets its own URL → tenants submit requests without making an account → you see everything in one dashboard\n\ncalled UnitFix. free for 1 unit, $29/mo for up to 5.\nunitfix.app\n\nfor landlords who are tired of managing maintenance in their texts",
+    "scheduledAt": "2026-03-10T07:00:00Z",
+    "hashtags": ["unitfix", "landlord", "proptech", "realestate"]
+  },
+  {
+    "id": "pm-x-006",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "Week 3 of solo founder life update: added meal history so you stop getting suggested the same 3 dishes. Also: Google Play launch incoming. Android users, you're next.\n\nMRR: still embarrassingly small. But it's growing. 🧪",
+    "scheduledAt": "2026-03-10T16:00:00Z",
+    "hashtags": ["buildinpublic", "indiemaker", "startup", "SaaS"]
+  },
+  {
+    "id": "uf-x-005",
+    "brand": "UnitFix",
+    "platform": "x",
+    "content": "stages of a small landlord's career:\n\n1. \"how hard can it be\"\n2. first maintenance call at 11pm\n3. buying a label maker for keys\n4. googling \"how to respond to maintenance requests professionally\"\n5. setting up actual systems\n6. peace (temporary)",
+    "scheduledAt": "2026-03-11T07:00:00Z",
+    "hashtags": ["landlordlife", "realestate", "rentalproperty"]
+  },
+  {
+    "id": "pm-x-007",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "What's the most random thing you've cooked because you refused to go to the grocery store?\n\nI'll start: tuna + leftover rice + whatever that sauce was. Ate it. 0 regrets.",
+    "scheduledAt": "2026-03-11T16:00:00Z",
+    "hashtags": ["cooking", "pantrycooking", "foodwaste", "frugal"]
+  },
+  {
+    "id": "uf-x-006",
+    "brand": "UnitFix",
+    "platform": "x",
+    "content": "the #1 thing that protects you in a tenant dispute isn't being a good landlord\n\nit's being a documented landlord\n\ntimestamped records of every request, every response, every repair\n\nthis is unsexy until the moment it isn't",
+    "scheduledAt": "2026-03-12T07:00:00Z",
+    "hashtags": ["landlordtips", "propertymanagement", "tenantdispute"]
+  },
+  {
+    "id": "pm-x-008",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "Here's what PantryMate actually does when you tell it you have chicken thighs, half an onion, garlic, and \"some spices\":\n\n→ 3 real recipes with cook times and missing-ingredient flags\n\nThat's it. That's the product. pantrymate.net",
+    "scheduledAt": "2026-03-12T16:00:00Z",
+    "hashtags": ["pantrymate", "AIcooking", "mealplanning", "dinnerideas"]
+  },
+  {
+    "id": "uf-x-007",
+    "brand": "UnitFix",
+    "platform": "x",
+    "content": "\"I'll just self-manage, it'll save money\"\n\n*receives simultaneous texts from 3 tenants on a saturday about 3 different things*\n\nok so how do property managers stay sane",
+    "scheduledAt": "2026-03-13T07:00:00Z",
+    "hashtags": ["landlordlife", "selfmanage", "rentalproperty"]
+  },
+  {
+    "id": "pm-x-009",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "Meal planning apps make you plan a week in advance. But most people don't know what they want for dinner at 5pm, let alone next Thursday. We're solving the wrong problem with all this planning.",
+    "scheduledAt": "2026-03-13T16:00:00Z",
+    "hashtags": ["mealplanning", "foodtech", "productthinking"]
+  },
+  {
+    "id": "uf-x-008",
+    "brand": "UnitFix",
+    "platform": "x",
+    "content": "running a lifetime deal on UnitFix right now — $79, one time, done\n\nit's a maintenance request tracker built for small landlords (1–5 units)\ntenants get a link, submit requests without an account, you see everything in one place\n\nno subscription. no gotcha.\n→ https://buy.stripe.com/6oU28qcJmgEs9Mj3dibsc01",
+    "scheduledAt": "2026-03-14T07:00:00Z",
+    "hashtags": ["unitfix", "lifetimeDeal", "landlord", "proptech"]
+  },
+  {
+    "id": "pm-x-010",
+    "brand": "PantryMate",
+    "platform": "x",
+    "content": "PantryMate is now on Google Play. 🎉\n\nAndroid users: open your fridge, type what you see, get dinner. 30 seconds, no scrolling through 40 recipes, no DoorDash guilt.\n\nFree to download. Free tier included.\n\nBuilt this solo from Namibia. Stoked it's finally on Android.",
+    "scheduledAt": "2026-03-14T16:00:00Z",
+    "hashtags": ["pantrymate", "GooglePlay", "Android", "mealplanning"]
+  },
+
+  {
+    "id": "pm-fb-001",
+    "brand": "PantryMate",
+    "platform": "facebook",
+    "content": "I used to throw out $20–$40 of food a week. Not because I didn't care, just because by the time I figured out what to cook, I'd already ordered something.\n\nStarted doing this instead: before I grocery shop, I type everything I still have into PantryMate (pantrymate.net). It tells me what I can actually cook with what's already there. Usually I can get 2–3 more dinners out of stuff I would've tossed.\n\nLast week it turned: half a butternut squash, a can of chickpeas, and some wilting spinach into a curry I'd make again.\n\nNot sponsored, just actually use it. Anyone else doing something similar to cut food waste?",
+    "scheduledAt": "2026-03-06T07:00:00Z",
+    "hashtags": ["zerowaste", "foodwaste", "mealplanning", "pantrymate", "savemoney"]
+  },
+  {
+    "id": "uf-fb-001",
+    "brand": "UnitFix",
+    "platform": "facebook",
+    "content": "One habit that saved me in a tenant dispute last year 👇\n\nWhen my tenant claimed I \"never fixed\" the leaking faucet she complained about in October, I had a timestamp, her exact words, and the date I sent the plumber — all in one place.\n\nHere's what most landlords skip: document every maintenance request the moment it comes in. Not in your texts. Not in your head. Somewhere with a timestamp you can actually pull up.\n\nMy process now:\n• Every unit has its own link (I text it to tenants on move-in day)\n• They submit requests through it — no account needed on their end\n• I get a notification, it logs automatically, and I can see everything by unit\n\nI've used it twice in 12 months to defend myself against \"you never responded\" complaints. Both times, the record was right there.\n\nAnyone else learned this the hard way? 👇",
+    "scheduledAt": "2026-03-06T16:00:00Z",
+    "hashtags": ["landlord", "propertymanagement", "rentalproperty", "smalllandlord"]
+  },
+  {
+    "id": "pm-fb-002",
+    "brand": "PantryMate",
+    "platform": "facebook",
+    "content": "Real talk: the hardest part of cooking isn't the cooking. It's deciding what to make at 5:30pm when you've already made 400 decisions today and everyone's hungry.\n\nI started using an AI tool (pantrymate.net) that does one thing: I type what's in my fridge and it tells me what I can make RIGHT NOW. No recipe browsing, no ingredient list planning, no \"honey what do you want for dinner\" spiral.\n\nIt's fast. Like, 30 seconds fast.\n\nSharing because I know this group is full of people managing family dinners on real schedules. What's your go-to when you're stuck?",
+    "scheduledAt": "2026-03-08T07:00:00Z",
+    "hashtags": ["busyparents", "mealplanning", "decisionfatigue", "dinnerideas"]
+  },
+  {
+    "id": "uf-fb-002",
+    "brand": "UnitFix",
+    "platform": "facebook",
+    "content": "Real talk for a second.\n\n2:47 AM. My phone buzzes. It's my tenant at unit 3.\n\n\"Hey sorry to bother you but the toilet is making a weird noise and water is coming out the bottom a little\"\n\nI'm half asleep, I panic, I send three voice memos, I can't remember if I already dealt with this exact toilet last spring...\n\nTurns out it was fine. Old wax ring. $120 fix. But I'd been awake for two hours because I had no system.\n\nAfter that I set up a simple maintenance request form for each of my units. Now when something happens, I wake up to a proper request with photos already attached, not a stress-inducing text.\n\nThe tool I use is called UnitFix (unitfix.app). Free for one unit, $29/month if you have more. No app for tenants to download.\n\nAnyone else have a \"that's when I finally got organized\" moment?",
+    "scheduledAt": "2026-03-08T16:00:00Z",
+    "hashtags": ["landlordlife", "smalllandlord", "propertymanagement", "unitfix"]
+  },
+  {
+    "id": "pm-fb-003",
+    "brand": "PantryMate",
+    "platform": "facebook",
+    "content": "Made this last night from stuff I almost forgot I had:\n\nChicken thighs + half an onion + garlic + a can of diced tomatoes + dried oregano = one-pan baked chicken that took 35 mins.\n\nI typed my ingredients into PantryMate (pantrymate.net) and it suggested this. I was skeptical but it was genuinely good. Now I check it before I grocery shop so I don't buy duplicates of things I already have.\n\nAnyone else doing pantry-first cooking? What did you make recently from random stuff?",
+    "scheduledAt": "2026-03-10T07:00:00Z",
+    "hashtags": ["pantrycooking", "mealideas", "foodwaste", "easyrecipes", "pantrymate"]
+  },
+  {
+    "id": "uf-fb-003",
+    "brand": "UnitFix",
+    "platform": "facebook",
+    "content": "Problem: You're not a property manager. But your tenants treat you like one.\n\nWhen you own 1–3 rental units and self-manage, you don't have a maintenance team. You're the landlord AND the handyman AND the customer service rep AND the accountant.\n\nSo when 3 different tenants have 3 different issues this month, you're tracking it all in:\n• Your texts\n• Your email\n• Your memory\n• Maybe a note on your fridge\n\nThe thing that actually helped me: giving each unit its own maintenance request URL.\n\nTenant submits a request with a description and photos → I get notified → I can see everything in one dashboard by unit.\n\nTool is called UnitFix (unitfix.app). Free for 1 unit. $29/month for up to 5. Tenants don't need to create an account or download anything.\n\nIf you're managing more than one unit without a system like this, you're doing it harder than it needs to be.",
+    "scheduledAt": "2026-03-10T16:00:00Z",
+    "hashtags": ["landlord", "proptech", "selfmanage", "unitfix", "smalllandlord"]
+  },
+  {
+    "id": "uf-fb-004",
+    "brand": "UnitFix",
+    "platform": "facebook",
+    "content": "Quick poll for the landlords in here:\n\nWhen a tenant has a maintenance issue, how do they usually reach you?\n\n📱 Text/WhatsApp\n📧 Email\n📞 Phone call\n🚪 Knock on my door (if you're on-site)\n📋 Some kind of form or system\n\nI'm asking because I've been thinking about how much time I lose just triaging tenant messages. Sometimes it's a true emergency. Sometimes it's \"the light in the hallway is dim.\" Both come in the same way — as a text — and I have to figure out urgency while I'm in the middle of something else.\n\nCurious how other small landlords handle this.",
+    "scheduledAt": "2026-03-12T07:00:00Z",
+    "hashtags": ["landlordpoll", "propertymanagement", "rentalproperty"]
+  },
+  {
+    "id": "uf-fb-005",
+    "brand": "UnitFix",
+    "platform": "facebook",
+    "content": "For the small landlords who've been winging it — this one's for you.\n\nI built a tool called UnitFix (unitfix.app) specifically for landlords with 1–5 units who self-manage.\n\nHere's what it does:\n✅ Each of your rental units gets its own public URL\n✅ Tenants submit maintenance requests through it — no account, no app download\n✅ You see every request in one dashboard, organized by unit\n\nRight now there's a lifetime deal running — $79 one time for full access (up to 5 units). No subscription, no annual renewals.\n\nIf you know a landlord who's still managing maintenance via text thread — tag them. This is exactly for them. 🙏",
+    "scheduledAt": "2026-03-14T07:00:00Z",
+    "hashtags": ["unitfix", "lifetimeDeal", "landlord", "proptech", "realestate"]
+  },
+
+  {
+    "id": "pm-li-001",
+    "brand": "PantryMate",
+    "platform": "linkedin",
+    "content": "I'm building an AI startup from Namibia. My MRR right now is $14.\n\nI'm not posting this for sympathy. I'm posting it because I think there's something off about how \"building in public\" usually gets framed — all milestones, no in-between.\n\nThe in-between is: one subscriber. A to-do list that's longer than my runway. An internet connection that drops every time it rains.\n\nThe product is PantryMate — you type what's in your fridge, AI tells you what you can cook right now. Simple problem, takes 30 seconds to solve. Google Play launch coming this week.\n\nI built it because I kept staring into my fridge, closing it, and ordering food I didn't need. I figured other people did the same.\n\nTurns out: they do.\n\nIf you know someone who'd use it, send them to pantrymate.net. And if you've ever shipped something with ugly early numbers and kept going anyway — I'd like to hear how you thought about it.",
+    "scheduledAt": "2026-03-06T07:00:00Z",
+    "hashtags": ["buildinpublic", "startuplife", "solofounder", "SaaS", "indiemaker", "Namibia"]
+  },
+  {
+    "id": "pm-li-002",
+    "brand": "PantryMate",
+    "platform": "linkedin",
+    "content": "PantryMate just launched on Google Play.\n\nThe pitch is simple: you type what's in your fridge, the AI tells you what you can cook right now. No meal planning, no grocery list — just what you have, right now.\n\nBuilt this as a solo founder to solve a genuinely annoying daily problem. Web version has been live for a while. Android is finally here.\n\nIf you're on Android and have ever stared into a full fridge with no plan: this is for you.\n\n→ pantrymate.net\n\nWould love any feedback from first users.",
+    "scheduledAt": "2026-03-07T07:00:00Z",
+    "hashtags": ["GooglePlay", "Android", "mobileapp", "AIstartup", "pantrymate"]
+  },
+  {
+    "id": "uf-li-001",
+    "brand": "UnitFix",
+    "platform": "linkedin",
+    "content": "I own a few rental units. I'm not a real estate mogul. I'm just someone who bought a duplex and figured out how to manage it without losing my mind.\n\nThe part I couldn't figure out: maintenance requests.\n\nThey came in by text, at midnight, with no context. I had no way to track what was open, what was resolved, what I'd already dealt with three months ago for the same unit. One time a tenant claimed I never responded to something — and I had no proof either way.\n\nSo I built UnitFix.\n\nEach unit gets a public URL. Tenants submit requests without creating an account. I see everything in one dashboard.\n\nThat's it. Deliberately boring. Exactly what I needed.\n\nIt's live at unitfix.app — free for 1 unit, $29/month for up to 5. I'm also running a one-time lifetime deal right now for early supporters.\n\nIf you own 1–5 rentals and still manage maintenance through your texts, this is for you.",
+    "scheduledAt": "2026-03-07T16:00:00Z",
+    "hashtags": ["realestate", "proptech", "landlord", "startup", "buildinpublic", "unitfix"]
+  },
+  {
+    "id": "uf-li-002",
+    "brand": "UnitFix",
+    "platform": "linkedin",
+    "content": "The lifetime deal for UnitFix is live.\n\nIf you've been curious about it but didn't want to commit to a subscription — this is your window.\n\n$79, one time. Full access for up to 5 rental units. No monthly charges, no annual renewals.\n\nHere's what you get:\n→ A unique public URL for each of your units\n→ Tenants can submit maintenance requests without creating an account\n→ One dashboard showing all open and resolved requests across your properties\n→ Photo attachments so you actually know what you're walking into\n\nBuilt specifically for small landlords (1–5 units) who self-manage.\n\nDeal link: https://buy.stripe.com/6oU28qcJmgEs9Mj3dibsc01\n\nQuestions? Drop them in the comments or DM me directly.",
+    "scheduledAt": "2026-03-11T07:00:00Z",
+    "hashtags": ["unitfix", "lifetimeDeal", "realestate", "proptech", "smalllandlord"]
+  },
+  {
+    "id": "sb-li-001",
+    "brand": "SmartBook AI",
+    "platform": "linkedin",
+    "content": "Independent dental practices miss 30% of incoming calls. Most happen after hours, during procedures, or when the front desk is overwhelmed.\n\nAnd the cost is real: 78% of patients book with the first practice that answers. At an average patient value of $1,500, missing 4 calls a week is $6,000+ in lost monthly revenue.\n\nSmartBook AI is an AI phone receptionist that answers every call, 24/7. It books appointments, handles scheduling questions, and sends SMS confirmations — without adding headcount.\n\n$497/month flat. Less than a part-time hire. Call the live demo yourself: (941) 251-8049\n\nBuilt specifically for solo and small group dental practices.",
+    "scheduledAt": "2026-03-08T07:00:00Z",
+    "hashtags": ["dental", "healthcaretech", "AIreceptionist", "dentaloffice", "smartbookai"]
+  },
+  {
+    "id": "sb-li-002",
+    "brand": "SmartBook AI",
+    "platform": "linkedin",
+    "content": "Here's a stat that should bother every independent practice owner:\n\n30% of calls to solo dental practices go unanswered.\n78% of patients book with whoever picks up first.\n\nThat's not a staffing problem. That's a revenue leak.\n\nSmartBook AI answers every call 24/7, books appointments, and sends SMS confirmations automatically — for $497/month flat.\n\nNo scripts to record. No hardware to install. Live in under a week.\n\nHear it yourself: call (941) 251-8049 — takes 60 seconds.\n\nOr visit: https://bummerland17.github.io/smartbook-ai/",
+    "scheduledAt": "2026-03-09T07:00:00Z",
+    "hashtags": ["dental", "medtech", "AIreceptionist", "dentalmarketing", "healthcareAI"]
+  },
+  {
+    "id": "sb-li-003",
+    "brand": "SmartBook AI",
+    "platform": "linkedin",
+    "content": "Most dental practice owners I talk to assume they're answering 90%+ of calls.\n\nWhen we actually track it: it's closer to 70%.\n\nThe gap happens:\n• During procedures (front desk busy, patient waiting)\n• Lunch break\n• After 5pm\n• Mondays (call volume spikes)\n\nEach missed call = a patient who called the next number on their Google search.\n\nSmartBook AI fills that gap. Answers every call, 24/7, books automatically.\n\n$497/month. Demo: (941) 251-8049",
+    "scheduledAt": "2026-03-12T07:00:00Z",
+    "hashtags": ["dentalpractice", "patientacquisition", "AIreceptionist", "dentaltech"]
+  },
+  {
+    "id": "sb-li-004",
+    "brand": "SmartBook AI",
+    "platform": "linkedin",
+    "content": "The math for solo dental practice owners:\n\n4 missed calls/week\n× $1,500 average patient value\n× 4 weeks\n= $24,000/month walking out the door\n\nSmartBook AI costs $497/month and captures those calls automatically.\n\nROI on day one.\n\nCall the live demo: (941) 251-8049\nLearn more: https://bummerland17.github.io/smartbook-ai/",
+    "scheduledAt": "2026-03-14T07:00:00Z",
+    "hashtags": ["dentalROI", "practicegrowth", "AIreceptionist", "smartbookai", "dental"]
+  },
+
+  {
+    "id": "pm-ig-001",
+    "brand": "PantryMate",
+    "platform": "instagram",
+    "content": "That 5pm fridge stare hits different when you've already made 400 decisions today 😩\n\nType what you have → get dinner in 30 seconds. That's PantryMate.\n\nLink in bio → pantrymate.net 🍳",
+    "scheduledAt": "2026-03-06T16:00:00Z",
+    "hashtags": ["mealplanning", "dinnerideas", "whatscooking", "foodhack", "pantrymate", "easyrecipes", "cookingforbeginners", "mealprep"]
+  },
+  {
+    "id": "pm-ig-002",
+    "brand": "PantryMate",
+    "platform": "instagram",
+    "content": "Chicken thighs + half onion + garlic + canned tomatoes = dinner ✅\n\nI typed these 4 ingredients into PantryMate and got 3 recipes with cook times. Made the one-pan baked chicken. Honestly incredible for a \"use what you have\" meal.\n\nZero food waste. Zero DoorDash. Zero regrets. 🌿\n\n→ pantrymate.net (free to try, no account needed)",
+    "scheduledAt": "2026-03-07T07:00:00Z",
+    "hashtags": ["zerowaste", "pantrycooking", "easyrecipes", "foodwaste", "mealideas", "homecooking", "frugalliving", "pantrymate"]
+  },
+  {
+    "id": "uf-ig-001",
+    "brand": "UnitFix",
+    "platform": "instagram",
+    "content": "Small landlord life: managing maintenance via a scattered text thread at 2am 🥴\n\nThere's a better way. Give each unit its own request link. Tenants submit with photos. You see everything in one dashboard.\n\nUnitFix — free for 1 unit. Link in bio.",
+    "scheduledAt": "2026-03-08T16:00:00Z",
+    "hashtags": ["landlord", "realestate", "propertymanagement", "smalllandlord", "proptech", "rentalproperty", "unitfix"]
+  },
+  {
+    "id": "pm-ig-003",
+    "brand": "PantryMate",
+    "platform": "instagram",
+    "content": "Building a startup from Namibia 🇳🇦\n\nNo co-founder. Spotty wifi. A fridge full of \"I don't know.\"\n\nThat last problem became PantryMate — the AI that tells you what to cook with what you already have.\n\nSolo founder life is weird and I love it. pantrymate.net 🙌",
+    "scheduledAt": "2026-03-09T16:00:00Z",
+    "hashtags": ["solofounder", "buildinpublic", "startuplife", "Namibia", "indiemaker", "SaaS", "AIstartup", "pantrymate"]
+  },
+  {
+    "id": "uf-ig-002",
+    "brand": "UnitFix",
+    "platform": "instagram",
+    "content": "Tenant said: \"you never responded to my maintenance request\"\nYou said: \"yes I did\"\nYou both check your texts...\n\nAvoid this entire conversation. ⏱️\n\nEvery request timestamped. Every response logged. All in one place.\n\nUnitFix.app — free for 1 unit 🏠",
+    "scheduledAt": "2026-03-11T16:00:00Z",
+    "hashtags": ["landlordtips", "propertymanagement", "realestate", "unitfix", "smalllandlord", "rentalproperty"]
+  },
+  {
+    "id": "pm-ig-004",
+    "brand": "PantryMate",
+    "platform": "instagram",
+    "content": "PantryMate is on Google Play! 🎉🤖\n\nAndroid fam — open your fridge, type what you see, get real dinner ideas in 30 seconds.\n\nFree to download. No credit card. Just stop staring into the fridge 😅\n\n→ Link in bio",
+    "scheduledAt": "2026-03-13T07:00:00Z",
+    "hashtags": ["GooglePlay", "Android", "mobileapp", "mealplanning", "pantrymate", "foodtech", "AIapp", "newapp"]
+  },
+
+  {
+    "id": "pm-tt-001",
+    "brand": "PantryMate",
+    "platform": "tiktok",
+    "content": "POV: It's 5pm and you're staring into the fridge again 🙃 Type what you have into PantryMate → get actual dinner ideas in 30 seconds. Free at pantrymate.net #pantrymate #mealideas #whatsfordinner #cookinghack #AIcooking #easyrecipes",
+    "scheduledAt": "2026-03-06T16:00:00Z",
+    "hashtags": ["pantrymate", "mealideas", "whatsfordinner", "cookinghack", "AIcooking", "easyrecipes"]
+  },
+  {
+    "id": "pm-tt-002",
+    "brand": "PantryMate",
+    "platform": "tiktok",
+    "content": "I typed 4 random fridge ingredients into an AI and this is what it gave me 👇 [show: typing chicken, garlic, onion, tomatoes → PantryMate output: 3 recipes with steps] Zero waste dinner unlocked. pantrymate.net #foodhack #cookingtiktok #zerofoodwaste #pantryrecipes #dinnerideas",
+    "scheduledAt": "2026-03-07T16:00:00Z",
+    "hashtags": ["foodhack", "cookingtiktok", "zerofoodwaste", "pantryrecipes", "dinnerideas"]
+  },
+  {
+    "id": "uf-tt-001",
+    "brand": "UnitFix",
+    "platform": "tiktok",
+    "content": "Small landlord starter pack 🧵: Getting a maintenance text at 2am with zero context 📱 Not remembering if you already dealt with this same issue last month 🤔 Finding out the tenant thinks you \"never responded\" 😬 Fix: unitfix.app — each unit gets its own request link #landlordtiktok #realestate #proptech #smalllandlord #landlordlife",
+    "scheduledAt": "2026-03-09T16:00:00Z",
+    "hashtags": ["landlordtiktok", "realestate", "proptech", "smalllandlord", "landlordlife"]
+  },
+  {
+    "id": "pm-tt-003",
+    "brand": "PantryMate",
+    "platform": "tiktok",
+    "content": "Solo founder from Namibia 🇳🇦 building an AI startup with spotty wifi and $14 MRR 😂 My product tells you what to cook from your fridge. My MRR tells me I have work to do. Building in public — watch me figure this out. pantrymate.net #solofounder #startuptiktok #buildinpublic #indiemaker #namibia",
+    "scheduledAt": "2026-03-10T07:00:00Z",
+    "hashtags": ["solofounder", "startuptiktok", "buildinpublic", "indiemaker", "Namibia"]
+  },
+  {
+    "id": "uf-tt-002",
+    "brand": "UnitFix",
+    "platform": "tiktok",
+    "content": "The one habit every small landlord needs: Document every maintenance request WITH A TIMESTAMP the second it comes in. One time I couldn't prove I responded. That was the last time. Now every unit has its own request link at unitfix.app 🏠 #landlordadvice #realestatetips #propertymanagement #landlordtips #rentalproperty",
+    "scheduledAt": "2026-03-11T16:00:00Z",
+    "hashtags": ["landlordadvice", "realestatetips", "propertymanagement", "landlordtips", "rentalproperty"]
+  },
+  {
+    "id": "pm-tt-004",
+    "brand": "PantryMate",
+    "platform": "tiktok",
+    "content": "PantryMate is now on Google Play 🎉 Android users — open your fridge, type what you see, eat something that isn't sad cereal. 30 seconds. Free. Link in bio! #googleplay #androidapp #mealideas #pantrymate #cookingtiktok #AIapp",
+    "scheduledAt": "2026-03-14T16:00:00Z",
+    "hashtags": ["googleplay", "androidapp", "mealideas", "pantrymate", "cookingtiktok", "AIapp"]
+  },
+
+  {
+    "id": "pm-pin-001",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "5 Easy Weeknight Dinners You Can Make From What's Already In Your Pantry\n\nNo grocery run needed. Type your ingredients into PantryMate and get personalized meal ideas instantly.\n\n✅ Ready in under 45 minutes\n✅ Uses what you already have\n✅ AI-powered suggestions\n\n→ pantrymate.net",
+    "scheduledAt": "2026-03-06T07:00:00Z",
+    "hashtags": ["easydinners", "weeknightmeals", "pantryrecipes", "mealplanning", "dinnerideas", "pantrymate"]
+  },
+  {
+    "id": "pm-pin-002",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "What to Cook With Chicken Thighs + Pantry Staples (No Extra Shopping!)\n\nChicken thighs are the most versatile ingredient in your fridge. Here are 5 one-pan meals you can make right now with what you have.\n\nGet personalized suggestions at pantrymate.net 🍗",
+    "scheduledAt": "2026-03-06T16:00:00Z",
+    "hashtags": ["chickenrecipes", "onepanmeal", "easyrecipes", "weeknightdinner", "pantrycooking", "mealideas"]
+  },
+  {
+    "id": "pm-pin-003",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "Stop Wasting Food: Use What's In Your Fridge Before It Goes Bad\n\nThe average family throws away $1,500/year in food. Here's how to use what you have before it spoils:\n\n1. Check your fridge for \"forgotten\" produce\n2. Type ingredients into PantryMate\n3. Get 3 recipes you can make RIGHT NOW\n\nFree at pantrymate.net 🌿",
+    "scheduledAt": "2026-03-07T07:00:00Z",
+    "hashtags": ["zerowaste", "foodwaste", "frugalliving", "savemoney", "pantrycooking", "mealplanning"]
+  },
+  {
+    "id": "pm-pin-004",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "Dinner Ideas When You Have No Idea What to Cook\n\nEvery night feels like this at 5pm:\n• Full fridge\n• Zero ideas\n• Hungry family\n\nPantryMate tells you exactly what to make with what you have. Takes 30 seconds.\n\n→ pantrymate.net (free)",
+    "scheduledAt": "2026-03-07T16:00:00Z",
+    "hashtags": ["dinnerideas", "whatsfordinner", "mealhelp", "easyrecipes", "familydinners", "pantrymate"]
+  },
+  {
+    "id": "pm-pin-005",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "Budget Meals: Cook From Your Pantry All Week Without Grocery Shopping\n\nChallenge: Use what you already have for 5 dinners straight.\n\nHow to do it:\n✓ Inventory your pantry (canned goods, grains, frozen items)\n✓ Check your fridge for fresh items\n✓ Type it all into PantryMate\n✓ Get a full week of meals planned\n\nFree at pantrymate.net 💰",
+    "scheduledAt": "2026-03-09T07:00:00Z",
+    "hashtags": ["budgetmeals", "frugalliving", "pantrycooking", "mealprep", "savemoney", "easyrecipes"]
+  },
+  {
+    "id": "pm-pin-006",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "What to Cook With Eggs + Whatever's Left in the Fridge\n\nEggs are the ultimate flexible ingredient. Combined with almost anything, they make a full meal.\n\n• Eggs + spinach + cheese = frittata (20 min)\n• Eggs + rice + soy sauce = fried rice (15 min)\n• Eggs + leftover veggies = shakshuka (25 min)\n\nType YOUR ingredients into PantryMate for a personalized recipe → pantrymate.net",
+    "scheduledAt": "2026-03-09T16:00:00Z",
+    "hashtags": ["eggrecipes", "easymeals", "fridgecleanout", "weeknightdinner", "quickdinner", "pantrycooking"]
+  },
+  {
+    "id": "pm-pin-007",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "30-Minute Meals Using Only Pantry Staples\n\nThese recipes use ONLY common pantry staples:\n\n1. Pasta aglio e olio (garlic + olive oil + pasta)\n2. Lentil soup (canned lentils + spices + broth)\n3. Bean tacos (canned beans + spices + tortillas)\n4. Tuna pasta (tuna + pasta + olive oil + garlic)\n5. Rice and peas (rice + canned peas + butter)\n\nGet personalized 30-min meal ideas at pantrymate.net ⏱️",
+    "scheduledAt": "2026-03-10T07:00:00Z",
+    "hashtags": ["30minutemeals", "quickdinners", "pantrystaples", "easyrecipes", "weeknightmeals"]
+  },
+  {
+    "id": "pm-pin-008",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "Meal Planning for Busy Moms: Stop Planning Ahead, Start Cooking Now\n\nTraditional meal planning asks you to plan 7 days in advance. But real life doesn't work that way.\n\nThe smarter approach:\n→ Check what you have each evening\n→ Type it into PantryMate\n→ Cook that night's dinner in under 45 min\n\nNo weekly plan. No wasted groceries. No guilt.\n\npantrymate.net 🍳",
+    "scheduledAt": "2026-03-10T16:00:00Z",
+    "hashtags": ["mealplanningformoms", "busymom", "familydinners", "dinnerideas", "mealprep", "weeknightmeals"]
+  },
+  {
+    "id": "pm-pin-009",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "Vegetarian Dinners from Pantry Staples (No Meat Needed)\n\nStaples that make amazing plant-based dinners:\n\n🌿 Chickpeas → curry, roasted, salads\n🌿 Lentils → soup, dal, stuffed peppers\n🌿 Black beans → tacos, bowls, burritos\n🌿 Cannellini beans → pasta, soup, toast\n\nType your vegetarian pantry into PantryMate → get meal ideas instantly\n→ pantrymate.net",
+    "scheduledAt": "2026-03-11T07:00:00Z",
+    "hashtags": ["vegetarianrecipes", "plantbased", "veganmeals", "pantrycooking", "meatlessmonday", "easyvegetarian"]
+  },
+  {
+    "id": "pm-pin-010",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "What to Do With That Half Can of Coconut Milk in Your Fridge\n\nDon't let it go to waste! Half a can of coconut milk = the start of:\n\n• Thai peanut noodles\n• Butternut squash soup\n• Coconut curry (any protein)\n• Rice cooked in coconut milk\n\nType your leftover ingredients into PantryMate for more ideas → pantrymate.net 🥥",
+    "scheduledAt": "2026-03-11T16:00:00Z",
+    "hashtags": ["leftovers", "zerowaste", "pantrycooking", "coconutmilkrecipes", "easyrecipes", "foodwaste"]
+  },
+  {
+    "id": "pm-pin-011",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "Easy Weeknight Dinner Ideas for Families of 4\n\nFast, affordable, uses what you have:\n\n1. One-pan chicken + veggies (35 min)\n2. Pasta with whatever sauce you have (20 min)\n3. Fried rice from leftover rice (15 min)\n4. Bean and cheese burritos (20 min)\n5. Lentil soup with crusty bread (30 min)\n\nGet personalized ideas for your exact ingredients → pantrymate.net 🏠",
+    "scheduledAt": "2026-03-12T07:00:00Z",
+    "hashtags": ["familydinners", "weeknightmeals", "easyrecipes", "budgetcooking", "dinnerideas", "mealplanning"]
+  },
+  {
+    "id": "pm-pin-012",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "How I Cut My Grocery Bill by 40% (Without Eating Worse)\n\nThe secret: cook from what you have BEFORE you shop.\n\nStep 1: Every Sunday, check your fridge + pantry\nStep 2: Type everything into PantryMate\nStep 3: Get a meal plan for what you already own\nStep 4: Only buy what you're actually missing\n\nResult: Less waste. Lower bill. Better meals.\n\nFree at pantrymate.net 💰",
+    "scheduledAt": "2026-03-12T16:00:00Z",
+    "hashtags": ["savemoney", "grocerybudget", "frugalliving", "mealplanning", "foodbudget", "zerowaste"]
+  },
+  {
+    "id": "pm-pin-013",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "Dinner Recipes Using Ground Beef + Pantry Staples\n\nGround beef is one of the most flexible proteins. Here's what you can make tonight:\n\n🥩 + pasta + canned tomatoes = Bolognese\n🥩 + beans + spices = chili\n🥩 + rice + soy sauce = Korean-style rice bowls\n🥩 + onion + breadcrumbs = meatballs\n\nType your ingredients into PantryMate for step-by-step recipes → pantrymate.net",
+    "scheduledAt": "2026-03-13T07:00:00Z",
+    "hashtags": ["groundbeefrecipes", "beefrecipes", "easyrecipes", "weeknightdinner", "mealideas", "pantrycooking"]
+  },
+  {
+    "id": "pm-pin-014",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "The Lazy Cook's Guide to Zero Food Waste\n\nYou don't have to be a meal prep queen to waste less food. You just need a system:\n\n1. Before every grocery run, open your fridge\n2. Take a mental (or phone) photo of what's there\n3. Type it into PantryMate (takes 60 seconds)\n4. Cook one of the suggestions before buying more\n\nStart with: pantrymate.net — free, no account needed 🌱",
+    "scheduledAt": "2026-03-13T16:00:00Z",
+    "hashtags": ["zerowaste", "foodwaste", "sustainableliving", "lazycooking", "pantrycooking", "frugal"]
+  },
+  {
+    "id": "pm-pin-015",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "High-Protein Meals From Pantry Staples\n\nProtein doesn't have to come from expensive fresh meat:\n\n💪 Canned chickpeas (15g protein per cup)\n💪 Canned tuna (25g per can)\n💪 Canned black beans (15g per cup)\n💪 Canned lentils (18g per cup)\n💪 Eggs (6g each)\n\nType these into PantryMate → get high-protein meal ideas instantly\n→ pantrymate.net",
+    "scheduledAt": "2026-03-14T07:00:00Z",
+    "hashtags": ["highprotein", "proteinmeals", "mealprep", "healthyeating", "pantrycooking", "budgetprotein"]
+  },
+  {
+    "id": "pm-pin-016",
+    "brand": "PantryMate",
+    "platform": "pinterest",
+    "content": "5-Ingredient Dinners That Actually Taste Good\n\nConstraints = creativity. Some of the best meals come from having barely anything:\n\n✓ Garlic butter pasta (5 ingredients)\n✓ Tomato basil soup (5 ingredients)\n✓ Egg fried rice (5 ingredients)\n✓ Greek lemon chicken (5 ingredients)\n✓ Black bean tacos (5 ingredients)\n\nType your 5 ingredients into PantryMate → get your perfect recipe\n→ pantrymate.net",
+    "scheduledAt": "2026-03-14T16:00:00Z",
+    "hashtags": ["5ingredients", "simplerecipes", "easymeals", "weeknightdinner", "quickmeals", "pantrymate"]
+  }
+]

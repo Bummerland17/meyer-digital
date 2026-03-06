@@ -1,0 +1,20 @@
+{
+  "ai-sales-script-bundle": {
+    "ok": true,
+    "url": "https://bummerland17.github.io/ai-sales-script-bundle",
+    "pages_note": "enabled",
+    "repo": "https://github.com/Bummerland17/ai-sales-script-bundle"
+  },
+  "landlord-maintenance-templates": {
+    "ok": true,
+    "url": "https://bummerland17.github.io/landlord-maintenance-templates",
+    "pages_note": "enabled",
+    "repo": "https://github.com/Bummerland17/landlord-maintenance-templates"
+  },
+  "app-launch-playbook": {
+    "ok": true,
+    "url": "https://bummerland17.github.io/app-launch-playbook",
+    "pages_note": "enabled",
+    "repo": "https://github.com/Bummerland17/app-launch-playbook"
+  }
+}

@@ -1,0 +1,688 @@
+{
+  "run_at": "2026-03-05T13:44:00.668350+00:00",
+  "total_attempted": 48,
+  "submitted": [],
+  "submitted_unconfirmed": [],
+  "captcha_blocked": [
+    {
+      "timestamp": "2026-03-05T13:30:24.502075",
+      "directory": "AIcyclopedia",
+      "product": "PantryMate",
+      "status": "captcha_blocked",
+      "notes": "CAPTCHA detected"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:31.550218",
+      "directory": "AIcyclopedia",
+      "product": "SmartBook AI",
+      "status": "captcha_blocked",
+      "notes": "CAPTCHA detected"
+    },
+    {
+      "timestamp": "2026-03-05T13:37:10.048285+00:00",
+      "directory": "Startup Stash",
+      "product": "PantryMate",
+      "status": "captcha_blocked",
+      "notes": "CAPTCHA"
+    },
+    {
+      "timestamp": "2026-03-05T13:37:16.478263+00:00",
+      "directory": "Startup Stash",
+      "product": "SmartBook AI",
+      "status": "captcha_blocked",
+      "notes": "CAPTCHA"
+    },
+    {
+      "timestamp": "2026-03-05T13:43:42.684289+00:00",
+      "directory": "AIcyclopedia",
+      "product": "PantryMate",
+      "status": "captcha_blocked",
+      "notes": "Form fully filled (all fields via JS) but reCAPTCHA required to submit"
+    },
+    {
+      "timestamp": "2026-03-05T13:43:58.624475+00:00",
+      "directory": "AIcyclopedia",
+      "product": "SmartBook AI",
+      "status": "captcha_blocked",
+      "notes": "Form fully filled (all fields via JS) but reCAPTCHA required to submit"
+    }
+  ],
+  "requires_account": [
+    {
+      "timestamp": "2026-03-05T13:29:53.792258",
+      "directory": "AI Tools Directory",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "No form fields accessible"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:02.540744",
+      "directory": "AI Tools Directory",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "No form fields accessible"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:09.756021",
+      "directory": "Toolify.ai",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required before submission"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:16.923696",
+      "directory": "Toolify.ai",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required before submission"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:38.175647",
+      "directory": "OpenFuture.ai",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:44.746731",
+      "directory": "OpenFuture.ai",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:51.336235",
+      "directory": "SaaSHub",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login/account required"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:57.753996",
+      "directory": "SaaSHub",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login/account required"
+    },
+    {
+      "timestamp": "2026-03-05T13:31:04.283702",
+      "directory": "BetaList",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Account required to submit"
+    },
+    {
+      "timestamp": "2026-03-05T13:31:10.754531",
+      "directory": "BetaList",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Account required to submit"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:05.942621+00:00",
+      "directory": "Futurepedia.io",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:13.273959+00:00",
+      "directory": "Futurepedia.io",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:21.498584+00:00",
+      "directory": "TAAFT",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:29.499950+00:00",
+      "directory": "TAAFT",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:37.620907+00:00",
+      "directory": "AI Top Tools",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:45.451626+00:00",
+      "directory": "AI Top Tools",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:56.850991+00:00",
+      "directory": "AI Tools Guide",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:37:03.152779+00:00",
+      "directory": "AI Tools Guide",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:13.766019+00:00",
+      "directory": "AI Finder",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:18.907909+00:00",
+      "directory": "AI Finder",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:24.102024+00:00",
+      "directory": "NerdyNav",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:29.252038+00:00",
+      "directory": "NerdyNav",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:34.577862+00:00",
+      "directory": "AI Tools FYI",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login wall \u2014 0 visible inputs"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:39.878388+00:00",
+      "directory": "AI Tools FYI",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login wall \u2014 0 visible inputs"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:45.381827+00:00",
+      "directory": "GPT Forge",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:50.696647+00:00",
+      "directory": "GPT Forge",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:07.358655+00:00",
+      "directory": "PoweredByAI",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:12.604637+00:00",
+      "directory": "PoweredByAI",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    }
+  ],
+  "errors": [
+    {
+      "timestamp": "2026-03-05T13:29:41.945587",
+      "directory": "Uneed.be",
+      "product": "PantryMate",
+      "status": "error",
+      "notes": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.uneed.be/submit-a-tool\nCall log:\n  - navigating to \"https://www.uneed.be/submit-a-tool\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "timestamp": "2026-03-05T13:29:44.233112",
+      "directory": "Uneed.be",
+      "product": "SmartBook AI",
+      "status": "error",
+      "notes": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.uneed.be/submit-a-tool\nCall log:\n  - navigating to \"https://www.uneed.be/submit-a-tool\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "timestamp": "2026-03-05T13:35:18.461651+00:00",
+      "directory": "AIcyclopedia",
+      "product": "PantryMate",
+      "status": "error",
+      "notes": "Page load timeout"
+    },
+    {
+      "timestamp": "2026-03-05T13:35:58.355756+00:00",
+      "directory": "AIcyclopedia",
+      "product": "SmartBook AI",
+      "status": "error",
+      "notes": "Page load timeout"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:56.355252+00:00",
+      "directory": "AI Tool Hunt",
+      "product": "PantryMate",
+      "status": "error",
+      "notes": "404 page not found"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:01.885643+00:00",
+      "directory": "AI Tool Hunt",
+      "product": "SmartBook AI",
+      "status": "error",
+      "notes": "404 page not found"
+    }
+  ],
+  "partial": [
+    {
+      "timestamp": "2026-03-05T13:31:47.488769",
+      "directory": "Launching Next",
+      "product": "PantryMate",
+      "status": "partial",
+      "notes": "Filled 1 fields but no submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:32:24.088598",
+      "directory": "Launching Next",
+      "product": "SmartBook AI",
+      "status": "partial",
+      "notes": "Filled 1 fields but no submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:39:09.490011+00:00",
+      "directory": "AIcyclopedia",
+      "product": "PantryMate",
+      "status": "partial",
+      "notes": "All steps filled but Send button not visible (captcha or step gating)"
+    },
+    {
+      "timestamp": "2026-03-05T13:39:54.885010+00:00",
+      "directory": "AIcyclopedia",
+      "product": "SmartBook AI",
+      "status": "partial",
+      "notes": "All steps filled but Send button not visible (captcha or step gating)"
+    },
+    {
+      "timestamp": "2026-03-05T13:40:32.364963+00:00",
+      "directory": "Toolscout.ai",
+      "product": "PantryMate",
+      "status": "partial",
+      "notes": "Filled 1 fields but no clickable submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:08.572390+00:00",
+      "directory": "Toolscout.ai",
+      "product": "SmartBook AI",
+      "status": "partial",
+      "notes": "Filled 1 fields but no clickable submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:18.594154+00:00",
+      "directory": "Supertools",
+      "product": "PantryMate",
+      "status": "partial",
+      "notes": "Filled 1 fields but no clickable submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:24.394070+00:00",
+      "directory": "Supertools",
+      "product": "SmartBook AI",
+      "status": "partial",
+      "notes": "Filled 1 fields but no clickable submit button"
+    }
+  ],
+  "all_results": [
+    {
+      "timestamp": "2026-03-05T13:29:41.945587",
+      "directory": "Uneed.be",
+      "product": "PantryMate",
+      "status": "error",
+      "notes": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.uneed.be/submit-a-tool\nCall log:\n  - navigating to \"https://www.uneed.be/submit-a-tool\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "timestamp": "2026-03-05T13:29:44.233112",
+      "directory": "Uneed.be",
+      "product": "SmartBook AI",
+      "status": "error",
+      "notes": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.uneed.be/submit-a-tool\nCall log:\n  - navigating to \"https://www.uneed.be/submit-a-tool\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "timestamp": "2026-03-05T13:29:53.792258",
+      "directory": "AI Tools Directory",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "No form fields accessible"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:02.540744",
+      "directory": "AI Tools Directory",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "No form fields accessible"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:09.756021",
+      "directory": "Toolify.ai",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required before submission"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:16.923696",
+      "directory": "Toolify.ai",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required before submission"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:24.502075",
+      "directory": "AIcyclopedia",
+      "product": "PantryMate",
+      "status": "captcha_blocked",
+      "notes": "CAPTCHA detected"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:31.550218",
+      "directory": "AIcyclopedia",
+      "product": "SmartBook AI",
+      "status": "captcha_blocked",
+      "notes": "CAPTCHA detected"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:38.175647",
+      "directory": "OpenFuture.ai",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:44.746731",
+      "directory": "OpenFuture.ai",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:51.336235",
+      "directory": "SaaSHub",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login/account required"
+    },
+    {
+      "timestamp": "2026-03-05T13:30:57.753996",
+      "directory": "SaaSHub",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login/account required"
+    },
+    {
+      "timestamp": "2026-03-05T13:31:04.283702",
+      "directory": "BetaList",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Account required to submit"
+    },
+    {
+      "timestamp": "2026-03-05T13:31:10.754531",
+      "directory": "BetaList",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Account required to submit"
+    },
+    {
+      "timestamp": "2026-03-05T13:31:47.488769",
+      "directory": "Launching Next",
+      "product": "PantryMate",
+      "status": "partial",
+      "notes": "Filled 1 fields but no submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:32:24.088598",
+      "directory": "Launching Next",
+      "product": "SmartBook AI",
+      "status": "partial",
+      "notes": "Filled 1 fields but no submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:35:18.461651+00:00",
+      "directory": "AIcyclopedia",
+      "product": "PantryMate",
+      "status": "error",
+      "notes": "Page load timeout"
+    },
+    {
+      "timestamp": "2026-03-05T13:35:58.355756+00:00",
+      "directory": "AIcyclopedia",
+      "product": "SmartBook AI",
+      "status": "error",
+      "notes": "Page load timeout"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:05.942621+00:00",
+      "directory": "Futurepedia.io",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:13.273959+00:00",
+      "directory": "Futurepedia.io",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:21.498584+00:00",
+      "directory": "TAAFT",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:29.499950+00:00",
+      "directory": "TAAFT",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:37.620907+00:00",
+      "directory": "AI Top Tools",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:45.451626+00:00",
+      "directory": "AI Top Tools",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:36:56.850991+00:00",
+      "directory": "AI Tools Guide",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:37:03.152779+00:00",
+      "directory": "AI Tools Guide",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login required"
+    },
+    {
+      "timestamp": "2026-03-05T13:37:10.048285+00:00",
+      "directory": "Startup Stash",
+      "product": "PantryMate",
+      "status": "captcha_blocked",
+      "notes": "CAPTCHA"
+    },
+    {
+      "timestamp": "2026-03-05T13:37:16.478263+00:00",
+      "directory": "Startup Stash",
+      "product": "SmartBook AI",
+      "status": "captcha_blocked",
+      "notes": "CAPTCHA"
+    },
+    {
+      "timestamp": "2026-03-05T13:39:09.490011+00:00",
+      "directory": "AIcyclopedia",
+      "product": "PantryMate",
+      "status": "partial",
+      "notes": "All steps filled but Send button not visible (captcha or step gating)"
+    },
+    {
+      "timestamp": "2026-03-05T13:39:54.885010+00:00",
+      "directory": "AIcyclopedia",
+      "product": "SmartBook AI",
+      "status": "partial",
+      "notes": "All steps filled but Send button not visible (captcha or step gating)"
+    },
+    {
+      "timestamp": "2026-03-05T13:40:32.364963+00:00",
+      "directory": "Toolscout.ai",
+      "product": "PantryMate",
+      "status": "partial",
+      "notes": "Filled 1 fields but no clickable submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:08.572390+00:00",
+      "directory": "Toolscout.ai",
+      "product": "SmartBook AI",
+      "status": "partial",
+      "notes": "Filled 1 fields but no clickable submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:13.766019+00:00",
+      "directory": "AI Finder",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:18.907909+00:00",
+      "directory": "AI Finder",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:24.102024+00:00",
+      "directory": "NerdyNav",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:29.252038+00:00",
+      "directory": "NerdyNav",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:34.577862+00:00",
+      "directory": "AI Tools FYI",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Login wall \u2014 0 visible inputs"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:39.878388+00:00",
+      "directory": "AI Tools FYI",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Login wall \u2014 0 visible inputs"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:45.381827+00:00",
+      "directory": "GPT Forge",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:50.696647+00:00",
+      "directory": "GPT Forge",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:41:56.355252+00:00",
+      "directory": "AI Tool Hunt",
+      "product": "PantryMate",
+      "status": "error",
+      "notes": "404 page not found"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:01.885643+00:00",
+      "directory": "AI Tool Hunt",
+      "product": "SmartBook AI",
+      "status": "error",
+      "notes": "404 page not found"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:07.358655+00:00",
+      "directory": "PoweredByAI",
+      "product": "PantryMate",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:12.604637+00:00",
+      "directory": "PoweredByAI",
+      "product": "SmartBook AI",
+      "status": "requires_account",
+      "notes": "Only 0 visible inputs \u2014 likely gated"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:18.594154+00:00",
+      "directory": "Supertools",
+      "product": "PantryMate",
+      "status": "partial",
+      "notes": "Filled 1 fields but no clickable submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:42:24.394070+00:00",
+      "directory": "Supertools",
+      "product": "SmartBook AI",
+      "status": "partial",
+      "notes": "Filled 1 fields but no clickable submit button"
+    },
+    {
+      "timestamp": "2026-03-05T13:43:42.684289+00:00",
+      "directory": "AIcyclopedia",
+      "product": "PantryMate",
+      "status": "captcha_blocked",
+      "notes": "Form fully filled (all fields via JS) but reCAPTCHA required to submit"
+    },
+    {
+      "timestamp": "2026-03-05T13:43:58.624475+00:00",
+      "directory": "AIcyclopedia",
+      "product": "SmartBook AI",
+      "status": "captcha_blocked",
+      "notes": "Form fully filled (all fields via JS) but reCAPTCHA required to submit"
+    }
+  ]
+}

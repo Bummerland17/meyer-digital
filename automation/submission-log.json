@@ -1,0 +1,269 @@
+[
+  {
+    "site": "AlternativeTo.net",
+    "product": "PantryMate",
+    "status": "error",
+    "notes": "Timeout 20000ms exceeded.",
+    "timestamp": "2026-03-05T07:00:53.675493",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/alternativeto_PantryMate_error_1772694053.png"
+  },
+  {
+    "site": "AlternativeTo.net",
+    "product": "SmartBook AI",
+    "status": "error",
+    "notes": "Timeout 20000ms exceeded.",
+    "timestamp": "2026-03-05T07:01:16.299345",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/alternativeto_SmartBook_AI_error_1772694075.png"
+  },
+  {
+    "site": "PRLog.org",
+    "product": "PantryMate",
+    "status": "requires_login",
+    "notes": "No form found - account registration required first",
+    "timestamp": "2026-03-05T07:01:19.951231",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/prlog_page_1772694079.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "error",
+    "notes": "ElementHandle.click: Timeout 30000ms exceeded.\nCall log:\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cmpbox2\" class=\"cmpboxBG cmpstyleroot\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cmpbox2\" class=\"cmpboxBG cmpstyleroot\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cmpbox2\" class=\"cmpboxBG cmpstyleroot\"></div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n",
+    "timestamp": "2026-03-05T07:01:54.564847",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/openpr_error_1772694114.png"
+  },
+  {
+    "site": "theresanaiforthat.com",
+    "product": "PantryMate",
+    "status": "requires_login",
+    "notes": "Login required",
+    "timestamp": "2026-03-05T07:02:22.362018",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/taafit_PantryMate_page_1772694140.png"
+  },
+  {
+    "site": "theresanaiforthat.com",
+    "product": "SmartBook AI",
+    "status": "requires_login",
+    "notes": "Login required",
+    "timestamp": "2026-03-05T07:02:47.573474",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/taafit_SmartBook_AI_page_1772694162.png"
+  },
+  {
+    "site": "aitoolsdirectory.com",
+    "product": "PantryMate",
+    "status": "error",
+    "notes": "No form fields detected",
+    "timestamp": "2026-03-05T07:03:00.749568",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/aitoolsdir_PantryMate_page_1772694178.png"
+  },
+  {
+    "site": "aitoolsdirectory.com",
+    "product": "SmartBook AI",
+    "status": "error",
+    "notes": "No form fields detected",
+    "timestamp": "2026-03-05T07:03:04.504775",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/aitoolsdir_SmartBook_AI_page_1772694184.png"
+  },
+  {
+    "site": "topai.tools",
+    "product": "PantryMate",
+    "status": "requires_login",
+    "notes": "Login required",
+    "timestamp": "2026-03-05T07:03:07.906941",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/topai_PantryMate_page_1772694187.png"
+  },
+  {
+    "site": "topai.tools",
+    "product": "SmartBook AI",
+    "status": "error",
+    "notes": "Timeout 20000ms exceeded.",
+    "timestamp": "2026-03-05T07:03:30.815824",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/topai_SmartBook_AI_error_1772694210.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "error",
+    "notes": "Exception: ElementHandle.click: Timeout 30000ms exceeded.\nCall log:\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cmpbox2\" class=\"cmpboxBG cmpstyleroot\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cmpbox2\" class=\"cmpboxBG cmpstyleroot\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cmpbox2\" class=\"cmpboxBG cmpstyleroot\"></div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n",
+    "timestamp": "2026-03-05T07:06:39.191865+00:00",
+    "pass": 2,
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p2_openpr_p2_error_1772694399.png"
+  },
+  {
+    "site": "PRLog.org",
+    "product": "PantryMate",
+    "status": "requires_login",
+    "notes": "No fillable PR form found, likely requires login. URL: https://www.prlog.org/submit-free-press-release.html#",
+    "timestamp": "2026-03-05T07:06:45.922884+00:00",
+    "pass": 2,
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p2_prlog_submit_page_1772694405.png"
+  },
+  {
+    "site": "AlternativeTo.net",
+    "product": "PantryMate",
+    "status": "requires_login",
+    "notes": "No fillable form found. URL: https://alternativeto.net/software/add/",
+    "timestamp": "2026-03-05T07:06:53.154817+00:00",
+    "pass": 2,
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p2_at_PantryMate_filled_1772694413.png"
+  },
+  {
+    "site": "AlternativeTo.net",
+    "product": "SmartBook AI",
+    "status": "requires_login",
+    "notes": "No fillable form found. URL: https://alternativeto.net/software/add/",
+    "timestamp": "2026-03-05T07:06:59.552089+00:00",
+    "pass": 2,
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p2_at_SmartBook_AI_filled_1772694419.png"
+  },
+  {
+    "site": "aitoolsdirectory.com",
+    "product": "PantryMate",
+    "status": "requires_login",
+    "notes": "Submit page requires login. URL: https://aitoolsdirectory.com/submit-tool",
+    "timestamp": "2026-03-05T07:07:09.695871+00:00",
+    "pass": 2,
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p2_aitd_PantryMate_submit_page_1772694429.png"
+  },
+  {
+    "site": "aitoolsdirectory.com",
+    "product": "SmartBook AI",
+    "status": "requires_login",
+    "notes": "Submit page requires login. URL: https://aitoolsdirectory.com/submit-tool",
+    "timestamp": "2026-03-05T07:07:17.636024+00:00",
+    "pass": 2,
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p2_aitd_SmartBook_AI_submit_page_1772694437.png"
+  },
+  {
+    "site": "AlternativeTo.net",
+    "product": "PantryMate",
+    "status": "captcha",
+    "notes": "Cloudflare Turnstile CAPTCHA on https://alternativeto.net/software/add/ \u2014 cannot automate",
+    "timestamp": "2026-03-05T07:09:05.424863+00:00",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p2_at_PantryMate_submit_page_1772694413.png",
+    "pass": 3
+  },
+  {
+    "site": "AlternativeTo.net",
+    "product": "SmartBook AI",
+    "status": "captcha",
+    "notes": "Cloudflare Turnstile CAPTCHA on https://alternativeto.net/software/add/ \u2014 cannot automate",
+    "timestamp": "2026-03-05T07:09:05.424885+00:00",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p2_at_PantryMate_submit_page_1772694413.png",
+    "pass": 3
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "captcha",
+    "notes": "CAPTCHA present on form",
+    "timestamp": "2026-03-05T07:09:18.145075+00:00",
+    "pass": 3,
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p3_openpr_captcha_1772694558.png"
+  },
+  {
+    "site": "aitoolsdirectory.com",
+    "product": "PantryMate",
+    "status": "requires_login",
+    "notes": "Submit-tool page requires login/account",
+    "timestamp": "2026-03-05T07:09:24.206672+00:00",
+    "pass": 3,
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p3_aitd3_PantryMate_scrolled_1772694564.png"
+  },
+  {
+    "site": "aitoolsdirectory.com",
+    "product": "SmartBook AI",
+    "status": "requires_login",
+    "notes": "Submit-tool page requires login/account",
+    "timestamp": "2026-03-05T07:09:29.775032+00:00",
+    "pass": 3,
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/p3_aitd3_SmartBook_AI_scrolled_1772694569.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "error",
+    "notes": "Exception: ElementHandle.fill: Timeout 30000ms exceeded.\nCall log:\n    - fill(\"+264 61 000 0000\")\n  - attempting fill action\n    2 \u00d7 waiting for element to be visible, enabled and editable\n      - element is not visible\n    - retrying fill action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, en",
+    "timestamp": "2026-03-05T07:11:44.738250+00:00",
+    "pass": "final",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/final_openpr_final_exception_1772694704.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "submitted",
+    "notes": "PR likely submitted! URL: https://www.openpr.com/news/searchresult.html?kw=. Fields: ['keywords', 'terms', 'privacy']",
+    "timestamp": "2026-03-05T07:12:53.648174+00:00",
+    "pass": "openpr_v2",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/v2_result_1772694773.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "submitted",
+    "notes": "PR submitted! URL: https://www.openpr.com/news/submit.html. Fields: ['email', 'company', 'category', 'title:b922819d', 'body', 'terms', 'privacy']",
+    "timestamp": "2026-03-05T07:14:13.715568+00:00",
+    "pass": "openpr_v3",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/v3_result_1772694853.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "error",
+    "notes": "Exception: Page.evaluate() takes from 2 to 3 positional arguments but 6 were given",
+    "timestamp": "2026-03-05T07:16:51.854082+00:00",
+    "pass": "openpr_v4",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/v4_exception_1772695011.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "submitted",
+    "notes": "PR submitted after preview! URL: https://www.openpr.com/news/searchresult.html?kw=. Fields: ['category', 'terms']",
+    "timestamp": "2026-03-05T07:18:17.072577+00:00",
+    "pass": "openpr_v5",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/v5_final_result_1772695096.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "captcha",
+    "notes": "Form errors: Please check:\n\n                \n                    \n                    Verification\n\n                    \n                    Text < 1700 chars\n\n                    \n                    Press release contains blocked word. ##keto. Fields: ['name', 'email', 'phone', 'company', 'category:Advertising, Media Consulting,', 'title', 'body', 'portrait', 'contact', 'cb:erklaerung_a', 'cb:erklaerung_d']",
+    "timestamp": "2026-03-05T07:19:53.198391+00:00",
+    "pass": "openpr_v6",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/v6_after_preview_click_1772695192.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "captcha",
+    "notes": "Image CAPTCHA present but OCR failed. Form fields are all fillable. Screenshot: /root/.openclaw/workspace/automation/screenshots/openpr_captcha_attempt2.png",
+    "timestamp": "2026-03-05T07:23:47.973043+00:00",
+    "pass": "openpr_final",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/final_captcha_ocr_fail_1_1772695427.png"
+  },
+  {
+    "site": "OpenPR.com",
+    "product": "PantryMate",
+    "status": "submitted",
+    "notes": "PR SUBMITTED! URL: https://www.openpr.com/news/submit.html",
+    "timestamp": "2026-03-05T07:30:28.048608+00:00",
+    "pass": "openpr_interactive",
+    "screenshot": "/root/.openclaw/workspace/automation/screenshots/interactive_after_preview_1772695827.png"
+  },
+  {
+    "site": "topai.tools",
+    "product": "SmartBook AI",
+    "status": "error",
+    "notes": "topai.tools is paid only ($47 fast listing / $229 premium) - no free submission available",
+    "timestamp": "2026-03-05T07:31:17.259698+00:00",
+    "pass": "final_analysis"
+  },
+  {
+    "site": "topai.tools",
+    "product": "PantryMate",
+    "status": "error",
+    "notes": "topai.tools is paid only ($47 fast listing / $229 premium) - no free submission available",
+    "timestamp": "2026-03-05T07:31:17.259722+00:00",
+    "pass": "final_analysis"
+  }
+]

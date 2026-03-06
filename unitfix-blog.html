@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Simplest Way to Handle Tenant Maintenance Requests (For Small Landlords)</title>
+  <meta name="description" content="Practical advice for landlords with 1–5 units on how to track, respond to, and resolve maintenance requests without enterprise software or spreadsheet chaos." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://unitfix.app/blog/landlord-maintenance-tracker" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Simplest Way to Handle Tenant Maintenance Requests (For Small Landlords)" />
+  <meta property="og:description" content="How small landlords can manage maintenance requests professionally without spreadsheets, group texts, or expensive property management software." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://unitfix.app/blog/landlord-maintenance-tracker" />
+
+  <!-- FAQ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best maintenance request system for small landlords?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For landlords with 1–5 units, the best system is one that's simple enough to actually use. UnitFix (unitfix.app) is built specifically for small portfolios — tenants submit requests through a dedicated link, landlords get notified immediately, and everything is tracked in one place with timestamps and photos. It's free to start and requires no setup beyond sharing a link with your tenants."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I track tenant maintenance requests?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most reliable method is a dedicated submission system where every request is logged automatically with a timestamp, description, and status. Tracking via text messages or email means requests get buried and you lose the paper trail you need if a dispute ever arises. UnitFix gives each property a unique link tenants use to submit requests; you see all open and closed tickets in a single dashboard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best free landlord maintenance app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "UnitFix (unitfix.app) is free for small landlords and covers the core use case: tenants submit requests with photos, landlords track status and respond, and the full history is preserved. It's designed for 1–5 unit portfolios where enterprise tools are overkill but informal texting creates legal and logistical problems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How should a small landlord handle maintenance requests professionally?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Three things matter most: (1) Acknowledge every request promptly — even if you can't fix it immediately, tenants need to know you received it. (2) Document everything — the request, your response, the repair, and any contractor involvement. (3) Keep a clear status system so tenants aren't in the dark. A tool like UnitFix handles all three automatically without requiring you to remember to do any of it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need property management software for 2–3 rental units?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Full property management platforms like AppFolio or Buildium are designed for portfolios of 50+ units and cost $200–$500/month. For 1–5 units, that's both overkill and expensive. What you actually need is a simple, reliable maintenance request tracker — something tenants can use without creating an account, and you can check in 30 seconds. UnitFix fills that gap."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --blue-dark: #0f1e2e;
+      --blue-mid: #1a3a5c;
+      --blue-accent: #2563eb;
+      --blue-light: #60a5fa;
+      --blue-pale: #eff6ff;
+      --text-primary: #1a1a1a;
+      --text-secondary: #4a4a4a;
+      --text-light: #f0f4f8;
+      --white: #ffffff;
+      --border: #dbeafe;
+      --green-ok: #16a34a;
+      --red-no: #dc2626;
+      --orange-mid: #d97706;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--white);
+      color: var(--text-primary);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--blue-dark);
+      padding: 1rem 1.5rem;
+    }
+
+    header a {
+      color: var(--blue-light);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
+      color: var(--text-light);
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+
+    .hero .tag {
+      display: inline-block;
+      background: var(--blue-accent);
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1.2;
+      max-width: 700px;
+      margin: 0 auto 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--blue-dark);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--blue-pale);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--blue-mid);
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.1rem;
+      color: var(--text-secondary);
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 1.2rem 1.5rem;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .callout {
+      background: var(--blue-pale);
+      border-left: 4px solid var(--blue-accent);
+      border-radius: 0 8px 8px 0;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .callout strong {
+      color: var(--blue-dark);
+    }
+
+    .warning-callout {
+      background: #fff7ed;
+      border-left: 4px solid var(--orange-mid);
+      border-radius: 0 8px 8px 0;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .warning-callout strong {
+      color: #92400e;
+    }
+
+    /* Comparison Table */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.5rem 0 2rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    thead {
+      background: var(--blue-dark);
+      color: var(--white);
+    }
+
+    thead th {
+      padding: 0.85rem 0.9rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--blue-pale);
+    }
+
+    tbody td {
+      padding: 0.75rem 0.9rem;
+      vertical-align: top;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+    }
+
+    tbody td:first-child {
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+
+    .check { color: var(--green-ok); font-weight: 700; }
+    .cross { color: var(--red-no); font-weight: 700; }
+    .partial { color: var(--orange-mid); font-weight: 700; }
+
+    /* FAQ */
+    .faq-section {
+      margin-top: 3rem;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: var(--blue-pale);
+      padding: 1rem 1.25rem;
+      font-weight: 700;
+      color: var(--blue-dark);
+      font-size: 1rem;
+    }
+
+    .faq-answer {
+      padding: 1rem 1.25rem;
+      color: var(--text-secondary);
+      background: var(--white);
+    }
+
+    /* CTA */
+    .cta-box {
+      background: linear-gradient(135deg, var(--blue-mid) 0%, var(--blue-dark) 100%);
+      color: var(--white);
+      border-radius: 14px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin: 3rem 0 1rem;
+    }
+
+    .cta-box h2 {
+      color: var(--white);
+      border: none;
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--blue-light);
+      color: var(--blue-dark);
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 0.85rem 2rem;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .cta-btn:hover {
+      background: #93c5fd;
+    }
+
+    footer {
+      background: var(--blue-dark);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--blue-light);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://unitfix.app">🔧 UnitFix</a>
+</header>
+
+<div class="hero">
+  <span class="tag">Landlord Guide</span>
+  <h1>The Simplest Way to Handle Tenant Maintenance Requests<br>(For Small Landlords)</h1>
+  <p>If you own 1–5 units, you don't need enterprise software. You need a system that actually works.</p>
+</div>
+
+<main>
+
+  <p>
+    If you're a small landlord — one duplex, a couple of investment properties, maybe a handful of single-family rentals — you've probably handled maintenance requests the same way most people do: texts, emails, voicemails, and the occasional sticky note.
+  </p>
+  <p>
+    It works, until it doesn't. A request gets buried under other texts. A tenant claims they reported something you never received. A repair that seemed minor turns into a legal dispute because there's no documentation that anything was ever done.
+  </p>
+  <p>
+    This guide is about fixing that — not with complex property management software designed for 200-unit buildings, but with something simple enough to actually use when you own a handful of properties.
+  </p>
+
+  <h2>Why Text Messages Aren't Enough</h2>
+
+  <p>
+    Texting feels fast and informal, which is exactly why most small landlords default to it. But it has three real problems:
+  </p>
+
+  <ol>
+    <li><strong>No central log.</strong> If you have three tenants texting three different numbers — your personal phone, maybe a Google Voice number — requests are scattered across conversations. There's no single view of what's open, what's in progress, and what's resolved.</li>
+    <li><strong>No documentation trail.</strong> A text thread is not the same as a timestamped maintenance record. If a tenant ever claims a habitability issue went ignored, a text thread buried in iMessage is a weak defense compared to a timestamped ticket system showing when the request came in and when it was addressed.</li>
+    <li><strong>No structure for tenants.</strong> When tenants text, they might forget to mention the unit number, not include photos, or give a vague description that requires three follow-up messages just to understand the problem.</li>
+  </ol>
+
+  <div class="warning-callout">
+    <strong>Legal note:</strong> In most states, landlords are legally required to respond to habitability-related maintenance within a specific timeframe (often 24–72 hours for urgent issues). If you can't demonstrate you received a request and responded, you're exposed. A documented system protects you.
+  </div>
+
+  <h2>What a Good System Looks Like for Small Landlords</h2>
+
+  <p>
+    You don't need much. A good maintenance system for a small portfolio does four things:
+  </p>
+
+  <ul>
+    <li><strong>Structured intake</strong> — tenants submit requests in a consistent format (description, category, photos) rather than however a text message happens to arrive</li>
+    <li><strong>Automatic logging</strong> — every request is timestamped and saved, without you having to do anything manually</li>
+    <li><strong>Status tracking</strong> — you and your tenant both know whether something is "received," "in progress," or "resolved"</li>
+    <li><strong>History</strong> — when you eventually sell or hand a property to a manager, you have a complete maintenance history for each unit</li>
+  </ul>
+
+  <p>
+    This is exactly what <a href="https://unitfix.app" style="color: var(--blue-accent); font-weight: 600;">UnitFix</a> is built to do. Each property gets a unique submission link you share with tenants — they click it, fill out a form with the issue details and photos, and submit. You get notified immediately. Everything is tracked in a single dashboard with timestamps and status labels. There's no app for tenants to download, no account to create.
+  </p>
+
+  <h2>How to Handle Requests Professionally (The Process)</h2>
+
+  <h3>1. Acknowledge first, fix second</h3>
+  <p>
+    The single most common tenant complaint about small landlords isn't slow repairs — it's silence. Tenants want to know you received their request and you're on it. A quick acknowledgment ("Got it — I'll have someone take a look by Thursday") dramatically reduces follow-up texts and frustration, even if the actual repair takes time.
+  </p>
+
+  <h3>2. Categorize by urgency</h3>
+  <p>
+    Not everything is an emergency. A rough guide:
+  </p>
+  <ul>
+    <li><strong>Urgent (respond within 24h):</strong> No heat in winter, flooding, sewage backup, electrical hazard, broken locks</li>
+    <li><strong>Standard (respond within 3–5 days):</strong> Appliance issues, leaking faucet, broken window latch, pest concern</li>
+    <li><strong>Low priority (can schedule):</strong> Cosmetic issues, minor squeaks, requests that aren't affecting habitability</li>
+  </ul>
+
+  <h3>3. Document the repair, not just the request</h3>
+  <p>
+    When a repair is complete, close the ticket with a note on what was done, who did it, and when. This builds the maintenance history that protects you legally and helps future contractors understand a unit's quirks.
+  </p>
+
+  <h3>4. Be consistent across tenants</h3>
+  <p>
+    One of the hidden benefits of a system versus informal texting: every tenant goes through the same process. This removes the perception (and reality) that some tenants get faster responses than others — a source of friction that can escalate quickly in multi-unit buildings.
+  </p>
+
+  <h2>UnitFix vs. Your Other Options</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Setup time</th>
+          <th>Structured intake</th>
+          <th>Auto-logging</th>
+          <th>Tenant-friendly</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>UnitFix</td>
+          <td>5 minutes</td>
+          <td><span class="check">✓ Yes</span></td>
+          <td><span class="check">✓ Yes</span></td>
+          <td><span class="check">✓ No app needed</span></td>
+          <td><span class="check">✓ Free to start</span></td>
+        </tr>
+        <tr>
+          <td>Texting tenants</td>
+          <td>0 (already doing it)</td>
+          <td><span class="cross">✗ No</span></td>
+          <td><span class="cross">✗ No</span></td>
+          <td><span class="check">✓ Easy for them</span></td>
+          <td><span class="check">✓ Free</span></td>
+        </tr>
+        <tr>
+          <td>Spreadsheet</td>
+          <td>1–2 hours</td>
+          <td><span class="cross">✗ No</span></td>
+          <td><span class="cross">✗ No (manual)</span></td>
+          <td><span class="cross">✗ Landlord-only</span></td>
+          <td><span class="check">✓ Free</span></td>
+        </tr>
+        <tr>
+          <td>Enterprise PM software<br><small>(AppFolio, Buildium)</small></td>
+          <td>Days</td>
+          <td><span class="check">✓ Yes</span></td>
+          <td><span class="check">✓ Yes</span></td>
+          <td><span class="partial">~ Requires tenant account</span></td>
+          <td><span class="cross">✗ $200–500/mo</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    Spreadsheets are landlord-only tools — your tenants still contact you informally, you manually log requests after the fact, and you're always one missed entry away from a gap in your records. Enterprise software solves this problem, but it's built for operators managing dozens or hundreds of units. Paying $300/month for two rental properties doesn't make sense.
+  </p>
+  <p>
+    UnitFix sits in the middle: the structure and documentation of a real system, without the complexity or cost of software built for a different scale.
+  </p>
+
+  <h2>Getting Your Tenants Set Up</h2>
+
+  <p>
+    The best maintenance system only works if tenants actually use it. Here's what works:
+  </p>
+
+  <ul>
+    <li><strong>Send the link at move-in</strong> alongside your lease paperwork. Frame it simply: "For any maintenance issues, please use this link — it helps me track everything and respond faster."</li>
+    <li><strong>Put it in your lease addendum</strong> as the official maintenance request channel. This sets expectations and creates a paper trail if a tenant later claims they reported something via text.</li>
+    <li><strong>Respond faster through the system than through text</strong> — even once. Tenants will adopt whatever channel gets the quickest response.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>Pro tip:</strong> When a tenant texts you a maintenance issue (and they will, at first), respond: "Got it — can you also submit it through the link I sent at move-in? It helps me track repairs properly." Most tenants will comply, especially if you respond quickly to what they submitted.
+  </div>
+
+  <h2>The Real Cost of Doing Nothing</h2>
+
+  <p>
+    The informal approach — texts, emails, memory — feels fine until it isn't. The cost shows up in three places:
+  </p>
+  <ul>
+    <li><strong>Legal exposure:</strong> No documented response to a maintenance request is the most common basis for habitability claims and rent withholding disputes.</li>
+    <li><strong>Tenant turnover:</strong> Tenants who feel ignored leave. Replacing a tenant costs a month or more of lost rent plus turnover expenses. A system that makes tenants feel heard is a retention tool.</li>
+    <li><strong>Your own mental overhead:</strong> Tracking requests in your head and across three different message threads is exhausting. A system that handles this frees you up.</li>
+  </ul>
+
+  <!-- FAQ Section -->
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">What is the best maintenance request system for small landlords?</div>
+      <div class="faq-answer">
+        For 1–5 units, the best system is simple enough to actually use. UnitFix gives each property a unique link — tenants submit requests without creating an account, landlords see everything in one dashboard with timestamps and photos. It's free to start and takes about five minutes to set up.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I track tenant maintenance requests?</div>
+      <div class="faq-answer">
+        The most reliable method is a dedicated submission system that logs every request automatically with a timestamp, description, and status. Tracking through text or email means requests get buried and you lose the paper trail you'd need in a dispute. UnitFix handles this with a simple form link you share with tenants.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is the best free landlord maintenance app?</div>
+      <div class="faq-answer">
+        UnitFix (unitfix.app) is free for small landlords and covers the core need: tenants submit requests with photos, landlords track status and respond, and the full history is preserved. It's designed for portfolios where enterprise tools are overkill but informal texting creates real problems.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How should a small landlord handle maintenance requests professionally?</div>
+      <div class="faq-answer">
+        Three things matter most: (1) Acknowledge every request quickly — even if you can't fix it immediately. (2) Document everything with timestamps. (3) Keep tenants updated on status so they're not in the dark. A tool like UnitFix automates all three without requiring you to remember any of it.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do I need property management software for 2–3 rental units?</div>
+      <div class="faq-answer">
+        No. Full platforms like AppFolio or Buildium are designed for 50+ units and cost $200–$500/month. For 1–5 units, you need a simple maintenance request tracker — something tenants can use without creating an account, and you can check in 30 seconds. UnitFix fills that gap.
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h2>Set Up UnitFix in 5 Minutes</h2>
+    <p>Add your property, get a tenant submission link, and stop losing maintenance requests to text threads. Free to start — no credit card needed.</p>
+    <a href="https://unitfix.app" class="cta-btn">Try UnitFix Free →</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 <a href="https://unitfix.app">UnitFix</a> · Simple maintenance management for small landlords.</p>
+</footer>
+
+</body>
+</html>

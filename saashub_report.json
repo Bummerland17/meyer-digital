@@ -1,0 +1,9 @@
+{
+  "log": [
+    "Navigating to sign-in page...",
+    "Stack: page.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"user[email]\"]')\u001b[22m\n\n    at /root/.openclaw/workspace/saashub_update.js:21:16"
+  ],
+  "errors": [
+    "Error: page.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"user[email]\"]')\u001b[22m\n"
+  ]
+}

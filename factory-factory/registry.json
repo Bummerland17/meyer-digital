@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "created": "2026-03-05",
+  "factories": {
+    "course-factory": {
+      "status": "active",
+      "path": "../course-factory",
+      "entry": "pipeline.py",
+      "description": "Builds and launches online courses with full content generation",
+      "products": [],
+      "revenue": 0
+    },
+    "app-factory": {
+      "status": "active",
+      "path": "../app-factory",
+      "entry": "build.py",
+      "description": "Builds micro-SaaS apps end-to-end",
+      "products": ["FollowUpFox"],
+      "revenue": 0
+    },
+    "business-factory": {
+      "status": "active",
+      "path": "../business-factory",
+      "entry": "run.py",
+      "description": "Tracks and grows businesses with automated systems",
+      "products": ["AI Sales Script Bundle", "Landlord Kit", "App Playbook"],
+      "revenue": 0
+    },
+    "marketing-factory": {
+      "status": "active",
+      "path": "../marketing-factory",
+      "entry": "campaign.py",
+      "description": "Generates full marketing campaigns per product",
+      "products": [],
+      "revenue": 0
+    }
+  },
+  "idea_types": {
+    "course": "course-factory",
+    "tutorial": "course-factory",
+    "ebook": "course-factory",
+    "workshop": "course-factory",
+    "app": "app-factory",
+    "saas": "app-factory",
+    "tool": "app-factory",
+    "extension": "app-factory",
+    "service": "business-factory",
+    "agency": "business-factory",
+    "consulting": "business-factory",
+    "community": "business-factory",
+    "newsletter": "marketing-factory",
+    "brand": "marketing-factory"
+  }
+}

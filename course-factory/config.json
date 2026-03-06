@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "openai_api_key_env": "OPENAI_API_KEY",
+  "openai_api_key_fallback": "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",
+  "model": "gpt-4o",
+  "courses_dir": "courses",
+  "price_points": {
+    "mini_course": 27,
+    "standard_course": 97,
+    "premium_course": 197,
+    "flagship_course": 497,
+    "cohort": 997
+  },
+  "course_structure": {
+    "modules": 10,
+    "lessons_per_module_min": 3,
+    "lessons_per_module_max": 5,
+    "target_lesson_length_words": 800,
+    "slides_per_lesson": 6
+  },
+  "promotion_schedule": {
+    "launch_day": {
+      "twitter_posts": 3,
+      "linkedin_posts": 1,
+      "email_broadcasts": 1
+    },
+    "week_1": {
+      "twitter_posts_per_day": 2,
+      "linkedin_posts": 2,
+      "email_broadcasts": 1
+    },
+    "week_2": {
+      "twitter_posts_per_day": 1,
+      "linkedin_posts": 1,
+      "email_broadcasts": 1
+    }
+  },
+  "platforms": {
+    "primary_sales": "gumroad",
+    "backup_sales": "lemon_squeezy",
+    "community": "discord",
+    "video_hosting": "loom"
+  }
+}

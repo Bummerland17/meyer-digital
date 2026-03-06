@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; overflow: hidden; font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif; }
+  .ad { width: 1080px; height: 1080px; background: #1a1a2e; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 80px 70px; }
+  .top-text { text-align: center; }
+  .headline { font-size: 52px; font-weight: 800; color: #ffffff; line-height: 1.2; letter-spacing: -1px; max-width: 800px; }
+  .subline { font-size: 36px; color: #8892b0; margin-top: 20px; font-weight: 400; }
+  .phone-mock { width: 280px; height: 440px; background: #16213e; border-radius: 40px; border: 6px solid #0f3460; box-shadow: 0 0 60px rgba(100, 210, 180, 0.3), 0 0 120px rgba(100, 210, 180, 0.1); display: flex; flex-direction: column; padding: 20px 16px; gap: 12px; }
+  .phone-notch { width: 80px; height: 20px; background: #0f3460; border-radius: 10px; align-self: center; margin-bottom: 8px; }
+  .phone-title { color: #64ffda; font-size: 16px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .ingredient-card { background: rgba(100, 255, 218, 0.08); border: 1px solid rgba(100, 255, 218, 0.2); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; }
+  .ing-emoji { font-size: 22px; }
+  .ing-info { display: flex; flex-direction: column; }
+  .ing-name { color: #ccd6f6; font-size: 14px; font-weight: 600; }
+  .ing-sub { color: #8892b0; font-size: 11px; }
+  .meal-card { background: linear-gradient(135deg, rgba(100,255,218,0.15), rgba(100,255,218,0.05)); border: 1px solid rgba(100,255,218,0.3); border-radius: 12px; padding: 12px 14px; }
+  .meal-label { color: #8892b0; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+  .meal-name { color: #64ffda; font-size: 15px; font-weight: 700; margin-top: 2px; }
+  .meal-meta { color: #8892b0; font-size: 11px; margin-top: 2px; }
+  .cta-btn { background: linear-gradient(135deg, #00d084, #00b894); color: #fff; font-size: 32px; font-weight: 800; padding: 28px 60px; border-radius: 20px; text-align: center; letter-spacing: -0.5px; box-shadow: 0 8px 40px rgba(0,208,132,0.4); }
+  .badge { display: flex; gap: 30px; align-items: center; }
+  .badge-item { color: #8892b0; font-size: 18px; }
+  .badge-item span { color: #64ffda; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="top-text">
+    <div class="headline">You have $60 of food<br>sitting in your fridge.</div>
+    <div class="subline">You just opened DoorDash anyway.</div>
+  </div>
+
+  <div class="phone-mock">
+    <div class="phone-notch"></div>
+    <div class="phone-title">🧠 PantryMate AI</div>
+    <div class="ingredient-card"><span class="ing-emoji">🥩</span><div class="ing-info"><span class="ing-name">Chicken breast</span><span class="ing-sub">expires in 2 days</span></div></div>
+    <div class="ingredient-card"><span class="ing-emoji">🧅</span><div class="ing-info"><span class="ing-name">Onion, garlic, peppers</span><span class="ing-sub">in stock</span></div></div>
+    <div class="ingredient-card"><span class="ing-emoji">🍅</span><div class="ing-info"><span class="ing-name">Canned tomatoes</span><span class="ing-sub">pantry staple</span></div></div>
+    <div class="meal-card">
+      <div class="meal-label">✨ suggested tonight</div>
+      <div class="meal-name">Chicken Cacciatore</div>
+      <div class="meal-meta">35 min · uses 7 items you own</div>
+    </div>
+  </div>
+
+  <div style="display:flex; flex-direction:column; align-items:center; gap:20px; width:100%;">
+    <div class="cta-btn">PantryMate — Free Download</div>
+    <div class="badge">
+      <div class="badge-item">⭐ <span>4.8</span> App Store</div>
+      <div class="badge-item">🌿 <span>Reduces</span> food waste</div>
+      <div class="badge-item">💸 <span>Saves $</span> every week</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

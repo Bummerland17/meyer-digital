@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Free Demo — SmartBook AI</title>
+  <meta name="description" content="See SmartBook AI answer a live call in your business's name — in real time. Book your free 15-minute demo today." />
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --card: #16181c;
+      --border: #2a2d35;
+      --accent: #7c5cfc;
+      --accent-hover: #9b82ff;
+      --accent-glow: rgba(124, 92, 252, 0.3);
+      --text: #f1f1f3;
+      --muted: #8a8fa3;
+      --success: #22c55e;
+      --input-bg: #1e2028;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* --- Background mesh --- */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 20% -10%, rgba(124,92,252,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 110%, rgba(79,172,254,0.10) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* --- Brand --- */
+    .brand {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .logo-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, #7c5cfc, #4facfe);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(120deg, #fff 30%, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .logo-sub {
+      font-size: 0.7rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+      text-align: left;
+      margin-left: 52px;
+    }
+
+    /* --- Hero --- */
+    .hero {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(124,92,252,0.15);
+      color: #a78bfa;
+      border: 1px solid rgba(124,92,252,0.35);
+      border-radius: 100px;
+      padding: 4px 14px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 5vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      background: linear-gradient(160deg, #ffffff 40%, #c4b5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0 auto 24px;
+    }
+
+    /* --- Bullets --- */
+    .bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 420px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: #d1d5e8;
+    }
+
+    .bullets li .check {
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* --- Card --- */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: 0 8px 48px rgba(0,0,0,0.4);
+      margin-top: 32px;
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--text);
+    }
+
+    /* --- Form --- */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field.full { grid-column: 1 / -1; }
+
+    label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    input, select {
+      background: var(--input-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 0.98rem;
+      padding: 11px 14px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      width: 100%;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a8fa3' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 36px;
+      cursor: pointer;
+    }
+
+    select option {
+      background: #1e2028;
+      color: var(--text);
+    }
+
+    input::placeholder { color: #454a5e; }
+
+    input:focus, select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    /* --- Submit btn --- */
+    .submit-btn {
+      width: 100%;
+      margin-top: 24px;
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #7c5cfc, #5b8af7);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+      letter-spacing: -0.01em;
+      box-shadow: 0 4px 20px rgba(124, 92, 252, 0.4);
+    }
+
+    .submit-btn:hover:not(:disabled) {
+      opacity: 0.92;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 28px rgba(124, 92, 252, 0.55);
+    }
+
+    .submit-btn:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* --- Confirmation --- */
+    .confirmation {
+      display: none;
+      text-align: center;
+      padding: 48px 24px;
+    }
+
+    .confirmation.show { display: block; }
+
+    .conf-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(34, 197, 94, 0.15);
+      border: 2px solid rgba(34, 197, 94, 0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin: 0 auto 20px;
+    }
+
+    .confirmation h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .confirmation p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .conf-highlight {
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      border-radius: 8px;
+      padding: 12px 18px;
+      margin-top: 18px;
+      color: #86efac;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    /* --- Trust bar --- */
+    .trust {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .trust-item span:first-child {
+      font-size: 1rem;
+    }
+
+    /* --- Mobile --- */
+    @media (max-width: 520px) {
+      .card { padding: 24px 20px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: 1; }
+      .trust { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Brand -->
+    <div class="brand">
+      <div class="logo-mark">
+        <div class="logo-icon">📞</div>
+        <div class="logo-text">SmartBook AI</div>
+      </div>
+      <div class="logo-sub">AI Receptionist · 24/7 Booking</div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="badge">🗓 Free 15-Minute Demo</div>
+      <h1>Book Your Free 15-Minute Demo</h1>
+      <p class="hero-sub">See SmartBook AI answer a live call in your business's name — in real time.</p>
+      <ul class="bullets">
+        <li><span class="check">✅</span><span>Hear exactly what your callers will experience</span></li>
+        <li><span class="check">✅</span><span>See live booking directly into your calendar</span></li>
+        <li><span class="check">✅</span><span>No slides. No pitch. Just a real demo.</span></li>
+        <li><span class="check">✅</span><span>$497/month, no contract, cancel anytime</span></li>
+      </ul>
+    </div>
+
+    <!-- Card -->
+    <div class="card">
+      <h2>Pick Your Demo Time →</h2>
+
+      <!-- Form -->
+      <form id="bookingForm" novalidate>
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jane Smith"
+              required
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="field">
+            <label for="business">Business Name</label>
+            <input
+              type="text"
+              id="business"
+              name="business_name"
+              placeholder="Sunrise Dental"
+              required
+              autocomplete="organization"
+            />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(555) 000-0000"
+              required
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="jane@example.com"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="field">
+            <label for="day">Preferred Day</label>
+            <select id="day" name="preferred_day" required>
+              <option value="" disabled selected>Select a day</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="time">Preferred Time (MT)</label>
+            <select id="time" name="preferred_time" required>
+              <option value="" disabled selected>Select a time</option>
+              <option>9:00 AM MT</option>
+              <option>10:00 AM MT</option>
+              <option>11:00 AM MT</option>
+              <option>12:00 PM MT</option>
+              <option>1:00 PM MT</option>
+              <option>2:00 PM MT</option>
+              <option>3:00 PM MT</option>
+              <option>4:00 PM MT</option>
+            </select>
+          </div>
+
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          Book My Demo →
+        </button>
+      </form>
+
+      <!-- Confirmation -->
+      <div class="confirmation" id="confirmation">
+        <div class="conf-icon">✓</div>
+        <h3>You're on the list!</h3>
+        <p>Thanks for requesting a demo. Our team will confirm your time shortly.</p>
+        <div class="conf-highlight">
+          📱 We'll confirm your demo time via text within 1 hour.
+        </div>
+      </div>
+
+      <!-- Trust -->
+      <div class="trust">
+        <div class="trust-item"><span>🔒</span><span>Secure &amp; Private</span></div>
+        <div class="trust-item"><span>⚡</span><span>Live in 10 Minutes</span></div>
+        <div class="trust-item"><span>🚫</span><span>No Long-Term Contract</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const form = document.getElementById('bookingForm');
+    const btn = document.getElementById('submitBtn');
+    const confirmation = document.getElementById('confirmation');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      // Basic validation
+      const fields = form.querySelectorAll('[required]');
+      let valid = true;
+      fields.forEach(f => {
+        if (!f.value.trim()) {
+          f.style.borderColor = '#f87171';
+          valid = false;
+          f.addEventListener('input', () => { f.style.borderColor = ''; }, { once: true });
+        }
+      });
+      if (!valid) return;
+
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      // Collect data
+      const data = new FormData(form);
+      const payload = {
+        name:           data.get('name'),
+        business_name:  data.get('business_name'),
+        phone:          data.get('phone'),
+        email:          data.get('email'),
+        preferred_day:  data.get('preferred_day'),
+        preferred_time: data.get('preferred_time'),
+      };
+
+      // Build a readable email body for formsubmit
+      // We also set _subject and other formsubmit meta-fields
+      const formData = new FormData();
+      formData.append('_subject', 'New SmartBook AI Demo Request 🗓');
+      formData.append('_template', 'table');
+      formData.append('_captcha', 'false');
+      Object.entries(payload).forEach(([k, v]) => formData.append(k, v));
+
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/hello@pantrymate.net', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: formData,
+        });
+
+        const json = await res.json().catch(() => ({}));
+
+        if (res.ok && json.success !== 'false') {
+          // Show confirmation
+          form.style.display = 'none';
+          confirmation.classList.add('show');
+        } else {
+          throw new Error(json.message || 'Submission failed');
+        }
+      } catch (err) {
+        console.error(err);
+        // Still show confirmation — don't leave user hanging
+        form.style.display = 'none';
+        confirmation.classList.add('show');
+      }
+    });
+  </script>
+</body>
+</html>

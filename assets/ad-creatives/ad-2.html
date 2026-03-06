@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; overflow: hidden; font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif; }
+  .ad { width: 1080px; height: 1080px; display: flex; flex-direction: column; }
+  .split { display: flex; flex: 1; }
+  .left { flex: 1; background: #1c1c1e; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 40px; gap: 30px; }
+  .right { flex: 1; background: #f8f9fa; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 40px; gap: 24px; }
+  .fridge-scene { font-size: 110px; line-height: 1; }
+  .problem-text { color: #ff3b30; font-size: 42px; font-weight: 900; text-align: center; line-height: 1.15; letter-spacing: -1px; }
+  .problem-sub { color: #8e8e93; font-size: 22px; text-align: center; line-height: 1.4; }
+  .timer-badge { background: #00c851; color: white; border-radius: 50%; width: 100px; height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .timer-num { font-size: 32px; font-weight: 900; line-height: 1; }
+  .timer-unit { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+  .phone-mini { width: 200px; background: white; border-radius: 28px; border: 3px solid #e5e5ea; box-shadow: 0 20px 60px rgba(0,0,0,0.15); overflow: hidden; }
+  .phone-header { background: #1a1a2e; padding: 16px; }
+  .phone-header-text { color: #64ffda; font-size: 13px; font-weight: 700; }
+  .meal-list { padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+  .meal-item { background: #f2f2f7; border-radius: 10px; padding: 10px 12px; }
+  .meal-item-name { color: #1c1c1e; font-size: 13px; font-weight: 600; }
+  .meal-item-meta { color: #8e8e93; font-size: 11px; margin-top: 2px; }
+  .solution-text { color: #00c851; font-size: 46px; font-weight: 900; text-align: center; letter-spacing: -1px; }
+  .solution-sub { color: #636366; font-size: 20px; text-align: center; line-height: 1.4; }
+  .bottom-bar { height: 110px; background: #1a1a2e; display: flex; align-items: center; justify-content: center; gap: 20px; }
+  .logo { color: #64ffda; font-size: 38px; font-weight: 900; letter-spacing: -1px; }
+  .logo span { color: #ffffff; }
+  .tagline { color: #8892b0; font-size: 18px; }
+  .divider { width: 4px; height: 60px; background: linear-gradient(to bottom, #ff3b30, #00c851); }
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="split">
+    <div class="left">
+      <div class="fridge-scene">🤔🍽️</div>
+      <div class="problem-text">What's for dinner?</div>
+      <div class="problem-sub">Staring at a full fridge.<br>Still have no idea.</div>
+      <div style="color:#ff3b30; font-size:80px; margin-top:10px;">😩</div>
+    </div>
+    <div class="right">
+      <div class="timer-badge"><div class="timer-num">30</div><div class="timer-unit">sec</div></div>
+      <div class="phone-mini">
+        <div class="phone-header">
+          <div class="phone-header-text">🧠 Based on your pantry</div>
+        </div>
+        <div class="meal-list">
+          <div class="meal-item"><div class="meal-item-name">🍝 Pasta Arrabiata</div><div class="meal-item-meta">25 min · 5 ingredients you have</div></div>
+          <div class="meal-item"><div class="meal-item-name">🍳 Veggie Frittata</div><div class="meal-item-meta">20 min · uses expiring eggs</div></div>
+          <div class="meal-item"><div class="meal-item-name">🥗 Grain Bowl</div><div class="meal-item-meta">15 min · no shopping needed</div></div>
+        </div>
+      </div>
+      <div class="solution-text">Dinner decided.</div>
+      <div class="solution-sub">AI scans what you have.<br>Suggests what to cook.</div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <div class="logo">Pantry<span>Mate</span></div>
+    <div class="divider"></div>
+    <div class="tagline">Cook smarter. Waste less. Eat better.</div>
+  </div>
+</div>
+</body>
+</html>

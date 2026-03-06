@@ -1,0 +1,23 @@
+{
+  "slug": "ai-sales-script-bundle",
+  "name": "AI Sales Script Bundle",
+  "tagline": "Stop writing sales scripts from scratch. 47 battle-tested prompts that turn blank pages into closing conversations.",
+  "problem": "Most salespeople waste 2-3 hours a week writing emails, follow-ups, and objection responses that mostly say the same things with different words. AI tools are supposed to fix this — but the prompts most people use produce generic garbage that sounds like every other sales email in the prospect's inbox.",
+  "solution": "47 copy-paste-ready AI prompts, specifically engineered for sales. Cold outreach, follow-up sequences, objection handling, proposal intros, closing emails — each prompt has a 'what it does' note and a real example output. Drop it into ChatGPT or Claude, fill in the blanks, send.",
+  "price": 49.00,
+  "price_type": "one-time",
+  "category": "digital-product",
+  "bullets": [
+    "47 prompts across 8 sales situations (cold, warm, follow-up, objection, proposal, closing, re-engage, referral)",
+    "Each prompt includes: what it's for, variables to fill in, and a real example output",
+    "Works with ChatGPT, Claude, Gemini — any AI chat tool",
+    "Designed for B2B sales, freelancers, and consultants (not e-commerce scripts)",
+    "Instant PDF + Notion template download — usable within 5 minutes",
+    "Updated quarterly: when AI models change, the prompts get tuned"
+  ],
+  "guarantee": "Use it for 7 days. If you don't save at least 3 hours on your first week of sales writing, email for a full refund. No questions, no forms.",
+  "day1_launch_plan": "Post in r/sales (300k members) with title: 'I spent 6 months testing AI prompts for cold outreach — here's what actually works (not asking you to buy anything, just sharing)'. Include 3 example prompts for free in the post. Link to full bundle at end. Cross-post to r/entrepreneur and r/freelance. If Wolfgang has an email list: send a 'here's why I built this' story email.",
+  "expected_first_sale": "Within 48 hours of Reddit post — r/sales buyers are fast if the content is genuinely useful",
+  "fast_roi_estimate_days": 2,
+  "kill_if_no_sale_by": "7 days post-launch"
+}

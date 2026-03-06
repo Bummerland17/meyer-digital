@@ -1,0 +1,32 @@
+<html><head></head><body><turbo-frame id="modal" target="_top"><div class="modal is-active --fixed-top" data-controller="modal" data-modal-name-value="modal" data-modal-placeholder-value="Loading...">
+<div class="modal-background" data-action="click-&gt;modal#close"></div>
+<div class="modal-content">
+<div class="boxed boxed--extra-space" data-modal-target="box">
+<h2 class="title">Suggest an alternative</h2>
+<div class="subtitle">
+Suggest an altenative to
+<b>PantryMate</b>
+by searching through the existing products on SaaSHub
+</div>
+<div data-controller="service-autocomplete">
+<form data-service-autocomplete-target="form" data-turbo-frame="service_autocomplete" action="/suggest_alternative/pantrymate/autocomplete" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="lx6lq-QF-huzM_eNOfeZtFjaKK9uzqycNT9rPyL5Ns5S5SzQ4KZuRzESbGl1h3WAToHchRo4C3eVG7ucH66GYw" autocomplete="off"><div class="field">
+<div class="control"><input autocapitalize="none" autocomplete="off" autocorrect="off" class="input" data-action="service-autocomplete#onInput" name="query" placeholder="Type in to search..." tabindex="0" value="">
+<p class="help">
+If a product is not present, you can <a target="_top" href="/services/submit">submit it here</a>
+</p>
+</div>
+</div>
+</form><hr>
+<turbo-frame id="service_autocomplete" src="/suggest_alternative/pantrymate/autocomplete"></turbo-frame>
+</div>
+
+</div>
+<button aria-label="close" class="modal-close" data-action="modal#close">
+      <svg class="bicon" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+      </svg>
+
+</button>
+</div>
+</div>
+</turbo-frame></body></html>

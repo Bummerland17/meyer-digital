@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REPLACE: agent name / brokerage name -->
+  <title>{{AGENT_NAME}} — {{CITY}} Real Estate</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================
+       CSS VARIABLES — edit to rebrand
+       ============================================ */
+    :root {
+      --color-primary:      {{PRIMARY_COLOR}};
+      --color-primary-dark: {{PRIMARY_COLOR_DARK}};
+      --color-gold:         #b45309;
+      --color-bg:           #ffffff;
+      --color-surface:      #fafaf9;
+      --color-border:       #e7e5e4;
+      --color-text:         #1c1917;
+      --color-text-muted:   #78716c;
+      --font-base:          'Inter', system-ui, sans-serif;
+      --font-display:       'Merriweather', Georgia, serif;
+      --radius:             10px;
+      --shadow:             0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-base); color: var(--color-text); background: var(--color-bg); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .btn {
+      display: inline-block;
+      padding: 13px 26px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+    }
+    .btn-primary { background: var(--color-primary); color: #fff; }
+    .btn-primary:hover { background: var(--color-primary-dark); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .btn-outline { background: transparent; border: 2px solid var(--color-primary); color: var(--color-primary); }
+    .btn-outline:hover { background: var(--color-primary); color: #fff; }
+    .section { padding: 88px 0; }
+    .section-alt { background: var(--color-surface); }
+    h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; margin-bottom: 16px; }
+    h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-primary);
+      margin-bottom: 10px;
+    }
+    .text-center { text-align: center; }
+
+    /* ============================================
+       NAVIGATION
+       ============================================ -->
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--color-border);
+      z-index: 100;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo { font-family: var(--font-display); font-size: 1.1rem; color: var(--color-text); }
+    .nav-logo span { color: var(--color-primary); }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 0.9rem; color: var(--color-text-muted); font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--color-primary); }
+    .nav-phone { font-size: 0.88rem; font-weight: 600; color: var(--color-text); }
+
+    /* ============================================
+       HERO
+       ============================================ -->
+    .hero {
+      position: relative;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    /* REPLACE: hero background image -->
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #292524 0%, #44403c 100%);
+      /* REPLACE: background-image: url('hero-home.jpg'); background-size: cover; background-position: center; */
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 80px 0;
+      max-width: 600px;
+      color: #fff;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .hero-tagline {
+      font-size: 1.05rem;
+      opacity: 0.85;
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    .hero-stat-num { font-size: 1.8rem; font-weight: 800; color: #fff; }
+    .hero-stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.65); margin-top: 2px; }
+
+    /* Search bar */
+    .hero-search {
+      margin-top: 32px;
+      display: flex;
+      gap: 0;
+      max-width: 500px;
+    }
+    .hero-search input {
+      flex: 1;
+      padding: 14px 18px;
+      border: none;
+      border-radius: 8px 0 0 8px;
+      font-family: var(--font-base);
+      font-size: 0.95rem;
+    }
+    .hero-search button {
+      padding: 14px 22px;
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: var(--font-base);
+    }
+
+    /* ============================================
+       FEATURED LISTINGS
+       ============================================ -->
+    .listings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .listing-card {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: all 0.3s;
+      background: var(--color-bg);
+    }
+    .listing-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.12); transform: translateY(-4px); }
+    .listing-image {
+      position: relative;
+      aspect-ratio: 4/3;
+      /* REPLACE: add background-image for each listing -->
+      background: linear-gradient(135deg, #e7e5e4, #d6d3d1);
+      overflow: hidden;
+    }
+    .listing-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .listing-price-badge {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(28,25,23,0.85);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+    .listing-body { padding: 18px; }
+    .listing-address { font-weight: 700; font-size: 0.98rem; margin-bottom: 4px; }
+    .listing-location { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 14px; }
+    .listing-specs {
+      display: flex;
+      gap: 16px;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+    .listing-spec { display: flex; align-items: center; gap: 4px; }
+    .listing-link {
+      display: block;
+      margin-top: 14px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    .listing-link:hover { text-decoration: underline; }
+
+    /* ============================================
+       AGENT BIO
+       ============================================ -->
+    .agent-grid {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .agent-photo {
+      border-radius: var(--radius);
+      aspect-ratio: 3/4;
+      background: linear-gradient(135deg, var(--color-surface), var(--color-border));
+      /* REPLACE: swap with <img src="agent-photo.jpg" alt="Agent name"> */
+    }
+    .agent-content .section-label { margin-bottom: 12px; }
+    .agent-content h2 { margin-bottom: 16px; }
+    .agent-content p { color: var(--color-text-muted); margin-bottom: 18px; font-size: 1rem; line-height: 1.8; }
+    .agent-credentials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .credential-badge {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    /* ============================================
+       CONTACT FORM
+       ============================================ -->
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      margin-top: 56px;
+    }
+    .contact-form-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: 36px;
+    }
+    .contact-form-card h3 { font-size: 1.3rem; margin-bottom: 6px; }
+    .contact-form-card > p { color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 24px; }
+    .contact-form { display: flex; flex-direction: column; gap: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 5px; }
+    .form-group label { font-size: 0.85rem; font-weight: 600; }
+    .form-group input, .form-group textarea, .form-group select {
+      padding: 11px 14px;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      font-family: var(--font-base);
+      font-size: 0.93rem;
+      color: var(--color-text);
+    }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--color-primary); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .contact-details { padding-top: 16px; }
+    .contact-details h3 { margin-bottom: 24px; font-size: 1.3rem; }
+    .contact-detail-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 18px;
+      align-items: flex-start;
+    }
+    .contact-detail-icon {
+      width: 40px;
+      height: 40px;
+      background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .contact-detail-text strong { display: block; font-size: 0.9rem; }
+    .contact-detail-text span { font-size: 0.9rem; color: var(--color-text-muted); }
+    .map-embed {
+      margin-top: 24px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      height: 220px;
+      background: var(--color-surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      /* REPLACE: add Google Maps iframe */
+    }
+
+    /* ============================================
+       NEIGHBORHOOD
+       ============================================ -->
+    .neighborhood-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    .neighborhood-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      text-align: center;
+    }
+    .neighborhood-image {
+      height: 120px;
+      background: linear-gradient(135deg, var(--color-surface), var(--color-border));
+      /* REPLACE: neighborhood photo */
+    }
+    .neighborhood-body { padding: 14px; }
+    .neighborhood-name { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; }
+    .neighborhood-info { font-size: 0.82rem; color: var(--color-text-muted); }
+
+    /* ============================================
+       FOOTER
+       ============================================ -->
+    footer {
+      background: var(--color-text);
+      color: #a8a29e;
+      padding: 48px 0;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer-logo { color: #fff; font-family: var(--font-display); font-size: 1.1rem; }
+    .footer-links { display: flex; gap: 24px; font-size: 0.88rem; }
+    .footer-links a:hover { color: #fff; }
+    .footer-copy { font-size: 0.82rem; }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ -->
+    @media (max-width: 1024px) {
+      .agent-grid { grid-template-columns: 280px 1fr; }
+    }
+    @media (max-width: 900px) {
+      .listings-grid { grid-template-columns: 1fr 1fr; }
+      .agent-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .neighborhood-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 64px 0; }
+      .listings-grid { grid-template-columns: 1fr; }
+      .hero-stats { flex-wrap: wrap; gap: 24px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================
+     NAVIGATION
+     REPLACE: agent/agency name, phone, links
+     ============================================ -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <!-- REPLACE: name / brokerage -->
+      <div class="nav-logo">{{AGENT_NAME}} <span>Real Estate</span></div>
+      <ul class="nav-links">
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#neighborhood">Area Guide</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- REPLACE: phone number -->
+      <a href="tel:{{PHONE}}" class="nav-phone">📞 {{PHONE}}</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================
+     HERO
+     REPLACE: badge, headline, tagline, stats
+     ============================================ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <!-- REPLACE: e.g. "Phoenix's #1 Residential Team" -->
+      <div class="hero-badge">{{HERO_BADGE}}</div>
+      <!-- REPLACE: clear, specific headline -->
+      <h1>{{HEADLINE}}</h1>
+      <p class="hero-tagline">{{TAGLINE}}</p>
+      <div class="hero-actions">
+        <a href="#listings" class="btn btn-primary">View Listings</a>
+        <a href="#contact" class="btn" style="background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.4);">{{CTA_TEXT}}</a>
+      </div>
+      <!-- Property search -->
+      <div class="hero-search">
+        <input type="text" placeholder="Neighborhood, zip, or address...">
+        <button type="button">Search</button>
+      </div>
+      <div class="hero-stats">
+        <!-- REPLACE: real numbers -->
+        <div>
+          <div class="hero-stat-num">{{STAT_1_NUMBER}}</div>
+          <div class="hero-stat-label">{{STAT_1_LABEL}}</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">{{STAT_2_NUMBER}}</div>
+          <div class="hero-stat-label">{{STAT_2_LABEL}}</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">{{STAT_3_NUMBER}}</div>
+          <div class="hero-stat-label">{{STAT_3_LABEL}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FEATURED LISTINGS
+     REPLACE: listing details, prices, specs, images
+     ============================================ -->
+<section class="section" id="listings">
+  <div class="container">
+    <div>
+      <div class="section-label">Featured Properties</div>
+      <h2>{{LISTINGS_HEADING}}</h2>
+    </div>
+    <div class="listings-grid">
+
+      <!-- LISTING 1 — REPLACE all -->
+      <div class="listing-card">
+        <div class="listing-image">
+          <!-- REPLACE: <img src="listing1.jpg" alt="address"> -->
+          <div class="listing-badge">{{LISTING_1_STATUS}}</div>
+          <div class="listing-price-badge">{{LISTING_1_PRICE}}</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-address">{{LISTING_1_ADDRESS}}</div>
+          <div class="listing-location">{{LISTING_1_CITY}}</div>
+          <div class="listing-specs">
+            <span class="listing-spec">🛏 {{LISTING_1_BEDS}} beds</span>
+            <span class="listing-spec">🚿 {{LISTING_1_BATHS}} baths</span>
+            <span class="listing-spec">📐 {{LISTING_1_SQFT}} sqft</span>
+          </div>
+          <a href="#contact" class="listing-link">Schedule a showing →</a>
+        </div>
+      </div>
+
+      <!-- LISTING 2 — REPLACE -->
+      <div class="listing-card">
+        <div class="listing-image">
+          <div class="listing-badge">{{LISTING_2_STATUS}}</div>
+          <div class="listing-price-badge">{{LISTING_2_PRICE}}</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-address">{{LISTING_2_ADDRESS}}</div>
+          <div class="listing-location">{{LISTING_2_CITY}}</div>
+          <div class="listing-specs">
+            <span class="listing-spec">🛏 {{LISTING_2_BEDS}} beds</span>
+            <span class="listing-spec">🚿 {{LISTING_2_BATHS}} baths</span>
+            <span class="listing-spec">📐 {{LISTING_2_SQFT}} sqft</span>
+          </div>
+          <a href="#contact" class="listing-link">Schedule a showing →</a>
+        </div>
+      </div>
+
+      <!-- LISTING 3 — REPLACE -->
+      <div class="listing-card">
+        <div class="listing-image">
+          <div class="listing-badge">{{LISTING_3_STATUS}}</div>
+          <div class="listing-price-badge">{{LISTING_3_PRICE}}</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-address">{{LISTING_3_ADDRESS}}</div>
+          <div class="listing-location">{{LISTING_3_CITY}}</div>
+          <div class="listing-specs">
+            <span class="listing-spec">🛏 {{LISTING_3_BEDS}} beds</span>
+            <span class="listing-spec">🚿 {{LISTING_3_BATHS}} baths</span>
+            <span class="listing-spec">📐 {{LISTING_3_SQFT}} sqft</span>
+          </div>
+          <a href="#contact" class="listing-link">Schedule a showing →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     AGENT BIO
+     REPLACE: photo, name, bio text, credentials
+     ============================================ -->
+<section class="section section-alt" id="about">
+  <div class="container">
+    <div class="agent-grid">
+      <!-- REPLACE: swap with <img src="agent.jpg" alt="Agent name"> -->
+      <div class="agent-photo"></div>
+      <div class="agent-content">
+        <div class="section-label">About Your Agent</div>
+        <!-- REPLACE: agent name -->
+        <h2>{{AGENT_NAME}}</h2>
+        <!-- REPLACE: bio paragraph 1 -->
+        <p>{{AGENT_BIO_1}}</p>
+        <!-- REPLACE: bio paragraph 2 -->
+        <p>{{AGENT_BIO_2}}</p>
+        <!-- REPLACE: credentials/certifications -->
+        <div class="agent-credentials">
+          <span class="credential-badge">{{CREDENTIAL_1}}</span>
+          <span class="credential-badge">{{CREDENTIAL_2}}</span>
+          <span class="credential-badge">{{CREDENTIAL_3}}</span>
+        </div>
+        <div style="display:flex;gap:16px;">
+          <a href="#contact" class="btn btn-primary">{{CTA_TEXT}}</a>
+          <a href="tel:{{PHONE}}" class="btn btn-outline">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     NEIGHBORHOOD INFO
+     REPLACE: neighborhood names, images, info
+     ============================================ -->
+<section class="section" id="neighborhood">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Area Guide</div>
+      <!-- REPLACE: city/area name -->
+      <h2>{{NEIGHBORHOOD_HEADING}}</h2>
+      <p style="color:var(--color-text-muted);max-width:520px;margin:0 auto;">{{NEIGHBORHOOD_SUBHEADING}}</p>
+    </div>
+    <div class="neighborhood-grid">
+
+      <!-- NEIGHBORHOOD 1 — REPLACE -->
+      <div class="neighborhood-card">
+        <!-- REPLACE: neighborhood photo -->
+        <div class="neighborhood-image"></div>
+        <div class="neighborhood-body">
+          <div class="neighborhood-name">{{NEIGHBORHOOD_1_NAME}}</div>
+          <div class="neighborhood-info">{{NEIGHBORHOOD_1_INFO}}</div>
+        </div>
+      </div>
+
+      <!-- NEIGHBORHOOD 2 — REPLACE -->
+      <div class="neighborhood-card">
+        <div class="neighborhood-image"></div>
+        <div class="neighborhood-body">
+          <div class="neighborhood-name">{{NEIGHBORHOOD_2_NAME}}</div>
+          <div class="neighborhood-info">{{NEIGHBORHOOD_2_INFO}}</div>
+        </div>
+      </div>
+
+      <!-- NEIGHBORHOOD 3 — REPLACE -->
+      <div class="neighborhood-card">
+        <div class="neighborhood-image"></div>
+        <div class="neighborhood-body">
+          <div class="neighborhood-name">{{NEIGHBORHOOD_3_NAME}}</div>
+          <div class="neighborhood-info">{{NEIGHBORHOOD_3_INFO}}</div>
+        </div>
+      </div>
+
+      <!-- NEIGHBORHOOD 4 — REPLACE -->
+      <div class="neighborhood-card">
+        <div class="neighborhood-image"></div>
+        <div class="neighborhood-body">
+          <div class="neighborhood-name">{{NEIGHBORHOOD_4_NAME}}</div>
+          <div class="neighborhood-info">{{NEIGHBORHOOD_4_INFO}}</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CONTACT / SCHEDULE
+     REPLACE: form action, contact details, map
+     ============================================ -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Get In Touch</div>
+      <h2>{{CONTACT_HEADING}}</h2>
+      <p style="color:var(--color-text-muted);max-width:480px;margin:0 auto;">{{CONTACT_SUBHEADING}}</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-form-card">
+        <h3>Schedule a Showing</h3>
+        <p>Fill out the form and we'll be in touch within 24 hours.</p>
+        <form class="contact-form" action="mailto:{{EMAIL}}" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="(555) 000-0000">
+          </div>
+          <div class="form-group">
+            <label>I'm interested in...</label>
+            <select name="interest">
+              <option>Buying a home</option>
+              <option>Selling a home</option>
+              <option>Both</option>
+              <option>Investment property</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Property address, questions, timeline..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Request Showing →</button>
+        </form>
+      </div>
+      <div class="contact-details">
+        <h3>Direct Contact</h3>
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <strong>Phone</strong>
+            <span><a href="tel:{{PHONE}}">{{PHONE}}</a></span>
+          </div>
+        </div>
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon">✉️</div>
+          <div class="contact-detail-text">
+            <strong>Email</strong>
+            <span><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></span>
+          </div>
+        </div>
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon">🏢</div>
+          <div class="contact-detail-text">
+            <strong>Office</strong>
+            <span>{{ADDRESS}}</span>
+          </div>
+        </div>
+        <!-- REPLACE: insert Google Maps iframe -->
+        <div class="map-embed">📍 Map — replace with Google Maps embed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     REPLACE: agent name, brokerage, links
+     ============================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">{{AGENT_NAME}}</div>
+      <div class="footer-links">
+        <a href="#listings">Listings</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="footer-copy">© {{YEAR}} {{AGENT_NAME}}. {{BROKERAGE}}. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

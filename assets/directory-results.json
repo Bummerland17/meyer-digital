@@ -1,0 +1,62 @@
+[
+  {
+    "site": "saashub.com",
+    "product": "PantryMate",
+    "status": "⚠️ form not found",
+    "detail": "https://www.saashub.com/add-product"
+  },
+  {
+    "site": "saashub.com",
+    "product": "UnitFix",
+    "status": "⚠️ form not found",
+    "detail": "https://www.saashub.com/add-product"
+  },
+  {
+    "site": "betalist.com",
+    "product": "PantryMate",
+    "status": "⚠️ form not found",
+    "detail": "https://betalist.com/startups/new"
+  },
+  {
+    "site": "betalist.com",
+    "product": "UnitFix",
+    "status": "⚠️ form not found",
+    "detail": "https://betalist.com/startups/new"
+  },
+  {
+    "site": "alternativeto.net",
+    "product": "PantryMate",
+    "status": "⚠️ form not found",
+    "detail": "https://alternativeto.net/add/"
+  },
+  {
+    "site": "alternativeto.net",
+    "product": "UnitFix",
+    "status": "⚠️ form not found",
+    "detail": "https://alternativeto.net/add/"
+  },
+  {
+    "site": "toolify.ai",
+    "product": "PantryMate",
+    "status": "⚠️ form not found",
+    "detail": "https://www.toolify.ai/submit-tool"
+  },
+  {
+    "site": "toolify.ai",
+    "product": "UnitFix",
+    "status": "⚠️ form not found",
+    "detail": "https://www.toolify.ai/submit-tool"
+  },
+  {
+    "site": "uneed.be",
+    "product": "PantryMate",
+    "status": "❌ failed",
+    "detail": "page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.uneed.be/submit\nCall log:\n\u001b[2m  - navigati"
+  },
+  {
+    "site": "uneed.be",
+    "product": "UnitFix",
+    "status": "❌ failed",
+    "detail": "page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.uneed.be/submit\nCall log:\n\u001b[2m  - navigati"
+  }
+]

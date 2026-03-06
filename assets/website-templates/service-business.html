@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{BUSINESS_NAME}} | {{SERVICE_TYPE}} in {{CITY}}, WY</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;color:#222}
+header{background:#2c5f2e;color:white;padding:60px 20px;text-align:center}
+header h1{font-size:2.5em;margin-bottom:10px}
+header p{font-size:1.2em;opacity:0.85}
+.cta{background:#f4a623;padding:20px;text-align:center}
+.cta a{font-size:1.4em;font-weight:bold;color:#1a1a1a;text-decoration:none}
+.services{padding:50px 20px;max-width:1000px;margin:0 auto}
+.services h2{text-align:center;color:#2c5f2e;font-size:2em;margin-bottom:30px}
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.card{background:#f0f7f0;border-radius:10px;padding:25px;text-align:center}
+.card h3{color:#2c5f2e;margin-bottom:10px;font-size:1.2em}
+.why{background:#2c5f2e;color:white;padding:40px 20px;text-align:center}
+.why h2{margin-bottom:20px;font-size:1.8em}
+.why ul{list-style:none;max-width:600px;margin:0 auto}
+.why li{padding:8px 0;font-size:1.1em}
+.contact{padding:40px 20px;text-align:center;background:#f9f9f9}
+.contact h2{color:#2c5f2e;margin-bottom:20px}
+.phone{font-size:2.2em;font-weight:bold;color:#2c5f2e}
+footer{background:#1a1a1a;color:#888;padding:12px;text-align:center;font-size:0.85em}
+</style>
+</head>
+<body>
+<header>
+  <h1>{{BUSINESS_NAME}}</h1>
+  <p>Professional {{SERVICE_TYPE}} in {{CITY}} & Surrounding Areas</p>
+</header>
+<div class="cta">📞 Free Estimate — Call <a href="tel:{{PHONE}}">{{PHONE}}</a></div>
+<section class="services">
+  <h2>What We Do</h2>
+  <div class="service-grid">
+    <div class="card"><h3>{{SERVICE1}}</h3><p>{{SERVICE1_DESC}}</p></div>
+    <div class="card"><h3>{{SERVICE2}}</h3><p>{{SERVICE2_DESC}}</p></div>
+    <div class="card"><h3>{{SERVICE3}}</h3><p>{{SERVICE3_DESC}}</p></div>
+    <div class="card"><h3>{{SERVICE4}}</h3><p>{{SERVICE4_DESC}}</p></div>
+  </div>
+</section>
+<section class="why">
+  <h2>Why Choose {{BUSINESS_NAME}}?</h2>
+  <ul>
+    <li>✅ Licensed & Insured</li>
+    <li>✅ Serving {{CITY}} & {{REGION}} for {{YEARS}} years</li>
+    <li>✅ Free estimates — no obligation</li>
+    <li>✅ {{UNIQUE_VALUE}}</li>
+  </ul>
+</section>
+<section class="contact">
+  <h2>Get a Free Estimate</h2>
+  <div class="phone"><a href="tel:{{PHONE}}" style="color:#2c5f2e;text-decoration:none">{{PHONE}}</a></div>
+  <p style="margin-top:15px;font-size:1.1em">📧 {{EMAIL}} | 📍 {{CITY}}, WY</p>
+</section>
+<footer>© 2026 {{BUSINESS_NAME}} | {{SERVICE_TYPE}} | {{CITY}}, Wyoming | Licensed & Insured</footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+[
+  {
+    "timestamp": "2026-03-05T15:09:59.841194",
+    "idea": "ClosetMate - Tinder-style outfit discovery app. Users swipe outfits to train AI taste profile, then AI suggests outfits from their own wardrobe. Tinder swipe mechanic for fashion discovery + personal wardrobe styling.",
+    "factory_type": "app",
+    "avg_score": 6.0,
+    "decision": "RESEARCH_MORE",
+    "action_taken": "research_brief_written",
+    "parameters": {
+      "title": "ClosetMate",
+      "topic": "AI-powered fashion styling",
+      "target_audience": "Fashion-conscious individuals looking to optimize their wardrobe choices",
+      "price_point": 0,
+      "key_differentiator": "Combines Tinder-style swiping with personal wardrobe integration for unique outfit suggestions."
+    }
+  },
+  {
+    "idea": "ClosetMate \u2014 Tinder-style outfit swipe app + AI wardrobe stylist",
+    "score": {
+      "demand": 9,
+      "buildability": 8,
+      "speed_to_revenue": 8,
+      "avg": 8.3
+    },
+    "factory_type": "app",
+    "verdict": "BUILD NOW",
+    "key_differentiator": "Tinder swipe trains AI taste profile \u2014 zero manual wardrobe input needed",
+    "pricing": "Free (swipe feed) + $4.99/mo Pro (outfit generation from own closet)",
+    "tiktok_hook": "I let AI dress me for 7 days using only swipes",
+    "brand_play": "Natural extension of PantryMate \u2014 same decision fatigue mechanic, fashion vertical",
+    "logged_at": "2026-03-05T15:10:00.011813"
+  },
+  {
+    "idea": "Background Note Taker \u2014 passive app that listens in background during meetings/conversations and auto-generates structured notes without user needing to do anything",
+    "score": {
+      "demand": 9,
+      "buildability": 7,
+      "speed_to_revenue": 8,
+      "avg": 8.0
+    },
+    "factory_type": "app",
+    "verdict": "BUILD NOW",
+    "key_differentiator": "Completely passive \u2014 no tap to record, no setup, just runs. Notes appear after meeting ends.",
+    "pricing": "$4.99/mo or $29.99/yr",
+    "competitors": "Otter.ai, Fireflies, Notion AI \u2014 all require intentional recording",
+    "tiktok_hook": "I forgot to take notes in 3 meetings this week. This app did it for me.",
+    "logged_at": "2026-03-05T17:25:12.678935"
+  },
+  {
+    "idea": "Moment Capture \u2014 captures life moments you forgot to record. Uses phone motion/location signals to detect when something interesting happened and prompts 'Did you want to capture that?' 5 minutes after",
+    "score": {
+      "demand": 8,
+      "buildability": 6,
+      "speed_to_revenue": 7,
+      "avg": 7.0
+    },
+    "factory_type": "app",
+    "verdict": "RESEARCH_MORE",
+    "key_differentiator": "Retrospective capture \u2014 instead of remembering to record, it reminds you after the moment",
+    "pricing": "$2.99/mo",
+    "note": "Privacy-sensitive \u2014 needs very clear messaging. Could be a viral hit if positioned right.",
+    "logged_at": "2026-03-05T17:25:12.678953"
+  },
+  {
+    "idea": "Business Idea Suggestion App/Website \u2014 based on real need. User inputs their skills, time available, capital \u2014 gets ranked business ideas with build instructions, revenue projections, and first steps",
+    "score": {
+      "demand": 9,
+      "buildability": 8,
+      "speed_to_revenue": 9,
+      "avg": 8.7
+    },
+    "factory_type": "app",
+    "verdict": "BUILD NOW",
+    "key_differentiator": "Based on REAL need signals (Reddit, trending searches, market data) not generic ideas",
+    "pricing": "$9.99/mo or $49 lifetime",
+    "note": "This is essentially a productized version of our truth engine. High demand, proven by courses selling the same thing.",
+    "logged_at": "2026-03-05T17:25:12.678955"
+  },
+  {
+    "idea": "Support Hub \u2014 unified support website with chat, email, and phone number across all Wolfgang products. One Zoho-powered support portal for PantryMate, SmartBook AI, UnitFix, Wolfpack AI",
+    "score": {
+      "demand": 7,
+      "buildability": 9,
+      "speed_to_revenue": 5,
+      "avg": 7.0
+    },
+    "factory_type": "service",
+    "verdict": "BUILD \u2014 low effort, high trust signal",
+    "pricing": "Free (trust builder)",
+    "note": "support.pantrymate.net or help.wolfpackai.io \u2014 one Crisp/Tidio chat widget across all products",
+    "logged_at": "2026-03-05T17:25:12.678959"
+  },
+  {
+    "idea": "Bathroom Finder \u2014 finds clean bathrooms in cities, rural areas, airports, road trips. Real-time cleanliness ratings, airport terminal-specific, road trip mode showing next bathroom within X miles.",
+    "score": {
+      "demand": 8,
+      "buildability": 7,
+      "speed_to_revenue": 7,
+      "avg": 7.5
+    },
+    "factory_type": "app",
+    "verdict": "BUILD \u2014 needs differentiation from Flush/SitOrSquat",
+    "key_differentiator": "Rural + road trip mode + airport terminal maps + real-time cleanliness scores",
+    "competitors": "Flush (decent), SitOrSquat (Charmin), Toilet Finder \u2014 all weak on rural/airports",
+    "data_source": "OpenStreetMap has restroom data (free), Google Places API for businesses",
+    "pricing": "Free + $1.99/mo Pro OR ad-supported with business sponsorships",
+    "tiktok_hook": "POV: you're 40 miles from the nearest town and need a bathroom right now",
+    "logged_at": "2026-03-05T17:43:11.116260"
+  },
+  {
+    "idea": "NeedFinder \u2014 multi-module 'find it right now' app. Modules: Bathrooms, Baby Changing Stations, Quiet Spaces, Nursing/Pumping Rooms, Dog-Friendly spots, Van Life overnight parking. One app, multiple desperate use cases.",
+    "score": {
+      "demand": 9,
+      "buildability": 7,
+      "speed_to_revenue": 8,
+      "avg": 8.0
+    },
+    "factory_type": "app",
+    "verdict": "BUILD NOW \u2014 stronger than single-purpose bathroom finder",
+    "key_differentiator": "Multi-module platform. Each module attracts different community. Cross-pollinates users. 5x the retention of single-purpose app.",
+    "data_source": "OpenStreetMap (free), Google Places API, community contributions",
+    "pricing": "Free (basic) + $2.99/mo Pro (offline, no ads, history)",
+    "tiktok_hooks": [
+      "POV: baby needs changing in the airport and you can't find a table",
+      "Found the only quiet room in JFK using this app",
+      "Traveled 2 years in a van \u2014 this is how I find safe overnight spots"
+    ],
+    "launch_order": "Start with bathrooms (broadest appeal) \u2192 add changing stations (viral parent content) \u2192 quiet spaces (remote work angle)",
+    "logged_at": "2026-03-05T17:45:29.289778"
+  },
+  {
+    "idea": "Wolfpack Mobile \u2014 AI business partner mobile app. Fork OpenClaw (open source), rebrand as Wolfpack AI, add Stripe dashboard, agent controls, MRR alerts, quick commands. Sell to other entrepreneurs at $19-29/mo.",
+    "score": {
+      "demand": 9,
+      "buildability": 6,
+      "speed_to_revenue": 7,
+      "avg": 7.3
+    },
+    "factory_type": "app",
+    "verdict": "FLAGSHIP \u2014 build after first revenue milestone ($1k MRR)",
+    "key_differentiator": "Built by a founder who actually uses it. Not a demo product. Real pipelines, real agents, real money.",
+    "build_approach": "Fork OpenClaw (open source MIT license), add mobile wrapper via Capacitor or React Native, rebrand as Wolfpack AI",
+    "pricing": "$19/mo Starter / $49/mo Pro (more agents, more pipelines) / $99/mo Agency",
+    "note": "This IS the pipeline factory productized. The system we built for Wolfgang becomes the product.",
+    "logged_at": "2026-03-05T17:48:08.692760"
+  },
+  {
+    "idea": "Veldt AI \u2014 Personal AI assistant mobile app that actually DOES things. Memory of who you are, connects to Gmail/Calendar/real services, proactive (reaches out to you), executes tasks not just answers questions. The AI companion everyone wants but nobody has built properly.",
+    "score": {
+      "demand": 10,
+      "buildability": 5,
+      "speed_to_revenue": 6,
+      "avg": 7.0
+    },
+    "factory_type": "app",
+    "verdict": "LONG-TERM FLAGSHIP \u2014 build after $5k MRR milestone",
+    "key_differentiator": "Agents, not answers. Memory, not just chat history. Proactive, not just reactive.",
+    "competitors": "ChatGPT app (no actions), Claude app (no actions), Siri (weak), Google Assistant (declining) \u2014 NONE do true agentic mobile",
+    "pricing": "$15/mo Personal / $29/mo Pro (more integrations, priority) / $99/mo Family",
+    "brand": "Veldt \u2014 'Your AI. Actually yours.' \u2014 personal brand, not Wolfpack (which is business-focused)",
+    "build_order": "1. Wolfpack Mobile (business, simpler) \u2192 2. Veldt AI (personal, flagship) \u2192 3. Combine into one platform",
+    "market_size": "Every smartphone user who's frustrated that AI apps just chat but don't do anything",
+    "note": "This is essentially OpenClaw for consumers. Wolfgang has the blueprint \u2014 he uses it daily. The product IS his life.",
+    "logged_at": "2026-03-05T17:55:04.065452",
+    "flagship_feature": "On-device AI \u2014 runs a small local model (Gemma 2B or Llama 3.2 3B) directly on the phone. Works offline, fully private, no data leaves device. Smart routing: simple tasks \u2192 on-device, complex \u2192 cloud.",
+    "tech_for_flagship": "Google MediaPipe LLM Inference API (free), Gemma 2B (1.5GB download on setup), Capacitor native plugin for ML inference",
+    "differentiator_updated": "ONLY AI assistant with true on-device + cloud hybrid. Works in airplane mode. Zero API costs for on-device queries. Privacy as core feature.",
+    "tagline_updated": "Your AI. On your device. Anywhere.",
+    "updated_at": "2026-03-05T18:34:00.260395"
+  },
+  {
+    "idea": "Lead Finder SaaS \u2014 sell our niche lead databases as subscriptions. Caribbean tourism leads, US dental leads, UK aesthetics leads, RE wholesale leads, custom niches on request. Similar to Apollo.io but hyper-niche.",
+    "score": {
+      "demand": 9,
+      "buildability": 9,
+      "speed_to_revenue": 9,
+      "avg": 9.0
+    },
+    "factory_type": "digital_product",
+    "verdict": "BUILD NOW \u2014 product already exists, just needs packaging and a sales page",
+    "pricing": "$97-297/mo per niche list, refreshed monthly",
+    "target_buyers": "Marketing agencies, sales teams, real estate investors, SmartBook AI competitors, local SEO resellers",
+    "competitive_advantage": "Hyper-niche pre-qualified leads vs generic Apollo.io/ZoomInfo data",
+    "logged_at": "2026-03-05T19:42:45.535655"
+  }
+]

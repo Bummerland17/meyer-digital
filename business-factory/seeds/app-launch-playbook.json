@@ -1,0 +1,24 @@
+{
+  "slug": "app-launch-playbook",
+  "name": "App Launch Playbook",
+  "tagline": "How to get your first 100 users without a marketing budget or an audience.",
+  "problem": "Most indie app launches go nowhere not because the product is bad but because the launch strategy is 'post on Twitter and hope'. The actually effective channels (niche Reddit threads, targeted cold DMs, early-adopter communities, SEO via changelog posts) aren't secret — they're just not compiled anywhere useful. Most 'launch guides' are written by people who never launched anything.",
+  "solution": "A 29-page playbook written from actual indie launches. Covers the 30 days before launch and the 14 days after. Specific tactics, specific communities, specific message templates. The 'what to do on day 1 if you have zero followers' section alone is worth the price.",
+  "price": 29.00,
+  "price_type": "one-time",
+  "category": "digital-product",
+  "bullets": [
+    "30-day pre-launch checklist: build in public, where to share what, how to collect emails before you launch",
+    "Launch day timeline (hour by hour): ProductHunt, HN Show, Reddit, Twitter — in what order and why",
+    "14-day post-launch playbook: how to keep momentum after the ProductHunt boost dies",
+    "Community map: 40+ communities by niche where indie launches actually get traction",
+    "Cold outreach templates for bloggers, newsletters, and micro-influencers (the ones that get replies)",
+    "SEO via devlog: how to rank for 'alternative to [competitor]' within 60 days",
+    "What to do when you launch to silence (the honest section most playbooks skip)"
+  ],
+  "guarantee": "If you follow the Day 1 plan and get zero traction, email. We'll either refund you or work through what happened.",
+  "day1_launch_plan": "Post in r/SideProject and r/indiehackers with a genuine post: 'Wrote down everything I know about indie app launches — the stuff that actually worked'. Share the community map (40 communities) for free in the post body. Link to full playbook at end. Also share in IndieHackers.com product section. These communities will pay $29 without hesitation for genuinely useful launch resources.",
+  "expected_first_sale": "Within 24 hours — r/indiehackers buyers are exactly the right audience and $29 is nothing to them",
+  "fast_roi_estimate_days": 1,
+  "kill_if_no_sale_by": "7 days post-launch"
+}

@@ -1,0 +1,38 @@
+{
+  "runDate": "2026-03-04T05:10:51.599Z",
+  "total": 5,
+  "ok": 1,
+  "noSV": 4,
+  "errors": 0,
+  "results": [
+    {
+      "address": "1423 W McDowell Rd, Phoenix, AZ 85007",
+      "status": "no_streetview",
+      "formatted": "1423 W McDowell Rd, Phoenix, AZ 85007, USA"
+    },
+    {
+      "address": "3201 W Van Buren St, Phoenix, AZ 85009",
+      "status": "no_streetview",
+      "formatted": "3201 W Van Buren St, Phoenix, AZ 85009, USA"
+    },
+    {
+      "address": "2845 W Thomas Rd, Phoenix, AZ 85017",
+      "status": "ok",
+      "formatted": "2845 W Thomas Rd, Phoenix, AZ 85017, USA",
+      "lat": 33.479874,
+      "lng": -112.1212156,
+      "frontPath": "/root/.openclaw/workspace/scout-output/003_2845_W_Thomas_Rd__Phoenix__AZ_85017_FRONT.jpg",
+      "sidePath": "/root/.openclaw/workspace/scout-output/003_2845_W_Thomas_Rd__Phoenix__AZ_85017_SIDE.jpg"
+    },
+    {
+      "address": "4102 S 35th Ave, Phoenix, AZ 85041",
+      "status": "no_streetview",
+      "formatted": "4102 S 35th Ave, Phoenix, AZ 85041, USA"
+    },
+    {
+      "address": "1867 E Broadway Rd, Phoenix, AZ 85040",
+      "status": "no_streetview",
+      "formatted": "1867 E Broadway Rd, Phoenix, AZ 85040, USA"
+    }
+  ]
+}

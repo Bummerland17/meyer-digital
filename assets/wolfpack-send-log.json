@@ -1,0 +1,7 @@
+{
+  "sent": 0,
+  "status": "BLOCKED",
+  "reason": "Zoho SMTP error 550: Unusual sending activity detected on hello@pantrymate.net. Account needs to be unblocked at https://mail.zoho.com/UnblockMe before bulk sending is possible.",
+  "action_required": "Visit https://mail.zoho.com/UnblockMe to unblock the account, then re-run the send script at /tmp/send_emails.py",
+  "log": []
+}

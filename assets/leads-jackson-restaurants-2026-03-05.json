@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Million Dollar Cowboy Bar",
+    "phone": "(307) 733-2207",
+    "address": "25 N Cache St, Jackson, WY 83001",
+    "rating": 4.0,
+    "review_count": 3052,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJu-w1TV0aU1MRbxo_-AZp4KI",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Gun Barrel Steak and Game House",
+    "phone": "(307) 733-3287",
+    "address": "862 W Broadway, Jackson, WY 83001",
+    "rating": 4.4,
+    "review_count": 2713,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUYFX33YaU1MR86bii5AVrSU",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Liberty Burger",
+    "phone": null,
+    "address": "160 N Cache St, Jackson, WY 83001",
+    "rating": 4.4,
+    "review_count": 2449,
+    "google_maps_url": "https://maps.google.com/?q=Liberty+Burger+Jackson+WY",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Mangy Moose Jackson Hole",
+    "phone": "(307) 733-4913",
+    "address": "3295 Village Dr, Teton Village, WY 83025",
+    "rating": 4.1,
+    "review_count": 2196,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJF4bVMdcFU1MR5LFSaqU8UJw",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Sidewinders American Grill",
+    "phone": "(307) 734-5766",
+    "address": "945 W Broadway, Jackson, WY 83001",
+    "rating": 4.2,
+    "review_count": 2122,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ32ZQp3caU1MR9R6Udq7-1Xw",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Silver Dollar Bar",
+    "phone": "(307) 732-3939",
+    "address": "50 N Glenwood St, Jackson, WY 83001",
+    "rating": 4.2,
+    "review_count": 2053,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJk-HQ-GcaU1MRRBviAVNLgWU",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Snake River Brewing",
+    "phone": "(307) 739-2337",
+    "address": "265 S Millward St, Jackson, WY 83001",
+    "rating": 4.2,
+    "review_count": 1438,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJo0rDA2kaU1MRop4qusx6k4Q",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Big Hole BBQ Jackson",
+    "phone": "(307) 264-1996",
+    "address": "325 W Pearl Ave, Jackson, WY 83001",
+    "rating": 4.2,
+    "review_count": 1351,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3fLvhGgaU1MRj3tC77CexMg",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "The Bird",
+    "phone": "(307) 732-2473",
+    "address": "4125 US-89 #6, Jackson, WY 83001",
+    "rating": 4.4,
+    "review_count": 1088,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ00lNgw0XU1MRAZ-s8rczR8w",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "StillWest Brewery & Grill",
+    "phone": "(307) 201-5955",
+    "address": "45 E Snow King Ave, Jackson, WY 83001",
+    "rating": 4.4,
+    "review_count": 987,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZzpwiAQbU1MRyQ7W2ykU-GQ",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Roadhouse Pub & Eatery",
+    "phone": "(307) 739-0700",
+    "address": "20 E Broadway Ave, Jackson, WY 83001",
+    "rating": 4.0,
+    "review_count": 1039,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJx9eaukIaU1MRf5L7Q-FWsxE",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Snake River Grill",
+    "phone": "(307) 733-0557",
+    "address": "84 E Broadway Ave, Jackson, WY 83001",
+    "rating": 4.4,
+    "review_count": 773,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJpXlZz0IaU1MRJEYPILCo-Bc",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "The Bistro",
+    "phone": "(307) 739-1100",
+    "address": "112 Center St, Jackson, WY 83001",
+    "rating": 4.3,
+    "review_count": 474,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJq6q6KF0aU1MR-rCykNKt9R8",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Haydens Post Restaurant Jackson Hole",
+    "phone": "(307) 734-3187",
+    "address": "400 E Snow King Ave, Jackson, WY 83001",
+    "rating": 3.9,
+    "review_count": 427,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGePagGoaU1MRiLtShcSXEds",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Roosevelts",
+    "phone": "(307) 200-6455",
+    "address": "140 N Cache St, Jackson, WY 83001",
+    "rating": 4.4,
+    "review_count": 367,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJL4ejWYYbU1MR4TErZIPT-ho",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "The Rose",
+    "phone": null,
+    "address": "50 W Broadway, Jackson, WY 83001",
+    "rating": 3.9,
+    "review_count": 364,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJjZseqkIaU1MRiP3wVK7OZsE",
+    "monthly_seo_value": "$400/mo"
+  },
+  {
+    "name": "Virginian Saloon",
+    "phone": null,
+    "address": "750 W Broadway, Jackson, WY 83001",
+    "rating": 4.2,
+    "review_count": 112,
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJk0knPHEaU1MRPVSv9zm8nrg",
+    "monthly_seo_value": "$400/mo"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "leads": [
+    {
+      "name": "Central Phoenix Fixer",
+      "phone": "+14802036263",
+      "address": "Central Phoenix",
+      "price": 254900,
+      "notes": "SFH, as-is/fixer, ARV play",
+      "source": "craigslist"
+    },
+    {
+      "name": "Rural Tiny House",
+      "phone": "+17024968327",
+      "address": "Rural Phoenix fringe",
+      "price": 49000,
+      "notes": "Tiny house on 1 acre, very motivated price",
+      "source": "craigslist"
+    }
+  ],
+  "last_updated": "2026-03-05"
+}

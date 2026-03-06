@@ -1,0 +1,142 @@
+[
+  {
+    "day": 1,
+    "product": "PantryMate",
+    "angle": "You have $60 of food in your fridge and you just ordered Doo",
+    "template": "stat-bomb",
+    "script": {
+      "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.c",
+      "caption": "",
+      "hashtags": ""
+    },
+    "voiceover": {
+      "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day01-pantrymate/voiceover.mp3",
+      "size_kb": 61,
+      "status": "saved"
+    },
+    "video": {
+      "status": "needs_key",
+      "note": "Add CREATOMATE_API_KEY to .env to enable video generation"
+    }
+  },
+  {
+    "day": 2,
+    "product": "SmartBook AI",
+    "angle": "Your dental practice loses $500 every night after 6pm",
+    "template": "stat-bomb",
+    "script": {
+      "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.c",
+      "caption": "",
+      "hashtags": ""
+    },
+    "voiceover": {
+      "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day02-smartbook-ai/voiceover.mp3",
+      "size_kb": 66,
+      "status": "saved"
+    },
+    "video": {
+      "status": "needs_key",
+      "note": "Add CREATOMATE_API_KEY to .env to enable video generation"
+    }
+  },
+  {
+    "day": 3,
+    "product": "UnitFix",
+    "angle": "Being a landlord is a second job nobody warned you about",
+    "template": "stat-bomb",
+    "script": {
+      "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.c",
+      "caption": "",
+      "hashtags": ""
+    },
+    "voiceover": {
+      "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day03-unitfix/voiceover.mp3",
+      "size_kb": 56,
+      "status": "saved"
+    },
+    "video": {
+      "status": "needs_key",
+      "note": "Add CREATOMATE_API_KEY to .env to enable video generation"
+    }
+  },
+  {
+    "day": 4,
+    "product": "PantryMate",
+    "angle": "The average family wastes $1,500/year on food they already b",
+    "template": "stat-bomb",
+    "script": {
+      "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.c",
+      "caption": "",
+      "hashtags": ""
+    },
+    "voiceover": {
+      "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day04-pantrymate/voiceover.mp3",
+      "size_kb": 67,
+      "status": "saved"
+    },
+    "video": {
+      "status": "needs_key",
+      "note": "Add CREATOMATE_API_KEY to .env to enable video generation"
+    }
+  },
+  {
+    "day": 5,
+    "product": "SmartBook AI",
+    "angle": "What happens when you miss a patient call at 7pm",
+    "template": "split-problem-solution",
+    "script": {
+      "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.c",
+      "caption": "",
+      "hashtags": ""
+    },
+    "voiceover": {
+      "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day05-smartbook-ai/voiceover.mp3",
+      "size_kb": 40,
+      "status": "saved"
+    },
+    "video": {
+      "status": "needs_key",
+      "note": "Add CREATOMATE_API_KEY to .env to enable video generation"
+    }
+  },
+  {
+    "day": 6,
+    "product": "UnitFix",
+    "angle": "The maintenance request that cost me $3,000 (and how to prev",
+    "template": "split-problem-solution",
+    "script": {
+      "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.c",
+      "caption": "",
+      "hashtags": ""
+    },
+    "voiceover": {
+      "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day06-unitfix/voiceover.mp3",
+      "size_kb": 66,
+      "status": "saved"
+    },
+    "video": {
+      "status": "needs_key",
+      "note": "Add CREATOMATE_API_KEY to .env to enable video generation"
+    }
+  },
+  {
+    "day": 7,
+    "product": "PantryMate",
+    "angle": "I built an app that tells you what to cook in 30 seconds",
+    "template": "bold-text-hook",
+    "script": {
+      "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.c",
+      "caption": "",
+      "hashtags": ""
+    },
+    "voiceover": {
+      "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day07-pantrymate/voiceover.mp3",
+      "size_kb": 50,
+      "status": "saved"
+    },
+    "video": {
+      "status": "needs_key",
+      "note": "Add CREATOMATE_API_KEY to .env to enable video generation"
+    }
+  }
+]

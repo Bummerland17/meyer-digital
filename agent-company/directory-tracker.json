@@ -1,0 +1,60 @@
+{
+  "last_updated": "2026-03-05",
+  "products": {
+    "PantryMate": {
+      "url": "https://pantrymate.net",
+      "email": "hello@pantrymate.net",
+      "submissions": {
+        "Futurepedia": { "status": "skip", "note": "Paid only ($247+). No free tier." },
+        "AlternativeTo": { "status": "pending", "note": "Requires manual browser login + form." },
+        "TopAI.tools": { "status": "pending", "note": "Blocks automated access. Manual browser needed." },
+        "AI Tools Directory": { "status": "pending", "note": "JS-heavy form. Manual browser needed." },
+        "AIcyclopedia": { "status": "pending", "note": "Elementor + reCAPTCHA. Manual browser needed." },
+        "There's An AI For That": { "status": "pending", "note": "Free submission. theresanaiforthat.com/submit" },
+        "AI Tools Club": { "status": "pending", "note": "Free. aitoolsclub.com/submit" },
+        "OpenTools": { "status": "pending", "note": "Free. opentools.ai/submit" },
+        "Toolify.ai": { "status": "pending", "note": "Free. toolify.ai/submit" },
+        "AI Scout": { "status": "pending", "note": "Free. aiscout.net/list-your-ai/" },
+        "Uneed": { "status": "pending", "note": "Free, Product Hunt-style. uneed.best/submit" },
+        "SaaS Hub": { "status": "pending", "note": "Free. saashub.com/add" },
+        "ProductHunt": { "status": "pending", "note": "Best ROI. producthunt.com/posts/new" },
+        "G2": { "status": "pending", "note": "Not yet researched." },
+        "Capterra": { "status": "pending", "note": "Not yet researched." }
+      }
+    },
+    "SmartBook AI": {
+      "url": "https://bummerland17.github.io/smartbook-ai/",
+      "email": "hello@pantrymate.net",
+      "submissions": {
+        "Futurepedia": { "status": "skip", "note": "Paid only ($247+). No free tier." },
+        "AlternativeTo": { "status": "pending", "note": "Requires manual browser login + form." },
+        "TopAI.tools": { "status": "pending", "note": "Blocks automated access. Manual browser needed." },
+        "AI Tools Directory": { "status": "pending", "note": "JS-heavy form. Manual browser needed." },
+        "AIcyclopedia": { "status": "pending", "note": "Elementor + reCAPTCHA. Manual browser needed." },
+        "There's An AI For That": { "status": "pending", "note": "Free submission." },
+        "OpenTools": { "status": "pending", "note": "Free." },
+        "Toolify.ai": { "status": "pending", "note": "Free." },
+        "Uneed": { "status": "pending", "note": "Free, Product Hunt-style." },
+        "SaaS Hub": { "status": "pending", "note": "Free." },
+        "ProductHunt": { "status": "pending", "note": "Best ROI." },
+        "G2": { "status": "pending", "note": "Not yet researched." },
+        "Capterra": { "status": "pending", "note": "Not yet researched." }
+      }
+    },
+    "UnitFix": {
+      "url": "https://unitfix.app",
+      "email": "hello@pantrymate.net",
+      "submissions": {
+        "ProductHunt": { "status": "pending", "note": "Best ROI." },
+        "AlternativeTo": { "status": "pending", "note": "Manual browser needed." },
+        "Uneed": { "status": "pending", "note": "Free, Product Hunt-style." },
+        "SaaS Hub": { "status": "pending", "note": "Free." }
+      }
+    }
+  },
+  "press_releases": {
+    "PRLog": { "status": "pending", "note": "Account creation needed. Content ready at assets/prlog-press-release.md" },
+    "OpenPR": { "status": "pending", "note": "Draft ready at assets/openpr-press-release.md — needs Wolfgang to create account and submit." }
+  },
+  "notes": "All directory submissions require Wolfgang to action manually via browser. Submission data pre-filled at assets/directory-submission-tracker.md"
+}

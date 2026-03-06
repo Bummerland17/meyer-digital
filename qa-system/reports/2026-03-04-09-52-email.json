@@ -1,0 +1,35 @@
+{
+  "qa_runner_version": "1.0.0",
+  "timestamp": "2026-03-04 09:52:07 UTC",
+  "file": "/tmp/test-bad-email.txt",
+  "content_type": "email",
+  "result": {
+    "checklist": "email-qa",
+    "verdict": "REJECT",
+    "total_score": 42,
+    "max_score": 70,
+    "scores": {
+      "personalization": 3,
+      "honesty": 4,
+      "brevity": 10,
+      "subject_line_relevance": 4,
+      "cta_clarity": 9,
+      "spam_risk": 2,
+      "professional_tone": 10
+    },
+    "word_count": 46,
+    "subject": "Re: Your request",
+    "flags": [
+      "No business name or type detected \u2014 may be too generic",
+      "Income guarantee phrase detected: 'you will (?:make|earn|get|see)'",
+      "Unverifiable claim: '10,000\\+?\\s+(?:happy\\s+)?(?:clients|customers|businesses)'",
+      "Deceptive Re:/Fwd: prefix on cold email subject",
+      "Spam trigger word detected: '\\bGUARANTEED\\b'",
+      "Spam trigger word detected: '\\bACT NOW\\b'",
+      "Spam trigger word detected: '\\bCLICK HERE\\b'",
+      "Multiple ALL CAPS words: ['GUARANTEE', 'AMAZING', 'WILL', 'GUARANTEED', 'ACT']"
+    ],
+    "reviewer_notes": "Hawk's automated review. Total: 42/70. Honesty: 4/10.",
+    "action": "Escalate to Wolfgang immediately. Honesty score below threshold."
+  }
+}

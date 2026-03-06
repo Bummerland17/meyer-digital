@@ -1,0 +1,26 @@
+{
+  "ai-sales-script-bundle": {
+    "product_id": "prod_U5SZnhiliE7zOm",
+    "price_id": "price_1T7HdvCRr0tlaIBCtj5Zocsv",
+    "payment_link": "https://buy.stripe.com/00w8wO6kY5ZOaQn016bsc08",
+    "payment_link_id": "plink_1T7HdvCRr0tlaIBCNpjOYF0y",
+    "link_ok": true,
+    "link_error": null
+  },
+  "landlord-maintenance-templates": {
+    "product_id": "prod_U5SZYBrxZ4HRjR",
+    "price_id": "price_1T7HdvCRr0tlaIBCU7jFGMiN",
+    "payment_link": "https://buy.stripe.com/9B6aEWfVyewk5w35lqbsc09",
+    "payment_link_id": "plink_1T7HdwCRr0tlaIBCsFfP2zlH",
+    "link_ok": true,
+    "link_error": null
+  },
+  "app-launch-playbook": {
+    "product_id": "prod_U5SZZpineVDAP2",
+    "price_id": "price_1T7HdwCRr0tlaIBCZQP85MhB",
+    "payment_link": "https://buy.stripe.com/eVq3cueRu3RGf6DcNSbsc0a",
+    "payment_link_id": "plink_1T7HdwCRr0tlaIBCZ0UzQZ8g",
+    "link_ok": true,
+    "link_error": null
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "product": "PantryMate",
+    "render_id": "b97f9045-4471-4c4d-af63-63e6d5535a00",
+    "status": "downloaded",
+    "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day01-pantrymate/video.mp4",
+    "size_mb": 0.4,
+    "url": "https://f002.backblazeb2.com/file/creatomate-c8xg3hsxdu/b97f9045-4471-4c4d-af63-63e6d5535a00.mp4",
+    "snapshot_url": ""
+  },
+  {
+    "product": "SmartBook AI",
+    "render_id": "381d1e22-aff8-4ad3-9434-19bd1b9ff2ab",
+    "status": "downloaded",
+    "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day02-smartbook-ai/video.mp4",
+    "size_mb": 0.46,
+    "url": "https://f002.backblazeb2.com/file/creatomate-c8xg3hsxdu/381d1e22-aff8-4ad3-9434-19bd1b9ff2ab.mp4",
+    "snapshot_url": ""
+  },
+  {
+    "product": "UnitFix",
+    "render_id": "01a536a8-2850-4aaf-b7ff-14a6a501a36e",
+    "status": "downloaded",
+    "path": "/root/.openclaw/workspace/content-engine/output/2026-03-week1/day03-unitfix/video.mp4",
+    "size_mb": 0.4,
+    "url": "https://f002.backblazeb2.com/file/creatomate-c8xg3hsxdu/01a536a8-2850-4aaf-b7ff-14a6a501a36e.mp4",
+    "snapshot_url": ""
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "type": "seller_ad_phoenix",
+    "category": "housing wanted > real estate wanted",
+    "area": "Phoenix - Central/South PHX",
+    "title": "We Buy Phoenix Houses Cash - Any Condition, Fast Close",
+    "success": true,
+    "status": "PENDING EMAIL CONFIRMATION",
+    "note": "Email sent to hello@pantrymate.net — click the link within 30 minutes to publish. Check spam folder.",
+    "postUrl": "https://post.craigslist.org/k/cSjzXyvCH4JcH6fNeNCPex/NecrV?s=loginloop"
+  },
+  {
+    "type": "buyer_ad_phoenix",
+    "category": "housing offered > real estate - by owner",
+    "area": "Phoenix - Central/South PHX",
+    "title": "Off-Market Phoenix Investment Properties - Cash Buyers Only",
+    "success": true,
+    "status": "PENDING EMAIL CONFIRMATION",
+    "note": "Email sent to hello@pantrymate.net — click the link within 30 minutes to publish. Check spam folder.",
+    "postUrl": "https://post.craigslist.org/k/ieu8E25XfMCzckJxr7cBhs/QgnwA?s=loginloop"
+  },
+  {
+    "importantNote": "Both ads require email confirmation. Wolfgang must check hello@pantrymate.net NOW and click both confirmation links (30 min expiry). Without clicking, ads won't go live."
+  }
+]

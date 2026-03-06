@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Coco",
+    "market": "Caribbean Tourism",
+    "agent_id": "ec36dfb3-9f0b-4f8e-9abb-53314b174831",
+    "phone_number_id": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+    "target_file": "caribbean-leads-2026-03-05.json",
+    "offer": "Website $599 + SEO $250/mo",
+    "opening": "Hi, is this [name]? I'm Coco calling about [business name] — I was looking at your Google listing and had a quick question about your direct bookings. Do you have about 60 seconds?"
+  },
+  {
+    "name": "Lila",
+    "market": "Philippines Tourism",
+    "agent_id": "1e54bb19-a423-4075-89b1-9e353bb2b6fe",
+    "phone_number_id": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+    "target_file": "philippines-leads-2026-03-05.json",
+    "offer": "Website $599 + SEO $200/mo",
+    "opening": "Hi po, good day! Is this [name] from [business]? My name is Lila — I'm calling about your online presence. Do you have a moment?"
+  },
+  {
+    "name": "Marco",
+    "market": "Costa Rica Eco-Tourism",
+    "agent_id": "544fffb7-c75d-4dce-a46f-c8a401a05e3e",
+    "phone_number_id": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+    "target_file": "costa-rica-leads-2026-03-05.json",
+    "offer": "Website $599 + SEO $300/mo",
+    "opening": "Hey, is this [name]? I'm Marco — I work with eco-lodges and tour operators in Costa Rica on getting more direct bookings. Quick question — what percentage of your bookings come direct vs through Expedia or Booking.com?"
+  },
+  {
+    "name": "Priya",
+    "market": "UK Aesthetics Clinics (SmartBook AI)",
+    "agent_id": "0aa82051-fb76-43f0-95cf-310e6bca4914",
+    "phone_number_id": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+    "target_file": "uk-aesthetics-leads-2026-03-05.json",
+    "offer": "SmartBook AI £390/mo",
+    "opening": "Good morning, could I speak with the clinic manager or owner please? My name is Priya — I'm calling about front desk efficiency at [clinic name]."
+  },
+  {
+    "name": "Jake",
+    "market": "Australian Dental Practices (SmartBook AI)",
+    "agent_id": "97a15a94-e4d4-4b80-8db5-0d6e62ff3121",
+    "phone_number_id": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+    "target_file": "australia-dental-leads-2026-03-05.json",
+    "offer": "SmartBook AI A$780/mo",
+    "opening": "G'day, is this [practice name]? My name's Jake — I work with dental practices around [city] on reducing missed appointment calls. Have you got 60 seconds?"
+  },
+  {
+    "name": "Sam",
+    "market": "UK Landlords (UnitFix)",
+    "agent_id": "ae3642d3-19f5-4d60-bd4d-cbeebe8a023e",
+    "phone_number_id": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+    "target_file": "uk-landlords-leads-2026-03-05.json",
+    "offer": "UnitFix £15/mo",
+    "opening": "Hello, is that [name]? My name's Sam — I'm calling about a property management tool that's been quite popular with landlords in [city]. Do you have a moment?"
+  }
+]

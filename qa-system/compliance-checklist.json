@@ -1,0 +1,236 @@
+{
+  "checklist_id": "compliance-qa",
+  "version": "1.0.0",
+  "reviewer": "Shield",
+  "description": "Legal and ethical compliance checklist for all PantryMate customer-facing content. Shield's FAIL is absolute — no item may be overridden by Godfather without Wolfgang's explicit approval. When in doubt, Shield flags and stops.",
+  "authority_note": "Shield operates with maximum authority on compliance matters. A Shield FAIL is not a suggestion. Work stops until the issue is resolved or Wolfgang explicitly approves the exception in writing.",
+  "verdict_rules": {
+    "pass": "All items pass → content cleared for delivery/launch",
+    "fail": "Any item fails → escalate to Wolfgang immediately with specific violation noted. Do NOT attempt to fix and re-review without Wolfgang's knowledge.",
+    "note": "Unlike other reviewers, Shield failures always go to Wolfgang — not just back to the specialist."
+  },
+  "criteria": [
+    {
+      "id": "tcpa_ai_disclosure",
+      "label": "TCPA: AI Disclosure in First 5 Seconds",
+      "applies_to": ["call_scripts", "vapi_deployments"],
+      "type": "pass_fail",
+      "legal_basis": "Telephone Consumer Protection Act (TCPA) + FTC guidelines on AI disclosure in automated calls",
+      "description": "Any AI-initiated phone call must clearly disclose that the caller is an AI, not a human, within the first 5 seconds of the call. This disclosure must be explicit — not implied.",
+      "pass_condition": "Script contains an explicit AI disclosure statement in the opening section, positioned within the first 3–4 spoken lines (approx. 5 seconds at natural speaking pace).",
+      "acceptable_disclosure_phrases": [
+        "I'm an AI assistant",
+        "I'm a virtual assistant, not a human",
+        "This is an automated AI call",
+        "I'm calling on behalf of [company] — I should mention I'm an AI",
+        "You're speaking with an AI calling on behalf of"
+      ],
+      "fail_conditions": [
+        "AI disclosure appears after the pitch (too late)",
+        "AI disclosure is implied but not stated ('automated system' without 'AI')",
+        "Disclosure is present only in a disclaimer footer of the script, not spoken",
+        "No AI disclosure at all"
+      ],
+      "automated_checks": [
+        "Find OPENING section of script",
+        "Search first 150 words for disclosure keywords: AI, artificial intelligence, virtual assistant, automated, not a human",
+        "Flag if disclosure keywords not found in first 150 words",
+        "Flag scripts where 'human' or 'person' is used to describe the caller"
+      ],
+      "severity": "critical",
+      "violation_consequence": "TCPA violation risk. Immediate escalation to Wolfgang. Do not deploy."
+    },
+    {
+      "id": "dnc_opt_out_mechanism",
+      "label": "DNC: Opt-Out Mechanism Present and Honored",
+      "applies_to": ["call_scripts", "email_campaigns", "landing_pages"],
+      "type": "pass_fail",
+      "legal_basis": "Do Not Call Registry (FTC), CAN-SPAM Act, general consent principles",
+      "description": "Every outreach mechanism must have a clear, functional opt-out path. Verbal opt-outs during calls must be honored immediately. Email opt-outs must work. No retry logic after opt-out.",
+      "pass_conditions": {
+        "call_scripts": "Script includes explicit handling for 'remove me from your list', 'don't call again', 'stop calling' — with immediate graceful exit and no re-engagement attempt.",
+        "emails": "Email includes working unsubscribe link or reply-to-unsubscribe instruction. Link must be functional, not # or placeholder.",
+        "pages": "If page collects contact info, privacy policy and opt-out terms must be linked."
+      },
+      "fail_conditions": [
+        "Call script has no opt-out handler",
+        "Call script attempts to re-engage after explicit 'remove me' request",
+        "Email has no unsubscribe mechanism",
+        "Unsubscribe link is # or broken",
+        "Page collects phone/email with no mention of how to unsubscribe"
+      ],
+      "automated_checks": [
+        "For call scripts: search for opt-out keywords in GRACEFUL_EXIT section: 'remove', 'opt out', 'do not call', 'stop'",
+        "For emails: search for 'unsubscribe' link or instruction",
+        "For emails: verify unsubscribe href is not '#' or placeholder",
+        "For pages with forms: check for privacy policy link near form"
+      ],
+      "severity": "critical",
+      "violation_consequence": "Legal exposure. Immediate escalation to Wolfgang."
+    },
+    {
+      "id": "no_income_guarantees",
+      "label": "No Guaranteed Revenue or Income Claims",
+      "applies_to": ["emails", "call_scripts", "landing_pages"],
+      "type": "pass_fail",
+      "legal_basis": "FTC Act Section 5 (unfair or deceptive acts), FTC Endorsement Guides",
+      "description": "Content must never guarantee specific income, revenue, or financial outcomes. Results may vary disclosures are required near any earnings-related claims.",
+      "pass_condition": "Any mention of financial results is framed as a possibility (not a certainty), is accompanied by context, and does not use guarantee language.",
+      "acceptable_framing": [
+        "Some restaurants have seen...",
+        "In our experience, businesses like yours may...",
+        "Results vary, but clients have reported...",
+        "This could help you increase revenue — though results depend on..."
+      ],
+      "forbidden_phrases": [
+        "you will make",
+        "you will earn",
+        "guaranteed to make",
+        "guaranteed income",
+        "guaranteed revenue",
+        "you'll definitely see",
+        "100% guaranteed results",
+        "make $X per month",
+        "earn $X guaranteed",
+        "double your revenue guaranteed",
+        "we guarantee you'll profit"
+      ],
+      "automated_checks": [
+        "Case-insensitive scan for all forbidden_phrases",
+        "Scan for patterns: 'guarantee' within 5 words of dollar amount or revenue/income/profit/earn",
+        "Scan for patterns: 'will make' or 'will earn' near dollar amounts",
+        "Flag any specific dollar amount claim without 'results may vary' disclaimer nearby"
+      ],
+      "severity": "critical",
+      "violation_consequence": "FTC compliance risk. Escalate to Wolfgang."
+    },
+    {
+      "id": "no_fake_urgency",
+      "label": "No Manufactured Urgency",
+      "applies_to": ["emails", "call_scripts", "landing_pages"],
+      "type": "pass_fail",
+      "legal_basis": "FTC Act Section 5 (deceptive practices)",
+      "description": "Urgency tactics must only be used if the constraint is real and verifiable. 'Only 3 spots left' is only acceptable if there are actually only 3 spots left, with a mechanism to enforce it.",
+      "pass_condition": "No urgency language present, OR urgency language is used for a genuinely limited offer with verifiable constraints.",
+      "forbidden_if_unverified": [
+        "Only [N] spots left",
+        "Only [N] slots available",
+        "Offer expires [date]",
+        "This offer ends tonight",
+        "Last [N] openings",
+        "We can only take [N] more clients",
+        "Special pricing ends soon",
+        "This week only"
+      ],
+      "acceptable_urgency": [
+        "Pricing locked until [specific date] — this is our launch rate (if true)",
+        "We're onboarding in batches of 10 (if true and enforced)"
+      ],
+      "automated_checks": [
+        "Scan for urgency trigger words: 'only X spots', 'limited spots', 'expires', 'ends tonight', 'last chance', 'this week only'",
+        "Flag any countdown or timer references",
+        "Flag any claim of scarcity without verifiable mechanism"
+      ],
+      "severity": "high",
+      "violation_consequence": "Deceptive practice risk. Return to specialist for removal or verification."
+    },
+    {
+      "id": "no_brand_impersonation",
+      "label": "No Impersonation of Known Brands",
+      "applies_to": ["emails", "call_scripts", "landing_pages"],
+      "type": "pass_fail",
+      "legal_basis": "Trademark law, FTC Act, CAN-SPAM anti-deception provisions",
+      "description": "Content must not imply affiliation with, endorsement by, or be from well-known third-party brands (Google, Amazon, DoorDash, Yelp, etc.) unless PantryMate has a documented partnership.",
+      "pass_condition": "Content is clearly from PantryMate. No third-party brand names used in ways that imply partnership or official endorsement.",
+      "fail_conditions": [
+        "Email appears to be from Google, Amazon, or another brand",
+        "Subject line implies third-party endorsement: 'Your Google Business listing...'",
+        "Call script introduces caller as representing a third-party brand",
+        "Page uses third-party logos without licensed permission",
+        "Using 'Google' or 'Yelp' branded colors/styles to imply official communication"
+      ],
+      "allowed_references": [
+        "Mentioning Google in context ('We help you get more Google reviews') — fine",
+        "Saying 'This is not affiliated with Google' — fine",
+        "Describing integrations accurately — fine"
+      ],
+      "automated_checks": [
+        "Check sender/from name for third-party brand names",
+        "Check subject line for third-party brand names in potentially misleading contexts",
+        "Scan opening of call scripts for false affiliation claims",
+        "Flag use of official logos (src containing 'google-logo', 'amazon-logo', etc.)"
+      ],
+      "severity": "critical",
+      "violation_consequence": "Trademark/legal risk. Escalate to Wolfgang immediately."
+    },
+    {
+      "id": "can_spam_unsubscribe",
+      "label": "CAN-SPAM: Unsubscribe Mechanism Present",
+      "applies_to": ["emails"],
+      "type": "pass_fail",
+      "legal_basis": "CAN-SPAM Act of 2003",
+      "description": "All commercial emails must include a clear, functional mechanism for recipients to opt out of future emails. This must be honored within 10 business days.",
+      "pass_condition": "Email contains either: (a) a working unsubscribe link, OR (b) a clear reply-to instruction to unsubscribe. The mechanism must be visible (not hidden in 4pt font).",
+      "required_elements": [
+        "Unsubscribe link OR clear opt-out instruction",
+        "Physical mailing address or P.O. box of sender (CAN-SPAM requirement)",
+        "From address must be identifiable as PantryMate"
+      ],
+      "fail_conditions": [
+        "No unsubscribe link or instruction",
+        "Unsubscribe link is # or broken",
+        "Unsubscribe text is hidden (font-size < 10px, color matches background)",
+        "No sender physical address",
+        "From: header is spoofed or misleading"
+      ],
+      "automated_checks": [
+        "Search for 'unsubscribe' in email body (case-insensitive)",
+        "If found, check associated href is not '#' or empty",
+        "Check for physical address in email footer",
+        "Verify From: address is @pantrymate.net domain"
+      ],
+      "severity": "critical",
+      "violation_consequence": "CAN-SPAM violation. Up to $50,753 per email in fines. Escalate to Wolfgang."
+    },
+    {
+      "id": "no_misleading_subject",
+      "label": "No Misleading Subject Lines",
+      "applies_to": ["emails"],
+      "type": "pass_fail",
+      "legal_basis": "CAN-SPAM Act — prohibits deceptive subject lines",
+      "description": "Subject lines must not deceive recipients about the content or purpose of the email. No fake 'Re:' or 'Fwd:' prefixes on cold emails. No misleading claims in the subject.",
+      "pass_condition": "Subject line accurately reflects the email content and does not use deceptive framing.",
+      "fail_conditions": [
+        "Subject starts with 'Re:' when there is no prior conversation",
+        "Subject starts with 'Fwd:' when email is not a forward",
+        "Subject implies the recipient requested the email when they didn't",
+        "Subject contains a question that the email doesn't answer",
+        "Subject implies urgency or action is required when it's just an offer",
+        "Subject contains false statements about the recipient ('Your account has been...')"
+      ],
+      "automated_checks": [
+        "Check subject for 'Re:' prefix on cold outreach emails",
+        "Check subject for 'Fwd:' prefix",
+        "Flag subjects implying transactional urgency: 'Action required', 'Your account', 'Invoice', 'Confirmation' on clearly promotional emails",
+        "Cross-reference subject keyword themes with body keyword themes"
+      ],
+      "severity": "critical",
+      "violation_consequence": "CAN-SPAM violation + trust damage. Escalate to Wolfgang."
+    }
+  ],
+  "output_format": {
+    "verdict": "PASS | FAIL",
+    "criteria_results": {
+      "tcpa_ai_disclosure": "PASS | FAIL | N/A",
+      "dnc_opt_out_mechanism": "PASS | FAIL",
+      "no_income_guarantees": "PASS | FAIL",
+      "no_fake_urgency": "PASS | FAIL",
+      "no_brand_impersonation": "PASS | FAIL",
+      "can_spam_unsubscribe": "PASS | FAIL | N/A",
+      "no_misleading_subject": "PASS | FAIL | N/A"
+    },
+    "violations": ["list of failed criteria with legal risk level and specific text found"],
+    "reviewer_notes": "Shield's assessment and mandatory next steps",
+    "action": "PASS → proceed | FAIL → escalate to Wolfgang immediately"
+  }
+}

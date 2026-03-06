@@ -1,0 +1,199 @@
+{
+  "date": "2026-03-04",
+  "generated": "2026-03-04T17:16:55.509663Z",
+  "vapi": {
+    "status": "live",
+    "total_calls": 2,
+    "avg_duration_sec": 0.0,
+    "short_hangups": 2,
+    "hangup_rate_pct": 100.0,
+    "warm_calls": 0,
+    "warm_rate_pct": 0.0,
+    "expressed_interest": 0,
+    "interest_rate_pct": 0.0,
+    "flagged_short": [
+      {
+        "id": "019cb98b-f9cb-766e-85f4-15cb6f42409d",
+        "duration": 0,
+        "created": "2026-03-04T15:51:24.363Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cb986-09a3-7ff3-98b2-04b583a6e54a",
+        "duration": 0,
+        "created": "2026-03-04T15:44:55.203Z",
+        "flag": "IMMEDIATE_HANGUP"
+      }
+    ],
+    "flagged_warm": [],
+    "flags": {
+      "hook_needs_rewrite": true,
+      "close_needs_work": false
+    }
+  },
+  "email": {
+    "status": "live",
+    "total_emails": 24,
+    "total_replies": 0,
+    "by_subject": {
+      "Re: Your phones after hours \u2014 quick follow-up": {
+        "sent": 12,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Downtown Smiles Phoenix Dental Care": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Downtown Phoenix Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Healing Dentistry": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Brighter Way Dental Center": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for McDowell Road Family Dentistry": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for City Creek Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for SunDrop Dental Clinic": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Lakeside Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Wynkoop Dentistry": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Dental Elements": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Idaho Street Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Capitol Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      }
+    },
+    "by_business_type": {
+      "unknown": {
+        "sent": 24,
+        "replied": 0,
+        "reply_rate": 0.0
+      }
+    },
+    "dead_subjects": [],
+    "dead_biz_types": [
+      "unknown"
+    ],
+    "best_subject": {
+      "subject": "Re: Your phones after hours \u2014 quick follow-up",
+      "sent": 12,
+      "replied": 0,
+      "reply_rate": 0.0
+    },
+    "worst_subject": {
+      "subject": "Last note \u2014 AI appointment booking for Capitol Dental",
+      "sent": 1,
+      "replied": 0,
+      "reply_rate": 0.0
+    },
+    "flags": {
+      "dead_subject_lines": [],
+      "zero_reply_biz_types": [
+        "unknown"
+      ]
+    }
+  },
+  "stripe": {
+    "status": "live",
+    "error": null,
+    "active_subscribers": 1,
+    "mrr_usd": 14.0,
+    "cancelled_last_30d": 0,
+    "refund_requests": 1,
+    "refund_amount_usd": 14.0,
+    "by_product": {
+      "prod_TyvIib3xxGcVur": 1
+    },
+    "flags": {
+      "refunds_flagged": [
+        {
+          "id": "pyr_1T17N3CRr0tlaIBCp4gscXdr",
+          "amount": 14.0,
+          "reason": null
+        }
+      ],
+      "churn_rate_approx": 0.0
+    }
+  },
+  "github": {
+    "Bummerland17/honest-eats": {
+      "status": "live",
+      "total_issues": 1,
+      "bugs": 0,
+      "ux_issues": 0,
+      "features": 1,
+      "other": 0,
+      "hot_issues": [],
+      "by_category": {
+        "bug": [],
+        "ux": [],
+        "feature": [
+          {
+            "id": 6,
+            "title": "feat: Resend email drip sequence (5-email onboarding automation)",
+            "category": "feature",
+            "comments": 2,
+            "reactions": 0,
+            "url": "https://github.com/Bummerland17/honest-eats/pull/6",
+            "labels": []
+          }
+        ],
+        "other": []
+      }
+    },
+    "Bummerland17/unitfix-simple-maintenance": {
+      "status": "live",
+      "total_issues": 0,
+      "bugs": 0,
+      "ux_issues": 0,
+      "features": 0,
+      "other": 0,
+      "hot_issues": [],
+      "by_category": {
+        "bug": [],
+        "ux": [],
+        "feature": [],
+        "other": []
+      }
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "source": {
+    "output_format": "mp4",
+    "width": 1080,
+    "height": 1920,
+    "frame_rate": 30,
+    "duration": 30,
+    "elements": [
+      {
+        "id": "background",
+        "type": "rectangle",
+        "x": "0%",
+        "y": "0%",
+        "width": "100%",
+        "height": "100%",
+        "fill_color": "#1a1a2e",
+        "z_index": 0
+      },
+      {
+        "id": "flash",
+        "type": "rectangle",
+        "x": "0%",
+        "y": "0%",
+        "width": "100%",
+        "height": "100%",
+        "fill_color": "#ffffff",
+        "z_index": 50,
+        "animations": [
+          {
+            "type": "fade-out",
+            "start": 0.0,
+            "duration": 0.25
+          }
+        ]
+      },
+      {
+        "id": "pre_hook",
+        "type": "text",
+        "text": "Did you know...",
+        "x": "8%",
+        "y": "12%",
+        "width": "84%",
+        "font_family": "Inter",
+        "font_weight": "500",
+        "font_size": "38px",
+        "fill_color": "#aaaaaa",
+        "text_align": "center",
+        "z_index": 10,
+        "animations": [
+          {
+            "type": "fade-in",
+            "start": 0.25,
+            "duration": 0.25
+          }
+        ]
+      },
+      {
+        "id": "stat_number",
+        "type": "text",
+        "text": "429",
+        "x": "4%",
+        "y": "28%",
+        "width": "92%",
+        "font_family": "Montserrat",
+        "font_weight": "900",
+        "font_size": "180px",
+        "fill_color": "#ffffff",
+        "text_align": "center",
+        "z_index": 10,
+        "line_height": 0.95,
+        "animations": [
+          {
+            "type": "scale",
+            "value_from": 2.5,
+            "value_to": 1,
+            "start": 0.5,
+            "duration": 0.4,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+          }
+        ]
+      },
+      {
+        "id": "stat_label",
+        "type": "text",
+        "text": "[SCRIPT FAILED:  CLIENT ERROR: TOO MANY REQUESTS FOR URL: HTTPS://GENERATIVELANGUAGE.GOOGLEAPIS.COM/V1BETA/MODELS/GEMINI-2.0-FLASH:GENERATECONTENT?KEY=AIZASYBXQG1O-KZ18ZMDWM2VVTGQKRWFVP6ADVA]",
+        "x": "8%",
+        "y": "58%",
+        "width": "84%",
+        "font_family": "Montserrat",
+        "font_weight": "700",
+        "font_size": "52px",
+        "fill_color": "#f59e0b",
+        "text_align": "center",
+        "z_index": 10,
+        "letter_spacing": "1px",
+        "text_transform": "uppercase",
+        "animations": [
+          {
+            "type": "text-appear",
+            "split": "word",
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "duration": 0.08,
+            "start": 0.9,
+            "color_from": "#f59e0b",
+            "color_to": "#ffffff"
+          }
+        ]
+      },
+      {
+        "id": "divider",
+        "type": "rectangle",
+        "x": "8%",
+        "y": "72%",
+        "width": "84%",
+        "height": "3px",
+        "fill_color": "#f59e0b",
+        "z_index": 9,
+        "animations": [
+          {
+            "type": "width",
+            "value_from": "0%",
+            "value_to": "84%",
+            "start": 1.8,
+            "duration": 0.4,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+          }
+        ]
+      },
+      {
+        "id": "solution",
+        "type": "text",
+        "text": "",
+        "x": "8%",
+        "y": "74%",
+        "width": "84%",
+        "font_family": "Inter",
+        "font_weight": "600",
+        "font_size": "42px",
+        "fill_color": "#ffffff",
+        "text_align": "center",
+        "z_index": 10,
+        "line_height": 1.35,
+        "animations": [
+          {
+            "type": "text-appear",
+            "split": "word",
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "duration": 0.08,
+            "start": 2.2,
+            "color_from": "#ffffff",
+            "color_to": "#ffffff"
+          }
+        ]
+      },
+      {
+        "id": "cta_pill",
+        "type": "rectangle",
+        "x": "15%",
+        "y": "88%",
+        "width": "70%",
+        "height": "90px",
+        "fill_color": "#f59e0b",
+        "z_index": 20,
+        "border_radius": "50px",
+        "animations": [
+          {
+            "type": "scale",
+            "value_from": 0,
+            "value_to": 1,
+            "start": 25,
+            "duration": 0.35,
+            "easing": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+          }
+        ]
+      },
+      {
+        "id": "cta_text",
+        "type": "text",
+        "text": "",
+        "x": "15%",
+        "y": "88%",
+        "width": "70%",
+        "font_family": "Montserrat",
+        "font_weight": "800",
+        "font_size": "30px",
+        "fill_color": "#000000",
+        "text_align": "center",
+        "z_index": 21,
+        "height": "90px",
+        "vertical_align": "middle",
+        "animations": [
+          {
+            "type": "fade-in",
+            "start": 25.4,
+            "duration": 0.25
+          }
+        ]
+      },
+      {
+        "id": "voiceover",
+        "type": "audio",
+        "source": "https://your-cdn.com/2026-03-week1/day03/voiceover.mp3",
+        "z_index": 30,
+        "volume": 1.0
+      }
+    ]
+  },
+  "queued": false
+}

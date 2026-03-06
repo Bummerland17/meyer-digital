@@ -1,0 +1,102 @@
+[
+  {
+    "source": "craigslist_phoenix",
+    "listing_type": "owner_sale",
+    "description": "Owner Wants it Sold Now! Make Offer! $514,000 - west valley",
+    "location": "West Valley, Phoenix AZ",
+    "price": "$514,000",
+    "contact": "phoenix.craigslist.org/search/glendale-az/rea?purveyor=owner",
+    "notes": "Active craigslist FSBO in west valley. Owner motivated - explicit 'sold now' language.",
+    "found_via": "brave_search - Glendale AZ investment property for sale owner"
+  },
+  {
+    "source": "craigslist_phoenix",
+    "listing_type": "investment_opportunity",
+    "description": "Investment Opportunity in Sun City, AZ (85351) - Cash/Hard Money Loans - $142,000",
+    "location": "Sun City, AZ 85351",
+    "price": "$142,000",
+    "contact": "phoenix.craigslist.org/search/glendale-az/rea?purveyor=owner",
+    "notes": "Low-price investment property in Sun City. Cash or hard money buyers wanted. Very distressed price point.",
+    "found_via": "brave_search - Glendale AZ investment property for sale owner"
+  },
+  {
+    "source": "craigslist_phoenix",
+    "listing_type": "seller_financing",
+    "description": "30 Year Seller Financing Available - 4/2/1 Home in Phoenix - $419,900 - Indian School Rd & 75th Ave",
+    "location": "Phoenix, AZ (Indian School Rd & 75th Ave)",
+    "price": "$419,900",
+    "contact": "phoenix.craigslist.org/search/glendale-az/rea?purveyor=owner",
+    "notes": "Seller offering 30-year financing \u2014 highly motivated seller willing to hold paper. Strong wholesale signal.",
+    "found_via": "brave_search - Glendale AZ investment property for sale owner"
+  },
+  {
+    "source": "craigslist_phoenix",
+    "listing_type": "mobile_home",
+    "description": "Beautiful 3-bed Mobile Home - $145,000 - Glendale",
+    "location": "Glendale, AZ",
+    "price": "$145,000",
+    "contact": "phoenix.craigslist.org/search/glendale-az/rea?purveyor=owner",
+    "notes": "Mobile home by owner in Glendale. Low price point.",
+    "found_via": "brave_search - Glendale AZ investment property for sale owner"
+  },
+  {
+    "source": "web_directory",
+    "listing_type": "wholesale_platform",
+    "description": "Arizona Real Estate - Off Market Listings (Wholesale, Pre-MLS, FSBO, Coming Soon)",
+    "location": "Phoenix metro, AZ",
+    "price": "varies",
+    "contact": "arizonarealestate.com/off-market/",
+    "notes": "Aggregator of off-market/wholesale properties across Phoenix metro. Multiple motivated seller listings available here.",
+    "found_via": "brave_search - off market property Phoenix AZ wholesaler 2026"
+  },
+  {
+    "source": "web_directory",
+    "listing_type": "wholesale_platform",
+    "description": "BatchLeads - 430,032 Off-Market Properties in Phoenix, AZ",
+    "location": "Phoenix, AZ",
+    "price": "varies",
+    "contact": "batchleads.io/properties/off-market-properties/Phoenix-AZ--",
+    "notes": "Data platform with 430k off-market Phoenix properties including distressed factors. Use to find bulk motivated seller leads.",
+    "found_via": "brave_search - off market property Phoenix AZ wholesaler 2026"
+  },
+  {
+    "source": "web_directory",
+    "listing_type": "wholesale_deals",
+    "description": "Reivesti - Phoenix AZ Wholesale Real Estate Deals",
+    "location": "Phoenix / Maricopa County, AZ",
+    "price": "varies",
+    "contact": "reivesti.com/phoenix-az-wholesale-real-estate/",
+    "notes": "Exclusive off-market wholesale deals you won't find elsewhere. Active in 2026.",
+    "found_via": "brave_search - off market property Phoenix AZ wholesaler 2026"
+  },
+  {
+    "source": "web_company",
+    "listing_type": "motivated_seller_buyer",
+    "description": "We Buy Homes in AZ - Motivated Seller Cash Program",
+    "location": "Phoenix, AZ",
+    "price": null,
+    "contact": "webuyhomesinaz.com | (480) 637-5500",
+    "notes": "Explicitly markets to motivated sellers. 'Built for people who need clarity, speed, and compassion.' Active lead flow.",
+    "found_via": "brave_search - motivated seller Phoenix AZ cash offer"
+  },
+  {
+    "source": "web_company",
+    "listing_type": "motivated_seller_buyer",
+    "description": "Arizona Home Seller Assistance Program by First Mill, LLC",
+    "location": "Phoenix, AZ",
+    "price": null,
+    "contact": "arizonahomesellerassistanceprogram.com | (623) 283-2881",
+    "notes": "Cash offer within 24 hours for qualifying homes. Uses 'assistance program' positioning for motivated sellers.",
+    "found_via": "brave_search - motivated seller Phoenix AZ cash offer"
+  },
+  {
+    "source": "web_company",
+    "listing_type": "off_market_deals",
+    "description": "Clutch AZ - Phoenix Housing Snapshot 2025-2026 Off-Market Deal (Paradise Valley)",
+    "location": "Paradise Valley / Phoenix, AZ",
+    "price": null,
+    "contact": "clutchaz.com",
+    "notes": "Active Phoenix investor blog with 2025-2026 deal flow. Features Paradise Valley off-market deal of the week.",
+    "found_via": "brave_search - wholesale deal Phoenix Maricopa 2026"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "generated_at": null,
+  "total_scanned": 0,
+  "total_qualified": 0,
+  "fast_roi_rule": "Hard reject if estimated days_to_first_sale > 14",
+  "opportunities": []
+}

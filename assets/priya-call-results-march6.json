@@ -1,0 +1,534 @@
+{
+  "meta": {
+    "run_date": "2026-03-06",
+    "run_time_utc": "2026-03-06T09:02:50.365287Z",
+    "agent": "Priya",
+    "assistant_id": "0aa82051-fb76-43f0-95cf-310e6bca4914",
+    "phone_number_id": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+    "product_pitched": "SmartBook AI \u00a3390/mo",
+    "total_leads": 50,
+    "callable_leads": 13,
+    "skipped_no_phone": 37,
+    "calls_completed": 12,
+    "calls_failed": 1,
+    "calls_timed_out": 0
+  },
+  "call_results": [
+    {
+      "id": 34,
+      "name": "Aesthetica Medical \u2013 Aesthetic & Skin Clinic Leeds",
+      "city": "Leeds",
+      "phone_raw": "0113 531 9755",
+      "phone_e164": "+441135319755",
+      "priority": "high",
+      "rating": 4.8,
+      "review_count": 336,
+      "fired_at": "2026-03-06T08:57:26.419199Z",
+      "call_id": null,
+      "fire_status": "fire_error",
+      "error": "HTTP 400: {\"message\":[\"customer.name must be shorter than or equal to 40 characters\"],\"error\":\"Bad Request\",\"statusCode\":400}",
+      "outcome": "fire_error"
+    },
+    {
+      "id": 1,
+      "name": "Aesthetics Clinic London",
+      "city": "London",
+      "phone_raw": "07893 942444",
+      "phone_e164": "+447893942444",
+      "priority": "high",
+      "rating": 5.0,
+      "review_count": 95,
+      "fired_at": "2026-03-06T08:56:45.067655Z",
+      "call_id": "019cc25d-10ca-711b-9e81-3622ba370615",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "silence-timed-out",
+      "duration_sec": 68.2,
+      "cost_usd": 0.0914,
+      "summary": "An AI assistant named Priya from SmartBook AI called a clinic to discuss front desk efficiency and offer a demonstration of their services. The call went to voicemail, where the AI identified itself and asked if the clinic currently has a system for patients to book appointments outside of opening hours. The call ended after the voicemail due to silence.",
+      "transcript_snippet": "AI: Good morning. Could I speak with the clinic manager or owner, please? My name is Priya. I'm calling about front desk efficiency at clinic name.\nUser: This 4 0 7 9 2 3 double 4 8. 3 1 7. Please leave a message after the tone. When you've finished recording, please hang up or press the hash key for more options.\nAI: I should be transparent. With you. I'm an AI assistant reaching out on behalf of SmartBook AI. I'm not a live sales rep, but I do have a team who can arrange a proper demonstration",
+      "poll_error": ""
+    },
+    {
+      "id": 2,
+      "name": "Aesthetic Clinic London",
+      "city": "London",
+      "phone_raw": "07496 719640",
+      "phone_e164": "+447496719640",
+      "priority": "high",
+      "rating": 4.7,
+      "review_count": 129,
+      "fired_at": "2026-03-06T08:56:50.290641Z",
+      "call_id": "019cc25d-2533-7ee4-aadd-fcdc26ce0978",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "silence-timed-out",
+      "duration_sec": 57.1,
+      "cost_usd": 0.0735,
+      "summary": "An AI assistant named Priya from SmartBook AI called a clinic to discuss front desk efficiency and offer a demonstration of their services. The AI specifically asked if the clinic had a system for patients to book appointments outside of opening hours. The call ended due to silence before the clinic could provide a response.",
+      "transcript_snippet": "AI: Good morning. Could I speak with the clinic manager or owner, please? My name is Priya. I'm calling about front desk efficiency at clinic name.\nUser: Brief message, and we will get back to you ASAP.\nAI: I should be transparent with you. I'm an AI assistant reaching out on behalf of SmartBook AI, not a live sales representative. I do have a team who can arrange a proper demonstration at your convenience. Could I ask, do you currently have a way for patients to book appointments outside of you",
+      "poll_error": ""
+    },
+    {
+      "id": 3,
+      "name": "EC Clinic London",
+      "city": "London",
+      "phone_raw": "020 7580 1149",
+      "phone_e164": "+442075801149",
+      "priority": "high",
+      "rating": 5.0,
+      "review_count": 271,
+      "fired_at": "2026-03-06T08:56:55.429211Z",
+      "call_id": "019cc25d-3946-777e-b81d-870b0243592b",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-ended-call",
+      "duration_sec": 18.3,
+      "cost_usd": 0.0192,
+      "summary": "Priya called \"clinic name\" to inquire about speaking with the clinic manager or owner regarding front desk efficiency. The call ended prematurely before she could connect with the requested party or elaborate further on her purpose.",
+      "transcript_snippet": "AI: Good morning. Could I speak with the clinic manager or owner, please? My name is Priya. I'm calling about front desk efficiency at clinic name.\n",
+      "poll_error": ""
+    },
+    {
+      "id": 4,
+      "name": "NK Aesthetics Clinic",
+      "city": "London",
+      "phone_raw": "07823 333814",
+      "phone_e164": "+447823333814",
+      "priority": "high",
+      "rating": 4.9,
+      "review_count": 259,
+      "fired_at": "2026-03-06T08:57:00.581065Z",
+      "call_id": "019cc25d-4d60-7000-8239-c769465ead98",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-did-not-answer",
+      "duration_sec": 0,
+      "cost_usd": 0,
+      "summary": "",
+      "transcript_snippet": "",
+      "poll_error": ""
+    },
+    {
+      "id": 5,
+      "name": "L'Atelier Aesthetics",
+      "city": "London",
+      "phone_raw": "020 3576 0335",
+      "phone_e164": "+442035760335",
+      "priority": "high",
+      "rating": 4.9,
+      "review_count": 259,
+      "fired_at": "2026-03-06T08:57:05.851729Z",
+      "call_id": "019cc25d-61ec-7881-94f4-2141d5b1e85d",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-did-not-answer",
+      "duration_sec": 0,
+      "cost_usd": 0,
+      "summary": "",
+      "transcript_snippet": "",
+      "poll_error": ""
+    },
+    {
+      "id": 21,
+      "name": "Manchester Aesthetics Clinic",
+      "city": "Manchester",
+      "phone_raw": "0161 222 3890",
+      "phone_e164": "+441612223890",
+      "priority": "high",
+      "rating": 4.9,
+      "review_count": 319,
+      "fired_at": "2026-03-06T08:57:11.008280Z",
+      "call_id": "019cc25d-7614-7996-b7ed-db8272fa4d14",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-did-not-answer",
+      "duration_sec": 0,
+      "cost_usd": 0,
+      "summary": "",
+      "transcript_snippet": "",
+      "poll_error": ""
+    },
+    {
+      "id": 22,
+      "name": "SKINS CLINIC \u2013 Medical Aesthetics",
+      "city": "Manchester",
+      "phone_raw": "07960 860099",
+      "phone_e164": "+447960860099",
+      "priority": "high",
+      "rating": 5.0,
+      "review_count": 209,
+      "fired_at": "2026-03-06T08:57:16.155878Z",
+      "call_id": "019cc25d-8a38-7222-9bf4-e0b3962eb9df",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-did-not-answer",
+      "duration_sec": 0,
+      "cost_usd": 0,
+      "summary": "",
+      "transcript_snippet": "",
+      "poll_error": ""
+    },
+    {
+      "id": 27,
+      "name": "Secret Aesthetics",
+      "city": "Birmingham",
+      "phone_raw": "0121 616 6023",
+      "phone_e164": "+441216166023",
+      "priority": "high",
+      "rating": 4.9,
+      "review_count": 447,
+      "fired_at": "2026-03-06T08:57:21.303023Z",
+      "call_id": "019cc25d-9e54-7558-a3fe-527cb2ba9aa5",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-did-not-answer",
+      "duration_sec": 0,
+      "cost_usd": 0,
+      "summary": "",
+      "transcript_snippet": "",
+      "poll_error": ""
+    },
+    {
+      "id": 35,
+      "name": "Serenity Aesthetics Leeds",
+      "city": "Leeds",
+      "phone_raw": "0113 821 4565",
+      "phone_e164": "+441138214565",
+      "priority": "high",
+      "rating": 5.0,
+      "review_count": 111,
+      "fired_at": "2026-03-06T08:57:31.657895Z",
+      "call_id": "019cc25d-c6ba-722c-b475-d2c47a3a5751",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-ended-call",
+      "duration_sec": 70.5,
+      "cost_usd": 0.1162,
+      "summary": "An AI assistant named Priya from SmartBook AI called Serenity Esthetics to discuss front desk efficiency and offer a demo of their services. The call was answered by an auto-attendant, preventing Priya from speaking to a live person. After Priya disclosed her AI nature and asked about after-hours appointment booking, the auto-attendant ended the call.",
+      "transcript_snippet": "AI: Good morning. Could I speak with the clinic manager or owner, please? My name is Priya. I'm calling about front desk efficiency at clinic name.\nUser: Thank you for calling Serenity Esthetics. We are sorry we're unable to take your call at this moment. Please leave your name, contact telephone number, and a brief message, and we shall return your call as soon as possible. Thank you.\nAI: I should be transparent with you. I'm an AI assistant reaching out on behalf of SmartBook AI. I'm not a liv",
+      "poll_error": ""
+    },
+    {
+      "id": 36,
+      "name": "Yorkshire Skin Centre",
+      "city": "Leeds",
+      "phone_raw": "0113 887 2272",
+      "phone_e164": "+441138872272",
+      "priority": "high",
+      "rating": 5.0,
+      "review_count": 838,
+      "fired_at": "2026-03-06T08:57:36.951829Z",
+      "call_id": "019cc25d-db6a-733b-bdc6-8c9286ef9086",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-did-not-answer",
+      "duration_sec": 0,
+      "cost_usd": 0,
+      "summary": "",
+      "transcript_snippet": "",
+      "poll_error": ""
+    },
+    {
+      "id": 41,
+      "name": "Azthetics Clinic",
+      "city": "Bristol",
+      "phone_raw": "0117 973 3666",
+      "phone_e164": "+441179733666",
+      "priority": "high",
+      "rating": 5.0,
+      "review_count": 282,
+      "fired_at": "2026-03-06T08:57:42.100458Z",
+      "call_id": "019cc25d-ef88-7229-beab-e8e6b966b6fc",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-did-not-answer",
+      "duration_sec": 0,
+      "cost_usd": 0,
+      "summary": "",
+      "transcript_snippet": "",
+      "poll_error": ""
+    },
+    {
+      "id": 42,
+      "name": "Bristol Aesthetics",
+      "city": "Bristol",
+      "phone_raw": "0117 910 2400",
+      "phone_e164": "+441179102400",
+      "priority": "medium",
+      "rating": 5.0,
+      "review_count": 14,
+      "fired_at": "2026-03-06T08:57:47.250476Z",
+      "call_id": "019cc25e-03af-7000-8520-007b93198e6f",
+      "fire_status": "queued",
+      "outcome": "ended",
+      "ended_reason": "customer-did-not-answer",
+      "duration_sec": 0,
+      "cost_usd": 0,
+      "summary": "",
+      "transcript_snippet": "",
+      "poll_error": ""
+    }
+  ],
+  "skipped_leads": [
+    {
+      "id": 6,
+      "name": "London Aesthetics Clinic",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 7,
+      "name": "The Aesthetics Doctor",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 8,
+      "name": "BEAUTY AESTHETIC CLINIC",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 9,
+      "name": "London Finsbury Clinic",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 10,
+      "name": "Lumera Clinic",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 11,
+      "name": "Regents Park Aesthetics",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 12,
+      "name": "Aesthetics Medical Clinic",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 13,
+      "name": "AM Aesthetics \u2013 Harley Street",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 14,
+      "name": "Victoria Aesthetics Beauty Clinic",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 15,
+      "name": "Dr L'Art",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 16,
+      "name": "London Classic Aesthetics LCA",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 17,
+      "name": "The London Cosmetic Clinic",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 18,
+      "name": "London Aesthetic Clinic",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 19,
+      "name": "London Aesthetic Clinics",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 20,
+      "name": "London Aesthetic Clinics \u2013 SW",
+      "city": "London",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 23,
+      "name": "SLA Medical Clinic",
+      "city": "Manchester",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 24,
+      "name": "BOSS BABES Aesthetics",
+      "city": "Manchester",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 25,
+      "name": "Forever 22 Aesthetics",
+      "city": "Manchester",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 26,
+      "name": "Derma Transform Aesthetics",
+      "city": "Manchester",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 28,
+      "name": "Dermoperfection Medical Skin & Aesthetics",
+      "city": "Birmingham",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 29,
+      "name": "Dr Aesthetica Medical Aesthetic Clinic",
+      "city": "Birmingham",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 30,
+      "name": "The Aesthetics Doctors \u2013 Edgbaston",
+      "city": "Birmingham",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 31,
+      "name": "Clinic Asthetika",
+      "city": "Birmingham",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 32,
+      "name": "Tres Beaux Aesthetics Clinic Birmingham",
+      "city": "Birmingham",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 33,
+      "name": "Faces By AKJ",
+      "city": "Manchester/Stockport",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 37,
+      "name": "Skin Doctor Clinics",
+      "city": "Leeds",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 38,
+      "name": "Skin Care Clinics Leeds",
+      "city": "Leeds",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 39,
+      "name": "6 Aesthetics & Skin Clinic",
+      "city": "Leeds",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 40,
+      "name": "Este Medical Group \u2013 Leeds",
+      "city": "Leeds",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 43,
+      "name": "SH Aesthetics",
+      "city": "Bristol",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 44,
+      "name": "Bristol Skin Clinic",
+      "city": "Bristol",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 45,
+      "name": "Newfound Skin Clinic \u2013 Edinburgh",
+      "city": "Edinburgh",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 46,
+      "name": "Skin N Tonic Aesthetics Edinburgh",
+      "city": "Edinburgh",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 47,
+      "name": "Dr Andy & Dr Andrew \u2013 GP-Led Aesthetics",
+      "city": "Manchester",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 48,
+      "name": "SB Aesthetics",
+      "city": "Manchester",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 49,
+      "name": "UK Aesthetics Lounge",
+      "city": "Birmingham",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    },
+    {
+      "id": 50,
+      "name": "Clinic 72",
+      "city": "Birmingham",
+      "phone_raw": "lookup-required",
+      "skip_reason": "no phone number / lookup-required"
+    }
+  ]
+}

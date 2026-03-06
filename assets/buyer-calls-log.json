@@ -1,0 +1,42 @@
+[
+  {
+    "company": "Valley Home Buyer",
+    "phone": "+16027343662",
+    "type": "direct_cash_buyer",
+    "call_id": "019cbac1-376d-733b-b7cb-20f78752d724",
+    "status": "fired",
+    "fired_at": "2026-03-04T21:29:11.718063+00:00"
+  },
+  {
+    "company": "AZ Home Buyer LLC",
+    "phone": "+14803311819",
+    "type": "direct_cash_buyer",
+    "call_id": "019cbac1-b0ac-7998-a5d2-e0183f71e0df",
+    "status": "fired",
+    "fired_at": "2026-03-04T21:29:42.581309+00:00"
+  },
+  {
+    "company": "Cash For Homes Arizona",
+    "phone": "+14806808927",
+    "type": "direct_cash_buyer",
+    "call_id": "019cbac2-2946-7ee4-a4e6-ae81e63d382a",
+    "status": "fired",
+    "fired_at": "2026-03-04T21:30:14.005388+00:00"
+  },
+  {
+    "company": "We Buy Houses in Arizona",
+    "phone": "+16029009327",
+    "type": "direct_cash_buyer",
+    "call_id": "019cbac2-a41e-7661-b299-885145356dcb",
+    "status": "fired",
+    "fired_at": "2026-03-04T21:30:45.959492+00:00"
+  },
+  {
+    "company": "We Buy Homes in AZ",
+    "phone": "+14806375500",
+    "type": "direct_cash_buyer",
+    "call_id": "019cbac3-20d2-733b-b7ce-11538c71874b",
+    "status": "fired",
+    "fired_at": "2026-03-04T21:31:17.320692+00:00"
+  }
+]

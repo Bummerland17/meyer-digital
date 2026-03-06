@@ -1,0 +1,10 @@
+📊 Weekly Feedback Loop Summary — 2026-03-06
+
+✅ 0 improvement(s) auto-applied
+🚩 2 item(s) flagged for human review
+📝 Full queue → feedback-loop/improvement-queue.md
+
+📞 Calls: 151 total | 100.0% hangup | 57.6% interest
+💰 Stripe: 1 subs | $14.0/mo MRR
+
+Run `cat /root/.openclaw/workspace/feedback-loop/improvement-queue.md` for full task list.

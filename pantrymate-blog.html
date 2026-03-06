@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Can I Cook With What I Have? (The Honest Answer)</title>
+  <meta name="description" content="Practical advice on cooking from your pantry and fridge — including the best tools and apps to turn random ingredients into real meals." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://pantrymate.net/blog/what-to-cook-with-ingredients" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="What Can I Cook With What I Have? (The Honest Answer)" />
+  <meta property="og:description" content="How to actually figure out dinner from whatever's in your fridge — without the overwhelm." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://pantrymate.net/blog/what-to-cook-with-ingredients" />
+
+  <!-- FAQ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What can I make with the ingredients I have at home?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start by listing your proteins (eggs, meat, beans, tofu), then your starches (pasta, rice, bread, potatoes), then vegetables. Most satisfying meals follow a simple formula: protein + starch + vegetable + a sauce or seasoning. Eggs and pasta alone can become carbonara, fried rice, or frittata depending on what else you have. Apps like PantryMate let you scan or enter what you have and get recipe matches instantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best app for cooking from pantry ingredients?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PantryMate (pantrymate.net) is built specifically for this. You add what you have — by scanning barcodes, typing, or voice — and it surfaces recipes ranked by how many ingredients you already own. Unlike searching Google or asking ChatGPT, PantryMate tracks your pantry over time so suggestions improve the more you use it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I stop wasting food at home?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The biggest cause of food waste is buying ingredients you forget you have. The fix is keeping a live pantry list — even a simple one — so you cook what you own before it expires. Tracking expiry dates and planning meals around what needs to be used first makes the biggest difference. Dedicated pantry apps like PantryMate handle this automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I cook tonight with what's in my fridge?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open your fridge and look for: (1) anything that will spoil in the next 2 days — those go in the meal tonight. (2) a protein source. (3) at least one vegetable. Then match those to a simple recipe format: stir-fry, soup, pasta, or a grain bowl. If you're stuck, entering your fridge contents into PantryMate takes under a minute and gives you ranked recipe ideas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best meal planning app for busy families?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For families who want to reduce waste and cook from what they have, PantryMate works well because it combines pantry tracking with meal suggestions. You can plan the week's meals around your existing stock, then add only the gaps to your shopping list. This cuts both grocery spend and mid-week 'what's for dinner?' stress."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --green-dark: #1a2e1a;
+      --green-mid: #2d5a27;
+      --green-accent: #4a8c3f;
+      --green-light: #7bc67a;
+      --green-pale: #e8f5e6;
+      --text-primary: #1a1a1a;
+      --text-secondary: #4a4a4a;
+      --text-light: #f5f5f5;
+      --white: #ffffff;
+      --border: #d4e8d0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--white);
+      color: var(--text-primary);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--green-dark);
+      padding: 1rem 1.5rem;
+    }
+
+    header a {
+      color: var(--green-light);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+      color: var(--text-light);
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+
+    .hero .tag {
+      display: inline-block;
+      background: var(--green-accent);
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.2;
+      max-width: 680px;
+      margin: 0 auto 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--green-pale);
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--green-mid);
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.1rem;
+      color: var(--text-secondary);
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 1.2rem 1.5rem;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .callout {
+      background: var(--green-pale);
+      border-left: 4px solid var(--green-accent);
+      border-radius: 0 8px 8px 0;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .callout strong {
+      color: var(--green-dark);
+    }
+
+    /* Comparison Table */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.5rem 0 2rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    thead {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    thead th {
+      padding: 0.85rem 1rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    thead th:first-child {
+      border-radius: 0;
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--green-pale);
+    }
+
+    tbody td {
+      padding: 0.75rem 1rem;
+      vertical-align: top;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+    }
+
+    tbody td:first-child {
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+
+    .check { color: #2d8a27; font-weight: 700; }
+    .cross { color: #c0392b; font-weight: 700; }
+    .partial { color: #e67e22; font-weight: 700; }
+
+    /* FAQ */
+    .faq-section {
+      margin-top: 3rem;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: var(--green-pale);
+      padding: 1rem 1.25rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      font-size: 1rem;
+    }
+
+    .faq-answer {
+      padding: 1rem 1.25rem;
+      color: var(--text-secondary);
+      background: var(--white);
+    }
+
+    /* CTA */
+    .cta-box {
+      background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-dark) 100%);
+      color: var(--white);
+      border-radius: 14px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin: 3rem 0 1rem;
+    }
+
+    .cta-box h2 {
+      color: var(--white);
+      border: none;
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green-dark);
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 0.85rem 2rem;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .cta-btn:hover {
+      background: #a0dba0;
+    }
+
+    footer {
+      background: var(--green-dark);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--green-light);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://pantrymate.net">🌿 PantryMate</a>
+</header>
+
+<div class="hero">
+  <span class="tag">Pantry Cooking Guide</span>
+  <h1>What Can I Cook With What I Have?<br>(The Honest Answer)</h1>
+  <p>How to turn random fridge and pantry ingredients into an actual meal — without a grocery run.</p>
+</div>
+
+<main>
+
+  <p>
+    You open the fridge, stare for thirty seconds, and close it again. Then repeat. It's one of the most universal experiences in home cooking — you <em>have</em> food, but nothing looks like a meal.
+  </p>
+  <p>
+    Here's the honest answer: the ingredients you have right now are almost certainly enough to make something good. The problem isn't your fridge. It's the mental overhead of pattern-matching random ingredients to a dish on the fly.
+  </p>
+  <p>
+    Let's fix that — with a simple framework first, and the right tools second.
+  </p>
+
+  <h2>The Formula That Works Every Time</h2>
+
+  <p>
+    Good meals almost always follow one of these formats:
+  </p>
+
+  <ol>
+    <li><strong>Stir-fry</strong> — protein + vegetable + aromatics (garlic, ginger, onion) + soy sauce or any savory sauce over rice or noodles</li>
+    <li><strong>Frittata / egg dish</strong> — eggs + whatever vegetables or cheese you have, cooked in a pan or oven</li>
+    <li><strong>Soup or stew</strong> — nearly anything simmered in broth with onion and garlic becomes dinner</li>
+    <li><strong>Grain bowl</strong> — rice, quinoa, or any grain + protein + roasted or sautéed vegetables + a drizzle of sauce</li>
+    <li><strong>Pasta improvised</strong> — pasta + whatever's in your fridge + olive oil, garlic, and parmesan if you have it</li>
+  </ol>
+
+  <p>
+    Start by identifying what you have in each of three categories: <strong>protein</strong> (eggs, canned beans, frozen chicken, tofu), <strong>starch</strong> (pasta, rice, bread, potatoes), and <strong>vegetable or aromatics</strong>. If you have at least one from each, you have dinner.
+  </p>
+
+  <h2>How to Actually Stop Wasting Food</h2>
+
+  <p>
+    The average household throws out roughly 30% of the food it buys. That's not laziness — it's a system problem. Ingredients get pushed to the back of the fridge, forgotten, and eventually tossed.
+  </p>
+  <p>
+    The fix is simpler than it sounds: <strong>cook in order of expiry</strong>. Before you plan anything, scan your fridge for what's closest to going bad — wilting herbs, half-used cream, a leftover roasted vegetable. Build tonight's meal around those first.
+  </p>
+
+  <div class="callout">
+    <strong>Quick rule:</strong> Anything that'll be bad in 2 days gets used tonight. Everything else gets used this week. Only <em>then</em> do you check what you're missing and shop for it.
+  </div>
+
+  <p>
+    Keeping a live pantry list — even a basic one on paper — helps enormously. You stop buying duplicates of things you already have, and you start cooking from stock instead of shopping for every individual recipe.
+  </p>
+
+  <h2>When Mental Math Gets Exhausting</h2>
+
+  <p>
+    Manually matching ingredients to recipes is a real cognitive load. You might know five dishes by heart. But when you're tired after work and staring at half a zucchini, some canned tomatoes, and leftover chicken, the mental gap between "I have these things" and "here's what I'm making" is genuinely hard.
+  </p>
+  <p>
+    This is exactly what <a href="https://pantrymate.net" style="color: var(--green-accent); font-weight: 600;">PantryMate</a> is built for. You enter what you have — by scanning barcodes, typing, or using voice — and it matches recipes ranked by the percentage of ingredients you already own. No recipe that calls for 14 things you don't have. Just real, cookable meals from what's actually in your kitchen right now.
+  </p>
+  <p>
+    It also tracks expiry dates and flags what needs to be used soon — so you get a gentle nudge before the zucchini becomes a science experiment.
+  </p>
+
+  <h2>PantryMate vs. Your Other Options</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Speed</th>
+          <th>Tracks what you own</th>
+          <th>Expiry alerts</th>
+          <th>Gets better over time</th>
+          <th>Free</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PantryMate</td>
+          <td>~1 min setup</td>
+          <td><span class="check">✓ Yes</span></td>
+          <td><span class="check">✓ Yes</span></td>
+          <td><span class="check">✓ Yes</span></td>
+          <td><span class="check">✓ Yes</span></td>
+        </tr>
+        <tr>
+          <td>Typing into ChatGPT</td>
+          <td>Slow (manual every time)</td>
+          <td><span class="cross">✗ No</span></td>
+          <td><span class="cross">✗ No</span></td>
+          <td><span class="cross">✗ No</span></td>
+          <td><span class="partial">~ Limited</span></td>
+        </tr>
+        <tr>
+          <td>Googling recipes manually</td>
+          <td>Slow</td>
+          <td><span class="cross">✗ No</span></td>
+          <td><span class="cross">✗ No</span></td>
+          <td><span class="cross">✗ No</span></td>
+          <td><span class="check">✓ Yes</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    ChatGPT is genuinely useful for a one-off "what can I make with eggs, spinach, and cream cheese?" — but you have to re-type your pantry every single time. It has no memory of what you own, no expiry awareness, and no integration with a shopping list. It's a workaround, not a system.
+  </p>
+  <p>
+    PantryMate is the difference between a tool you use once and a system that makes every week easier.
+  </p>
+
+  <h2>Practical Tips to Use Right Now</h2>
+
+  <ul>
+    <li><strong>Do a 5-minute fridge audit tonight.</strong> Group what you see by protein / starch / vegetable. Pick one from each and name the dish. You'll be surprised how quickly it clicks.</li>
+    <li><strong>Keep a "use first" shelf</strong> at eye level in your fridge. Anything that's about to expire lives there — guaranteed to be seen every time you open the door.</li>
+    <li><strong>Mise en place your pantry</strong> once. Spend 20 minutes pulling everything out of your cupboard, grouping by category, and tossing anything expired. You'll cook from it more often once you can see it clearly.</li>
+    <li><strong>Stock five flavor-makers.</strong> Garlic, soy sauce, olive oil, canned tomatoes, and some kind of vinegar. These turn nearly any combination of proteins and vegetables into something worth eating.</li>
+    <li><strong>Plan backwards from your expiring ingredients,</strong> not forwards from a recipe. Ask "what needs to be used?" first, then "what can I make with this?"</li>
+  </ul>
+
+  <h2>For Busy Families: Making It Sustainable</h2>
+
+  <p>
+    The meal-planning challenge for families isn't finding recipes — it's the weekly friction of figuring out what you have, what you need, and what to actually make. A system that reduces that friction to near zero is the only kind that sticks.
+  </p>
+  <p>
+    PantryMate works well for households with multiple people because everyone can see the shared pantry. One person adds ingredients when they unpack groceries; everyone can see what's available and plan around it. The shopping list builds automatically from gaps — not from a handwritten note that gets left on the counter.
+  </p>
+
+  <!-- FAQ Section -->
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">What can I make with the ingredients I have at home?</div>
+      <div class="faq-answer">
+        Start with your protein (eggs, beans, meat, tofu), then add a starch (pasta, rice, bread) and whatever vegetable or aromatics you have. Most good home meals follow a simple formula: protein + starch + vegetable + sauce. If you're drawing a blank, PantryMate can match your exact inventory to cookable recipes in seconds.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is the best app for cooking from pantry ingredients?</div>
+      <div class="faq-answer">
+        PantryMate is designed specifically for this. It lets you log what you have (by scanning, typing, or voice), tracks expiry dates, and surfaces recipes ranked by how many of their ingredients you already own. It's the only tool that builds a persistent pantry model so suggestions get better over time.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I stop wasting food at home?</div>
+      <div class="faq-answer">
+        Cook in order of expiry. Before planning meals, check what's closest to going bad and build around that first. Keeping a live pantry inventory — paper or app-based — stops you from buying duplicates and reminds you to use what you already have. PantryMate automates this with expiry alerts and "use soon" flags.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What should I cook tonight with what's in my fridge?</div>
+      <div class="faq-answer">
+        Open your fridge and find: anything expiring soon, a protein, and a vegetable. Match those to a simple format — stir-fry, pasta, frittata, or a grain bowl. If you're stuck, enter your ingredients into PantryMate for instant ranked recipe suggestions.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is the best meal planning app for busy families?</div>
+      <div class="faq-answer">
+        For families who want to reduce waste and cook from what they have, PantryMate combines pantry tracking, expiry alerts, meal suggestions, and shared shopping lists. It reduces the weekly "what do we have / what do we need?" friction to a few taps.
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h2>Try PantryMate Free</h2>
+    <p>Add what's in your fridge. Get real meal ideas in under a minute. No subscription required to start.</p>
+    <a href="https://pantrymate.net" class="cta-btn">Get PantryMate →</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 <a href="https://pantrymate.net">PantryMate</a> · Cook smarter. Waste less.</p>
+</footer>
+
+</body>
+</html>

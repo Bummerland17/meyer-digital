@@ -1,0 +1,147 @@
+
+=== 2026-03-05 16:00 UTC — Alex Outbound Campaign ===
+Total queue: 110 leads
+Actually dialed: 9
+Daily limit errors: 14
+Transport errors: 5
+
+RESULTS:
+- COLD: Dental on Central (+16022661776) — hung up 5s
+- COLD: Life Smiles Dental Care (+16027865484) — hung up 14s
+- COLD: ATLAS Physical Therapy (+13038323700) — hung up 24s
+- COLD: Silk Touch Med Spa (+12089393110) — hung up 10s
+- COLD: Haus of Aesthetics (+18019978199) — WRONG NUMBER (hospice), not interested, 37s
+- VOICEMAIL: REJUV Medspa (+12088843800) — voicemail left
+- VOICEMAIL: Altitude Medspa (+18012302822) — voicemail left
+- IN PROGRESS: Arizona Biltmore Dentistry (+16027373624)
+- IN PROGRESS: Biltmore Dental Center (+16029548200)
+
+HOT LEADS: 0
+EMAILS SENT: 0 (no hot leads)
+RETRY QUEUE: 103 leads saved for 2026-03-06 16:00 UTC
+
+ISSUE: Vapi outbound daily limit hit almost immediately. Campaign only reached 9/110 leads.
+ACTION: Increase Vapi plan limit or distribute across multiple phone numbers.
+
+🔥 Firing 110 SmartBook AI calls — 16:00 UTC
+
+✅ Altitude Medspa (Salt Lake City) → 019cbeba-3a9a-7000-8
+✅ Haus of Aesthetics (Salt Lake City) → 019cbeba-6a63-7ee0-a
+✅ Silk Touch Med Spa (Boise) → 019cbeba-9a28-7445-8
+✅ REJUV Medspa (Boise) → 019cbeba-c9b0-755c-a
+✅ ATLAS Physical Therapy (Denver) → 019cbeba-f941-766d-9
+✅ Life Smiles Dental Care (Phoenix) → 019cbebb-2b69-733e-9
+✅ Dental on Central (Phoenix) → 019cbebb-8040-755d-a
+✅ Arizona Biltmore Dentistry (Phoenix) → 019cbebb-b004-7668-9
+✅ Biltmore Dental Center (Phoenix) → 019cbebb-dfa8-755d-a
+✅ Smile Dental Clinics (Phoenix) → 019cbebc-0f3e-722d-8
+✅ WALK IN - SAME DAY Treatment Dental (Phoenix) → 019cbebc-3f21-7881-a
+✅ Paradise Ridge Dentistry (Phoenix) → 019cbebc-6e9f-7ee0-a
+✅ Dental Specialty Associates (Phoenix) → 019cbebc-9e59-722d-8
+✅ Open Wide Dental - Phoenix (Phoenix) → 019cbebc-ce0e-7110-8
+✅ The Society Of St. Vincent De Paul (Phoenix) → 019cbebd-3229-7ee0-a
+❌ Risas Dental and Braces - Phoenix Central (Phoenix) → ['customer.name must be shorter than or equal to 40 characters']
+✅ 7 North Dental (Phoenix) → 019cbebd-96d6-7222-9
+✅ 24th Street Dental Biltmore (Phoenix) → 019cbebd-c70f-7dd3-9
+✅ Thomas Dental (Phoenix) → 019cbebd-f687-7881-a
+✅ North Central Family Dentistry (Phoenix) → 019cbebe-2609-7dd3-9
+✅ Weekend Dental Care (Phoenix) → 019cbebe-55cb-755c-a
+✅ Downtown Phoenix Dental (Phoenix) → 019cbebe-8559-7996-b
+✅ Westwind Dental Phoenix (Phoenix) → 019cbebe-b57b-711b-9
+✅ All Smiles Dental Care - Phoenix (Phoenix) → 019cbebe-e63d-722c-b
+✅ 19th Ave Dental Care (Phoenix) → 019cbebf-15e3-722c-b
+✅ Central Dental (Phoenix) → 019cbebf-455b-7ee7-8
+✅ Radiant Smiles Phoenix (Phoenix) → 019cbebf-74dc-7776-9
+✅ Phoenix Dental Design (Phoenix) → 019cbebf-a46f-7000-8
+✅ Arcadia Dental Group (Phoenix) → 019cbebf-d403-7668-9
+✅ We Care Dental Phoenix, AZ (Phoenix) → 019cbec0-0382-7dd3-9
+✅ Bell Road Dental Care of Phoenix (Phoenix) → 019cbec0-3308-777f-a
+✅ Diamond Dental (Phoenix) → 019cbec0-6299-755d-a
+✅ Anytime Dental (Phoenix) → 019cbec0-920b-777f-a
+✅ Downtown Smiles Phoenix Dental Care (Phoenix) → 019cbec0-c1a3-7ee0-a
+✅ Highland Dental Studio Phoenix (Phoenix) → 019cbec0-f144-7881-a
+✅ Brighter Way Dental Center (Phoenix) → 019cbec1-2300-7881-a
+✅ Dental Brothers & Smile Dental Studio (Phoenix) → 019cbec1-52af-7aa4-b
+✅ Family Dental Phoenix (Phoenix) → 019cbec1-823c-7229-b
+✅ Agave Dental (Phoenix) → 019cbec1-b1c0-7aa4-b
+✅ Encanto Family Dental Care (Phoenix) → 019cbec1-e1c3-722c-b
+✅ Orthodontic Associates (Phoenix) → 019cbec2-118c-7774-b
+✅ Vincent G. Sotero, D.M.D. (Phoenix) → 019cbec2-412f-733b-b
+✅ Healing Dentistry Dental clinic (Phoenix) → 019cbec2-70ce-7226-9
+✅ AZ Family Dental - Phoenix (Phoenix) → 019cbec2-a059-7668-9
+✅ Highrise Dental (Phoenix) → 019cbec2-cfe5-788b-b
+✅ Dental Therapy - Phoenix (Phoenix) → 019cbec2-ff6e-7222-9
+✅ 1800 Emergency Dentist Phoenix 24 Hour (Phoenix) → 019cbec3-388b-777f-a
+✅ AZ DENTAL (Phoenix) → 019cbec3-6878-7ee4-a
+✅ VA Dental (Phoenix) → 019cbec3-984e-7996-b
+✅ Phoenix Medcom Inc (Phoenix) → 019cbec3-c7ea-7229-b
+✅ Ahwatukee Dentistry (Phoenix) → 019cbec3-f7a0-755d-a
+✅ Hi-Fi Dental (Phoenix) → 019cbec4-273c-7ee4-a
+✅ Scottsdale Dental Studio (Scottsdale) → 019cbec4-5762-7881-a
+✅ Scottsdale Dental Solutions (Scottsdale) → 019cbec4-8716-7222-9
+✅ Sonoran Desert Dentistry (Scottsdale) → 019cbec4-b6a7-722c-b
+✅ Scottsdale Family Dentistry (Scottsdale) → 019cbec4-e627-7227-a
+✅ North Scottsdale Dentistry (Scottsdale) → 019cbec5-174e-711b-9
+✅ Dentistry of Old Town Scottsdale (Scottsdale) → 019cbec5-46d6-7881-a
+✅ Arizona Healthy Smiles (Tempe) → 019cbec5-764b-7229-b
+✅ Tempe Dental Care (Tempe) → 019cbec5-a5e3-733e-9
+✅ Tempe Smile Design (Tempe) → 019cbec5-d9b1-7222-9
+✅ Sweet Skin Medspa (Phoenix) → 019cbec6-092e-7776-9
+✅ CNT Medspa (Phoenix) → 019cbec6-38b2-7668-9
+✅ Innova MedSpa (Phoenix) → 019cbec6-684b-755d-a
+✅ Willo MediSpa (Phoenix) → 019cbec6-9822-755d-a
+✅ Love Aesthetics & Wellness (Scottsdale) → 019cbec6-c7d0-788b-b
+✅ Village Animal Clinic Phoenix (Phoenix) → 019cbec6-f79d-7226-9
+✅ Camelback Animal Clinic (Phoenix) → 019cbec7-2728-788b-b
+✅ Central Phoenix Animal Hospital (Phoenix) → 019cbec7-56c0-7996-b
+✅ Sugarloaf Animal Clinic (Phoenix) → 019cbec7-864a-711b-9
+✅ Arizona Physical Therapy Specialists (Phoenix) → 019cbec7-b5bf-755c-a
+✅ Salt Lake City Dental Center (Salt Lake City) → 019cbec7-e53a-7227-a
+✅ The Sugar House Dentist (Salt Lake City) → 019cbec8-1510-7996-b
+✅ Highland Dental Center (Salt Lake City) → 019cbec8-45be-788b-b
+✅ SLC Med Spa (Salt Lake City) → 019cbec8-7553-7ee4-a
+✅ RO Aesthetics (Salt Lake City) → 019cbec8-a4db-7776-a
+✅ Pet Stop Veterinary Clinic (Salt Lake City) → 019cbec8-d460-7dd3-9
+✅ Lake City Veterinary Clinic (Salt Lake City) → 019cbec9-0755-7dd3-9
+✅ OG Dental Denver (Denver) → 019cbec9-36fa-755c-a
+✅ RiNo Dental (Denver) → 019cbec9-6672-7229-b
+✅ Barotz Dental (Denver) → 019cbec9-95f0-7557-a
+✅ Always Beautiful Medspa (Denver) → 019cbec9-c59e-7881-a
+✅ Founders Green Animal Hospital (Denver) → 019cbec9-f542-788b-b
+✅ Allbrick Veterinary Clinic (Denver) → 019cbeca-25a9-7226-9
+✅ Hermosa Veterinary Clinic (Denver) → 019cbeca-5525-7226-9
+✅ Park Hill Veterinary Medical Center (Denver) → 019cbeca-84a2-733b-b
+✅ Active Solutions Physical Therapy (Boulder) → 019cbeca-b41d-711b-9
+✅ Bird Family Dental (Boise) → 019cbeca-e3b1-755c-a
+✅ New Leaf Dental (Meridian) → 019cbecb-135b-7ee4-a
+✅ Emerald Smiles Dentistry (Boise) → 019cbecb-42de-7772-b
+✅ The Spa Boise (Boise) → 019cbecb-725d-733b-b
+✅ Prophecy Med Spa Boise (Boise) → 019cbecb-a1e4-711b-9
+✅ Bench Animal Hospital (Boise) → 019cbecb-d3f0-7776-a
+✅ Critter Clinic Boise (Boise) → 019cbecc-03d4-7aa2-b
+✅ Southwest Vegas Smiles (Las Vegas) → 019cbecc-3361-7229-b
+✅ Town Center Dental Las Vegas (Las Vegas) → 019cbecc-62db-7222-9
+✅ Las Vegas Dental Group (Las Vegas) → 019cbecc-928f-7229-b
+✅ Advanced Aesthetics LV (Las Vegas) → 019cbecc-c276-7aa2-b
+✅ Simply Radiant LV (Las Vegas) → 019cbecc-f218-7229-b
+✅ Beauty Factory MedSpa (Las Vegas) → 019cbecd-2196-7776-9
+✅ Chic la Vie Med Spa (Las Vegas) → 019cbecd-511a-7776-a
+✅ Performance Physical Therapy LV (Las Vegas) → 019cbecd-80b4-7ee0-a
+✅ Achieve Physical Therapy LV (Las Vegas) → 019cbecd-b09c-7772-b
+✅ ABQ Dentists (Albuquerque) → 019cbecd-e024-722c-b
+✅ ABQ Gentle Dentistry (Albuquerque) → 019cbece-0fa1-7227-a
+✅ Blue Sky Dental ABQ (Albuquerque) → 019cbece-3f28-788b-b
+✅ Riverpoint Family Dental (Albuquerque) → 019cbece-6ea1-788b-b
+✅ AlluraDerm MD MedSpa (Albuquerque) → 019cbece-9e31-7996-b
+✅ Bair Medical Spa ABQ (Albuquerque) → 019cbece-cdc6-733b-b
+✅ Look Rejuvenated Med Spa ABQ (Albuquerque) → 019cbece-fd49-7772-b
+
+📞 SmartBook AI calls complete
+109/110 calls fired
+Check call-results-smartbook.json for details
+❌ Failed info@localjh.com: (550, b'5.4.6 Unusual sending activity detected. <a href=https://www.zoho.com/mail/help/usage-policy.html target=_blank>Learn more.</a> To unblock <a href=https://mail.zoho.com/UnblockMe target=_blank>Click here.</a>')
+❌ Failed info@jacksonsouthtown.com: (550, b'5.4.6 Unusual sending activity detected. <a href=https://www.zoho.com/mail/help/usage-policy.html target=_blank>Learn more.</a> To unblock <a href=https://mail.zoho.com/UnblockMe target=_blank>Click here.</a>')
+❌ Failed olcowboy21@gmail.com: (550, b'5.4.6 Unusual sending activity detected. <a href=https://www.zoho.com/mail/help/usage-policy.html target=_blank>Learn more.</a> To unblock <a href=https://mail.zoho.com/UnblockMe target=_blank>Click here.</a>')
+📧 Priority email retry complete
+✅ 0/3 sent
+❌ Still failed: info@localjh.com, info@jacksonsouthtown.com, olcowboy21@gmail.com

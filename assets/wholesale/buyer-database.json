@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Valley Home Buyer",
+    "company": "Valley Home Buyer",
+    "phone": "(602) 734-3662",
+    "email": "",
+    "website": "https://www.valleyhomebuyer.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Active 'We Buy Houses' company in Phoenix metro. Recent blog post Jan 2026."
+  },
+  {
+    "name": "Doug Hopkins",
+    "company": "Doug Hopkins Real Estate",
+    "phone": "",
+    "email": "",
+    "website": "https://www.doughopkins.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Well-established Phoenix cash buyer. AS-IS offers within 24 hours. Large operation."
+  },
+  {
+    "name": "AZ Home Buyer LLC",
+    "company": "AZ Home Buyer LLC",
+    "phone": "(480) 331-1819",
+    "email": "",
+    "website": "https://www.azhomebuyer.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Local AZ cash buyer. No commissions/fees. Choose closing date."
+  },
+  {
+    "name": "Cash For Homes Arizona",
+    "company": "Cash For Homes Arizona",
+    "phone": "(480) 680-8927",
+    "email": "",
+    "website": "https://www.cashforhomesarizona.com",
+    "buy_box": {
+      "areas": ["Phoenix metro", "Arizona statewide"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Buy any condition in AZ. Cash offer focus."
+  },
+  {
+    "name": "HBSB Holdings",
+    "company": "HBSB Holdings / PHX Investment Properties",
+    "phone": "",
+    "email": "",
+    "website": "https://www.hbsbholdings.com",
+    "buy_box": {
+      "areas": ["Phoenix metro", "Glendale"],
+      "price_range": "",
+      "property_types": ["SFR", "MFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "fix_and_flip_investor",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Invests across Phoenix metro. Fix and flip focus. Also phxinvestmentproperties.com."
+  },
+  {
+    "name": "LRT Offers",
+    "company": "LRT Offers",
+    "phone": "",
+    "email": "",
+    "website": "https://lrtoffers.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Top cash investor pick for distressed Phoenix properties. No-obligation offers."
+  },
+  {
+    "name": "The Trusted Home Buyer",
+    "company": "The Trusted Home Buyer",
+    "phone": "",
+    "email": "",
+    "website": "https://www.thetrustedhomebuyer.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Phoenix area cash buyer. Claims 7-day close."
+  },
+  {
+    "name": "Joint Venture Properties",
+    "company": "Joint Venture Properties",
+    "phone": "",
+    "email": "",
+    "website": "https://www.jointventure-properties.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR", "MFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Phoenix AZ cash buyers, any condition or situation."
+  },
+  {
+    "name": "We Buy Houses in Arizona",
+    "company": "We Buy Houses in Arizona",
+    "phone": "(602) 900-9327",
+    "email": "",
+    "website": "https://www.yelp.com/biz/we-buy-houses-in-arizona-phoenix",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Open 24 hours. Physical address: 3104 E Camelback Rd, Ste 2112, Phoenix AZ 85016."
+  },
+  {
+    "name": "We Buy Homes in AZ",
+    "company": "We Buy Homes in AZ",
+    "phone": "(480) 637-5500",
+    "email": "",
+    "website": "https://www.webuyhomesinaz.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Motivated seller program. Cash for houses in Phoenix."
+  },
+  {
+    "name": "Great Flips Wholesale",
+    "company": "Great Flips Wholesale Property",
+    "phone": "",
+    "email": "",
+    "website": "https://greatflips.com",
+    "buy_box": {
+      "areas": ["Phoenix metro", "Maricopa County"],
+      "price_range": "",
+      "property_types": ["SFR", "condos"],
+      "max_arv_percent": null,
+      "prefers": "assignment"
+    },
+    "type": "wholesale_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Phoenix wholesale houses & condos. Off-market deals across Maricopa County. Also buys, builds, rehabs & sells SFRs."
+  },
+  {
+    "name": "Reivesti",
+    "company": "Reivesti",
+    "phone": "",
+    "email": "",
+    "website": "https://www.reivesti.com/phoenix-az-wholesale-real-estate/",
+    "buy_box": {
+      "areas": ["Phoenix metro", "Maricopa County"],
+      "price_range": "",
+      "property_types": ["SFR", "MFR"],
+      "max_arv_percent": null,
+      "prefers": "assignment"
+    },
+    "type": "wholesale_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Source for off-market Phoenix wholesale investment deals."
+  },
+  {
+    "name": "AZ REO Group",
+    "company": "AZ REO Group",
+    "phone": "",
+    "email": "",
+    "website": "https://azreogroup.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR", "MFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "wholesale_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Buys and sells wholesale real estate in the Phoenix metro area."
+  },
+  {
+    "name": "Investment Homes Phoenix",
+    "company": "Investment Homes Phoenix",
+    "phone": "",
+    "email": "",
+    "website": "https://www.investmenthomesphoenix.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "assignment"
+    },
+    "type": "wholesale_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Off-market Phoenix properties, wholesale to investors."
+  },
+  {
+    "name": "New Western (Phoenix)",
+    "company": "New Western",
+    "phone": "",
+    "email": "",
+    "website": "https://www.newwestern.com/wholesale-real-estate/phoenix-az/",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR", "MFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "wholesale_marketplace",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Large wholesale marketplace with licensed agents in Phoenix. May also buy deals."
+  },
+  {
+    "name": "Opendoor",
+    "company": "Opendoor Technologies",
+    "phone": "",
+    "email": "",
+    "website": "https://www.opendoor.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "ibuyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "iBuyer. ~72,000 transactions. Cash offers within 24h. Large Phoenix presence. May not take assignments."
+  },
+  {
+    "name": "Offerpad",
+    "company": "Offerpad",
+    "phone": "",
+    "email": "",
+    "website": "https://www.offerpad.com/sell/phoenix-az/",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "ibuyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Phoenix iBuyer. Close in 7-60 days. May not take assignments — verify first."
+  },
+  {
+    "name": "FSO Capital Partners",
+    "company": "FSO Capital Partners",
+    "phone": "",
+    "email": "",
+    "website": "https://www.fsocap.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "$1M+",
+      "property_types": ["MFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "private_equity_multifamily",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Phoenix PE firm specializing in undervalued multifamily. Institutional. Send MFR deals only."
+  },
+  {
+    "name": "Amazing Offer Arizona",
+    "company": "Amazing Offer Arizona",
+    "phone": "",
+    "email": "",
+    "website": "https://amazingoffer.com",
+    "buy_box": {
+      "areas": ["Phoenix metro"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Fast cash offers for Phoenix homes, any condition."
+  },
+  {
+    "name": "Unbiased Options",
+    "company": "Unbiased Options",
+    "phone": "",
+    "email": "",
+    "website": "https://unbiasedoptions.com/glendale/",
+    "buy_box": {
+      "areas": ["Glendale", "West Valley"],
+      "price_range": "",
+      "property_types": ["SFR"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "direct_cash_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Glendale/Arizona Valley home buyer. Send West Valley deals."
+  },
+  {
+    "name": "Shelter Asset Management",
+    "company": "Shelter Asset Management",
+    "phone": "",
+    "email": "",
+    "website": "https://www.bizjournals.com/phoenix/news/2026/02/27/shelter-asset-management-maricopa-apartments.html",
+    "buy_box": {
+      "areas": ["Phoenix metro", "Maricopa"],
+      "price_range": "$5M+",
+      "property_types": ["MFR", "apartments"],
+      "max_arv_percent": null,
+      "prefers": "unknown"
+    },
+    "type": "institutional_buyer",
+    "status": "not_contacted",
+    "last_contact": null,
+    "notes": "Just opened first phase of Maricopa project (Feb 2026). Active institutional buyer. Multifamily/apartment focus only."
+  }
+]

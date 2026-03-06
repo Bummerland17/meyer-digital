@@ -1,0 +1,23 @@
+{
+  "slug": "landlord-maintenance-templates",
+  "name": "Landlord Maintenance Kit",
+  "tagline": "Every maintenance form a landlord needs. Stop rewriting the same emails and tracking repairs in your head.",
+  "problem": "Managing maintenance requests without a system is a slow disaster. Tenants text at 11pm. You forget what you promised. Contractors ghost you. Then a small repair turns into a dispute because neither party has anything in writing. Property management software costs $50-200/month and is overkill if you have 1-10 units.",
+  "solution": "A Notion workspace + Google Sheets tracker built specifically for small landlords (1-20 units). Covers the full maintenance lifecycle: tenant submits request → you log it → contractor assigned → work confirmed → closed. Includes 12 fill-in-the-blank email templates for every maintenance scenario.",
+  "price": 9.00,
+  "price_type": "one-time",
+  "category": "digital-product",
+  "bullets": [
+    "Notion workspace: maintenance request log, contractor contact book, open/closed board",
+    "Google Sheets version included (for people who don't use Notion)",
+    "12 email templates: initial response, contractor assignment, work confirmation, tenant follow-up, dispute response, and more",
+    "One-page 'maintenance policy' template to include in your lease",
+    "Warranty tracker tab — never lose a warranty document again",
+    "Works for 1 property or 20 — just duplicate the board"
+  ],
+  "guarantee": "If it doesn't save you time on your next maintenance request, email for a full refund.",
+  "day1_launch_plan": "Post in r/Landlord (170k members) with title: 'Made a free Notion template for tracking maintenance requests — happy to share'. Offer the Notion board free, mention the full kit (email templates, policy template, warranty tracker) is $9. Also post in r/realestateinvesting and r/PropertyManagement. r/Landlord community is very active and loves practical tools.",
+  "expected_first_sale": "Same day as Reddit post — $9 is impulse-buy territory for landlords",
+  "fast_roi_estimate_days": 1,
+  "kill_if_no_sale_by": "7 days post-launch"
+}

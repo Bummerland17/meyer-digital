@@ -1,0 +1,22 @@
+{
+  "qa_runner_version": "1.0.0",
+  "timestamp": "2026-03-04 09:52:13 UTC",
+  "file": "/tmp/test-email.txt",
+  "content_type": "compliance",
+  "result": {
+    "checklist": "compliance-qa",
+    "verdict": "PASS",
+    "criteria_results": {
+      "tcpa_ai_disclosure": "N/A",
+      "dnc_opt_out_mechanism": "PASS",
+      "no_income_guarantees": "PASS",
+      "no_fake_urgency": "PASS",
+      "no_brand_impersonation": "PASS",
+      "can_spam_unsubscribe": "PASS",
+      "no_misleading_subject": "PASS"
+    },
+    "violations": [],
+    "reviewer_notes": "Shield's automated compliance review. 0 violation(s) found.",
+    "action": "Compliance check passed. Content cleared for delivery."
+  }
+}

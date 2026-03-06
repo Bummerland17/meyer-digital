@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2026-03-04T17:17:06.310713Z",
+    "action": "FLAG_BUSINESS_TYPE_CLEANUP",
+    "detail": "Dead business types identified but no targeting.json found: ['unknown']",
+    "result": "Manual: remove from outreach targeting list"
+  },
+  {
+    "date": "2026-03-04",
+    "action": "FLAG_FOR_SCRIBE",
+    "detail": "Hangup rate 100.0% \u2014 call opener needs QA rewrite",
+    "result": "\u26a0\ufe0f FLAGGED \u2014 requires Scribe review before applying"
+  },
+  {
+    "date": "2026-03-04",
+    "action": "FLAG_FOR_PIXEL",
+    "detail": "Refund $14.00 \u2014 possible UX/onboarding issue",
+    "result": "\u26a0\ufe0f FLAGGED \u2014 review onboarding flow"
+  },
+  {
+    "date": "2026-03-06T04:10:18.755425Z",
+    "action": "FLAG_BUSINESS_TYPE_CLEANUP",
+    "detail": "Dead business types identified but no targeting.json found: ['unknown']",
+    "result": "Manual: remove from outreach targeting list"
+  },
+  {
+    "date": "2026-03-06",
+    "action": "FLAG_FOR_SCRIBE",
+    "detail": "Hangup rate 100.0% \u2014 call opener needs QA rewrite",
+    "result": "\u26a0\ufe0f FLAGGED \u2014 requires Scribe review before applying"
+  },
+  {
+    "date": "2026-03-06",
+    "action": "FLAG_FOR_PIXEL",
+    "detail": "Refund $14.00 \u2014 possible UX/onboarding issue",
+    "result": "\u26a0\ufe0f FLAGGED \u2014 review onboarding flow"
+  }
+]

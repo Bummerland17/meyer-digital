@@ -1,0 +1,42 @@
+{
+  "account_username": "TBD_by_Wolfgang",
+  "created_date": "TBD",
+  "karma": 0,
+  "comments_posted": 0,
+  "status": "pending_account_creation",
+  "ready_to_promote": false,
+  "target_karma": 100,
+  "days_active": 0,
+  "notes": [
+    "Account must be created on fresh IP (mobile data or new VPN server)",
+    "Fresh email required - not olcowboy21@gmail.com",
+    "Wait 3 days after account creation before first comment",
+    "Shadow-ban test: visit reddit.com/user/[username] while logged out",
+    "Promotion window opens at day 17-21 IF karma >= 100"
+  ],
+  "milestones": {
+    "account_created": false,
+    "profile_complete": false,
+    "first_comment": false,
+    "karma_50": false,
+    "karma_100": false,
+    "ready_for_soft_promo": false
+  },
+  "businesses": {
+    "PantryMate": {
+      "first_mention_allowed_after_days": 17,
+      "subreddits": ["r/mealplanning", "r/EatCheapAndHealthy", "r/Frugal"],
+      "trigger": "Someone directly asks about apps or tools for meal planning"
+    },
+    "SmartBook_AI": {
+      "first_mention_allowed_after_days": 21,
+      "subreddits": ["r/realestateinvesting", "r/Entrepreneur"],
+      "trigger": "Someone asks about booking systems or managing client appointments"
+    },
+    "UnitFix": {
+      "first_mention_allowed_after_days": 21,
+      "subreddits": ["r/realestateinvesting", "r/landlord"],
+      "trigger": "Someone mentions property management pain points or maintenance tracking"
+    }
+  }
+}

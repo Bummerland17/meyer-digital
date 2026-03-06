@@ -1,0 +1,302 @@
+[
+  {
+    "name": "AZ Family Dental",
+    "city": "Phoenix, AZ",
+    "phone": null,
+    "website": "https://www.azfd.com/locations/phoenix/",
+    "review_count": "300+",
+    "fit_reason": "Multi-location dental group serving Phoenix for 40+ years. Multiple offices = high inbound call volume for booking across locations. Likely overwhelmed front desk juggling multi-site scheduling — perfect AI phone answering fit.",
+    "category": "dental",
+    "fit_score": 9
+  },
+  {
+    "name": "Western Dental - Phoenix",
+    "city": "Phoenix, AZ",
+    "phone": null,
+    "website": "https://www.westerndental.com/en-us/find-a-location/arizona/phoenix/",
+    "review_count": "500+",
+    "fit_reason": "Large multi-location dental chain with multiple Phoenix locations. High-volume patient booking, busy front desks across sites. Brand spends heavily on scheduling tools — clear $2k+/month booking spend.",
+    "category": "dental",
+    "fit_score": 9
+  },
+  {
+    "name": "West Wind Integrated Health",
+    "city": "Phoenix, AZ",
+    "phone": null,
+    "website": "https://westwindintegratedhealth.com/",
+    "review_count": "200+",
+    "fit_reason": "Phoenix dental group with easy online scheduling emphasized — they already know booking is a key pain point. Dental + integrated health = multiple appointment types with complex scheduling needs.",
+    "category": "dental",
+    "fit_score": 7
+  },
+  {
+    "name": "Norterra Dental Group and Orthodontics",
+    "city": "Phoenix, AZ",
+    "phone": null,
+    "website": "https://www.norterradentalgroup.com/",
+    "review_count": "250+",
+    "fit_reason": "Dental group with orthodontics = two revenue streams and high appointment volume. Group practice name signals multiple providers; every missed call is a missed patient.",
+    "category": "dental",
+    "fit_score": 8
+  },
+  {
+    "name": "Tramonto Dental Group and Orthodontics",
+    "city": "Phoenix, AZ",
+    "phone": null,
+    "website": "https://www.tramontodentalgroup.com/",
+    "review_count": "200+",
+    "fit_reason": "Dental + orthodontics combo group practice in Phoenix. High appointment volume from dual specialty. Part of a dental group network — scalable AI phone solution across multiple sites.",
+    "category": "dental",
+    "fit_score": 8
+  },
+  {
+    "name": "Peak Dental Services - Colorado",
+    "city": "Denver, CO",
+    "phone": null,
+    "website": "https://peakdentalservices.com/locations/colorado/",
+    "review_count": "300+",
+    "fit_reason": "Multi-location dental group across Colorado explicitly focused on growing dental careers at scale. Multiple offices = centralized scheduling pain point. DSO-level operation spending heavily on admin.",
+    "category": "dental",
+    "fit_score": 9
+  },
+  {
+    "name": "City Park Dental Group",
+    "city": "Denver, CO",
+    "phone": null,
+    "website": "https://www.cityparkdentalgroup.com/",
+    "review_count": "200+",
+    "fit_reason": "Dental group branding in a high-density Denver neighborhood. Group practice with multi-provider scheduling needs. Emphasis on scheduling experience in their messaging.",
+    "category": "dental",
+    "fit_score": 7
+  },
+  {
+    "name": "Elite Dental Group",
+    "city": "Denver, CO",
+    "phone": null,
+    "website": "https://www.facebook.com/elitedentalgroupco/",
+    "review_count": "150+",
+    "fit_reason": "Explicitly described as 'a dental clinic with multiple locations throughout' Denver. Multi-site scheduling is their core operational challenge — ideal AI phone answering candidate.",
+    "category": "dental",
+    "fit_score": 8
+  },
+  {
+    "name": "Corson Dentistry",
+    "city": "Denver, CO",
+    "phone": null,
+    "website": "https://www.corsondentistry.com/",
+    "review_count": "200+",
+    "fit_reason": "3 convenient locations near Denver. Multi-location practice with high patient volume. Strong reviews indicate established revenue base well above $2k/month on booking.",
+    "category": "dental",
+    "fit_score": 8
+  },
+  {
+    "name": "Whitewater Oral Surgery Group",
+    "city": "Boise, ID",
+    "phone": null,
+    "website": "https://whitewatersurgery.com/",
+    "review_count": "200+",
+    "fit_reason": "Oral surgery group with multiple office locations throughout Idaho. Surgical specialty = high-value appointments ($500-$3000+). Every missed call is significant lost revenue. Multiple locations = centralized phone volume.",
+    "category": "dental",
+    "fit_score": 9
+  },
+  {
+    "name": "Summit Dental Group",
+    "city": "Boise, ID",
+    "phone": null,
+    "website": "https://www.boise-dentists.com/",
+    "review_count": "200+",
+    "fit_reason": "Led by four dentists — high provider-to-patient ratio signals busy practice. Multi-provider dental group in Boise with substantial booking demand.",
+    "category": "dental",
+    "fit_score": 7
+  },
+  {
+    "name": "Dentists of Boise and Orthodontics",
+    "city": "Boise, ID",
+    "phone": null,
+    "website": "https://www.dentistsofboise.com/",
+    "review_count": "200+",
+    "fit_reason": "Dental + orthodontics group practice. Plural 'dentists' branding signals multi-provider busy operation. Orthodontic scheduling alone is complex and recurring.",
+    "category": "dental",
+    "fit_score": 7
+  },
+  {
+    "name": "Rejuvenate Colorado Med Spa",
+    "city": "Denver, CO (multiple: Cherry Creek, Golden, Colorado Springs)",
+    "phone": null,
+    "website": "https://www.rejuvenatecolorado.com/",
+    "review_count": "300+",
+    "fit_reason": "Multi-location med spa with 3+ locations. High-volume aesthetics (Botox, fillers, laser). Appointment-driven revenue model with premium service pricing. Multi-site = distributed phone volume ideal for AI centralization.",
+    "category": "medspa",
+    "fit_score": 10
+  },
+  {
+    "name": "Novuskin Med Spa",
+    "city": "Denver, CO",
+    "phone": null,
+    "website": "https://www.novuskin.com/med-spa-denver/",
+    "review_count": "200+",
+    "fit_reason": "Membership-based med spa model = recurring high-value clients who call frequently. Online + phone scheduling emphasized. Membership clubs = high call volume from existing and prospective members.",
+    "category": "medspa",
+    "fit_score": 8
+  },
+  {
+    "name": "SLC Med Spa",
+    "city": "Salt Lake City, UT",
+    "phone": null,
+    "website": "https://www.slcmedspa.com",
+    "review_count": "200+",
+    "fit_reason": "Two-location med spa in Sugar House and a second site. Aesthetic + weight loss clinic = dual revenue streams with high appointment demand. Explicit focus on scheduling convenience.",
+    "category": "medspa",
+    "fit_score": 8
+  },
+  {
+    "name": "Altitude Medspa",
+    "city": "Salt Lake City + Park City, UT",
+    "phone": "(801) 230-2822",
+    "website": "https://www.altitudemedspa.com",
+    "review_count": "200+",
+    "fit_reason": "Two-location premier med spa (SLC + Park City). Full service: injectables, skincare, medical weight loss, wellness. Phone number prominently displayed — heavy phone booking dependency.",
+    "category": "medspa",
+    "fit_score": 9
+  },
+  {
+    "name": "Haus of Aesthetics",
+    "city": "Salt Lake City + Provo, UT",
+    "phone": "(801) 997-8199",
+    "website": "https://hausofaestheticsslc.com/",
+    "review_count": "200+",
+    "fit_reason": "Two-location medical spa serving SLC and Provo. Phone number on every page indicates call-heavy booking. 'Premier' positioning = high-ticket services and clients who expect quality phone experience.",
+    "category": "medspa",
+    "fit_score": 8
+  },
+  {
+    "name": "Elase Med Spa",
+    "city": "Salt Lake City, UT (multiple locations)",
+    "phone": null,
+    "website": "https://elase.com/locations/salt-lake-city/",
+    "review_count": "400+",
+    "fit_reason": "Well-established multi-location med spa chain near SLC. Laser-focused (hair removal, skin treatments) = high repeat appointment volume. Strong location presence suggests significant monthly booking spend.",
+    "category": "medspa",
+    "fit_score": 9
+  },
+  {
+    "name": "Silk Touch Med Spa",
+    "city": "Boise, ID",
+    "phone": "(208) 939-3110",
+    "website": "https://silktouchmedspa.com/",
+    "review_count": "300+",
+    "fit_reason": "Award-winning cosmetic surgery + med spa combo in Boise. Surgical consultations + aesthetic appointments = very high per-call revenue value. Phone/text number front-and-center in branding.",
+    "category": "medspa",
+    "fit_score": 9
+  },
+  {
+    "name": "REJUV Medspa",
+    "city": "Boise + Meridian, ID",
+    "phone": "(208) 884-3800",
+    "website": "https://rejuv-medspa.com/",
+    "review_count": "200+",
+    "fit_reason": "Two-location day spa + med spa (Boise + Meridian). Phone prominently featured for scheduling. Dual-location operation means split phone coverage — AI can unify intake across both sites.",
+    "category": "medspa",
+    "fit_score": 8
+  },
+  {
+    "name": "Elevation Chiropractic & Wellness",
+    "city": "Denver, CO",
+    "phone": null,
+    "website": "https://elevationcw.com/",
+    "review_count": "200+",
+    "fit_reason": "Multi-discipline practice (chiropractic, PT, massage). Review explicitly mentions 'online scheduling makes it easy for me to make an appointment around my busy schedule' — signals high demand and booking friction.",
+    "category": "chiropractic",
+    "fit_score": 8
+  },
+  {
+    "name": "5280 Chiropractic (Denver Chiropractic Downtown)",
+    "city": "Denver, CO",
+    "phone": null,
+    "website": "https://www.denverchiropracticdowntown.com/",
+    "review_count": "200+",
+    "fit_reason": "Specializes in chiropractic care for busy professionals — target clientele who call during work hours. Downtown Denver = high call volume from working professionals.",
+    "category": "chiropractic",
+    "fit_score": 7
+  },
+  {
+    "name": "ATLAS Physical Therapy",
+    "city": "Denver, CO",
+    "phone": "(303) 832-3700",
+    "website": "https://www.atlasptco.com/",
+    "review_count": "200+",
+    "fit_reason": "PT clinic with phone prominently featured. Messaging acknowledges 'patients have busy lives' — they know their patients call during limited windows. High recurring appointment volume.",
+    "category": "physical_therapy",
+    "fit_score": 7
+  },
+  {
+    "name": "Salt Lake Chiropractic & Jeremy Ranch Chiropractic",
+    "city": "Salt Lake City + Park City, UT",
+    "phone": null,
+    "website": "https://www.chirosaltlake.com/",
+    "review_count": "200+",
+    "fit_reason": "Two-location chiropractic practice (SLC + Park City area). Multi-location = split phone coverage challenge. High patient volume in two markets.",
+    "category": "chiropractic",
+    "fit_score": 7
+  },
+  {
+    "name": "Central Phoenix Animal Hospital",
+    "city": "Phoenix, AZ",
+    "phone": null,
+    "website": "https://www.centralphoenixanimalhospital.com/",
+    "review_count": "300+",
+    "fit_reason": "Reviews literally say 'Busy!!! Yet somehow they manage...' — explicit signal of high call volume and booking pressure. Pet owners call constantly for appointments. Missing calls = lost urgent cases.",
+    "category": "veterinary",
+    "fit_score": 10
+  },
+  {
+    "name": "Sploot Veterinary Care",
+    "city": "Denver, CO (multiple locations)",
+    "phone": null,
+    "website": "https://www.splootvets.com/locations/denver",
+    "review_count": "400+",
+    "fit_reason": "Multi-location vet clinic with dedicated Pet Parent Concierge and their own app — already investing heavily in client communication. Extended daily availability signals very high volume. Multi-site perfect for AI phone unification.",
+    "category": "veterinary",
+    "fit_score": 10
+  },
+  {
+    "name": "Ada Veterinary Hospital",
+    "city": "Meridian + Boise, ID",
+    "phone": null,
+    "website": "https://adavethospital.com/",
+    "review_count": "300+",
+    "fit_reason": "Two-location private vet practice serving Meridian and Boise since 1987. Long-established = large loyal client base with regular appointment demand. Private ownership means open to AI cost savings.",
+    "category": "veterinary",
+    "fit_score": 8
+  },
+  {
+    "name": "Evans East Animal Hospital",
+    "city": "Denver, CO",
+    "phone": null,
+    "website": "https://evanseastvet.com/",
+    "review_count": "350+",
+    "fit_reason": "24/7 veterinary care with top-rated status. Around-the-clock operation = constant inbound calls including overnight when staff is limited. AI phone answering directly solves after-hours booking.",
+    "category": "veterinary",
+    "fit_score": 9
+  },
+  {
+    "name": "EōS Fitness Phoenix",
+    "city": "Phoenix, AZ (multiple locations)",
+    "phone": null,
+    "website": "https://www.eosfitness.com/gym/downtown-phoenix",
+    "review_count": "500+",
+    "fit_reason": "40+ Arizona locations, massive membership base, peak hours 6am-9am and 4pm-7pm means huge call volume during staff-busy times. Personal training and class booking = high appointment scheduling need.",
+    "category": "gym",
+    "fit_score": 8
+  },
+  {
+    "name": "VASA Fitness Phoenix",
+    "city": "Phoenix, AZ",
+    "phone": null,
+    "website": "https://vasafitness.com/locations/az/phoenix-thunderbird/",
+    "review_count": "300+",
+    "fit_reason": "Multi-location gym with group fitness classes — class booking and personal training sessions generate significant inbound call volume. Budget gym positioning = cost-conscious but high-volume operation.",
+    "category": "gym",
+    "fit_score": 7
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "Alex": {
+    "status": "deployed",
+    "id": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+    "name": "Alex \u2014 SmartBook AI Sales Agent",
+    "http_status": 201
+  },
+  "Maya": {
+    "status": "deployed",
+    "id": "a413b4d6-175d-49b3-8114-cf05879ea5d5",
+    "name": "Maya \u2014 Local SEO & Reputation Agent",
+    "name_note": "Truncated from 41 chars to 35 to meet Vapi 40-char limit",
+    "http_status": 201
+  },
+  "Dev": {
+    "status": "deployed",
+    "id": "a2f3fb8d-8bdf-4586-9b34-31401fe59856",
+    "name": "Dev \u2014 App Development Discovery Agent",
+    "http_status": 201
+  },
+  "Rex": {
+    "status": "deployed",
+    "id": "4c03087c-79c6-4ab0-ad11-5234cc8c5f68",
+    "name": "Rex \u2014 Wholesale RE Seller Outreach Agent",
+    "http_status": 201
+  },
+  "Kai": {
+    "status": "deployed",
+    "id": "bebae429-b4f1-4f1c-97ad-eb6d3face073",
+    "name": "Kai \u2014 Wholesale RE Buyer Outreach Agent",
+    "http_status": 201
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{BUSINESS_NAME}} | Plumber in {{CITY}}, WY</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;color:#222}
+header{background:#1a3a5c;color:white;padding:20px;text-align:center}
+header h1{font-size:2em;margin-bottom:5px}
+header p{font-size:1.1em;opacity:0.9}
+.cta-bar{background:#e8a020;padding:15px;text-align:center;font-size:1.2em;font-weight:bold}
+.cta-bar a{color:#1a3a5c;text-decoration:none}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px 20px;max-width:1100px;margin:0 auto}
+.service-card{background:#f5f8ff;border-radius:8px;padding:25px;border-left:4px solid #1a3a5c}
+.service-card h3{color:#1a3a5c;margin-bottom:10px}
+.about{background:#f9f9f9;padding:40px 20px;text-align:center;max-width:800px;margin:0 auto}
+.about h2{margin-bottom:15px;color:#1a3a5c}
+.contact{background:#1a3a5c;color:white;padding:40px 20px;text-align:center}
+.contact h2{margin-bottom:20px}
+.contact-info{font-size:1.3em;margin:10px 0}
+.phone{font-size:2em;font-weight:bold;color:#e8a020}
+footer{background:#111;color:#aaa;padding:15px;text-align:center;font-size:0.9em}
+@media(max-width:600px){header h1{font-size:1.5em}.phone{font-size:1.5em}}
+</style>
+</head>
+<body>
+<header>
+  <h1>{{BUSINESS_NAME}}</h1>
+  <p>Licensed Plumber Serving {{CITY}} & {{REGION}}</p>
+</header>
+<div class="cta-bar">
+  🚨 24/7 Emergency Service — Call Now: <a href="tel:{{PHONE}}">{{PHONE}}</a>
+</div>
+<section class="services">
+  <div class="service-card"><h3>🔧 Repairs</h3><p>Leaks, burst pipes, faucets, toilets — fixed fast and done right the first time.</p></div>
+  <div class="service-card"><h3>🚿 Installations</h3><p>Water heaters, fixtures, dishwashers, and full bathroom/kitchen installs.</p></div>
+  <div class="service-card"><h3>🚰 Drain Cleaning</h3><p>Clogged drains cleared quickly. Sewer line inspections available.</p></div>
+  <div class="service-card"><h3>❄️ Winterization</h3><p>Protect your pipes from Wyoming winters. Pre-season and emergency service.</p></div>
+</section>
+<section class="about">
+  <h2>About {{BUSINESS_NAME}}</h2>
+  <p>{{ABOUT_TEXT}}</p>
+</section>
+<section class="contact">
+  <h2>Get In Touch</h2>
+  <div class="phone"><a href="tel:{{PHONE}}" style="color:#e8a020;text-decoration:none">{{PHONE}}</a></div>
+  <div class="contact-info">📧 {{EMAIL}}</div>
+  <div class="contact-info">📍 {{CITY}}, Wyoming</div>
+</section>
+<footer>© 2026 {{BUSINESS_NAME}} | Licensed & Insured | Serving {{REGION}}</footer>
+</body>
+</html>

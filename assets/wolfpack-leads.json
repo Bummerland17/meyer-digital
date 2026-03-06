@@ -1,0 +1,264 @@
+{
+  "generated": "2026-03-04",
+  "total": 32,
+  "scraped_emails": 16,
+  "guessed_emails": 16,
+  "leads": [
+    {
+      "name": "Eclipse Marketing",
+      "website": "https://eclipsemarketing.io/",
+      "city": "Denver, CO",
+      "email": "contact@eclipsemarketing.io",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Gravity Global",
+      "website": "https://www.gravityglobal.com/",
+      "city": "Denver, CO",
+      "email": "newbusiness@gravityglobal.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Booyah Advertising",
+      "website": "https://www.booyah.com/",
+      "city": "Denver, CO",
+      "email": "info@booyahadvertising.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "COHN Marketing",
+      "website": "https://cohnmarketing.com/",
+      "city": "Denver, CO",
+      "email": "hello@cohnmarketing.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Red Egg Marketing",
+      "website": "https://redeggmarketing.com/",
+      "city": "Denver, CO",
+      "email": "hello@redeggmarketing.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Peaks Digital Marketing",
+      "website": "https://www.peaksdigitalmarketing.com/",
+      "city": "Denver, CO",
+      "email": "info@peaksdigitalmarketing.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "The Brandsmen",
+      "website": "https://thebrandsmen.com/",
+      "city": "Denver, CO",
+      "email": "cheers@thebrandsmen.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Faceted Media LLC",
+      "website": "https://facetedmedia.com/",
+      "city": "Denver, CO",
+      "email": "hello@facetedmedia.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Blackhawk Digital Marketing",
+      "website": "https://www.blackhawkdm.com/",
+      "city": "Austin, TX",
+      "email": "hello@blackhawkdm.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Ollie Marketing",
+      "website": "https://olliemarketing.com/",
+      "city": "Austin, TX",
+      "email": "hello@olliemarketing.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "ADMEN",
+      "website": "https://admen.com/",
+      "city": "Austin, TX",
+      "email": "support@admen.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "HMG Creative",
+      "website": "https://www.hmgcreative.com/",
+      "city": "Austin, TX",
+      "email": "hello@hmgcreative.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Stackmatix",
+      "website": "http://www.stackmatix.com/",
+      "city": "Austin, TX",
+      "email": "info@stackmatix.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Allegiant Digital Marketing",
+      "website": "https://allegiantdigital.com/",
+      "city": "Austin, TX",
+      "email": "hello@allegiantdigital.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Neon Ambition",
+      "website": "https://neonambition.com/",
+      "city": "Austin, TX",
+      "email": "hello@neonambition.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "JBowman Creative",
+      "website": "https://www.jbowmancreative.com/",
+      "city": "Nashville, TN",
+      "email": "contact@jbowmancreative.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Social Link",
+      "website": "https://sociallink.com/",
+      "city": "Nashville, TN",
+      "email": "hello@sociallink.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Bauer Entertainment Marketing",
+      "website": "http://www.bauerem.com/",
+      "city": "Nashville, TN",
+      "email": "info@bauerem.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "GoEpps",
+      "website": "https://www.goepps.com/",
+      "city": "Nashville, TN",
+      "email": "contact@goepps.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "MediaTree Advertising",
+      "website": "https://mediatreeadv.com/",
+      "city": "Nashville, TN",
+      "email": "hello@mediatreeadv.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "cj Advertising",
+      "website": "https://www.cjadvertising.com/",
+      "city": "Nashville, TN",
+      "email": "hello@cjadvertising.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Drive Social Media",
+      "website": "https://drivesocialnow.com/",
+      "city": "Nashville, TN",
+      "email": "hello@drivesocialnow.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Overtop Media",
+      "website": "https://overtopmedia.com/",
+      "city": "Charlotte, NC",
+      "email": "contact@overtopmedia.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Premier Marketing",
+      "website": "https://premiermarketingus.com/",
+      "city": "Charlotte, NC",
+      "email": "info@premiermarketingus.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Crimson Park Digital",
+      "website": "https://crimsonparkdigital.com/",
+      "city": "Charlotte, NC",
+      "email": "info@crimsonparkdigital.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Townsquare Interactive",
+      "website": "https://townsquareinteractive.com/",
+      "city": "Charlotte, NC",
+      "email": "hello@townsquareinteractive.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Epic Notion",
+      "website": "https://www.epicnotion.com/",
+      "city": "Charlotte, NC",
+      "email": "hello@epicnotion.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Market My Market",
+      "website": "https://www.marketmymarket.com/",
+      "city": "Charlotte, NC",
+      "email": "info@marketmymarket.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Knowmad",
+      "website": "https://www.knowmad.com/",
+      "city": "Charlotte, NC",
+      "email": "hello@knowmad.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "BartX Digital",
+      "website": "https://bartxdigital.com/",
+      "city": "Charlotte, NC",
+      "email": "hello@bartxdigital.com",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "The Agency Angle",
+      "website": "https://www.agencyangle.com/",
+      "city": "Charlotte, NC",
+      "email": "Info@gettheagency.com",
+      "email_confidence": "scraped",
+      "type": "Marketing Agency"
+    },
+    {
+      "name": "Kingdom Culture Agency",
+      "website": "https://www.kingdomoverculture.net/",
+      "city": "Nashville, TN",
+      "email": "hello@kingdomoverculture.net",
+      "email_confidence": "guessed",
+      "type": "Marketing Agency"
+    }
+  ]
+}

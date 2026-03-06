@@ -1,0 +1,153 @@
+{
+  "name": "New Lead → Auto-Call Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [{"mode": "everyMinute"}]
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_GOOGLE_SHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Leads",
+          "mode": "name"
+        },
+        "event": "rowAdded"
+      },
+      "id": "node-sheets-trigger",
+      "name": "New Lead in Google Sheets",
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [200, 300],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "google-sheets-creds",
+          "name": "Google Sheets"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const row = $input.first().json;\nconst rawPhone = row.phone || row.Phone || row.phone_number || '';\n\n// Normalize phone number\nlet phone = rawPhone.replace(/[^0-9+]/g, '');\nif (phone.length === 10) phone = '+1' + phone;\nif (phone.length === 11 && !phone.startsWith('+')) phone = '+' + phone;\n\nconst isValid = /^\\+1[2-9][0-9]{9}$/.test(phone) || /^\\+[1-9][0-9]{10,14}$/.test(phone);\n\nreturn [{\n  json: {\n    ...row,\n    phone_normalized: phone,\n    phone_valid: isValid,\n    name: row.name || row.Name || row.first_name || 'there',\n    email: row.email || row.Email || ''\n  }\n}];"
+      },
+      "id": "node-validate-phone",
+      "name": "Validate Phone Number",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.phone_valid }}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "node-if-valid",
+      "name": "IF Valid Phone",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [700, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const fs = require('fs');\nconst QUEUE_PATH = '/root/.openclaw/workspace/assets/call-queue.json';\n\nlet queue = [];\ntry { queue = JSON.parse(fs.readFileSync(QUEUE_PATH, 'utf8')); } catch(e) { queue = []; }\n\nconst phone = $input.first().json.phone_normalized;\nconst alreadyCalled = queue.some(c => c.phone === phone && c.status !== 'pending');\n\nreturn [{\n  json: {\n    ...$input.first().json,\n    already_called: alreadyCalled\n  }\n}];"
+      },
+      "id": "node-check-called",
+      "name": "Check If Already Called",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [950, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.already_called }}",
+              "value2": false
+            }
+          ]
+        }
+      },
+      "id": "node-if-not-called",
+      "name": "IF Not Already Called",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1200, 200]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.vapi.ai/call/phone",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {"name": "Authorization", "value": "Bearer 0aaae7fe-be63-472a-a46d-5d9224e0fa89"}
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {"name": "assistantId", "value": "95e7c636-f8e6-4801-8866-fca9d5d475d3"},
+            {"name": "customer", "value": "={{ { \"number\": $json.phone_normalized, \"name\": $json.name } }}"},
+            {"name": "phoneNumberId", "value": "YOUR_VAPI_PHONE_NUMBER_ID"}
+          ]
+        }
+      },
+      "id": "node-vapi-call",
+      "name": "POST to Vapi — Initiate Call",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1450, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const fs = require('fs');\nconst QUEUE_PATH = '/root/.openclaw/workspace/assets/call-queue.json';\n\nlet queue = [];\ntry { queue = JSON.parse(fs.readFileSync(QUEUE_PATH, 'utf8')); } catch(e) { queue = []; }\n\nconst lead = $('IF Not Already Called').first().json;\nconst vapiResponse = $input.first().json;\n\nqueue.push({\n  call_id: vapiResponse.id,\n  phone: lead.phone_normalized,\n  name: lead.name,\n  email: lead.email,\n  status: 'initiated',\n  initiated_at: new Date().toISOString(),\n  source: 'google_sheets'\n});\n\nfs.writeFileSync(QUEUE_PATH, JSON.stringify(queue, null, 2));\nreturn [{ json: { call_id: vapiResponse.id, logged: true } }];"
+      },
+      "id": "node-log-call",
+      "name": "Log Call ID to Queue",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1700, 200]
+    }
+  ],
+  "connections": {
+    "New Lead in Google Sheets": {
+      "main": [[{"node": "Validate Phone Number", "type": "main", "index": 0}]]
+    },
+    "Validate Phone Number": {
+      "main": [[{"node": "IF Valid Phone", "type": "main", "index": 0}]]
+    },
+    "IF Valid Phone": {
+      "main": [[{"node": "Check If Already Called", "type": "main", "index": 0}]]
+    },
+    "Check If Already Called": {
+      "main": [[{"node": "IF Not Already Called", "type": "main", "index": 0}]]
+    },
+    "IF Not Already Called": {
+      "main": [[{"node": "POST to Vapi — Initiate Call", "type": "main", "index": 0}]]
+    },
+    "POST to Vapi — Initiate Call": {
+      "main": [[{"node": "Log Call ID to Queue", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": ["vapi", "leads", "outreach"],
+  "meta": {
+    "description": "Watches Google Sheets for new leads. Validates phone, checks if already called, POSTs to Vapi to initiate call, logs call ID back. Set phoneNumberId and Sheet ID before activating."
+  }
+}

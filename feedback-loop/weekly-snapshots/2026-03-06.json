@@ -1,0 +1,312 @@
+{
+  "date": "2026-03-06",
+  "generated": "2026-03-06T04:10:15.386073Z",
+  "vapi": {
+    "status": "live",
+    "total_calls": 151,
+    "avg_duration_sec": 0.0,
+    "short_hangups": 151,
+    "hangup_rate_pct": 100.0,
+    "warm_calls": 0,
+    "warm_rate_pct": 0.0,
+    "expressed_interest": 87,
+    "interest_rate_pct": 57.6,
+    "flagged_short": [
+      {
+        "id": "019cbf1a-1e60-755c-a92e-2fe7ef61fea2",
+        "duration": 0,
+        "created": "2026-03-05T17:44:45.920Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbece-fd49-7772-bf3a-958a69ac9771",
+        "duration": 0,
+        "created": "2026-03-05T16:22:42.249Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbece-cdc6-733b-bab3-7db4812f7783",
+        "duration": 0,
+        "created": "2026-03-05T16:22:30.086Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbece-9e31-7996-b4d6-d67ca900b525",
+        "duration": 0,
+        "created": "2026-03-05T16:22:17.905Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbece-6ea1-788b-bb09-eb87b306d3db",
+        "duration": 0,
+        "created": "2026-03-05T16:22:05.729Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbece-3f28-788b-bb09-c16354fc74f0",
+        "duration": 0,
+        "created": "2026-03-05T16:21:53.576Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbece-0fa1-7227-a77a-8b977e7f9fe0",
+        "duration": 0,
+        "created": "2026-03-05T16:21:41.409Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecd-e024-722c-b15d-75d8880bfcce",
+        "duration": 0,
+        "created": "2026-03-05T16:21:29.252Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecd-b09c-7772-bf38-971a21621435",
+        "duration": 0,
+        "created": "2026-03-05T16:21:17.084Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecd-80b4-7ee0-ac11-e126d07ad040",
+        "duration": 0,
+        "created": "2026-03-05T16:21:04.820Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecd-511a-7776-acd3-e19213f8c940",
+        "duration": 0,
+        "created": "2026-03-05T16:20:52.634Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecd-2196-7776-9e83-90ad395b92ba",
+        "duration": 0,
+        "created": "2026-03-05T16:20:40.470Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecc-f218-7229-bb63-c876c3dbaff2",
+        "duration": 0,
+        "created": "2026-03-05T16:20:28.312Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecc-c276-7aa2-b80d-d4ea89c727a7",
+        "duration": 0,
+        "created": "2026-03-05T16:20:16.118Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecc-928f-7229-bb62-a62227f056b3",
+        "duration": 0,
+        "created": "2026-03-05T16:20:03.856Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecc-62db-7222-98d7-4e4dd4bfb032",
+        "duration": 0,
+        "created": "2026-03-05T16:19:51.643Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecc-3361-7229-bb62-0404b5248fc6",
+        "duration": 0,
+        "created": "2026-03-05T16:19:39.489Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecc-03d4-7aa2-b80c-a2306e299b78",
+        "duration": 0,
+        "created": "2026-03-05T16:19:27.316Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecb-d3f0-7776-acd1-16fe1b12d4a3",
+        "duration": 0,
+        "created": "2026-03-05T16:19:15.056Z",
+        "flag": "IMMEDIATE_HANGUP"
+      },
+      {
+        "id": "019cbecb-a1e4-711b-9b60-9eeb400c6176",
+        "duration": 0,
+        "created": "2026-03-05T16:19:02.244Z",
+        "flag": "IMMEDIATE_HANGUP"
+      }
+    ],
+    "flagged_warm": [],
+    "flags": {
+      "hook_needs_rewrite": true,
+      "close_needs_work": false
+    }
+  },
+  "email": {
+    "status": "live",
+    "total_emails": 39,
+    "total_replies": 0,
+    "by_subject": {
+      "Re: Your phones after hours \u2014 quick follow-up": {
+        "sent": 12,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Downtown Smiles Phoenix Dental Care": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Downtown Phoenix Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Healing Dentistry": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Brighter Way Dental Center": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for McDowell Road Family Dentistry": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for City Creek Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for SunDrop Dental Clinic": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Lakeside Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Wynkoop Dentistry": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Dental Elements": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Idaho Street Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "Last note \u2014 AI appointment booking for Capitol Dental": {
+        "sent": 1,
+        "replied": 0,
+        "reply_rate": 0.0
+      },
+      "How many hours did your team waste on tasks AI could do in seconds?": {
+        "sent": 15,
+        "replied": 0,
+        "reply_rate": 0.0
+      }
+    },
+    "by_business_type": {
+      "unknown": {
+        "sent": 39,
+        "replied": 0,
+        "reply_rate": 0.0
+      }
+    },
+    "dead_subjects": [],
+    "dead_biz_types": [
+      "unknown"
+    ],
+    "best_subject": {
+      "subject": "Re: Your phones after hours \u2014 quick follow-up",
+      "sent": 12,
+      "replied": 0,
+      "reply_rate": 0.0
+    },
+    "worst_subject": {
+      "subject": "How many hours did your team waste on tasks AI could do in seconds?",
+      "sent": 15,
+      "replied": 0,
+      "reply_rate": 0.0
+    },
+    "flags": {
+      "dead_subject_lines": [],
+      "zero_reply_biz_types": [
+        "unknown"
+      ]
+    }
+  },
+  "stripe": {
+    "status": "live",
+    "error": null,
+    "active_subscribers": 1,
+    "mrr_usd": 14.0,
+    "cancelled_last_30d": 0,
+    "refund_requests": 1,
+    "refund_amount_usd": 14.0,
+    "by_product": {
+      "prod_TyvIib3xxGcVur": 1
+    },
+    "flags": {
+      "refunds_flagged": [
+        {
+          "id": "pyr_1T17N3CRr0tlaIBCp4gscXdr",
+          "amount": 14.0,
+          "reason": null
+        }
+      ],
+      "churn_rate_approx": 0.0
+    }
+  },
+  "github": {
+    "Bummerland17/honest-eats": {
+      "status": "live",
+      "total_issues": 1,
+      "bugs": 0,
+      "ux_issues": 0,
+      "features": 1,
+      "other": 0,
+      "hot_issues": [],
+      "by_category": {
+        "bug": [],
+        "ux": [],
+        "feature": [
+          {
+            "id": 6,
+            "title": "feat: Resend email drip sequence (5-email onboarding automation)",
+            "category": "feature",
+            "comments": 2,
+            "reactions": 0,
+            "url": "https://github.com/Bummerland17/honest-eats/pull/6",
+            "labels": []
+          }
+        ],
+        "other": []
+      }
+    },
+    "Bummerland17/unitfix-simple-maintenance": {
+      "status": "live",
+      "total_issues": 0,
+      "bugs": 0,
+      "ux_issues": 0,
+      "features": 0,
+      "other": 0,
+      "hot_issues": [],
+      "by_category": {
+        "bug": [],
+        "ux": [],
+        "feature": [],
+        "other": []
+      }
+    }
+  }
+}

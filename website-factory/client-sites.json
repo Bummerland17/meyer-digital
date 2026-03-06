@@ -1,0 +1,35 @@
+[
+  {
+    "client_name": "Phoenix Dental Smiles",
+    "url": "https://bummerland17.github.io/demo-dental/",
+    "template_used": "service-business",
+    "built_date": "2026-03-04",
+    "payment_status": "demo",
+    "payment_amount": 0,
+    "stripe_link": "",
+    "github_repo": "https://github.com/Bummerland17/demo-dental",
+    "notes": "Demo site \u2014 Meyer Digital portfolio"
+  },
+  {
+    "client_name": "Iron Peak CrossFit",
+    "url": "https://bummerland17.github.io/demo-gym/",
+    "template_used": "service-business",
+    "built_date": "2026-03-04",
+    "payment_status": "demo",
+    "payment_amount": 0,
+    "stripe_link": "",
+    "github_repo": "https://github.com/Bummerland17/demo-gym",
+    "notes": "Demo site \u2014 Meyer Digital portfolio"
+  },
+  {
+    "client_name": "Veldt Digital",
+    "url": "https://bummerland17.github.io/demo-agency/",
+    "template_used": "agency-consultant",
+    "built_date": "2026-03-04",
+    "payment_status": "demo",
+    "payment_amount": 0,
+    "stripe_link": "",
+    "github_repo": "https://github.com/Bummerland17/demo-agency",
+    "notes": "Wolfgang's agency demo \u2014 Meyer Digital portfolio"
+  }
+]

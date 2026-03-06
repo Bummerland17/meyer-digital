@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App Launch Playbook — First 100 Users Without an Audience</title>
+  <meta name="description" content="How to get your first 100 users without a marketing budget or an audience. 29-page playbook from actual indie launches. $29.">
+  <meta property="og:title" content="App Launch Playbook">
+  <meta property="og:description" content="The 30 days before and 14 days after launch. Specific tactics, specific communities, specific message templates.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #f9f9f7;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: #0f1923;
+      color: #f9f9f7;
+      padding: 80px 24px 72px;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7eb8f7;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      max-width: 760px;
+      margin: 0 auto 24px;
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      opacity: 0.7;
+      max-width: 580px;
+      margin: 0 auto 40px;
+    }
+
+    .cta-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+
+    .cta-primary {
+      display: inline-block;
+      background: #7eb8f7;
+      color: #0f1923;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 16px 40px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .cta-primary:hover { opacity: 0.88; }
+
+    .cta-note { font-size: 0.88rem; opacity: 0.5; }
+
+    .section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    .section h2 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.05rem;
+      color: #2e2e2e;
+      margin-bottom: 18px;
+    }
+
+    .honest-box {
+      background: #0f1923;
+      color: #f9f9f7;
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 28px 0;
+      font-size: 1.05rem;
+    }
+
+    .honest-box strong { color: #7eb8f7; }
+
+    .timeline {
+      margin: 28px 0;
+      border-left: 3px solid #e0e0dc;
+      padding-left: 24px;
+    }
+
+    .timeline-item {
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #7eb8f7;
+      border: 2px solid #f9f9f7;
+      box-shadow: 0 0 0 2px #7eb8f7;
+    }
+
+    .timeline-item .day-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #7eb8f7;
+      margin-bottom: 4px;
+    }
+
+    .timeline-item h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .timeline-item p {
+      font-size: 0.93rem;
+      color: #555;
+      margin: 0;
+    }
+
+    .community-sample {
+      background: #fff;
+      border: 1px solid #e0e0dc;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .community-sample h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 8px;
+    }
+
+    .community-tag {
+      font-size: 0.87rem;
+      padding: 6px 10px;
+      background: #f5f5f3;
+      border-radius: 4px;
+    }
+
+    ul.toc {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+      counter-reset: toc;
+    }
+
+    ul.toc li {
+      padding: 12px 0 12px 48px;
+      position: relative;
+      font-size: 1.02rem;
+      border-bottom: 1px solid #e8e8e4;
+      counter-increment: toc;
+    }
+
+    ul.toc li:last-child { border-bottom: none; }
+
+    ul.toc li::before {
+      content: counter(toc);
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 28px;
+      height: 28px;
+      background: #0f1923;
+      color: #7eb8f7;
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 28px;
+    }
+
+    ul.toc li .note {
+      display: block;
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 2px;
+    }
+
+    .guarantee {
+      background: #fff;
+      border: 1px solid #e0e0dc;
+      border-radius: 8px;
+      padding: 24px 28px;
+      font-size: 0.97rem;
+      color: #444;
+      margin-top: 36px;
+    }
+    .guarantee strong { color: #1a1a1a; }
+
+    .buy-section {
+      text-align: center;
+      background: #0f1923;
+      color: #f9f9f7;
+      padding: 72px 24px;
+    }
+    .buy-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .buy-section p {
+      opacity: 0.6;
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .divider { border: none; border-top: 1px solid #e8e8e4; margin: 0; }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 500px) {
+      .community-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="eyebrow">29-page playbook · 40+ communities · $29 one-time</p>
+  <h1>How to get your first 100 users without a marketing budget or an audience.</h1>
+  <p class="sub">The 30 days before launch and 14 days after. Specific tactics, specific communities, specific message templates — from actual indie launches.</p>
+  <div class="cta-wrap">
+    <a href="https://buy.stripe.com/eVq3cueRu3RGf6DcNSbsc0a" class="cta-primary">Get the playbook — $29</a>
+    <span class="cta-note">Instant PDF download · 29 pages · No fluff</span>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<div class="section">
+  <h2>Most indie launches fail for the same reason</h2>
+
+  <p>The product works. The design is decent. The pricing is reasonable. But when launch day comes, the strategy is "post on Twitter and submit to ProductHunt" — and two days later there are 12 signups, 8 of which are the founder's friends.</p>
+
+  <p>This isn't because getting early users is hard. It's because the playbooks most people follow are written by people who already had an audience when they launched. "Build in public for 6 months" is good advice if you already have 5,000 Twitter followers. It's useless advice if you're starting from zero.</p>
+
+  <div class="honest-box">
+    <strong>The honest version:</strong> Most channels don't work until you have social proof. The ones that work from day zero are community-based — specific Reddit threads, niche Discord servers, targeted cold DMs to people who've publicly said they have the problem you solve. This playbook is about those channels.
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- LAUNCH TIMELINE -->
+<div class="section">
+  <h2>What the playbook covers</h2>
+  <p>Two phases: the 30 days before launch (setup and pre-validation) and the 14 days after (actual user acquisition).</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="day-label">Days 30-15 before launch</span>
+      <h3>Build in public — strategically</h3>
+      <p>Where to share progress updates that actually build an audience vs. tweeting into the void. The 3 communities where early-stage founders consistently get early adopters.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="day-label">Days 14-7 before launch</span>
+      <h3>Pre-launch email list</h3>
+      <p>How to get 50-200 genuinely interested people on a waitlist before you launch. The exact landing page copy that converts, and where to send traffic to it.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="day-label">Days 6-1 before launch</span>
+      <h3>Prep the channels</h3>
+      <p>How to find the 10-20 people who will be your first real users — before launch day. How to warm them up without being annoying about it.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="day-label">Launch day</span>
+      <h3>The hour-by-hour plan</h3>
+      <p>ProductHunt timing, HN Show HN format, Reddit post strategy, email to waitlist — in what order, at what time, and why. What to do when nothing is happening at hour 4.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="day-label">Days 2-14 after launch</span>
+      <h3>Keeping momentum</h3>
+      <p>The ProductHunt boost lasts about 48 hours. Here's what to do on day 3 when traffic drops to zero. The channels that keep working after the launch spike.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- COMMUNITIES -->
+<div class="section">
+  <h2>The community map (40+ communities)</h2>
+  <p>One chapter of the playbook is a map of 40+ communities where indie launches actually get traction — organized by niche so you only spend time where your users actually are.</p>
+
+  <div class="community-sample">
+    <h3>A sample (these are in the book, with notes on each):</h3>
+    <div class="community-grid">
+      <span class="community-tag">r/SideProject</span>
+      <span class="community-tag">r/indiehackers</span>
+      <span class="community-tag">r/entrepreneur</span>
+      <span class="community-tag">IndieHackers.com</span>
+      <span class="community-tag">Hacker News</span>
+      <span class="community-tag">Product Hunt</span>
+      <span class="community-tag">BetaList</span>
+      <span class="community-tag">r/startups</span>
+      <span class="community-tag">MicroConf Community</span>
+      <span class="community-tag">Makerpad</span>
+      <span class="community-tag">WIP.co</span>
+      <span class="community-tag">+ 29 more by niche</span>
+    </div>
+  </div>
+
+  <p style="font-size: 0.95rem; color: #666;">Each community has a note: size, typical response to launches, what posts perform well, whether self-promotion is allowed or needs to be indirect.</p>
+</div>
+
+<hr class="divider">
+
+<!-- TABLE OF CONTENTS -->
+<div class="section">
+  <h2>Table of contents</h2>
+
+  <ul class="toc">
+    <li>
+      The zero-follower problem — why most launch playbooks assume you already have an audience
+      <span class="note">Sets up the framework for everything that follows</span>
+    </li>
+    <li>
+      30-day pre-launch: build in public without burning out your network
+      <span class="note">Where to share, how often, what resonates</span>
+    </li>
+    <li>
+      Building a real waitlist (not just your friends' emails)
+      <span class="note">Landing page copy, traffic sources, realistic expectations</span>
+    </li>
+    <li>
+      Finding your first 10 users before launch day
+      <span class="note">Cold DM templates that get replies, how to find the right people</span>
+    </li>
+    <li>
+      Launch day hour-by-hour timeline
+      <span class="note">ProductHunt, HN, Reddit, email — exact sequence and timing</span>
+    </li>
+    <li>
+      The community map: 40+ communities by niche
+      <span class="note">Where your users actually are and how to reach them</span>
+    </li>
+    <li>
+      Post-launch: staying alive after the ProductHunt bounce
+      <span class="note">Day 3+ strategy when traffic drops to zero</span>
+    </li>
+    <li>
+      SEO via devlog: ranking for "[competitor] alternative" in 60 days
+      <span class="note">The slow channel that keeps paying</span>
+    </li>
+    <li>
+      What to do when you launch to silence
+      <span class="note">The honest section — when nothing works and what that actually means</span>
+    </li>
+  </ul>
+
+  <div class="guarantee">
+    <strong>Guarantee:</strong> Follow the Day 1 plan from the playbook. If you get zero traction and can show you did the work, email. We'll either refund you or work through what happened. The whole point of this is that it should work — if it doesn't, something's wrong and we want to know what.
+  </div>
+</div>
+
+<!-- BUY -->
+<div class="buy-section">
+  <h2>Get the App Launch Playbook</h2>
+  <p>$29 one-time · 29 pages · 40+ community map · Instant PDF download</p>
+  <a href="https://buy.stripe.com/eVq3cueRu3RGf6DcNSbsc0a" class="cta-primary">Buy now — $29</a>
+</div>
+
+<footer>
+  Questions? Email hello@applaunchplaybook.com &middot; &copy; 2026
+</footer>
+
+</body>
+</html>

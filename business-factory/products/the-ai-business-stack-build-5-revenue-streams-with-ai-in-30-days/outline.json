@@ -1,0 +1,235 @@
+{
+  "title": "The AI Business Stack: Build 5 Revenue Streams with AI in 30 Days",
+  "subtitle": "Unlock AI's potential to diversify your income.",
+  "tagline": "Master AI for multiple income streams.",
+  "target_audience": "Entrepreneurs, freelancers, and side-project builders",
+  "transformation": "Create and manage five AI-driven revenue streams in 30 days.",
+  "price": 97,
+  "modules": [
+    {
+      "number": 1,
+      "title": "Understanding the AI Landscape",
+      "description": "This module introduces the current AI landscape and its potential for revenue generation, setting the stage for building AI-driven businesses.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "The AI Revolution",
+          "objective": "Understand the impact of AI on modern business and identify opportunities for innovation."
+        },
+        {
+          "number": 2,
+          "title": "AI Tools and Technologies",
+          "objective": "Familiarize yourself with key AI tools and technologies that can be leveraged for business."
+        },
+        {
+          "number": 3,
+          "title": "AI Trends in Business",
+          "objective": "Identify current AI trends and how they can influence business strategies."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Laying the Foundation for AI Revenue Streams",
+      "description": "Build a strong foundation by understanding the prerequisites for creating AI-driven income streams, including mindset and resources.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Mindset for AI Entrepreneurship",
+          "objective": "Cultivate an entrepreneurial mindset tailored for leveraging AI."
+        },
+        {
+          "number": 2,
+          "title": "Resource Allocation for AI Projects",
+          "objective": "Learn to allocate resources effectively for AI-driven initiatives."
+        },
+        {
+          "number": 3,
+          "title": "Building Your AI Toolkit",
+          "objective": "Assemble a toolkit of AI applications and resources to support your business goals."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Developing Core AI Skills",
+      "description": "Acquire essential skills needed to implement AI solutions, focusing on practical applications and problem-solving.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Data Analysis with AI",
+          "objective": "Learn to use AI for data analysis to drive business decisions."
+        },
+        {
+          "number": 2,
+          "title": "Automating Tasks with AI",
+          "objective": "Discover how to automate routine tasks using AI tools."
+        },
+        {
+          "number": 3,
+          "title": "AI-Driven Marketing Strategies",
+          "objective": "Implement AI in marketing to optimize campaigns and engagement."
+        },
+        {
+          "number": 4,
+          "title": "Customer Service Automation",
+          "objective": "Utilize AI to enhance customer service and satisfaction."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Crafting AI-Powered Products",
+      "description": "Learn to design and develop AI-powered products that solve real-world problems and generate revenue.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Identifying Market Needs",
+          "objective": "Identify unmet market needs that can be addressed with AI solutions."
+        },
+        {
+          "number": 2,
+          "title": "Designing AI Solutions",
+          "objective": "Design AI solutions that are both innovative and practical."
+        },
+        {
+          "number": 3,
+          "title": "Prototyping AI Products",
+          "objective": "Create prototypes of AI products to test and refine ideas."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Advanced AI Execution Techniques",
+      "description": "Dive deeper into advanced AI techniques and strategies to enhance your business operations and scalability.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Advanced Data Manipulation",
+          "objective": "Master advanced techniques for data manipulation using AI."
+        },
+        {
+          "number": 2,
+          "title": "Scaling AI Solutions",
+          "objective": "Learn strategies for scaling AI solutions to handle increased demand."
+        },
+        {
+          "number": 3,
+          "title": "AI for Predictive Analysis",
+          "objective": "Use AI for predictive analysis to anticipate market trends and demands."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Revenue Stream 1: AI-Driven E-commerce",
+      "description": "Explore how to create an AI-driven e-commerce platform that optimizes sales and customer experiences.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "AI in Product Recommendations",
+          "objective": "Implement AI to enhance product recommendations and increase sales."
+        },
+        {
+          "number": 2,
+          "title": "Optimizing Inventory with AI",
+          "objective": "Use AI to manage inventory efficiently and reduce overhead."
+        },
+        {
+          "number": 3,
+          "title": "Personalizing Customer Experience",
+          "objective": "Leverage AI to personalize customer interactions and drive loyalty."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Revenue Stream 2: AI-Powered Content Creation",
+      "description": "Learn to use AI for creating engaging content that attracts and retains audiences across platforms.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Automating Content Generation",
+          "objective": "Use AI tools to automate the creation of high-quality content."
+        },
+        {
+          "number": 2,
+          "title": "Enhancing Content with AI",
+          "objective": "Integrate AI to improve the quality and relevance of your content."
+        },
+        {
+          "number": 3,
+          "title": "AI for SEO Optimization",
+          "objective": "Optimize content for search engines using AI-driven insights."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Revenue Stream 3: AI-Enhanced Freelancing",
+      "description": "Discover how to integrate AI into freelancing services to increase efficiency and client satisfaction.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "AI Tools for Freelancers",
+          "objective": "Identify AI tools that can enhance your freelancing services."
+        },
+        {
+          "number": 2,
+          "title": "Improving Client Communication",
+          "objective": "Use AI to streamline and improve communication with clients."
+        },
+        {
+          "number": 3,
+          "title": "Automating Project Management",
+          "objective": "Leverage AI to automate project management tasks and improve delivery."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Revenue Stream 4: AI in Real Estate",
+      "description": "Utilize AI to transform real estate operations, from property analysis to client interactions.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "AI for Property Analysis",
+          "objective": "Use AI to analyze properties and identify investment opportunities."
+        },
+        {
+          "number": 2,
+          "title": "Enhancing Real Estate Marketing",
+          "objective": "Apply AI to improve real estate marketing strategies and outreach."
+        },
+        {
+          "number": 3,
+          "title": "Streamlining Transactions with AI",
+          "objective": "Integrate AI to streamline real estate transactions and improve client experience."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Revenue Stream 5: AI-Driven Consulting Services",
+      "description": "Learn how to offer consulting services that help businesses implement AI solutions effectively.",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Identifying Consulting Opportunities",
+          "objective": "Identify opportunities for offering AI consulting services to businesses."
+        },
+        {
+          "number": 2,
+          "title": "Developing AI Consulting Packages",
+          "objective": "Create consulting packages that address specific business needs with AI."
+        },
+        {
+          "number": 3,
+          "title": "Delivering AI Consulting Services",
+          "objective": "Learn best practices for delivering effective AI consulting services."
+        }
+      ]
+    }
+  ]
+}

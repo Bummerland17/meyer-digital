@@ -1,0 +1,103 @@
+name: Android Release Build
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build & Sign AAB
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── Checkout ──────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── Node.js ───────────────────────────────────────────────────────────
+      - name: Set up Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      # ── Java ──────────────────────────────────────────────────────────────
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      # ── Android SDK ───────────────────────────────────────────────────────
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android build-tools 34.0.0
+        run: |
+          sdkmanager "build-tools;34.0.0" "platforms;android-34"
+
+      # ── JS Dependencies & Build ───────────────────────────────────────────
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build web assets (Vite)
+        run: npm run build
+
+      # ── Capacitor Sync ────────────────────────────────────────────────────
+      - name: Sync Capacitor Android project
+        run: npx cap sync android
+
+      # ── Gradle Build ──────────────────────────────────────────────────────
+      - name: Make gradlew executable
+        run: chmod +x android/gradlew
+
+      - name: Build release AAB
+        working-directory: android
+        run: ./gradlew bundleRelease --no-daemon
+
+      # ── Keystore Setup ────────────────────────────────────────────────────
+      - name: Decode keystore from secret
+        run: |
+          echo "${{ secrets.KEYSTORE_FILE }}" | base64 --decode > /tmp/pantrymate.keystore
+
+      # ── Sign AAB ──────────────────────────────────────────────────────────
+      - name: Sign AAB with jarsigner
+        run: |
+          # Find the unsigned AAB
+          AAB_PATH=$(find android -name "*.aab" | grep release | head -1)
+          echo "Signing: $AAB_PATH"
+
+          jarsigner \
+            -verbose \
+            -sigalg SHA256withRSA \
+            -digestalg SHA-256 \
+            -keystore /tmp/pantrymate.keystore \
+            -storepass "${{ secrets.STORE_PASSWORD }}" \
+            -keypass "${{ secrets.KEY_PASSWORD }}" \
+            "$AAB_PATH" \
+            "${{ secrets.KEY_ALIAS }}"
+
+          # Copy to well-known output path
+          mkdir -p output
+          cp "$AAB_PATH" output/pantrymate-release-signed.aab
+          echo "AAB_PATH=$AAB_PATH" >> $GITHUB_ENV
+
+      # ── Verify Signature ──────────────────────────────────────────────────
+      - name: Verify signature
+        run: |
+          jarsigner -verify -verbose -certs output/pantrymate-release-signed.aab
+
+      # ── Clean up keystore ─────────────────────────────────────────────────
+      - name: Remove keystore from runner
+        if: always()
+        run: rm -f /tmp/pantrymate.keystore
+
+      # ── Upload Artifact ───────────────────────────────────────────────────
+      - name: Upload signed AAB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pantrymate-release-aab
+          path: output/pantrymate-release-signed.aab
+          retention-days: 30
+          if-no-files-found: error

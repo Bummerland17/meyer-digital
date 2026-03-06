@@ -1,0 +1,222 @@
+{
+  "checklist_id": "script-qa",
+  "version": "1.0.0",
+  "reviewer": "Echo",
+  "description": "Pass/fail checklist for all Vapi call scripts before deployment. Echo reviews for quality, naturalness, and effectiveness. Shield handles legal compliance separately.",
+  "verdict_rules": {
+    "pass": "All items pass → proceed to Shield compliance check",
+    "fail": "Any item fails → return to Scribe with specific notes. Fix and re-review.",
+    "note": "Echo focuses on quality and effectiveness. Shield handles TCPA/legal. Both must pass."
+  },
+  "estimated_wpm": 150,
+  "cold_outreach_max_words": 450,
+  "criteria": [
+    {
+      "id": "ai_disclosure_timing",
+      "label": "AI Disclosure in First 15 Seconds",
+      "type": "pass_fail",
+      "description": "The script must disclose AI nature within the first 15 seconds of the call — roughly the first 37 words at 150 WPM. This is both a quality standard and a legal requirement (also checked by Shield).",
+      "pass_condition": "AI disclosure appears in the OPENING section within the first 37 words.",
+      "measurement": "Count words in OPENING section before disclosure. Must be <= 37 words before 'AI', 'artificial intelligence', 'virtual assistant', or 'not a human' appears.",
+      "fail_conditions": [
+        "Disclosure appears after word 37 in opening",
+        "Disclosure is only in a separate 'disclaimer' note not part of the spoken script",
+        "No disclosure present"
+      ],
+      "automated_checks": [
+        "Extract OPENING section",
+        "Count words to first occurrence of AI disclosure keywords",
+        "Flag if word count > 37 before disclosure",
+        "Flag if disclosure keywords not found in OPENING at all"
+      ],
+      "disclosure_keywords": ["AI", "artificial intelligence", "virtual assistant", "not a human", "automated"],
+      "severity": "critical"
+    },
+    {
+      "id": "natural_opening",
+      "label": "Opening Sounds Natural",
+      "type": "pass_fail",
+      "description": "The opening lines must sound like natural spoken language. Not robotic, not stiff, not reading from a brochure. Should pass the 'read-aloud test' — if it sounds weird said out loud, it needs work.",
+      "pass_condition": "Opening reads naturally when spoken aloud. Uses conversational phrasing. Appropriate greeting for time of day. Doesn't sound like a press release.",
+      "fail_conditions": [
+        "Robotic phrasing: 'I am calling to inform you that...'",
+        "Corporate stiffness: 'We are pleased to offer you the opportunity to...'",
+        "Over-formal: 'Dear valued business owner, I am reaching out today...'",
+        "Breathless sales opener with no human warmth",
+        "Starts with a false premise: 'We spoke last week...' (if untrue)"
+      ],
+      "naturalness_test": "Read the opening aloud. Would a normal person say this on the phone? If you'd feel embarrassed saying it, it fails.",
+      "good_openers": [
+        "Hey [Name], this is Aria from PantryMate — I'm an AI assistant. Quick question, do you have 90 seconds?",
+        "Hi [Name], I'm calling from PantryMate — just so you know, I'm an AI. I'm reaching out because..."
+      ],
+      "automated_checks": [
+        "Flag formal/robotic phrase patterns: 'I am calling to inform', 'please be advised', 'we are pleased to',  'valued customer'",
+        "Flag if opening is over 60 words (too long before getting to the point)",
+        "Flag use of passive voice in first 3 sentences",
+        "Check for false continuity phrases: 'as discussed', 'per our conversation', 'following up' on cold call scripts"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "realistic_objection_handlers",
+      "label": "Objection Handlers Are Realistic",
+      "type": "pass_fail",
+      "description": "The script must include at least 3 objection handlers. Each must respond to the objection genuinely — not dismiss it, not steamroll it, not use pushy counters. The handler should acknowledge the concern and offer a real response.",
+      "pass_condition": "Script contains OBJECTION_HANDLERS section with at least 3 distinct objections, each with a non-dismissive, realistic response.",
+      "minimum_objections_required": 3,
+      "expected_objections_to_cover": [
+        "Not interested",
+        "Too busy right now",
+        "Already have something like this",
+        "What does it cost?",
+        "How does this work?",
+        "I need to think about it"
+      ],
+      "fail_conditions": [
+        "Fewer than 3 objection handlers",
+        "Handlers that dismiss the objection: 'I understand but...' immediately pivoting without acknowledgment",
+        "Pushy counters: 'But you really should consider...' or 'Think about what you're leaving on the table'",
+        "Fake urgency in objection responses: 'We only have 2 spots left so you should decide now'",
+        "Handlers that just repeat the pitch",
+        "No OBJECTION_HANDLERS section"
+      ],
+      "automated_checks": [
+        "Find OBJECTION_HANDLERS section",
+        "Count distinct objection entries",
+        "Flag if count < 3",
+        "Scan objection responses for dismissive phrases: 'but anyway', 'regardless', 'the thing is though'",
+        "Scan for pressure phrases in objection handlers: 'you need to', 'you should really', 'don't miss'"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "call_duration",
+      "label": "Cold Outreach Calls Under 3 Minutes",
+      "type": "pass_fail",
+      "description": "For cold outreach scripts, the full script (excluding objection handler branches) must estimate to under 3 minutes speaking time at 150 WPM. That's 450 words for the main flow.",
+      "pass_condition": "Main call flow (OPENING + PITCH + DATA_CAPTURE + CLOSE) is under 450 words.",
+      "word_budget": {
+        "total_max_words": 450,
+        "speaking_wpm": 150,
+        "max_minutes": 3,
+        "section_guidance": {
+          "OPENING": "30–50 words",
+          "PITCH": "100–150 words",
+          "DATA_CAPTURE": "50–80 words",
+          "CLOSE": "30–50 words",
+          "GRACEFUL_EXIT": "20–30 words"
+        }
+      },
+      "fail_conditions": [
+        "Main flow exceeds 450 words",
+        "Any single section exceeds its guidance range by more than 50%"
+      ],
+      "automated_checks": [
+        "Count words in OPENING + PITCH + DATA_CAPTURE + CLOSE sections",
+        "Flag if total > 450",
+        "Flag if any single section is more than 50% over its guidance"
+      ],
+      "severity": "medium",
+      "note": "This applies to cold outreach scripts. Warm follow-up or scheduled demos may have different limits."
+    },
+    {
+      "id": "data_capture_clarity",
+      "label": "Data Capture Is Clear",
+      "type": "pass_fail",
+      "description": "If the script is meant to collect information from the prospect (name, email, phone, business details), the DATA_CAPTURE section must clearly define what to ask, how to confirm, and what to do if the prospect declines to provide info.",
+      "pass_condition": "Script has DATA_CAPTURE section with explicit fields to collect, confirmation phrasing, and fallback if prospect declines.",
+      "required_elements": [
+        "List of specific fields to collect",
+        "Confirmation phrasing (repeat back to confirm accuracy)",
+        "Fallback/exit if prospect declines to share"
+      ],
+      "fail_conditions": [
+        "No DATA_CAPTURE section on a script designed to gather leads",
+        "Vague data capture: 'collect their info' without specifying what",
+        "No confirmation step (how does AI know it captured correctly?)",
+        "No fallback if prospect says 'I don't want to give you that'"
+      ],
+      "automated_checks": [
+        "Find DATA_CAPTURE section",
+        "Check for field labels: name, email, phone, business name, or similar",
+        "Check for confirmation phrasing keywords: 'just to confirm', 'let me repeat', 'does that sound right'",
+        "Check for fallback phrase in DATA_CAPTURE: 'no problem', 'that's okay', 'I understand'"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "graceful_exit",
+      "label": "Graceful Exit if Not Interested",
+      "type": "pass_fail",
+      "description": "Script must handle disinterest gracefully. One attempt to address the concern is allowed. After that, the AI must close politely and not push further. No aggressive re-engagement loops.",
+      "pass_condition": "Script contains GRACEFUL_EXIT section. After one soft re-engagement attempt, if the prospect is still not interested, the AI says thank you and ends the call cleanly.",
+      "fail_conditions": [
+        "No GRACEFUL_EXIT section",
+        "Exit involves more than one re-engagement attempt after 'not interested'",
+        "Exit is abrupt or rude",
+        "Exit still tries to schedule a follow-up after explicit rejection",
+        "Exit contains guilt or pressure: 'I just want to make sure you're not missing out'"
+      ],
+      "acceptable_exit": "Thank you so much for your time — I won't take up any more of it. Have a great day!",
+      "automated_checks": [
+        "Find GRACEFUL_EXIT section",
+        "Verify section exists and contains closing language",
+        "Flag if GRACEFUL_EXIT contains: 'but', 'however', 'just one more thing', 'before I go, can I just'",
+        "Flag if GRACEFUL_EXIT loops back to PITCH",
+        "Verify graceful exit word count is 20–50 words (short and clean)"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "no_false_claims",
+      "label": "No False Claims About Results",
+      "type": "pass_fail",
+      "description": "Script must not make false or unverifiable claims about PantryMate's results, client outcomes, or competitive advantages. Results may vary. Claims must be framed appropriately.",
+      "pass_condition": "All result claims are hedged appropriately. No guaranteed outcomes. No fabricated statistics.",
+      "forbidden_claims": [
+        "We guarantee you'll see results",
+        "100% of our clients...",
+        "You will make $X",
+        "Proven to double your revenue",
+        "No one else does this",
+        "The only solution on the market",
+        "Every restaurant that uses us...",
+        "You'll definitely notice..."
+      ],
+      "acceptable_claims": [
+        "Some of our clients have seen...",
+        "In our experience, businesses like yours often find...",
+        "We've worked with restaurants that have noticed...",
+        "Results vary, but the feedback we get is..."
+      ],
+      "automated_checks": [
+        "Scan for forbidden_claims patterns",
+        "Scan for 'guarantee' within 10 words of result/revenue/income",
+        "Scan for '100%' followed by positive outcome claim",
+        "Scan for 'every' followed by client/customer/business + positive claim",
+        "Flag specific dollar amount claims without 'results may vary'"
+      ],
+      "severity": "critical"
+    }
+  ],
+  "output_format": {
+    "verdict": "PASS | FAIL",
+    "criteria_results": {
+      "ai_disclosure_timing": "PASS | FAIL",
+      "natural_opening": "PASS | FAIL",
+      "realistic_objection_handlers": "PASS | FAIL",
+      "call_duration": "PASS | FAIL",
+      "data_capture_clarity": "PASS | FAIL",
+      "graceful_exit": "PASS | FAIL",
+      "no_false_claims": "PASS | FAIL"
+    },
+    "word_count": {
+      "main_flow_total": 0,
+      "by_section": {}
+    },
+    "failures": ["list of failed criteria with specific line references"],
+    "reviewer_notes": "Echo's assessment and suggested rewrites",
+    "action": "what happens next"
+  }
+}

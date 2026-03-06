@@ -1,0 +1,9 @@
+NeedFinder Pro — Stripe Details
+================================
+Product:      NeedFinder Pro
+Product ID:   prod_U5rnzRDAR764qN
+Price:        $2.99/month recurring
+Price ID:     price_1T7g3pCRr0tlaIBCbh6XuFwI
+Payment Link: https://buy.stripe.com/6oU6oGbFidsg1fN9BGbsc0b
+Link ID:      plink_1T7g3uCRr0tlaIBCKTLu1iWG
+Created:      2026-03-05

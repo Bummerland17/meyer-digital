@@ -1,0 +1,14 @@
+{
+  "product": "SmartBook AI",
+  "angle": "Your dental practice loses $500 every night after 6pm",
+  "template": "stat-bomb",
+  "duration": 30,
+  "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBxqG1O-kz18zmdwm2vVtGqkrWfvP6aDvA]",
+  "body": "",
+  "cta": "",
+  "caption": "",
+  "hashtags": "",
+  "thumbnail_text": "SMARTBOOK AI",
+  "voiceover_text": "Your dental practice loses $500 every night after 6pm",
+  "raw_script": ""
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{BUSINESS_NAME}} | {{CITY}}, WY</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Georgia',serif;color:#222}
+header{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200') center/cover;color:white;padding:80px 20px;text-align:center}
+header h1{font-size:3em;margin-bottom:10px;text-shadow:1px 1px 3px rgba(0,0,0,0.5)}
+header p{font-size:1.2em;opacity:0.9}
+.hours-bar{background:#8b2635;color:white;padding:12px;text-align:center;font-size:1em}
+.about{padding:50px 20px;max-width:800px;margin:0 auto;text-align:center}
+.about h2{color:#8b2635;font-size:2em;margin-bottom:20px}
+.about p{font-size:1.1em;line-height:1.8;color:#444}
+.menu-highlight{background:#fdf6ec;padding:40px 20px}
+.menu-highlight h2{text-align:center;color:#8b2635;margin-bottom:30px;font-size:1.8em}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:900px;margin:0 auto}
+.menu-item{background:white;border-radius:8px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center}
+.contact{background:#222;color:white;padding:40px 20px;text-align:center}
+.contact h2{margin-bottom:20px;color:#e8c97e}
+.contact p{margin:8px 0;font-size:1.1em}
+footer{background:#111;color:#666;padding:12px;text-align:center;font-size:0.85em}
+</style>
+</head>
+<body>
+<header>
+  <h1>{{BUSINESS_NAME}}</h1>
+  <p>{{TAGLINE}}</p>
+</header>
+<div class="hours-bar">🕐 Hours: {{HOURS}} | 📍 {{ADDRESS}}</div>
+<section class="about">
+  <h2>Welcome</h2>
+  <p>{{ABOUT_TEXT}}</p>
+</section>
+<section class="menu-highlight">
+  <h2>Our Menu</h2>
+  <div class="menu-grid">
+    <div class="menu-item"><h3>🥩 {{ITEM1}}</h3><p>{{ITEM1_DESC}}</p></div>
+    <div class="menu-item"><h3>🥗 {{ITEM2}}</h3><p>{{ITEM2_DESC}}</p></div>
+    <div class="menu-item"><h3>🍺 {{ITEM3}}</h3><p>{{ITEM3_DESC}}</p></div>
+    <div class="menu-item"><h3>🍰 {{ITEM4}}</h3><p>{{ITEM4_DESC}}</p></div>
+  </div>
+</section>
+<section class="contact">
+  <h2>Find Us</h2>
+  <p>📞 <strong>{{PHONE}}</strong></p>
+  <p>📍 {{ADDRESS}}, {{CITY}}, WY</p>
+  <p>📧 {{EMAIL}}</p>
+</section>
+<footer>© 2026 {{BUSINESS_NAME}} | {{CITY}}, Wyoming</footer>
+</body>
+</html>

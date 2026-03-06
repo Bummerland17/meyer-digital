@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "skills": {
+    "brave-search": {
+      "version": "1.0.1",
+      "installedAt": 1772537384788
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1772537561628
+    },
+    "vapi-calls": {
+      "version": "1.0.0",
+      "installedAt": 1772653347408
+    },
+    "real-estate-lead-machine": {
+      "version": "1.0.0",
+      "installedAt": 1772653352341
+    },
+    "ai-cold-email-machine": {
+      "version": "1.0.0",
+      "installedAt": 1772653366408
+    },
+    "meta-ads": {
+      "version": "1.0.0",
+      "installedAt": 1772653372569
+    },
+    "afrexai-saas-metrics": {
+      "version": "1.0.0",
+      "installedAt": 1772653378947
+    },
+    "lead-hunter": {
+      "version": "1.0.1",
+      "installedAt": 1772653385489
+    },
+    "larry-tiktok-agent": {
+      "version": "1.0.0",
+      "installedAt": 1772690955349
+    }
+  }
+}

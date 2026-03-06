@@ -1,0 +1,111 @@
+{
+  "name": "New Stripe Subscriber → Alert Wolfgang",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "stripe-webhook",
+        "responseMode": "onReceived",
+        "responseData": "firstEntryJson"
+      },
+      "id": "node-stripe-webhook",
+      "name": "Stripe Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [200, 300],
+      "webhookId": "stripe-webhook"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.body.type || $json.type }}",
+              "operation": "equals",
+              "value2": "checkout.session.completed"
+            }
+          ]
+        }
+      },
+      "id": "node-if-checkout",
+      "name": "IF checkout.session.completed",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const event = $input.first().json.body || $input.first().json;\nconst session = event.data?.object || {};\n\nconst email = session.customer_details?.email || session.customer_email || 'unknown';\nconst amount = (session.amount_total || 0) / 100;\nconst currency = (session.currency || 'usd').toUpperCase();\nconst planName = session.metadata?.plan_name || session.display_items?.[0]?.custom?.name || 'subscription';\nconst customerId = session.customer || '';\nconst subscriptionId = session.subscription || '';\n\n// Estimate MRR — you can replace this with a real Stripe API call\nconst estimatedMRR = amount; // simplified\n\nreturn [{\n  json: {\n    email,\n    amount,\n    currency,\n    planName,\n    customerId,\n    subscriptionId,\n    estimatedMRR,\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "node-parse-stripe",
+      "name": "Parse Subscriber Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [700, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "8654703697",
+        "text": "🎉 *New Subscriber!*\n\n📧 {{ $json.email }}\n📦 Plan: {{ $json.planName }}\n💰 Amount: ${{ $json.amount }} {{ $json.currency }}\n\n→ Check Stripe for full details",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "node-telegram-sub",
+      "name": "Telegram Alert — New Subscriber",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [950, 200],
+      "credentials": {
+        "telegramApi": {
+          "id": "telegram-creds",
+          "name": "Telegram Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.resend.com/emails",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {"name": "Authorization", "value": "Bearer YOUR_RESEND_API_KEY"}
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={{ JSON.stringify({ from: 'Wolfgang <hello@pantrymate.net>', to: [$json.email], subject: 'Welcome to ' + $json.planName + '!', html: '<p>Hi there,</p><p>Thanks for subscribing to <strong>' + $json.planName + '</strong>. We are excited to have you on board!</p><p>— Wolfgang</p>' }) }}"
+      },
+      "id": "node-resend-welcome",
+      "name": "Add to Resend Drip",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [950, 400]
+    }
+  ],
+  "connections": {
+    "Stripe Webhook": {
+      "main": [[{"node": "IF checkout.session.completed", "type": "main", "index": 0}]]
+    },
+    "IF checkout.session.completed": {
+      "main": [[{"node": "Parse Subscriber Data", "type": "main", "index": 0}]]
+    },
+    "Parse Subscriber Data": {
+      "main": [[
+        {"node": "Telegram Alert — New Subscriber", "type": "main", "index": 0},
+        {"node": "Add to Resend Drip", "type": "main", "index": 0}
+      ]]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": ["stripe", "subscribers", "alerts"],
+  "meta": {
+    "description": "Receives Stripe webhooks on checkout.session.completed. Parses subscriber email/plan/amount, sends Wolfgang a Telegram alert, and triggers a Resend welcome email. Add your Resend API key before activating."
+  }
+}

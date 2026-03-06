@@ -1,0 +1,14 @@
+{
+  "product": "SmartBook AI",
+  "angle": "What happens when you miss a patient call at 7pm",
+  "template": "split-problem-solution",
+  "duration": 30,
+  "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBxqG1O-kz18zmdwm2vVtGqkrWfvP6aDvA]",
+  "body": "",
+  "cta": "",
+  "caption": "",
+  "hashtags": "",
+  "thumbnail_text": "SMARTBOOK AI",
+  "voiceover_text": "What happens when you miss a patient call at 7pm",
+  "raw_script": ""
+}

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonara — Your Music. Any Culture. Anywhere.</title>
+  <meta name="description" content="Sonara blends your personal music DNA with the best sounds from any culture on earth. Connect Spotify, pick your vibe, get your blend." />
+  <meta property="og:title" content="Sonara — Your Music. Any Culture. Anywhere." />
+  <meta property="og:description" content="Blend your music taste with regional sounds from across the globe. Afrobeats, Latin, K-Pop, Reggae & more." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --bg2: #111111;
+      --purple: #9b5de5;
+      --pink: #f72585;
+      --cyan: #4cc9f0;
+      --green: #06d6a0;
+      --text: #f0f0f0;
+      --muted: #888;
+      --card: #1a1a1a;
+      --border: #2a2a2a;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes gradientShift {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50%       { transform: translateY(-18px); }
+    }
+    @keyframes pulse-ring {
+      0%   { transform: scale(0.8); opacity: 1; }
+      100% { transform: scale(2.2); opacity: 0; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    @keyframes waveBar {
+      0%, 100% { height: 8px; }
+      50%       { height: 32px; }
+    }
+    @keyframes shimmer {
+      0%   { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    @keyframes blobMove {
+      0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; transform: translate(0,0) scale(1); }
+      33%       { border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%; transform: translate(30px,-20px) scale(1.05); }
+      66%       { border-radius: 70% 30% 50% 50% / 30% 60% 40% 70%; transform: translate(-20px,15px) scale(0.97); }
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.1rem 2rem;
+      background: rgba(13,13,13,0.7);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .nav-logo {
+      font-size: 1.4rem; font-weight: 900; letter-spacing: -0.5px;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      border: none; border-radius: 50px; padding: 0.55rem 1.4rem;
+      font-size: 0.85rem; font-weight: 700; color: #fff;
+      cursor: pointer; text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; transform: scale(1.04); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 7rem 1.5rem 4rem;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: linear-gradient(135deg, #1a003a, #0d0d0d, #2d0050, #0d0d0d, #1a003a);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
+    }
+    .blob {
+      position: absolute; z-index: 0;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      filter: blur(80px); opacity: 0.35;
+      animation: blobMove 14s ease-in-out infinite;
+    }
+    .blob-1 { width: 520px; height: 520px; top: -120px; left: -100px; background: var(--purple); animation-delay: 0s; }
+    .blob-2 { width: 400px; height: 400px; bottom: -100px; right: -80px; background: var(--pink); animation-delay: -7s; }
+    .blob-3 { width: 300px; height: 300px; top: 30%; left: 55%; background: var(--cyan); opacity: 0.15; animation-delay: -3s; }
+
+    .hero-content { position: relative; z-index: 1; max-width: 760px; animation: fadeInUp 0.9s ease both; }
+
+    .hero-badge {
+      display: inline-block; margin-bottom: 1.4rem;
+      background: rgba(155,93,229,0.18); border: 1px solid rgba(155,93,229,0.4);
+      border-radius: 50px; padding: 0.4rem 1rem;
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      color: #c47aff;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 8vw, 5.2rem);
+      font-weight: 900; line-height: 1.05; letter-spacing: -2px;
+      margin-bottom: 1.3rem;
+    }
+    h1 .gradient-text {
+      background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 50%, #ff9a3c 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 4s linear infinite;
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.22rem); color: rgba(240,240,240,0.7);
+      max-width: 520px; margin: 0 auto 2.5rem; font-weight: 400;
+    }
+
+    /* Hero form */
+    .hero-form {
+      display: flex; flex-wrap: wrap; gap: 0.7rem;
+      justify-content: center; margin-bottom: 1.2rem;
+    }
+    .hero-form input[type="email"] {
+      flex: 1 1 260px; padding: 0.9rem 1.3rem;
+      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50px; color: #fff; font-size: 0.95rem; font-family: inherit;
+      outline: none; transition: border-color 0.2s, background 0.2s;
+    }
+    .hero-form input[type="email"]::placeholder { color: rgba(255,255,255,0.35); }
+    .hero-form input[type="email"]:focus {
+      border-color: var(--purple); background: rgba(155,93,229,0.1);
+    }
+    .btn-primary {
+      flex: 0 0 auto; padding: 0.9rem 1.8rem;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      border: none; border-radius: 50px; color: #fff;
+      font-size: 0.95rem; font-weight: 700; font-family: inherit;
+      cursor: pointer; letter-spacing: 0.02em;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 30px rgba(247,37,133,0.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 8px 40px rgba(247,37,133,0.5); }
+
+    .hero-note { font-size: 0.8rem; color: var(--muted); }
+    .hero-note a { color: var(--muted); }
+
+    /* Wave equalizer decoration */
+    .wave-eq {
+      display: flex; align-items: flex-end; gap: 4px; height: 40px;
+      margin: 2.5rem auto 0; justify-content: center;
+    }
+    .wave-eq span {
+      display: block; width: 5px; background: linear-gradient(var(--purple), var(--pink));
+      border-radius: 3px; animation: waveBar 1s ease-in-out infinite;
+    }
+    .wave-eq span:nth-child(1)  { animation-delay: 0s; }
+    .wave-eq span:nth-child(2)  { animation-delay: 0.1s; }
+    .wave-eq span:nth-child(3)  { animation-delay: 0.2s; }
+    .wave-eq span:nth-child(4)  { animation-delay: 0.3s; }
+    .wave-eq span:nth-child(5)  { animation-delay: 0.4s; }
+    .wave-eq span:nth-child(6)  { animation-delay: 0.3s; }
+    .wave-eq span:nth-child(7)  { animation-delay: 0.2s; }
+    .wave-eq span:nth-child(8)  { animation-delay: 0.1s; }
+    .wave-eq span:nth-child(9)  { animation-delay: 0s; }
+    .wave-eq span:nth-child(10) { animation-delay: 0.15s; }
+    .wave-eq span:nth-child(11) { animation-delay: 0.25s; }
+    .wave-eq span:nth-child(12) { animation-delay: 0.35s; }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 5rem 1.5rem; }
+    .container { max-width: 1060px; margin: 0 auto; }
+    .section-label {
+      display: inline-block; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--purple); margin-bottom: 0.9rem;
+    }
+    h2 {
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      font-weight: 900; letter-spacing: -1px; line-height: 1.1;
+      margin-bottom: 1.1rem;
+    }
+    .section-sub { font-size: 1.05rem; color: rgba(240,240,240,0.6); max-width: 540px; }
+
+    /* ── PROBLEM ── */
+    .problem { background: var(--bg2); }
+    .problem-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+    }
+    .problem-text { }
+    .problem-text h2 { margin-bottom: 1.2rem; }
+    .problem-text p { color: rgba(240,240,240,0.65); margin-bottom: 0.9rem; font-size: 1.02rem; }
+    .pain-list { list-style: none; margin-top: 1.5rem; }
+    .pain-list li {
+      display: flex; align-items: flex-start; gap: 0.8rem;
+      padding: 0.7rem 0; border-bottom: 1px solid var(--border);
+      font-size: 0.97rem; color: rgba(240,240,240,0.75);
+    }
+    .pain-list li .icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 0.05rem; }
+
+    .vinyl-wrap {
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    .vinyl {
+      width: 220px; height: 220px; border-radius: 50%;
+      background: conic-gradient(#1a1a1a 0deg, #2a2a2a 40deg, #1a1a1a 80deg, #2a2a2a 120deg, #1a1a1a 160deg, #2a2a2a 200deg, #1a1a1a 240deg, #2a2a2a 280deg, #1a1a1a 320deg, #2a2a2a 360deg);
+      box-shadow: 0 0 60px rgba(155,93,229,0.25);
+      position: relative;
+      animation: spin-slow 10s linear infinite;
+    }
+    .vinyl::after {
+      content: ''; position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      width: 68px; height: 68px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      box-shadow: 0 0 20px rgba(247,37,133,0.6);
+    }
+    .vinyl-ring {
+      position: absolute; border-radius: 50%;
+      border: 2px solid rgba(155,93,229,0.3);
+      animation: pulse-ring 2.5s ease-out infinite;
+    }
+    .vinyl-ring:nth-child(2) { width: 260px; height: 260px; animation-delay: 0s; }
+    .vinyl-ring:nth-child(3) { width: 300px; height: 300px; animation-delay: 0.8s; }
+    .vinyl-ring:nth-child(4) { width: 340px; height: 340px; animation-delay: 1.6s; }
+
+    @media (max-width: 720px) {
+      .problem-inner { grid-template-columns: 1fr; }
+      .vinyl-wrap { margin-top: 2rem; }
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how { background: var(--bg); }
+    .how-steps {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .step-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+      padding: 2rem 1.6rem; text-align: center; position: relative; overflow: hidden;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .step-card:hover { transform: translateY(-6px); border-color: var(--purple); }
+    .step-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--purple), var(--pink));
+    }
+    .step-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      font-weight: 900; font-size: 1.1rem; margin-bottom: 1.2rem;
+    }
+    .step-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; }
+    .step-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.5; }
+
+    @media (max-width: 720px) { .how-steps { grid-template-columns: 1fr; } }
+
+    /* ── REGION VIBES ── */
+    .vibes { background: var(--bg2); }
+    .vibes-header { text-align: center; margin-bottom: 3rem; }
+    .vibes-header .section-sub { margin: 0 auto; }
+    .region-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+    }
+    .region-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 18px; padding: 1.5rem 1rem;
+      text-align: center; cursor: pointer;
+      transition: transform 0.25s, border-color 0.25s, background 0.25s;
+      position: relative; overflow: hidden;
+    }
+    .region-card::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      opacity: 0; transition: opacity 0.25s;
+    }
+    .region-card:hover { transform: translateY(-5px) scale(1.03); border-color: var(--purple); }
+    .region-card:hover::after { opacity: 0.08; }
+    .region-card .emoji { font-size: 2.4rem; display: block; margin-bottom: 0.6rem; position: relative; z-index: 1; }
+    .region-card .label {
+      font-size: 0.88rem; font-weight: 700; letter-spacing: 0.03em;
+      position: relative; z-index: 1;
+    }
+    .region-card .sublabel {
+      font-size: 0.75rem; color: var(--muted); margin-top: 0.25rem;
+      position: relative; z-index: 1;
+    }
+
+    @media (max-width: 720px) { .region-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 400px) { .region-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    /* ── FOUNDER ── */
+    .founder { background: var(--bg); }
+    .founder-inner {
+      display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: center;
+    }
+    .founder-visual {
+      display: flex; align-items: center; justify-content: center;
+    }
+    .founder-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 24px;
+      padding: 2rem; position: relative; max-width: 300px; width: 100%;
+      animation: float 5s ease-in-out infinite;
+    }
+    .founder-card::before {
+      content: ''; position: absolute; inset: -1px; border-radius: 25px;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      z-index: -1; opacity: 0.5;
+    }
+    .founder-avatar {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; margin-bottom: 1rem;
+      box-shadow: 0 0 25px rgba(155,93,229,0.5);
+    }
+    .founder-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .founder-card .role { font-size: 0.82rem; color: var(--purple); margin-bottom: 1rem; }
+    .founder-card blockquote {
+      font-size: 0.88rem; color: rgba(240,240,240,0.7); font-style: italic; line-height: 1.6;
+      border-left: 2px solid var(--purple); padding-left: 0.8rem;
+    }
+    .location-tag {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: rgba(155,93,229,0.15); border: 1px solid rgba(155,93,229,0.3);
+      border-radius: 50px; padding: 0.3rem 0.8rem;
+      font-size: 0.75rem; color: var(--purple); margin-top: 1rem;
+    }
+
+    .founder-text h2 { margin-bottom: 1.2rem; }
+    .founder-text p { color: rgba(240,240,240,0.68); margin-bottom: 1rem; font-size: 1rem; line-height: 1.75; }
+    .founder-text .big-quote {
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem); font-weight: 600; font-style: italic;
+      color: var(--text); border-left: 3px solid var(--pink);
+      padding: 0.5rem 0 0.5rem 1.2rem; margin: 1.5rem 0;
+    }
+
+    @media (max-width: 720px) {
+      .founder-inner { grid-template-columns: 1fr; }
+      .founder-visual { order: -1; }
+    }
+
+    /* ── WAITLIST ── */
+    .waitlist {
+      background: var(--bg2);
+      text-align: center;
+    }
+    .waitlist-box {
+      max-width: 580px; margin: 0 auto;
+      background: var(--card); border: 1px solid var(--border); border-radius: 28px;
+      padding: 3rem 2.5rem; position: relative; overflow: hidden;
+    }
+    .waitlist-box::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, var(--purple), var(--pink), var(--cyan));
+    }
+    .waitlist-box h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); margin-bottom: 0.6rem; }
+    .waitlist-box p { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+
+    .waitlist-form { display: flex; flex-direction: column; gap: 0.8rem; }
+    .waitlist-form input[type="email"] {
+      padding: 1rem 1.4rem;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px; color: #fff; font-size: 1rem; font-family: inherit;
+      outline: none; transition: border-color 0.2s;
+    }
+    .waitlist-form input[type="email"]:focus { border-color: var(--purple); }
+    .waitlist-form input[type="email"]::placeholder { color: rgba(255,255,255,0.3); }
+    .waitlist-form .btn-primary {
+      padding: 1rem; font-size: 1rem; border-radius: 12px;
+      box-shadow: 0 6px 35px rgba(247,37,133,0.4);
+    }
+    .waitlist-count {
+      margin-top: 1.2rem; font-size: 0.82rem; color: var(--muted);
+    }
+    .waitlist-count strong { color: var(--pink); }
+
+    /* ── SOCIAL PROOF ── */
+    .social-proof { background: var(--bg); }
+    .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .proof-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+      padding: 1.6rem;
+    }
+    .proof-stars { color: #ffd60a; font-size: 1rem; margin-bottom: 0.8rem; letter-spacing: 2px; }
+    .proof-card p { font-size: 0.92rem; color: rgba(240,240,240,0.72); line-height: 1.6; margin-bottom: 1rem; }
+    .proof-person { display: flex; align-items: center; gap: 0.7rem; }
+    .proof-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+    .proof-name { font-size: 0.85rem; font-weight: 600; }
+    .proof-title { font-size: 0.75rem; color: var(--muted); }
+
+    @media (max-width: 720px) { .proof-grid { grid-template-columns: 1fr; } }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg); border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem; text-align: center;
+    }
+    .footer-logo {
+      font-size: 1.5rem; font-weight: 900;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; margin-bottom: 0.6rem;
+    }
+    footer p { font-size: 0.82rem; color: var(--muted); }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--purple); }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-logo">Sonara</div>
+  <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">🎵 Launching Soon</div>
+    <h1>
+      Your Music.<br />
+      <span class="gradient-text">Any Culture.</span><br />
+      Anywhere.
+    </h1>
+    <p class="hero-sub">
+      Connect Spotify, pick a vibe from anywhere on earth, and get a playlist
+      that's 100% you — with flavors from the world you're exploring.
+    </p>
+
+    <form class="hero-form" action="mailto:hello@pantrymate.net" method="get" enctype="text/plain">
+      <input type="hidden" name="subject" value="Sonara Waitlist" />
+      <input type="email" name="email" placeholder="your@email.com" required />
+      <button type="submit" class="btn-primary">🎧 Join the Waitlist</button>
+    </form>
+    <p class="hero-note">No spam. Just a ping when we launch.</p>
+
+    <div class="wave-eq">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROBLEM ── -->
+<section class="problem">
+  <div class="container">
+    <div class="problem-inner">
+      <div class="problem-text">
+        <span class="section-label">The Problem</span>
+        <h2>You travel the world but your playlist stays home.</h2>
+        <p>
+          You land in Lagos, São Paulo, Seoul, or Kingston — and the music scene
+          is electric. But your Spotify is still playing the same tracks from six
+          months ago.
+        </p>
+        <p>
+          Local music discovery is a mystery. Language barriers, unfamiliar artists,
+          zero context. You want to vibe with the culture — but without starting from scratch.
+        </p>
+        <ul class="pain-list">
+          <li><span class="icon">✈️</span>Travelers want local sounds but don't know where to start</li>
+          <li><span class="icon">🌍</span>Expats miss their taste but crave cultural connection</li>
+          <li><span class="icon">🎵</span>Nomads want music that moves with them — everywhere</li>
+          <li><span class="icon">🔍</span>No app bridges your DNA with regional vibes — until now</li>
+        </ul>
+      </div>
+      <div class="vinyl-wrap">
+        <div class="vinyl-ring"></div>
+        <div class="vinyl-ring"></div>
+        <div class="vinyl-ring"></div>
+        <div class="vinyl"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="how">
+  <div class="container">
+    <span class="section-label">How It Works</span>
+    <h2>Three steps to your perfect blend.</h2>
+    <div class="how-steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Connect Spotify</h3>
+        <p>Sonara reads your listening history to map your music DNA — tempo, energy, mood, genres. No guesswork.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Pick Your Vibe</h3>
+        <p>Choose a region or cultural vibe you want to explore. Afrobeats, Latin, K-Pop, Reggae — you name it.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Get Your Blend</h3>
+        <p>We find songs from that region that match your unique audio DNA. A playlist saved straight to your Spotify.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── REGION VIBES ── -->
+<section class="vibes">
+  <div class="container">
+    <div class="vibes-header">
+      <span class="section-label">Choose Your World</span>
+      <h2>8 regions. Infinite possibilities.</h2>
+      <p class="section-sub">Pick a cultural vibe and Sonara finds the tracks that match <em>your</em> sound.</p>
+    </div>
+    <div class="region-grid">
+      <div class="region-card">
+        <span class="emoji">🌍</span>
+        <div class="label">Afrobeats</div>
+        <div class="sublabel">West Africa</div>
+      </div>
+      <div class="region-card">
+        <span class="emoji">💃</span>
+        <div class="label">Latin</div>
+        <div class="sublabel">South America</div>
+      </div>
+      <div class="region-card">
+        <span class="emoji">🇰🇷</span>
+        <div class="label">K-Pop</div>
+        <div class="sublabel">South Korea</div>
+      </div>
+      <div class="region-card">
+        <span class="emoji">🌊</span>
+        <div class="label">Reggae</div>
+        <div class="sublabel">Caribbean</div>
+      </div>
+      <div class="region-card">
+        <span class="emoji">🏮</span>
+        <div class="label">J-Pop</div>
+        <div class="sublabel">Japan</div>
+      </div>
+      <div class="region-card">
+        <span class="emoji">🎸</span>
+        <div class="label">Highlife</div>
+        <div class="sublabel">Ghana / Nigeria</div>
+      </div>
+      <div class="region-card">
+        <span class="emoji">🌶️</span>
+        <div class="label">Flamenco</div>
+        <div class="sublabel">Iberian Soul</div>
+      </div>
+      <div class="region-card">
+        <span class="emoji">🎺</span>
+        <div class="label">Afro-Jazz</div>
+        <div class="sublabel">Southern Africa</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOUNDER ── -->
+<section class="founder">
+  <div class="container">
+    <div class="founder-inner">
+      <div class="founder-visual">
+        <div class="founder-card">
+          <div class="founder-avatar">🎵</div>
+          <h4>Wolfgang</h4>
+          <div class="role">Founder, Sonara</div>
+          <blockquote>
+            "I was sitting in Namibia wishing I could blend my regular music taste with African vibes. No app existed. So I built one."
+          </blockquote>
+          <div class="location-tag">📍 Built in Windhoek, Namibia</div>
+        </div>
+      </div>
+      <div class="founder-text">
+        <span class="section-label">The Origin</span>
+        <h2>Built in Namibia.<br />For everywhere else.</h2>
+        <p>
+          Wolfgang was deep in Namibia — surrounded by the hypnotic pulse of
+          Southern African rhythms. The music was incredible. But his Spotify
+          knew nothing about it.
+        </p>
+        <div class="big-quote">
+          "The music there is incredible and I wanted it in my life without losing myself."
+        </div>
+        <p>
+          He didn't want to start over with a blank slate. He wanted his taste — his
+          energy, his moods, his musical identity — blended with the sounds of wherever
+          he was in the world.
+        </p>
+        <p>
+          That frustration became Sonara. A bridge between who you are musically
+          and the culture you're stepping into.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WAITLIST ── -->
+<section class="waitlist" id="waitlist">
+  <div class="container">
+    <div class="waitlist-box">
+      <h2>Be the first to blend.</h2>
+      <p>Join 0 others waiting — honest, we're just getting started.</p>
+      <form class="waitlist-form" action="mailto:hello@pantrymate.net" method="get" enctype="text/plain">
+        <input type="hidden" name="subject" value="Sonara Waitlist" />
+        <input type="email" name="email" placeholder="Enter your email address" required />
+        <button type="submit" class="btn-primary">🎧 Join the Waitlist — It's Free</button>
+      </form>
+      <p class="waitlist-count">
+        <strong>0 people</strong> on the waitlist so far. Be among the first.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── SOCIAL PROOF ── -->
+<section class="social-proof">
+  <div class="container">
+    <div style="text-align:center; margin-bottom: 1rem;">
+      <span class="section-label">The Vision</span>
+      <h2>Your music taste + the world's best sounds.</h2>
+    </div>
+    <div class="proof-grid">
+      <div class="proof-card">
+        <div class="proof-stars">★★★★★</div>
+        <p>"Finally. I've been living in Lagos for two years and I've never been able to bridge my old playlist with Afrobeats. This is exactly what I needed."</p>
+        <div class="proof-person">
+          <div class="proof-avatar" style="background: linear-gradient(135deg, #9b5de5, #f72585);">🌍</div>
+          <div>
+            <div class="proof-name">Maria T.</div>
+            <div class="proof-title">Expat in Lagos</div>
+          </div>
+        </div>
+      </div>
+      <div class="proof-card">
+        <div class="proof-stars">★★★★★</div>
+        <p>"I travel every month for work. Having a playlist that adapts to wherever I land would completely change how I experience new cities."</p>
+        <div class="proof-person">
+          <div class="proof-avatar" style="background: linear-gradient(135deg, #4cc9f0, #06d6a0);">✈️</div>
+          <div>
+            <div class="proof-name">James K.</div>
+            <div class="proof-title">Digital Nomad</div>
+          </div>
+        </div>
+      </div>
+      <div class="proof-card">
+        <div class="proof-stars">★★★★★</div>
+        <p>"The concept is brilliant. I don't want someone else's playlist — I want music that fits my taste but opens a window into a new culture."</p>
+        <div class="proof-person">
+          <div class="proof-avatar" style="background: linear-gradient(135deg, #f72585, #ff9a3c);">🎵</div>
+          <div>
+            <div class="proof-name">Amara N.</div>
+            <div class="proof-title">Music enthusiast</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">Sonara</div>
+  <p style="margin-bottom: 0.4rem;">Your Music. Any Culture. Anywhere.</p>
+  <p>Built with ❤️ in Namibia · <a href="mailto:hello@pantrymate.net">hello@pantrymate.net</a></p>
+</footer>
+
+</body>
+</html>

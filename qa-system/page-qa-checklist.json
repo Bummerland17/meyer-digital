@@ -1,0 +1,222 @@
+{
+  "checklist_id": "page-qa",
+  "version": "1.0.0",
+  "reviewer": "Lens",
+  "description": "Pass/fail checklist for all PantryMate landing pages before launch. Every item must pass. One FAIL blocks launch.",
+  "verdict_rules": {
+    "pass": "All items pass → proceed to Shield compliance check",
+    "fail": "Any item fails → return to Pixel with specific failure notes. Fix and re-review."
+  },
+  "criteria": [
+    {
+      "id": "links_functional",
+      "label": "All Links Functional",
+      "type": "pass_fail",
+      "description": "Every anchor tag with an href must point to a real, working URL. No placeholder hrefs.",
+      "pass_condition": "Zero href values equal to '#', 'javascript:void(0)', '/placeholder', or empty string. No 404s on resolvable URLs.",
+      "fail_examples": [
+        "<a href='#'>Learn More</a>",
+        "<a href='javascript:void(0)'>Book Now</a>",
+        "<a href=''>Contact Us</a>",
+        "<a href='/coming-soon'>Pricing</a>"
+      ],
+      "automated_checks": [
+        "Regex scan for href=\"#\" and href='#'",
+        "Regex scan for href=\"\" and href=''",
+        "Regex scan for href containing 'placeholder', 'todo', 'fixme', 'tbd'",
+        "Regex scan for javascript:void",
+        "Flag any internal links that don't resolve to real pages"
+      ],
+      "severity": "blocking"
+    },
+    {
+      "id": "no_placeholder_text",
+      "label": "No Placeholder Text",
+      "type": "pass_fail",
+      "description": "Page must not contain any AI-generated or template placeholder text. Every field must be filled with real content.",
+      "pass_condition": "Zero instances of known placeholder patterns in visible text or HTML attributes.",
+      "fail_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "[Business Name]",
+        "[Owner Name]",
+        "[City]",
+        "[Phone]",
+        "[Email]",
+        "INSERT HERE",
+        "INSERT TEXT",
+        "PLACEHOLDER",
+        "YOUR NAME HERE",
+        "COMPANY NAME",
+        "ADD YOUR",
+        "ENTER YOUR",
+        "TODO:",
+        "FIXME:",
+        "TBD",
+        "Coming Soon (placeholder)",
+        "Sample Text",
+        "Dummy Text"
+      ],
+      "automated_checks": [
+        "Case-insensitive regex scan for all fail_patterns",
+        "Scan both visible text and HTML attribute values (alt, title, placeholder, value)",
+        "Flag any text inside square brackets: \\[.*?\\]",
+        "Flag any text inside curly braces that isn't a real template: \\{\\{.*?\\}\\}"
+      ],
+      "severity": "blocking"
+    },
+    {
+      "id": "mobile_responsive",
+      "label": "Mobile Responsive",
+      "type": "pass_fail",
+      "description": "Page must be designed for mobile viewing. Requires viewport meta tag and responsive layout patterns.",
+      "pass_condition": "Viewport meta tag present AND at least one of: media queries in CSS, relative units (%, vw, rem, em) used for layout, or responsive framework (Bootstrap, Tailwind) detected.",
+      "required_elements": [
+        {
+          "check": "viewport_meta",
+          "pattern": "<meta name=\"viewport\"",
+          "description": "Must have viewport meta tag in <head>"
+        },
+        {
+          "check": "responsive_units",
+          "pattern": "% | vw | vh | rem | em (in CSS width/max-width declarations)",
+          "description": "Layout should use relative units, not fixed px widths only"
+        },
+        {
+          "check": "media_queries_or_framework",
+          "pattern": "@media | bootstrap | tailwind | foundation",
+          "description": "Must have responsive breakpoint handling"
+        }
+      ],
+      "automated_checks": [
+        "Check for <meta name=\"viewport\" content=\"width=device-width",
+        "Check for @media queries in <style> or linked CSS",
+        "Check for Bootstrap/Tailwind class patterns",
+        "Flag if all widths are specified in fixed px with no responsive override"
+      ],
+      "severity": "blocking"
+    },
+    {
+      "id": "stripe_links_real",
+      "label": "Stripe Links Are Real (Live Mode)",
+      "type": "pass_fail",
+      "description": "All payment links must be real buy.stripe.com URLs in live mode. No test mode links, no placeholder payment URLs.",
+      "pass_condition": "All payment/checkout links start with https://buy.stripe.com/ and do not contain 'test' in the URL path. No links to stripe.com/test or checkout.stripe.com/pay/test_*.",
+      "fail_patterns": [
+        "href containing 'stripe' but not matching buy.stripe.com",
+        "buy.stripe.com/test_",
+        "checkout.stripe.com/pay/test",
+        "href='#' near any Buy/Purchase/Checkout button",
+        "stripe.com/docs (doc links used as fake payment links)"
+      ],
+      "automated_checks": [
+        "Find all buttons/links with text containing: Buy, Purchase, Get Started, Checkout, Order, Pay, Subscribe",
+        "Verify each points to https://buy.stripe.com/[real-id]",
+        "Flag any that point to # or a non-Stripe URL",
+        "Check that link IDs don't start with 'test_'",
+        "Flag if no payment link is found on a page that appears to sell something"
+      ],
+      "live_url_pattern": "^https://buy\\.stripe\\.com/[a-zA-Z0-9]+$",
+      "severity": "blocking"
+    },
+    {
+      "id": "correct_contact_email",
+      "label": "Contact Email Is hello@pantrymate.net",
+      "type": "pass_fail",
+      "description": "Any email address displayed on the page must be hello@pantrymate.net. No example emails, no placeholder emails.",
+      "pass_condition": "If any email address appears on the page, it must be hello@pantrymate.net. Page may have no email address (also acceptable).",
+      "fail_patterns": [
+        "example@email.com",
+        "example@example.com",
+        "your@email.com",
+        "contact@yourbusiness.com",
+        "info@company.com",
+        "test@test.com",
+        "noreply@example.com",
+        "any @example.* or @yourdomain.* address",
+        "any email address that is not hello@pantrymate.net"
+      ],
+      "automated_checks": [
+        "Regex scan for all email addresses in page: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+        "For each found email, verify it equals hello@pantrymate.net",
+        "Flag any email that does not match",
+        "Case-insensitive match"
+      ],
+      "correct_email": "hello@pantrymate.net",
+      "severity": "blocking"
+    },
+    {
+      "id": "testimonials_labeled",
+      "label": "Testimonials Labeled as Illustrative (If Not Real)",
+      "type": "pass_fail",
+      "description": "If the page contains testimonials, case studies, or customer quotes, they must either be from real named customers OR clearly labeled as illustrative/example scenarios.",
+      "pass_condition": "All testimonials either: (a) include a full name and verifiable context, OR (b) include a clear disclaimer such as 'Illustrative example', 'Results may vary', 'Sample scenario', or equivalent visible label.",
+      "fail_patterns": [
+        "Testimonial with no name or fake generic name ('Happy Customer', 'Business Owner in Ohio')",
+        "Quote attributed to 'John D.' or initials only without context",
+        "Revenue or result claims in testimonials without disclaimer",
+        "Stock photo + fake name testimonial with no disclaimer"
+      ],
+      "acceptable_labels": [
+        "Illustrative example",
+        "Sample scenario",
+        "Results may vary",
+        "These results are not typical",
+        "Example only — not a real customer",
+        "Fictional scenario for illustration"
+      ],
+      "automated_checks": [
+        "Find testimonial sections by common class names: .testimonial, .review, .quote, blockquote",
+        "Check for presence of disclaimer text near each testimonial block",
+        "Flag testimonials with generic attributions (no last name, no business name)",
+        "Flag testimonials containing specific dollar amounts without disclaimer"
+      ],
+      "severity": "blocking"
+    },
+    {
+      "id": "no_heavy_dependencies",
+      "label": "No Heavy External Dependencies",
+      "type": "pass_fail",
+      "description": "Page should load fast. External dependencies should be limited to Google Fonts. No unnecessary heavy JS libraries, tracking pixels, or external scripts.",
+      "pass_condition": "External script tags and stylesheets limited to Google Fonts (fonts.googleapis.com, fonts.gstatic.com) and optionally one analytics tag (Google Analytics or equivalent). No heavy libraries loaded that aren't needed.",
+      "allowed_external": [
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "www.googletagmanager.com (GA4 only)",
+        "cdn.jsdelivr.net (lightweight utilities only)",
+        "buy.stripe.com (Stripe payment button embed)"
+      ],
+      "flag_if_found": [
+        "Multiple large JS frameworks (loading both jQuery AND React, etc.)",
+        "Video autoplay from external source (YouTube embed, Vimeo) without user interaction",
+        "Multiple tracking pixels from different ad networks",
+        "Unminified library files over 500KB",
+        "External fonts from non-Google sources (Adobe Fonts, Typekit) — not blocked, just flagged"
+      ],
+      "automated_checks": [
+        "Count <script src=> tags pointing to external domains",
+        "Count <link rel=stylesheet> tags pointing to external domains",
+        "Flag any src pointing to domains not in allowed_external",
+        "Flag large bundle files by checking for .bundle.js or unminified .js files"
+      ],
+      "severity": "warning",
+      "note": "This is the only criterion where a finding results in a WARNING rather than hard FAIL. Reviewer uses judgment. If page is clearly unacceptably slow (more than 5 external scripts), escalate to Pixel for cleanup."
+    }
+  ],
+  "output_format": {
+    "verdict": "PASS | FAIL | PASS_WITH_WARNINGS",
+    "criteria_results": {
+      "links_functional": "PASS | FAIL",
+      "no_placeholder_text": "PASS | FAIL",
+      "mobile_responsive": "PASS | FAIL",
+      "stripe_links_real": "PASS | FAIL",
+      "correct_contact_email": "PASS | FAIL",
+      "testimonials_labeled": "PASS | FAIL",
+      "no_heavy_dependencies": "PASS | FAIL | WARNING"
+    },
+    "failures": ["list of failed criteria with specific details"],
+    "warnings": ["list of warnings (non-blocking)"],
+    "reviewer_notes": "Lens's summary and recommended fixes",
+    "action": "what happens next"
+  }
+}

@@ -1,0 +1,4376 @@
+[
+  {
+    "lead": "Altitude Medspa",
+    "phone": "+18012302822",
+    "city": "Salt Lake City",
+    "type": "Med Spa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbeba-3a9a-7000-81f5-e208d54b1254",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:00:01.690Z",
+      "updatedAt": "2026-03-05T16:00:01.690Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Altitude Medspa",
+        "number": "+18012302822"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Altitude Medspa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-3a9a-7000-81f5-e208d54b1254/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-3a9a-7000-81f5-e208d54b1254/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:00:01.812586+00:00"
+  },
+  {
+    "lead": "Haus of Aesthetics",
+    "phone": "+18019978199",
+    "city": "Salt Lake City",
+    "type": "Med Spa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbeba-6a63-7ee0-abed-9f43bfeb6897",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:00:13.923Z",
+      "updatedAt": "2026-03-05T16:00:13.923Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Haus of Aesthetics",
+        "number": "+18019978199"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Haus of Aesthetics? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-6a63-7ee0-abed-9f43bfeb6897/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-6a63-7ee0-abed-9f43bfeb6897/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:00:14.055127+00:00"
+  },
+  {
+    "lead": "Silk Touch Med Spa",
+    "phone": "+12089393110",
+    "city": "Boise",
+    "type": "Med Spa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 7
+      },
+      "id": "019cbeba-9a28-7445-8cbd-3c8c6ad65e5b",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:00:26.152Z",
+      "updatedAt": "2026-03-05T16:00:26.152Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Silk Touch Med Spa",
+        "number": "+12089393110"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Silk Touch Med Spa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-9a28-7445-8cbd-3c8c6ad65e5b/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-9a28-7445-8cbd-3c8c6ad65e5b/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:00:26.236413+00:00"
+  },
+  {
+    "lead": "REJUV Medspa",
+    "phone": "+12088843800",
+    "city": "Boise",
+    "type": "Med Spa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 6
+      },
+      "id": "019cbeba-c9b0-755c-a88d-145bd75a9cff",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:00:38.320Z",
+      "updatedAt": "2026-03-05T16:00:38.320Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "REJUV Medspa",
+        "number": "+12088843800"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this REJUV Medspa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-c9b0-755c-a88d-145bd75a9cff/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-c9b0-755c-a88d-145bd75a9cff/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:00:38.400843+00:00"
+  },
+  {
+    "lead": "ATLAS Physical Therapy",
+    "phone": "+13038323700",
+    "city": "Denver",
+    "type": "Physical Therapy",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 7
+      },
+      "id": "019cbeba-f941-766d-9b75-de9c58fda5cd",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:00:50.497Z",
+      "updatedAt": "2026-03-05T16:00:50.497Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "ATLAS Physical Therapy",
+        "number": "+13038323700"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this ATLAS Physical Therapy? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-f941-766d-9b75-de9c58fda5cd/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeba-f941-766d-9b75-de9c58fda5cd/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:00:50.578882+00:00"
+  },
+  {
+    "lead": "Life Smiles Dental Care",
+    "phone": "+16027865484",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebb-2b69-733e-92bc-4f2155fdb8dd",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:01:03.337Z",
+      "updatedAt": "2026-03-05T16:01:03.337Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Life Smiles Dental Care",
+        "number": "+16027865484"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Life Smiles Dental Care? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebb-2b69-733e-92bc-4f2155fdb8dd/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebb-2b69-733e-92bc-4f2155fdb8dd/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:01:03.484335+00:00"
+  },
+  {
+    "lead": "Dental on Central",
+    "phone": "+16022661776",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebb-8040-755d-aa16-0a9f77acacf6",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:01:25.056Z",
+      "updatedAt": "2026-03-05T16:01:25.056Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Dental on Central",
+        "number": "+16022661776"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Dental on Central? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebb-8040-755d-aa16-0a9f77acacf6/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebb-8040-755d-aa16-0a9f77acacf6/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:01:25.182370+00:00"
+  },
+  {
+    "lead": "Arizona Biltmore Dentistry",
+    "phone": "+16027373624",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebb-b004-7668-96ef-4fce70d46134",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:01:37.284Z",
+      "updatedAt": "2026-03-05T16:01:37.284Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Arizona Biltmore Dentistry",
+        "number": "+16027373624"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Arizona Biltmore Dentistry? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebb-b004-7668-96ef-4fce70d46134/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebb-b004-7668-96ef-4fce70d46134/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:01:37.395227+00:00"
+  },
+  {
+    "lead": "Biltmore Dental Center",
+    "phone": "+16029548200",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebb-dfa8-755d-aa16-8624f246a0d4",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:01:49.480Z",
+      "updatedAt": "2026-03-05T16:01:49.480Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Biltmore Dental Center",
+        "number": "+16029548200"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Biltmore Dental Center? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebb-dfa8-755d-aa16-8624f246a0d4/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebb-dfa8-755d-aa16-8624f246a0d4/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:01:49.553133+00:00"
+  },
+  {
+    "lead": "Smile Dental Clinics",
+    "phone": "+16232577475",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbebc-0f3e-722d-8f53-af5cd92f7456",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:02:01.662Z",
+      "updatedAt": "2026-03-05T16:02:01.662Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Smile Dental Clinics",
+        "number": "+16232577475"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Smile Dental Clinics? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-0f3e-722d-8f53-af5cd92f7456/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-0f3e-722d-8f53-af5cd92f7456/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:02:01.838147+00:00"
+  },
+  {
+    "lead": "WALK IN - SAME DAY Treatment Dental",
+    "phone": "+16023533333",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebc-3f21-7881-a2ab-bef296f492f7",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:02:13.921Z",
+      "updatedAt": "2026-03-05T16:02:13.921Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "WALK IN - SAME DAY Treatment Dental",
+        "number": "+16023533333"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this WALK IN - SAME DAY Treatment Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-3f21-7881-a2ab-bef296f492f7/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-3f21-7881-a2ab-bef296f492f7/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:02:13.989622+00:00"
+  },
+  {
+    "lead": "Paradise Ridge Dentistry",
+    "phone": "+16023133947",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbebc-6e9f-7ee0-abf1-d5e50ee319cf",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:02:26.079Z",
+      "updatedAt": "2026-03-05T16:02:26.079Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Paradise Ridge Dentistry",
+        "number": "+16023133947"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Paradise Ridge Dentistry? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-6e9f-7ee0-abf1-d5e50ee319cf/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-6e9f-7ee0-abf1-d5e50ee319cf/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:02:26.171917+00:00"
+  },
+  {
+    "lead": "Dental Specialty Associates",
+    "phone": "+16029627558",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 7
+      },
+      "id": "019cbebc-9e59-722d-8f54-fe9321ed6e2a",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:02:38.297Z",
+      "updatedAt": "2026-03-05T16:02:38.297Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Dental Specialty Associates",
+        "number": "+16029627558"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Dental Specialty Associates? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-9e59-722d-8f54-fe9321ed6e2a/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-9e59-722d-8f54-fe9321ed6e2a/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:02:38.411638+00:00"
+  },
+  {
+    "lead": "Open Wide Dental - Phoenix",
+    "phone": "+16028069999",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbebc-ce0e-7110-86d0-2d9d5aee4242",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:02:50.510Z",
+      "updatedAt": "2026-03-05T16:02:50.510Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Open Wide Dental - Phoenix",
+        "number": "+16028069999"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Open Wide Dental - Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-ce0e-7110-86d0-2d9d5aee4242/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebc-ce0e-7110-86d0-2d9d5aee4242/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:02:50.598333+00:00"
+  },
+  {
+    "lead": "The Society Of St. Vincent De Paul",
+    "phone": "+16022543338",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebd-3229-7ee0-abf2-77fb66b895d8",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:03:16.137Z",
+      "updatedAt": "2026-03-05T16:03:16.137Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "The Society Of St. Vincent De Paul",
+        "number": "+16022543338"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this The Society Of St. Vincent De Paul? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebd-3229-7ee0-abf2-77fb66b895d8/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebd-3229-7ee0-abf2-77fb66b895d8/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:03:16.435215+00:00"
+  },
+  {
+    "lead": "Risas Dental and Braces - Phoenix Central",
+    "phone": "+16028455730",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "message": [
+        "customer.name must be shorter than or equal to 40 characters"
+      ],
+      "error": "Bad Request",
+      "statusCode": 400
+    },
+    "time": "2026-03-05T16:03:28.554929+00:00"
+  },
+  {
+    "lead": "7 North Dental",
+    "phone": "+16029105700",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbebd-96d6-7222-98bd-04f2b150334a",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:03:41.910Z",
+      "updatedAt": "2026-03-05T16:03:41.910Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "7 North Dental",
+        "number": "+16029105700"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this 7 North Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebd-96d6-7222-98bd-04f2b150334a/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebd-96d6-7222-98bd-04f2b150334a/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:03:42.175982+00:00"
+  },
+  {
+    "lead": "24th Street Dental Biltmore",
+    "phone": "+16024681135",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebd-c70f-7dd3-9aff-424e0a66dc1e",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:03:54.255Z",
+      "updatedAt": "2026-03-05T16:03:54.255Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "24th Street Dental Biltmore",
+        "number": "+16024681135"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this 24th Street Dental Biltmore? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebd-c70f-7dd3-9aff-424e0a66dc1e/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebd-c70f-7dd3-9aff-424e0a66dc1e/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:03:54.325316+00:00"
+  },
+  {
+    "lead": "Thomas Dental",
+    "phone": "+16234556668",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbebd-f687-7881-a2ae-3ad2742a6420",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:04:06.407Z",
+      "updatedAt": "2026-03-05T16:04:06.407Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Thomas Dental",
+        "number": "+16234556668"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Thomas Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebd-f687-7881-a2ae-3ad2742a6420/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebd-f687-7881-a2ae-3ad2742a6420/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:04:06.479139+00:00"
+  },
+  {
+    "lead": "North Central Family Dentistry",
+    "phone": "+16022422576",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebe-2609-7dd3-9aff-9bef38344e3e",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:04:18.569Z",
+      "updatedAt": "2026-03-05T16:04:18.569Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "North Central Family Dentistry",
+        "number": "+16022422576"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this North Central Family Dentistry? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-2609-7dd3-9aff-9bef38344e3e/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-2609-7dd3-9aff-9bef38344e3e/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:04:18.650051+00:00"
+  },
+  {
+    "lead": "Weekend Dental Care",
+    "phone": "+16024663001",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebe-55cb-755c-a893-8804c958f7ef",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:04:30.795Z",
+      "updatedAt": "2026-03-05T16:04:30.795Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Weekend Dental Care",
+        "number": "+16024663001"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Weekend Dental Care? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-55cb-755c-a893-8804c958f7ef/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-55cb-755c-a893-8804c958f7ef/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:04:30.873392+00:00"
+  },
+  {
+    "lead": "Downtown Phoenix Dental",
+    "phone": "+16026267952",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebe-8559-7996-b4bb-9f82c389395d",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:04:42.969Z",
+      "updatedAt": "2026-03-05T16:04:42.969Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Downtown Phoenix Dental",
+        "number": "+16026267952"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Downtown Phoenix Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-8559-7996-b4bb-9f82c389395d/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-8559-7996-b4bb-9f82c389395d/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:04:43.066940+00:00"
+  },
+  {
+    "lead": "Westwind Dental Phoenix",
+    "phone": "+14804708781",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbebe-b57b-711b-9b4b-271c8d4dcf8c",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:04:55.291Z",
+      "updatedAt": "2026-03-05T16:04:55.291Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Westwind Dental Phoenix",
+        "number": "+14804708781"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Westwind Dental Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-b57b-711b-9b4b-271c8d4dcf8c/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-b57b-711b-9b4b-271c8d4dcf8c/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:04:55.611079+00:00"
+  },
+  {
+    "lead": "All Smiles Dental Care - Phoenix",
+    "phone": "+16029609130",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebe-e63d-722c-b144-19c887bf09b3",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:05:07.773Z",
+      "updatedAt": "2026-03-05T16:05:07.773Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "All Smiles Dental Care - Phoenix",
+        "number": "+16029609130"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this All Smiles Dental Care - Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-e63d-722c-b144-19c887bf09b3/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebe-e63d-722c-b144-19c887bf09b3/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:05:07.890383+00:00"
+  },
+  {
+    "lead": "19th Ave Dental Care",
+    "phone": "+16024330313",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbebf-15e3-722c-b145-20e377b04a49",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:05:19.971Z",
+      "updatedAt": "2026-03-05T16:05:19.971Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "19th Ave Dental Care",
+        "number": "+16024330313"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this 19th Ave Dental Care? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-15e3-722c-b145-20e377b04a49/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-15e3-722c-b145-20e377b04a49/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:05:20.044754+00:00"
+  },
+  {
+    "lead": "Central Dental",
+    "phone": "+14808089494",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebf-455b-7ee7-8f90-034a1a6de3fb",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:05:32.123Z",
+      "updatedAt": "2026-03-05T16:05:32.123Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Central Dental",
+        "number": "+14808089494"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Central Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-455b-7ee7-8f90-034a1a6de3fb/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-455b-7ee7-8f90-034a1a6de3fb/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:05:32.198526+00:00"
+  },
+  {
+    "lead": "Radiant Smiles Phoenix",
+    "phone": "+16024617575",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebf-74dc-7776-9e6f-0b7d68121114",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:05:44.284Z",
+      "updatedAt": "2026-03-05T16:05:44.284Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Radiant Smiles Phoenix",
+        "number": "+16024617575"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Radiant Smiles Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-74dc-7776-9e6f-0b7d68121114/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-74dc-7776-9e6f-0b7d68121114/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:05:44.355276+00:00"
+  },
+  {
+    "lead": "Phoenix Dental Design",
+    "phone": "+16029562241",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbebf-a46f-7000-81fd-74444f368145",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:05:56.463Z",
+      "updatedAt": "2026-03-05T16:05:56.463Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Phoenix Dental Design",
+        "number": "+16029562241"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Phoenix Dental Design? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-a46f-7000-81fd-74444f368145/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-a46f-7000-81fd-74444f368145/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:05:56.550627+00:00"
+  },
+  {
+    "lead": "Arcadia Dental Group",
+    "phone": "+16029542177",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbebf-d403-7668-96f7-a9b2c473194a",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:06:08.643Z",
+      "updatedAt": "2026-03-05T16:06:08.643Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Arcadia Dental Group",
+        "number": "+16029542177"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Arcadia Dental Group? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-d403-7668-96f7-a9b2c473194a/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbebf-d403-7668-96f7-a9b2c473194a/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:06:08.712054+00:00"
+  },
+  {
+    "lead": "We Care Dental Phoenix, AZ",
+    "phone": "+16027551671",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec0-0382-7dd3-9b02-baed2effe967",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:06:20.802Z",
+      "updatedAt": "2026-03-05T16:06:20.802Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "We Care Dental Phoenix, AZ",
+        "number": "+16027551671"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this We Care Dental Phoenix, AZ? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-0382-7dd3-9b02-baed2effe967/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-0382-7dd3-9b02-baed2effe967/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:06:20.878570+00:00"
+  },
+  {
+    "lead": "Bell Road Dental Care of Phoenix",
+    "phone": "+16024043483",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec0-3308-777f-a165-98ed2b51601a",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:06:32.968Z",
+      "updatedAt": "2026-03-05T16:06:32.968Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Bell Road Dental Care of Phoenix",
+        "number": "+16024043483"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Bell Road Dental Care of Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-3308-777f-a165-98ed2b51601a/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-3308-777f-a165-98ed2b51601a/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:06:33.049162+00:00"
+  },
+  {
+    "lead": "Diamond Dental",
+    "phone": "+16029001100",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec0-6299-755d-aa1d-3dcf399ab1bf",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:06:45.145Z",
+      "updatedAt": "2026-03-05T16:06:45.145Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Diamond Dental",
+        "number": "+16029001100"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Diamond Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-6299-755d-aa1d-3dcf399ab1bf/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-6299-755d-aa1d-3dcf399ab1bf/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:06:45.214803+00:00"
+  },
+  {
+    "lead": "Anytime Dental",
+    "phone": "+16022078528",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec0-920b-777f-a165-daac12ef3eee",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:06:57.291Z",
+      "updatedAt": "2026-03-05T16:06:57.291Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Anytime Dental",
+        "number": "+16022078528"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Anytime Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-920b-777f-a165-daac12ef3eee/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-920b-777f-a165-daac12ef3eee/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:06:57.379697+00:00"
+  },
+  {
+    "lead": "Downtown Smiles Phoenix Dental Care",
+    "phone": "+16025669005",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec0-c1a3-7ee0-abf7-20468f220b27",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:07:09.475Z",
+      "updatedAt": "2026-03-05T16:07:09.475Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Downtown Smiles Phoenix Dental Care",
+        "number": "+16025669005"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Downtown Smiles Phoenix Dental Care? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-c1a3-7ee0-abf7-20468f220b27/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-c1a3-7ee0-abf7-20468f220b27/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:07:09.580131+00:00"
+  },
+  {
+    "lead": "Highland Dental Studio Phoenix",
+    "phone": "+16028583028",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec0-f144-7881-a2b3-8f84afb9ba51",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:07:21.668Z",
+      "updatedAt": "2026-03-05T16:07:21.668Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Highland Dental Studio Phoenix",
+        "number": "+16028583028"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Highland Dental Studio Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-f144-7881-a2b3-8f84afb9ba51/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec0-f144-7881-a2b3-8f84afb9ba51/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:07:21.768932+00:00"
+  },
+  {
+    "lead": "Brighter Way Dental Center",
+    "phone": "+16023620744",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec1-2300-7881-a2b3-eab84a93e07f",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:07:34.400Z",
+      "updatedAt": "2026-03-05T16:07:34.400Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Brighter Way Dental Center",
+        "number": "+16023620744"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Brighter Way Dental Center? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-2300-7881-a2b3-eab84a93e07f/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-2300-7881-a2b3-eab84a93e07f/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:07:34.505063+00:00"
+  },
+  {
+    "lead": "Dental Brothers & Smile Dental Studio",
+    "phone": "+16027891131",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec1-52af-7aa4-b1d4-15d564b68963",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:07:46.607Z",
+      "updatedAt": "2026-03-05T16:07:46.607Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Dental Brothers & Smile Dental Studio",
+        "number": "+16027891131"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Dental Brothers & Smile Dental Studio? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-52af-7aa4-b1d4-15d564b68963/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-52af-7aa4-b1d4-15d564b68963/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:07:46.702880+00:00"
+  },
+  {
+    "lead": "Family Dental Phoenix",
+    "phone": "+16028641119",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec1-823c-7229-bb50-08fe9b3e0263",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:07:58.780Z",
+      "updatedAt": "2026-03-05T16:07:58.780Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Family Dental Phoenix",
+        "number": "+16028641119"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Family Dental Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-823c-7229-bb50-08fe9b3e0263/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-823c-7229-bb50-08fe9b3e0263/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:07:58.851254+00:00"
+  },
+  {
+    "lead": "Agave Dental",
+    "phone": "+16029572411",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec1-b1c0-7aa4-b1d5-3f0b5e883268",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:08:10.944Z",
+      "updatedAt": "2026-03-05T16:08:10.944Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Agave Dental",
+        "number": "+16029572411"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Agave Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-b1c0-7aa4-b1d5-3f0b5e883268/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-b1c0-7aa4-b1d5-3f0b5e883268/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:08:11.119639+00:00"
+  },
+  {
+    "lead": "Encanto Family Dental Care",
+    "phone": "+16026669961",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec1-e1c3-722c-b149-cf88979f8708",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:08:23.235Z",
+      "updatedAt": "2026-03-05T16:08:23.235Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Encanto Family Dental Care",
+        "number": "+16026669961"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Encanto Family Dental Care? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-e1c3-722c-b149-cf88979f8708/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec1-e1c3-722c-b149-cf88979f8708/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:08:23.380640+00:00"
+  },
+  {
+    "lead": "Orthodontic Associates",
+    "phone": "+12078854850",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec2-118c-7774-b95c-8a1cc674b0c6",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:08:35.468Z",
+      "updatedAt": "2026-03-05T16:08:35.468Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Orthodontic Associates",
+        "number": "+12078854850"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Orthodontic Associates? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-118c-7774-b95c-8a1cc674b0c6/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-118c-7774-b95c-8a1cc674b0c6/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:08:35.552745+00:00"
+  },
+  {
+    "lead": "Vincent G. Sotero, D.M.D.",
+    "phone": "+12034839069",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec2-412f-733b-baa0-96d4d51b7f09",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:08:47.663Z",
+      "updatedAt": "2026-03-05T16:08:47.663Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Vincent G. Sotero, D.M.D.",
+        "number": "+12034839069"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Vincent G. Sotero, D.M.D.? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-412f-733b-baa0-96d4d51b7f09/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-412f-733b-baa0-96d4d51b7f09/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:08:47.747589+00:00"
+  },
+  {
+    "lead": "Healing Dentistry Dental clinic",
+    "phone": "+16022730013",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec2-70ce-7226-9952-9bfa604e8a21",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:08:59.854Z",
+      "updatedAt": "2026-03-05T16:08:59.854Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Healing Dentistry Dental clinic",
+        "number": "+16022730013"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Healing Dentistry Dental clinic? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-70ce-7226-9952-9bfa604e8a21/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-70ce-7226-9952-9bfa604e8a21/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:08:59.945501+00:00"
+  },
+  {
+    "lead": "AZ Family Dental - Phoenix",
+    "phone": "+16028442431",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec2-a059-7668-96fc-ee815b83b9e0",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:09:12.025Z",
+      "updatedAt": "2026-03-05T16:09:12.025Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "AZ Family Dental - Phoenix",
+        "number": "+16028442431"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this AZ Family Dental - Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-a059-7668-96fc-ee815b83b9e0/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-a059-7668-96fc-ee815b83b9e0/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:09:12.108214+00:00"
+  },
+  {
+    "lead": "Highrise Dental",
+    "phone": "+16022301161",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec2-cfe5-788b-baf7-c5fe9d2415a9",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:09:24.197Z",
+      "updatedAt": "2026-03-05T16:09:24.197Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Highrise Dental",
+        "number": "+16022301161"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Highrise Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-cfe5-788b-baf7-c5fe9d2415a9/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-cfe5-788b-baf7-c5fe9d2415a9/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:09:24.266276+00:00"
+  },
+  {
+    "lead": "Dental Therapy - Phoenix",
+    "phone": "+16029444123",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec2-ff6e-7222-98c6-3537c78889c4",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:09:36.366Z",
+      "updatedAt": "2026-03-05T16:09:36.366Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Dental Therapy - Phoenix",
+        "number": "+16029444123"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Dental Therapy - Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-ff6e-7222-98c6-3537c78889c4/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec2-ff6e-7222-98c6-3537c78889c4/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:09:36.445885+00:00"
+  },
+  {
+    "lead": "1800 Emergency Dentist Phoenix 24 Hour",
+    "phone": "+14809143723",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec3-388b-777f-a16a-48342dc0b921",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:09:50.987Z",
+      "updatedAt": "2026-03-05T16:09:50.987Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "1800 Emergency Dentist Phoenix 24 Hour",
+        "number": "+14809143723"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this 1800 Emergency Dentist Phoenix 24 Hour? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-388b-777f-a16a-48342dc0b921/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-388b-777f-a16a-48342dc0b921/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:09:51.115586+00:00"
+  },
+  {
+    "lead": "AZ DENTAL",
+    "phone": "+16024550505",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec3-6878-7ee4-a7cc-6946bd878e7b",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:10:03.256Z",
+      "updatedAt": "2026-03-05T16:10:03.256Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "AZ DENTAL",
+        "number": "+16024550505"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this AZ DENTAL? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-6878-7ee4-a7cc-6946bd878e7b/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-6878-7ee4-a7cc-6946bd878e7b/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:10:03.380715+00:00"
+  },
+  {
+    "lead": "VA Dental",
+    "phone": "+16022226424",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec3-984e-7996-b4c5-134cd2077e70",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:10:15.502Z",
+      "updatedAt": "2026-03-05T16:10:15.502Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "VA Dental",
+        "number": "+16022226424"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this VA Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-984e-7996-b4c5-134cd2077e70/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-984e-7996-b4c5-134cd2077e70/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:10:15.565805+00:00"
+  },
+  {
+    "lead": "Phoenix Medcom Inc",
+    "phone": "+19147886777",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec3-c7ea-7229-bb54-60c4eabc116c",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:10:27.690Z",
+      "updatedAt": "2026-03-05T16:10:27.690Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Phoenix Medcom Inc",
+        "number": "+19147886777"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Phoenix Medcom Inc? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-c7ea-7229-bb54-60c4eabc116c/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-c7ea-7229-bb54-60c4eabc116c/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:10:27.808982+00:00"
+  },
+  {
+    "lead": "Ahwatukee Dentistry",
+    "phone": "+14805824973",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec3-f7a0-755d-aa22-caa7d0f3d03d",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:10:39.904Z",
+      "updatedAt": "2026-03-05T16:10:39.904Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Ahwatukee Dentistry",
+        "number": "+14805824973"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Ahwatukee Dentistry? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-f7a0-755d-aa22-caa7d0f3d03d/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec3-f7a0-755d-aa22-caa7d0f3d03d/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:10:40.002129+00:00"
+  },
+  {
+    "lead": "Hi-Fi Dental",
+    "phone": "+16022425445",
+    "city": "Phoenix",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec4-273c-7ee4-a7cd-9b1e587fe370",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:10:52.092Z",
+      "updatedAt": "2026-03-05T16:10:52.092Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Hi-Fi Dental",
+        "number": "+16022425445"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Hi-Fi Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-273c-7ee4-a7cd-9b1e587fe370/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-273c-7ee4-a7cd-9b1e587fe370/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:10:52.161659+00:00"
+  },
+  {
+    "lead": "Scottsdale Dental Studio",
+    "phone": "+14803820337",
+    "city": "Scottsdale",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec4-5762-7881-a2b8-5c6ec865d7b5",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:11:04.418Z",
+      "updatedAt": "2026-03-05T16:11:04.418Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Scottsdale Dental Studio",
+        "number": "+14803820337"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Scottsdale Dental Studio? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-5762-7881-a2b8-5c6ec865d7b5/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-5762-7881-a2b8-5c6ec865d7b5/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:11:04.531144+00:00"
+  },
+  {
+    "lead": "Scottsdale Dental Solutions",
+    "phone": "+14805369050",
+    "city": "Scottsdale",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec4-8716-7222-98ca-2f5af61f43fe",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:11:16.630Z",
+      "updatedAt": "2026-03-05T16:11:16.630Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Scottsdale Dental Solutions",
+        "number": "+14805369050"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Scottsdale Dental Solutions? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-8716-7222-98ca-2f5af61f43fe/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-8716-7222-98ca-2f5af61f43fe/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:11:16.707902+00:00"
+  },
+  {
+    "lead": "Sonoran Desert Dentistry",
+    "phone": "+14804390117",
+    "city": "Scottsdale",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 7
+      },
+      "id": "019cbec4-b6a7-722c-b14e-55bb808b436c",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:11:28.807Z",
+      "updatedAt": "2026-03-05T16:11:28.807Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Sonoran Desert Dentistry",
+        "number": "+14804390117"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Sonoran Desert Dentistry? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-b6a7-722c-b14e-55bb808b436c/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-b6a7-722c-b14e-55bb808b436c/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:11:28.884235+00:00"
+  },
+  {
+    "lead": "Scottsdale Family Dentistry",
+    "phone": "+14804744990",
+    "city": "Scottsdale",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec4-e627-7227-a76c-2d532a6da96a",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:11:40.967Z",
+      "updatedAt": "2026-03-05T16:11:40.967Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Scottsdale Family Dentistry",
+        "number": "+14804744990"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Scottsdale Family Dentistry? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-e627-7227-a76c-2d532a6da96a/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec4-e627-7227-a76c-2d532a6da96a/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:11:41.048281+00:00"
+  },
+  {
+    "lead": "North Scottsdale Dentistry",
+    "phone": "+14809004966",
+    "city": "Scottsdale",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec5-174e-711b-9b54-7830c54c43f1",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:11:53.550Z",
+      "updatedAt": "2026-03-05T16:11:53.550Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "North Scottsdale Dentistry",
+        "number": "+14809004966"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this North Scottsdale Dentistry? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-174e-711b-9b54-7830c54c43f1/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-174e-711b-9b54-7830c54c43f1/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:11:53.626663+00:00"
+  },
+  {
+    "lead": "Dentistry of Old Town Scottsdale",
+    "phone": "+14807196994",
+    "city": "Scottsdale",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec5-46d6-7881-a2b9-eba6fd61ee72",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:12:05.718Z",
+      "updatedAt": "2026-03-05T16:12:05.718Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Dentistry of Old Town Scottsdale",
+        "number": "+14807196994"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Dentistry of Old Town Scottsdale? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-46d6-7881-a2b9-eba6fd61ee72/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-46d6-7881-a2b9-eba6fd61ee72/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:12:05.784470+00:00"
+  },
+  {
+    "lead": "Arizona Healthy Smiles",
+    "phone": "+14804565457",
+    "city": "Tempe",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec5-764b-7229-bb57-98e073a2ba8e",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:12:17.867Z",
+      "updatedAt": "2026-03-05T16:12:17.867Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Arizona Healthy Smiles",
+        "number": "+14804565457"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Arizona Healthy Smiles? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-764b-7229-bb57-98e073a2ba8e/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-764b-7229-bb57-98e073a2ba8e/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:12:17.957341+00:00"
+  },
+  {
+    "lead": "Tempe Dental Care",
+    "phone": "+14807305000",
+    "city": "Tempe",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec5-a5e3-733e-92cc-eb3096cd53b5",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:12:30.051Z",
+      "updatedAt": "2026-03-05T16:12:30.051Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Tempe Dental Care",
+        "number": "+14807305000"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Tempe Dental Care? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-a5e3-733e-92cc-eb3096cd53b5/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-a5e3-733e-92cc-eb3096cd53b5/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:12:30.141674+00:00"
+  },
+  {
+    "lead": "Tempe Smile Design",
+    "phone": "+14808298200",
+    "city": "Tempe",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec5-d9b1-7222-98cc-18e10ccb152c",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:12:43.313Z",
+      "updatedAt": "2026-03-05T16:12:43.313Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Tempe Smile Design",
+        "number": "+14808298200"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Tempe Smile Design? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-d9b1-7222-98cc-18e10ccb152c/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec5-d9b1-7222-98cc-18e10ccb152c/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:12:43.385646+00:00"
+  },
+  {
+    "lead": "Sweet Skin Medspa",
+    "phone": "+16028251746",
+    "city": "Phoenix",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec6-092e-7776-9e78-52150d48a842",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:12:55.470Z",
+      "updatedAt": "2026-03-05T16:12:55.470Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Sweet Skin Medspa",
+        "number": "+16028251746"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Sweet Skin Medspa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-092e-7776-9e78-52150d48a842/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-092e-7776-9e78-52150d48a842/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:12:55.542823+00:00"
+  },
+  {
+    "lead": "CNT Medspa",
+    "phone": "+14802049682",
+    "city": "Phoenix",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec6-38b2-7668-9701-f440cd640e30",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:13:07.634Z",
+      "updatedAt": "2026-03-05T16:13:07.634Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "CNT Medspa",
+        "number": "+14802049682"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this CNT Medspa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-38b2-7668-9701-f440cd640e30/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-38b2-7668-9701-f440cd640e30/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:13:07.719624+00:00"
+  },
+  {
+    "lead": "Innova MedSpa",
+    "phone": "+16029731774",
+    "city": "Phoenix",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec6-684b-755d-aa3f-9fc1416ed4e1",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:13:19.819Z",
+      "updatedAt": "2026-03-05T16:13:19.819Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Innova MedSpa",
+        "number": "+16029731774"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Innova MedSpa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-684b-755d-aa3f-9fc1416ed4e1/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-684b-755d-aa3f-9fc1416ed4e1/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:13:19.979649+00:00"
+  },
+  {
+    "lead": "Willo MediSpa",
+    "phone": "+16022964477",
+    "city": "Phoenix",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec6-9822-755d-aa40-4d88063b288f",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:13:32.066Z",
+      "updatedAt": "2026-03-05T16:13:32.066Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Willo MediSpa",
+        "number": "+16022964477"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Willo MediSpa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-9822-755d-aa40-4d88063b288f/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-9822-755d-aa40-4d88063b288f/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:13:32.181235+00:00"
+  },
+  {
+    "lead": "Love Aesthetics & Wellness",
+    "phone": "+14809998383",
+    "city": "Scottsdale",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec6-c7d0-788b-bafd-99dbef57a538",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:13:44.272Z",
+      "updatedAt": "2026-03-05T16:13:44.272Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Love Aesthetics & Wellness",
+        "number": "+14809998383"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Love Aesthetics & Wellness? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-c7d0-788b-bafd-99dbef57a538/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-c7d0-788b-bafd-99dbef57a538/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:13:44.414229+00:00"
+  },
+  {
+    "lead": "Village Animal Clinic Phoenix",
+    "phone": "+16029388500",
+    "city": "Phoenix",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec6-f79d-7226-995a-26816f6a501a",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:13:56.509Z",
+      "updatedAt": "2026-03-05T16:13:56.509Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Village Animal Clinic Phoenix",
+        "number": "+16029388500"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Village Animal Clinic Phoenix? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-f79d-7226-995a-26816f6a501a/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec6-f79d-7226-995a-26816f6a501a/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:13:56.591273+00:00"
+  },
+  {
+    "lead": "Camelback Animal Clinic",
+    "phone": "+16025954020",
+    "city": "Phoenix",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec7-2728-788b-bafe-3b97d0de39eb",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:14:08.680Z",
+      "updatedAt": "2026-03-05T16:14:08.680Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Camelback Animal Clinic",
+        "number": "+16025954020"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Camelback Animal Clinic? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-2728-788b-bafe-3b97d0de39eb/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-2728-788b-bafe-3b97d0de39eb/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:14:08.768752+00:00"
+  },
+  {
+    "lead": "Central Phoenix Animal Hospital",
+    "phone": "+16022775155",
+    "city": "Phoenix",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 7
+      },
+      "id": "019cbec7-56c0-7996-b4cc-0c94ec4fe132",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:14:20.864Z",
+      "updatedAt": "2026-03-05T16:14:20.864Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Central Phoenix Animal Hospital",
+        "number": "+16022775155"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Central Phoenix Animal Hospital? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-56c0-7996-b4cc-0c94ec4fe132/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-56c0-7996-b4cc-0c94ec4fe132/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:14:20.939382+00:00"
+  },
+  {
+    "lead": "Sugarloaf Animal Clinic",
+    "phone": "+16029712720",
+    "city": "Phoenix",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 6
+      },
+      "id": "019cbec7-864a-711b-9b58-acb3451a165e",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:14:33.034Z",
+      "updatedAt": "2026-03-05T16:14:33.034Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Sugarloaf Animal Clinic",
+        "number": "+16029712720"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Sugarloaf Animal Clinic? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-864a-711b-9b58-acb3451a165e/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-864a-711b-9b58-acb3451a165e/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:14:33.107130+00:00"
+  },
+  {
+    "lead": "Arizona Physical Therapy Specialists",
+    "phone": "+16029977844",
+    "city": "Phoenix",
+    "type": "physio",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec7-b5bf-755c-a8a5-218a259bf7fc",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:14:45.183Z",
+      "updatedAt": "2026-03-05T16:14:45.183Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Arizona Physical Therapy Specialists",
+        "number": "+16029977844"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Arizona Physical Therapy Specialists? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-b5bf-755c-a8a5-218a259bf7fc/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-b5bf-755c-a8a5-218a259bf7fc/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:14:45.253206+00:00"
+  },
+  {
+    "lead": "Salt Lake City Dental Center",
+    "phone": "+18015056850",
+    "city": "Salt Lake City",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec7-e53a-7227-a771-1db017a39c9e",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:14:57.338Z",
+      "updatedAt": "2026-03-05T16:14:57.338Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Salt Lake City Dental Center",
+        "number": "+18015056850"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Salt Lake City Dental Center? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-e53a-7227-a771-1db017a39c9e/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec7-e53a-7227-a771-1db017a39c9e/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:14:57.408433+00:00"
+  },
+  {
+    "lead": "The Sugar House Dentist",
+    "phone": "+18016180197",
+    "city": "Salt Lake City",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec8-1510-7996-b4cc-ae186dd7d927",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:15:09.584Z",
+      "updatedAt": "2026-03-05T16:15:09.584Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "The Sugar House Dentist",
+        "number": "+18016180197"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this The Sugar House Dentist? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-1510-7996-b4cc-ae186dd7d927/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-1510-7996-b4cc-ae186dd7d927/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:15:09.939864+00:00"
+  },
+  {
+    "lead": "Highland Dental Center",
+    "phone": "+18014875755",
+    "city": "Salt Lake City",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec8-45be-788b-baff-ded540976474",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:15:22.046Z",
+      "updatedAt": "2026-03-05T16:15:22.046Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Highland Dental Center",
+        "number": "+18014875755"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Highland Dental Center? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-45be-788b-baff-ded540976474/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-45be-788b-baff-ded540976474/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:15:22.128707+00:00"
+  },
+  {
+    "lead": "SLC Med Spa",
+    "phone": "+18014190551",
+    "city": "Salt Lake City",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec8-7553-7ee4-a7d6-930bd2722ed6",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:15:34.227Z",
+      "updatedAt": "2026-03-05T16:15:34.227Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "SLC Med Spa",
+        "number": "+18014190551"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this SLC Med Spa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-7553-7ee4-a7d6-930bd2722ed6/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-7553-7ee4-a7d6-930bd2722ed6/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:15:34.290635+00:00"
+  },
+  {
+    "lead": "RO Aesthetics",
+    "phone": "+18012338778",
+    "city": "Salt Lake City",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec8-a4db-7776-accc-48c82f6f01cf",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:15:46.395Z",
+      "updatedAt": "2026-03-05T16:15:46.395Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "RO Aesthetics",
+        "number": "+18012338778"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this RO Aesthetics? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-a4db-7776-accc-48c82f6f01cf/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-a4db-7776-accc-48c82f6f01cf/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:15:46.483432+00:00"
+  },
+  {
+    "lead": "Pet Stop Veterinary Clinic",
+    "phone": "+18015310662",
+    "city": "Salt Lake City",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec8-d460-7dd3-9b13-f07184ec6347",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:15:58.560Z",
+      "updatedAt": "2026-03-05T16:15:58.560Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Pet Stop Veterinary Clinic",
+        "number": "+18015310662"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Pet Stop Veterinary Clinic? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-d460-7dd3-9b13-f07184ec6347/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec8-d460-7dd3-9b13-f07184ec6347/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:15:58.627499+00:00"
+  },
+  {
+    "lead": "Lake City Veterinary Clinic",
+    "phone": "+18013288543",
+    "city": "Salt Lake City",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbec9-0755-7dd3-9b14-8fb9e269a8af",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:16:11.605Z",
+      "updatedAt": "2026-03-05T16:16:11.605Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Lake City Veterinary Clinic",
+        "number": "+18013288543"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Lake City Veterinary Clinic? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-0755-7dd3-9b14-8fb9e269a8af/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-0755-7dd3-9b14-8fb9e269a8af/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:16:11.711425+00:00"
+  },
+  {
+    "lead": "OG Dental Denver",
+    "phone": "+17208157459",
+    "city": "Denver",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec9-36fa-755c-a8a7-86dd03a7e897",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:16:23.802Z",
+      "updatedAt": "2026-03-05T16:16:23.802Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "OG Dental Denver",
+        "number": "+17208157459"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this OG Dental Denver? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-36fa-755c-a8a7-86dd03a7e897/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-36fa-755c-a8a7-86dd03a7e897/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:16:23.875146+00:00"
+  },
+  {
+    "lead": "RiNo Dental",
+    "phone": "+13032923120",
+    "city": "Denver",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec9-6672-7229-bb5e-2783d7398432",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:16:35.954Z",
+      "updatedAt": "2026-03-05T16:16:35.954Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "RiNo Dental",
+        "number": "+13032923120"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this RiNo Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-6672-7229-bb5e-2783d7398432/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-6672-7229-bb5e-2783d7398432/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:16:36.029670+00:00"
+  },
+  {
+    "lead": "Barotz Dental",
+    "phone": "+17205731500",
+    "city": "Denver",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec9-95f0-7557-aad2-2c194531894f",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:16:48.112Z",
+      "updatedAt": "2026-03-05T16:16:48.112Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Barotz Dental",
+        "number": "+17205731500"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Barotz Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-95f0-7557-aad2-2c194531894f/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-95f0-7557-aad2-2c194531894f/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:16:48.179864+00:00"
+  },
+  {
+    "lead": "Always Beautiful Medspa",
+    "phone": "+17202807016",
+    "city": "Denver",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec9-c59e-7881-a2c0-f5f545752745",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:17:00.318Z",
+      "updatedAt": "2026-03-05T16:17:00.318Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Always Beautiful Medspa",
+        "number": "+17202807016"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Always Beautiful Medspa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-c59e-7881-a2c0-f5f545752745/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-c59e-7881-a2c0-f5f545752745/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:17:00.426320+00:00"
+  },
+  {
+    "lead": "Founders Green Animal Hospital",
+    "phone": "+17207698754",
+    "city": "Denver",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbec9-f542-788b-bb02-5e96a30acd3b",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:17:12.514Z",
+      "updatedAt": "2026-03-05T16:17:12.514Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Founders Green Animal Hospital",
+        "number": "+17207698754"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Founders Green Animal Hospital? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-f542-788b-bb02-5e96a30acd3b/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbec9-f542-788b-bb02-5e96a30acd3b/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:17:12.815049+00:00"
+  },
+  {
+    "lead": "Allbrick Veterinary Clinic",
+    "phone": "+13037325008",
+    "city": "Denver",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbeca-25a9-7226-995e-bd3c82cab420",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:17:24.905Z",
+      "updatedAt": "2026-03-05T16:17:24.905Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Allbrick Veterinary Clinic",
+        "number": "+13037325008"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Allbrick Veterinary Clinic? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-25a9-7226-995e-bd3c82cab420/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-25a9-7226-995e-bd3c82cab420/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:17:24.972514+00:00"
+  },
+  {
+    "lead": "Hermosa Veterinary Clinic",
+    "phone": "+13034552131",
+    "city": "Denver",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbeca-5525-7226-995e-e653b1ac4544",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:17:37.061Z",
+      "updatedAt": "2026-03-05T16:17:37.061Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Hermosa Veterinary Clinic",
+        "number": "+13034552131"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Hermosa Veterinary Clinic? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-5525-7226-995e-e653b1ac4544/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-5525-7226-995e-e653b1ac4544/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:17:37.142419+00:00"
+  },
+  {
+    "lead": "Park Hill Veterinary Medical Center",
+    "phone": "+13033882255",
+    "city": "Denver",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbeca-84a2-733b-baac-07b14f95158d",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:17:49.218Z",
+      "updatedAt": "2026-03-05T16:17:49.218Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Park Hill Veterinary Medical Center",
+        "number": "+13033882255"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Park Hill Veterinary Medical Center? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-84a2-733b-baac-07b14f95158d/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-84a2-733b-baac-07b14f95158d/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:17:49.291312+00:00"
+  },
+  {
+    "lead": "Active Solutions Physical Therapy",
+    "phone": "+13034944100",
+    "city": "Boulder",
+    "type": "physio",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbeca-b41d-711b-9b5f-2a95c2ba22ea",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:18:01.373Z",
+      "updatedAt": "2026-03-05T16:18:01.373Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Active Solutions Physical Therapy",
+        "number": "+13034944100"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Active Solutions Physical Therapy? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-b41d-711b-9b5f-2a95c2ba22ea/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-b41d-711b-9b5f-2a95c2ba22ea/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:18:01.448712+00:00"
+  },
+  {
+    "lead": "Bird Family Dental",
+    "phone": "+12083221263",
+    "city": "Boise",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbeca-e3b1-755c-a8aa-a327adb43335",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:18:13.553Z",
+      "updatedAt": "2026-03-05T16:18:13.553Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Bird Family Dental",
+        "number": "+12083221263"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Bird Family Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-e3b1-755c-a8aa-a327adb43335/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbeca-e3b1-755c-a8aa-a327adb43335/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:18:13.636923+00:00"
+  },
+  {
+    "lead": "New Leaf Dental",
+    "phone": "+12088962284",
+    "city": "Meridian",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbecb-135b-7ee4-a7db-ec43f99ab50b",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:18:25.755Z",
+      "updatedAt": "2026-03-05T16:18:25.755Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "New Leaf Dental",
+        "number": "+12088962284"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this New Leaf Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-135b-7ee4-a7db-ec43f99ab50b/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-135b-7ee4-a7db-ec43f99ab50b/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:18:25.834841+00:00"
+  },
+  {
+    "lead": "Emerald Smiles Dentistry",
+    "phone": "+12085933221",
+    "city": "Boise",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbecb-42de-7772-bf34-fb33d181863a",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:18:37.918Z",
+      "updatedAt": "2026-03-05T16:18:37.918Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Emerald Smiles Dentistry",
+        "number": "+12085933221"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Emerald Smiles Dentistry? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-42de-7772-bf34-fb33d181863a/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-42de-7772-bf34-fb33d181863a/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:18:37.989234+00:00"
+  },
+  {
+    "lead": "The Spa Boise",
+    "phone": "+12085907721",
+    "city": "Boise",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbecb-725d-733b-baad-a9bb90f93797",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:18:50.077Z",
+      "updatedAt": "2026-03-05T16:18:50.077Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "The Spa Boise",
+        "number": "+12085907721"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this The Spa Boise? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-725d-733b-baad-a9bb90f93797/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-725d-733b-baad-a9bb90f93797/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:18:50.156986+00:00"
+  },
+  {
+    "lead": "Prophecy Med Spa Boise",
+    "phone": "+12089996427",
+    "city": "Boise",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbecb-a1e4-711b-9b60-9eeb400c6176",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:19:02.244Z",
+      "updatedAt": "2026-03-05T16:19:02.244Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Prophecy Med Spa Boise",
+        "number": "+12089996427"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Prophecy Med Spa Boise? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-a1e4-711b-9b60-9eeb400c6176/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-a1e4-711b-9b60-9eeb400c6176/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:19:02.311886+00:00"
+  },
+  {
+    "lead": "Bench Animal Hospital",
+    "phone": "+12083377431",
+    "city": "Boise",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbecb-d3f0-7776-acd1-16fe1b12d4a3",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:19:15.056Z",
+      "updatedAt": "2026-03-05T16:19:15.056Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Bench Animal Hospital",
+        "number": "+12083377431"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Bench Animal Hospital? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-d3f0-7776-acd1-16fe1b12d4a3/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecb-d3f0-7776-acd1-16fe1b12d4a3/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:19:15.195215+00:00"
+  },
+  {
+    "lead": "Critter Clinic Boise",
+    "phone": "+12083231210",
+    "city": "Boise",
+    "type": "vet",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbecc-03d4-7aa2-b80c-a2306e299b78",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:19:27.316Z",
+      "updatedAt": "2026-03-05T16:19:27.316Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Critter Clinic Boise",
+        "number": "+12083231210"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Critter Clinic Boise? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-03d4-7aa2-b80c-a2306e299b78/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-03d4-7aa2-b80c-a2306e299b78/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:19:27.387319+00:00"
+  },
+  {
+    "lead": "Southwest Vegas Smiles",
+    "phone": "+17024322223",
+    "city": "Las Vegas",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbecc-3361-7229-bb62-0404b5248fc6",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:19:39.489Z",
+      "updatedAt": "2026-03-05T16:19:39.489Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Southwest Vegas Smiles",
+        "number": "+17024322223"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Southwest Vegas Smiles? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-3361-7229-bb62-0404b5248fc6/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-3361-7229-bb62-0404b5248fc6/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:19:39.557559+00:00"
+  },
+  {
+    "lead": "Town Center Dental Las Vegas",
+    "phone": "+17023608696",
+    "city": "Las Vegas",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 7
+      },
+      "id": "019cbecc-62db-7222-98d7-4e4dd4bfb032",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:19:51.643Z",
+      "updatedAt": "2026-03-05T16:19:51.643Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Town Center Dental Las Vegas",
+        "number": "+17023608696"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Town Center Dental Las Vegas? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-62db-7222-98d7-4e4dd4bfb032/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-62db-7222-98d7-4e4dd4bfb032/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:19:51.721846+00:00"
+  },
+  {
+    "lead": "Las Vegas Dental Group",
+    "phone": "+17028705165",
+    "city": "Las Vegas",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbecc-928f-7229-bb62-a62227f056b3",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:20:03.856Z",
+      "updatedAt": "2026-03-05T16:20:03.856Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Las Vegas Dental Group",
+        "number": "+17028705165"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Las Vegas Dental Group? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-928f-7229-bb62-a62227f056b3/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-928f-7229-bb62-a62227f056b3/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:20:04.039250+00:00"
+  },
+  {
+    "lead": "Advanced Aesthetics LV",
+    "phone": "+17028384644",
+    "city": "Las Vegas",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 7
+      },
+      "id": "019cbecc-c276-7aa2-b80d-d4ea89c727a7",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:20:16.118Z",
+      "updatedAt": "2026-03-05T16:20:16.118Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Advanced Aesthetics LV",
+        "number": "+17028384644"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Advanced Aesthetics LV? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-c276-7aa2-b80d-d4ea89c727a7/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-c276-7aa2-b80d-d4ea89c727a7/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:20:16.189153+00:00"
+  },
+  {
+    "lead": "Simply Radiant LV",
+    "phone": "+17022746559",
+    "city": "Las Vegas",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbecc-f218-7229-bb63-c876c3dbaff2",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:20:28.312Z",
+      "updatedAt": "2026-03-05T16:20:28.312Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Simply Radiant LV",
+        "number": "+17022746559"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Simply Radiant LV? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-f218-7229-bb63-c876c3dbaff2/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecc-f218-7229-bb63-c876c3dbaff2/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:20:28.380177+00:00"
+  },
+  {
+    "lead": "Beauty Factory MedSpa",
+    "phone": "+17023523560",
+    "city": "Las Vegas",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbecd-2196-7776-9e83-90ad395b92ba",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:20:40.470Z",
+      "updatedAt": "2026-03-05T16:20:40.470Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Beauty Factory MedSpa",
+        "number": "+17023523560"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Beauty Factory MedSpa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-2196-7776-9e83-90ad395b92ba/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-2196-7776-9e83-90ad395b92ba/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:20:40.544084+00:00"
+  },
+  {
+    "lead": "Chic la Vie Med Spa",
+    "phone": "+17022338535",
+    "city": "Las Vegas",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 7
+      },
+      "id": "019cbecd-511a-7776-acd3-e19213f8c940",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:20:52.634Z",
+      "updatedAt": "2026-03-05T16:20:52.634Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Chic la Vie Med Spa",
+        "number": "+17022338535"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Chic la Vie Med Spa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-511a-7776-acd3-e19213f8c940/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-511a-7776-acd3-e19213f8c940/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:20:52.737076+00:00"
+  },
+  {
+    "lead": "Performance Physical Therapy LV",
+    "phone": "+17022333288",
+    "city": "Las Vegas",
+    "type": "physio",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbecd-80b4-7ee0-ac11-e126d07ad040",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:21:04.820Z",
+      "updatedAt": "2026-03-05T16:21:04.820Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Performance Physical Therapy LV",
+        "number": "+17022333288"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Performance Physical Therapy LV? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-80b4-7ee0-ac11-e126d07ad040/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-80b4-7ee0-ac11-e126d07ad040/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:21:04.976342+00:00"
+  },
+  {
+    "lead": "Achieve Physical Therapy LV",
+    "phone": "+17028769737",
+    "city": "Las Vegas",
+    "type": "physio",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbecd-b09c-7772-bf38-971a21621435",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:21:17.084Z",
+      "updatedAt": "2026-03-05T16:21:17.084Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Achieve Physical Therapy LV",
+        "number": "+17028769737"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Achieve Physical Therapy LV? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-b09c-7772-bf38-971a21621435/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-b09c-7772-bf38-971a21621435/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:21:17.168580+00:00"
+  },
+  {
+    "lead": "ABQ Dentists",
+    "phone": "+15052938011",
+    "city": "Albuquerque",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbecd-e024-722c-b15d-75d8880bfcce",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:21:29.252Z",
+      "updatedAt": "2026-03-05T16:21:29.252Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "ABQ Dentists",
+        "number": "+15052938011"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this ABQ Dentists? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-e024-722c-b15d-75d8880bfcce/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbecd-e024-722c-b15d-75d8880bfcce/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:21:29.327917+00:00"
+  },
+  {
+    "lead": "ABQ Gentle Dentistry",
+    "phone": "+15052928588",
+    "city": "Albuquerque",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbece-0fa1-7227-a77a-8b977e7f9fe0",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:21:41.409Z",
+      "updatedAt": "2026-03-05T16:21:41.409Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "ABQ Gentle Dentistry",
+        "number": "+15052928588"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this ABQ Gentle Dentistry? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-0fa1-7227-a77a-8b977e7f9fe0/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-0fa1-7227-a77a-8b977e7f9fe0/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:21:41.489156+00:00"
+  },
+  {
+    "lead": "Blue Sky Dental ABQ",
+    "phone": "+15052752492",
+    "city": "Albuquerque",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbece-3f28-788b-bb09-c16354fc74f0",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:21:53.576Z",
+      "updatedAt": "2026-03-05T16:21:53.576Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Blue Sky Dental ABQ",
+        "number": "+15052752492"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Blue Sky Dental ABQ? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-3f28-788b-bb09-c16354fc74f0/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-3f28-788b-bb09-c16354fc74f0/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:21:53.643274+00:00"
+  },
+  {
+    "lead": "Riverpoint Family Dental",
+    "phone": "+15058216910",
+    "city": "Albuquerque",
+    "type": "dental",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbece-6ea1-788b-bb09-eb87b306d3db",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:22:05.729Z",
+      "updatedAt": "2026-03-05T16:22:05.729Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Riverpoint Family Dental",
+        "number": "+15058216910"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Riverpoint Family Dental? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-6ea1-788b-bb09-eb87b306d3db/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-6ea1-788b-bb09-eb87b306d3db/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:22:05.809338+00:00"
+  },
+  {
+    "lead": "AlluraDerm MD MedSpa",
+    "phone": "+15058219630",
+    "city": "Albuquerque",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbece-9e31-7996-b4d6-d67ca900b525",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:22:17.905Z",
+      "updatedAt": "2026-03-05T16:22:17.905Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "AlluraDerm MD MedSpa",
+        "number": "+15058219630"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this AlluraDerm MD MedSpa? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-9e31-7996-b4d6-d67ca900b525/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-9e31-7996-b4d6-d67ca900b525/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:22:17.987905+00:00"
+  },
+  {
+    "lead": "Bair Medical Spa ABQ",
+    "phone": "+15058811532",
+    "city": "Albuquerque",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 9
+      },
+      "id": "019cbece-cdc6-733b-bab3-7db4812f7783",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:22:30.086Z",
+      "updatedAt": "2026-03-05T16:22:30.086Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Bair Medical Spa ABQ",
+        "number": "+15058811532"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Bair Medical Spa ABQ? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-cdc6-733b-bab3-7db4812f7783/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-cdc6-733b-bab3-7db4812f7783/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:22:30.166987+00:00"
+  },
+  {
+    "lead": "Look Rejuvenated Med Spa ABQ",
+    "phone": "+15057165566",
+    "city": "Albuquerque",
+    "type": "medspa",
+    "result": {
+      "subscriptionLimits": {
+        "concurrencyBlocked": false,
+        "concurrencyLimit": 10,
+        "remainingConcurrentCalls": 8
+      },
+      "id": "019cbece-fd49-7772-bf3a-958a69ac9771",
+      "assistantId": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+      "phoneNumberId": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+      "type": "outboundPhoneCall",
+      "createdAt": "2026-03-05T16:22:42.249Z",
+      "updatedAt": "2026-03-05T16:22:42.249Z",
+      "orgId": "32cd7afa-6722-4d1d-81b7-e5ac835bf573",
+      "cost": 0,
+      "customer": {
+        "name": "Look Rejuvenated Med Spa ABQ",
+        "number": "+15057165566"
+      },
+      "status": "queued",
+      "phoneCallProvider": "twilio",
+      "assistantOverrides": {
+        "firstMessage": "Hi, this is Alex calling from SmartBook AI \u2014 is this Look Rejuvenated Med Spa ABQ? Quick 60-second question about your front desk coverage \u2014 is now an okay time?"
+      },
+      "monitor": {
+        "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-fd49-7772-bf3a-958a69ac9771/listen",
+        "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production2.vapi.ai/019cbece-fd49-7772-bf3a-958a69ac9771/control"
+      },
+      "transport": {
+        "conversationType": "voice",
+        "provider": "twilio",
+        "accountSid": "AC81522b7a4a7c902b52334639d2615b88"
+      }
+    },
+    "time": "2026-03-05T16:22:42.344118+00:00"
+  }
+]

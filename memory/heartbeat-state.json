@@ -1,0 +1,43 @@
+{
+  "lastChecks": {
+    "github": 1772787576,
+    "reddit": null,
+    "email": 1772787576,
+    "calendar": null,
+    "weather": null,
+    "stripe": 1772787576,
+    "redditRateLimited": true,
+    "lastEvolutionCheck": 1772727000
+  },
+  "stripe": {
+    "lastKnownSubCount": 1,
+    "lastKnownSubIds": [
+      "sub_1T0xTGCRr0tlaIBChc3FhQOO"
+    ],
+    "lastKnownMRR": 14.0
+  },
+  "github": {
+    "lastOpenIssues": [
+      {
+        "number": 6,
+        "title": "feat: Resend email drip sequence (5-email onboarding automation)",
+        "created_at": "2026-03-03T13:09:45Z",
+        "category": "feature / PR - awaiting deploy"
+      }
+    ]
+  },
+  "email": {
+    "lastChecked": "2026-03-06T08:58:00Z",
+    "newClientReplies": [],
+    "zohoOutgoingBlocked": true,
+    "saashubNeedsDetails": true
+  },
+  "emailScheduler": {
+    "status": "partially_blocked",
+    "lastRun": "2026-03-05T16:05:00Z",
+    "sent": 2,
+    "failed": 8,
+    "error": "Zoho 550 unusual sending activity \u2014 block still active"
+  },
+  "notes": "SaaSHub emails = newsletter confirmations only. No real client replies. Reddit still rate-limited."
+}

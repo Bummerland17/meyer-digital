@@ -1,0 +1,14 @@
+{
+  "product": "PantryMate",
+  "angle": "The average family wastes $1,500/year on food they already bought",
+  "template": "stat-bomb",
+  "duration": 30,
+  "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBxqG1O-kz18zmdwm2vVtGqkrWfvP6aDvA]",
+  "body": "",
+  "cta": "",
+  "caption": "",
+  "hashtags": "",
+  "thumbnail_text": "PANTRYMATE",
+  "voiceover_text": "The average family wastes $1,500/year on food they already bought",
+  "raw_script": ""
+}

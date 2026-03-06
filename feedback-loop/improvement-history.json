@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2026-03-04",
+    "snapshot": "/root/.openclaw/workspace/feedback-loop/weekly-snapshots/2026-03-04.json",
+    "tasks": 4,
+    "high": 1,
+    "medium": 3,
+    "low": 0,
+    "by_agent": {
+      "SCRIBE": 0,
+      "QUILL": 2,
+      "PIXEL": 0,
+      "SPARK": 1,
+      "GENERAL": 1
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "snapshot": "/root/.openclaw/workspace/feedback-loop/weekly-snapshots/2026-03-06.json",
+    "tasks": 5,
+    "high": 2,
+    "medium": 3,
+    "low": 0,
+    "by_agent": {
+      "SCRIBE": 1,
+      "QUILL": 2,
+      "PIXEL": 0,
+      "SPARK": 1,
+      "GENERAL": 1
+    }
+  }
+]

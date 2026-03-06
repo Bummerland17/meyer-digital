@@ -1,0 +1,131 @@
+{
+  "name": "Vapi Call End → Log to CRM",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "vapi-call-end",
+        "responseMode": "onReceived",
+        "responseData": "firstEntryJson"
+      },
+      "id": "node-webhook-trigger",
+      "name": "Vapi Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [200, 300],
+      "webhookId": "vapi-call-end"
+    },
+    {
+      "parameters": {
+        "jsCode": "const msg = $input.first().json.body.message || $input.first().json.message || {};\nconst call = msg.call || {};\nconst analysis = msg.analysis || {};\n\nconst duration = msg.durationSeconds || 0;\nconst summary = analysis.summary || '';\nconst sentiment = analysis.successEvaluation || 'unknown';\nconst callId = call.id || 'unknown';\nconst endedReason = msg.endedReason || '';\nconst isWarmLead = duration > 90;\nconst isNoAnswer = duration < 15;\n\nreturn [{\n  json: {\n    callId,\n    duration,\n    summary,\n    sentiment,\n    endedReason,\n    isWarmLead,\n    isNoAnswer,\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "node-parse-outcome",
+      "name": "Parse Call Outcome",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.isWarmLead }}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "node-if-warm",
+      "name": "IF Warm Lead (>90s)",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [700, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "8654703697",
+        "text": "🔥 *WARM LEAD DETECTED*\n\nCall ID: `{{ $json.callId }}`\nDuration: {{ $json.duration }}s\nSentiment: {{ $json.sentiment }}\n\nSummary: {{ $json.summary }}\n\n→ Follow-up queued for tomorrow 9am",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "node-telegram-warm",
+      "name": "Telegram Alert — Warm Lead",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [950, 200],
+      "credentials": {
+        "telegramApi": {
+          "id": "telegram-creds",
+          "name": "Telegram Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.isNoAnswer }}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "node-if-noanswer",
+      "name": "IF No Answer (<15s)",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [950, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "const fs = require('fs');\nconst QUEUE_PATH = '/root/.openclaw/workspace/assets/call-queue.json';\n\nlet queue = [];\ntry { queue = JSON.parse(fs.readFileSync(QUEUE_PATH, 'utf8')); } catch(e) { queue = []; }\n\nconst callId = $input.first().json.callId;\nconst entry = queue.find(c => c.call_id === callId || c.id === callId);\nif (entry) {\n  entry.status = $input.first().json.isWarmLead ? 'warm_lead' : \n                 $input.first().json.isNoAnswer ? 'no_answer' : 'completed';\n  entry.completed_at = new Date().toISOString();\n  entry.duration = $input.first().json.duration;\n  entry.summary = $input.first().json.summary;\n} else {\n  queue.push({\n    call_id: callId,\n    status: $input.first().json.isWarmLead ? 'warm_lead' : \n            $input.first().json.isNoAnswer ? 'no_answer' : 'completed',\n    completed_at: new Date().toISOString(),\n    duration: $input.first().json.duration,\n    summary: $input.first().json.summary\n  });\n}\n\nfs.writeFileSync(QUEUE_PATH, JSON.stringify(queue, null, 2));\nreturn $input.all();"
+      },
+      "id": "node-update-queue",
+      "name": "Update call-queue.json",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Queue follow-up email for tomorrow 9am\nconst fs = require('fs');\nconst QUEUE_PATH = '/root/.openclaw/workspace/assets/email-queue.json';\n\nlet emailQueue = [];\ntry { emailQueue = JSON.parse(fs.readFileSync(QUEUE_PATH, 'utf8')); } catch(e) { emailQueue = []; }\n\nconst tomorrow = new Date();\ntomorrow.setDate(tomorrow.getDate() + 1);\ntomorrow.setHours(9, 0, 0, 0);\n\nconst item = $input.first().json;\nemailQueue.push({\n  type: 'follow_up',\n  call_id: item.callId,\n  scheduled_for: tomorrow.toISOString(),\n  subject: 'Following up on our conversation',\n  notes: item.summary,\n  status: 'pending'\n});\n\nfs.writeFileSync(QUEUE_PATH, JSON.stringify(emailQueue, null, 2));\nreturn [{ json: { queued: true, scheduled_for: tomorrow.toISOString() } }];"
+      },
+      "id": "node-queue-followup",
+      "name": "Queue Follow-up Email (9am tomorrow)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1450, 200]
+    }
+  ],
+  "connections": {
+    "Vapi Webhook": {
+      "main": [[{"node": "Parse Call Outcome", "type": "main", "index": 0}]]
+    },
+    "Parse Call Outcome": {
+      "main": [[
+        {"node": "IF Warm Lead (>90s)", "type": "main", "index": 0},
+        {"node": "Update call-queue.json", "type": "main", "index": 0}
+      ]]
+    },
+    "IF Warm Lead (>90s)": {
+      "main": [
+        [{"node": "Telegram Alert — Warm Lead", "type": "main", "index": 0}],
+        [{"node": "IF No Answer (<15s)", "type": "main", "index": 0}]
+      ]
+    },
+    "Telegram Alert — Warm Lead": {
+      "main": [[{"node": "Queue Follow-up Email (9am tomorrow)", "type": "main", "index": 0}]]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": ["vapi", "crm", "calls"],
+  "meta": {
+    "description": "Receives Vapi end-of-call reports. Flags warm leads (>90s), marks no-answers (<15s), updates call-queue.json, queues follow-up emails for warm leads at 9am next day."
+  }
+}

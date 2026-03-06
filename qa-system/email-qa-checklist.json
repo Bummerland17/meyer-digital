@@ -1,0 +1,189 @@
+{
+  "checklist_id": "email-qa",
+  "version": "1.0.0",
+  "reviewer": "Hawk",
+  "description": "Scoring rubric for all outbound PantryMate emails. Each criterion scored 0–10. Total possible: 70.",
+  "scoring_rules": {
+    "auto_approve": {
+      "condition": "total_score >= 60 AND no single score < 5 AND honesty_score >= 7",
+      "verdict": "PASS",
+      "action": "Proceed to Shield compliance check"
+    },
+    "flag_for_review": {
+      "condition": "any single score < 5",
+      "verdict": "FLAG",
+      "action": "Return to Godfather with specific notes. Revise and re-review."
+    },
+    "auto_reject": {
+      "condition": "honesty_score < 7",
+      "verdict": "REJECT",
+      "action": "Escalate to Wolfgang immediately. Do not revise without human approval."
+    },
+    "priority_order": "auto_reject takes precedence over flag_for_review"
+  },
+  "criteria": [
+    {
+      "id": "personalization",
+      "label": "Personalization",
+      "weight": 10,
+      "description": "Email references the recipient's specific business name, business type, or something unique to their operation. Not a generic blast.",
+      "scoring_guide": {
+        "10": "Mentions business name AND business type AND something specific (city, owner name, or observed detail)",
+        "8-9": "Mentions business name AND business type",
+        "6-7": "Mentions business name only",
+        "4-5": "Generic but has one token personalization (e.g., just first name)",
+        "2-3": "Mostly generic, no business reference",
+        "0-1": "Completely generic, could be sent to anyone"
+      },
+      "automated_checks": [
+        "Check for presence of {{business_name}} or actual resolved business name",
+        "Check for presence of business type keyword (restaurant, gym, bakery, etc.)",
+        "Flag if body contains unresolved template variables like {{, }}, [NAME], [BUSINESS]"
+      ]
+    },
+    {
+      "id": "honesty",
+      "label": "Honesty",
+      "weight": 10,
+      "description": "No false claims. No invented testimonials. No fabricated social proof. No guaranteed income claims.",
+      "scoring_guide": {
+        "10": "Every claim is verifiable or clearly framed as illustrative. No guarantees.",
+        "8-9": "Minor hedging issues (e.g., 'most clients' without data), but nothing deceptive",
+        "7": "Borderline — passes threshold but needs improvement",
+        "5-6": "Contains vague claims that could mislead ('many businesses doubled revenue')",
+        "3-4": "Contains unverifiable testimonials or strong implied guarantees",
+        "0-2": "Contains false claims, fake testimonials, or explicit income guarantees"
+      },
+      "automated_checks": [
+        "Flag guaranteed income phrases: 'you will make', 'guaranteed to earn', 'double your revenue', 'triple your sales'",
+        "Flag fake urgency: 'only N spots left', 'expires tonight', 'last chance'",
+        "Flag fabricated social proof: 'our 10,000 happy clients', 'as seen on' without verifiable source",
+        "Flag superlatives used as facts: '#1 platform', 'best in the industry'"
+      ],
+      "critical": true,
+      "rejection_threshold": 7,
+      "rejection_note": "Honesty score below 7 triggers AUTO-REJECT regardless of total score. Escalate to Wolfgang."
+    },
+    {
+      "id": "brevity",
+      "label": "Brevity",
+      "weight": 10,
+      "description": "Email body (excluding subject line and signature) is under 120 words. Shorter is better for cold outreach.",
+      "scoring_guide": {
+        "10": "60–90 words (ideal range)",
+        "8-9": "91–119 words (acceptable)",
+        "7": "Exactly 120 words (on the line)",
+        "5-6": "121–150 words (too long)",
+        "3-4": "151–200 words (significantly too long)",
+        "0-2": "Over 200 words (far too long)"
+      },
+      "automated_checks": [
+        "Count words in body (exclude subject line, signature block)",
+        "Auto-score based on word count thresholds above",
+        "Flag if body contains multiple paragraphs without clear structure"
+      ]
+    },
+    {
+      "id": "subject_line_relevance",
+      "label": "Subject Line Relevance",
+      "weight": 10,
+      "description": "Subject line accurately previews the email content. Not misleading, not clickbait, not disconnected from body.",
+      "scoring_guide": {
+        "10": "Subject clearly summarizes the email purpose, sounds natural, personalized if appropriate",
+        "8-9": "Relevant and honest, minor polish needed",
+        "6-7": "Loosely related but could be more specific",
+        "4-5": "Subject line is generic or only vaguely related to body",
+        "2-3": "Misleading or disconnected from body content",
+        "0-1": "Clickbait or completely unrelated"
+      },
+      "automated_checks": [
+        "Check for 'Re:' or 'Fwd:' in subject of unsolicited emails (deceptive)",
+        "Check for ALL CAPS words in subject",
+        "Check for excessive punctuation: !!!, ???",
+        "Flag subject lines over 60 characters (may get clipped)"
+      ]
+    },
+    {
+      "id": "cta_clarity",
+      "label": "CTA Clarity",
+      "weight": 10,
+      "description": "There is exactly one clear call to action. The recipient knows exactly what to do next. No multiple asks, no vague endings.",
+      "scoring_guide": {
+        "10": "One explicit CTA, clear next step, easy to take action (link, reply, book a call)",
+        "8-9": "One CTA, slightly vague wording but still actionable",
+        "6-7": "CTA present but buried or wordy",
+        "4-5": "Two competing CTAs or very vague ('reach out sometime')",
+        "2-3": "No clear CTA or just 'let me know what you think'",
+        "0-1": "No CTA at all"
+      },
+      "automated_checks": [
+        "Count question marks — more than one may indicate multiple asks",
+        "Check for presence of action words: 'reply', 'click', 'book', 'schedule', 'visit'",
+        "Flag emails ending without any actionable request"
+      ]
+    },
+    {
+      "id": "spam_risk",
+      "label": "Spam Risk",
+      "weight": 10,
+      "description": "Email does not contain spam trigger words, excessive punctuation, ALL CAPS sections, or other patterns that cause deliverability issues.",
+      "scoring_guide": {
+        "10": "Clean — no trigger words, no ALL CAPS, no excessive punctuation",
+        "8-9": "One minor flag (e.g., word 'free' used naturally in context)",
+        "6-7": "Two minor flags or one moderate flag",
+        "4-5": "Multiple trigger words or one severe trigger word",
+        "2-3": "Heavy spam language throughout",
+        "0-1": "Reads like a spam email — would never reach inbox"
+      },
+      "automated_checks": [
+        "Scan for spam trigger words: FREE, GUARANTEED, WINNER, URGENT, LIMITED TIME, ACT NOW, CLICK HERE, MAKE MONEY, EARN $, NO RISK, 100%",
+        "Check for ALL CAPS words (3+ consecutive caps words = flag)",
+        "Check for excessive punctuation: !!!, ???, !?!",
+        "Check for emoji overuse (more than 2 in a cold email)",
+        "Check for dollar signs in subject line"
+      ],
+      "trigger_word_list": [
+        "FREE!!!", "GUARANTEED", "ACT NOW", "LIMITED TIME OFFER", "CLICK HERE",
+        "MAKE MONEY", "EARN $", "NO RISK", "100% FREE", "WINNER", "YOU HAVE BEEN SELECTED",
+        "URGENT", "EXPIRE", "FINAL NOTICE", "LAST CHANCE", "ONLY TODAY"
+      ]
+    },
+    {
+      "id": "professional_tone",
+      "label": "Professional Tone",
+      "weight": 10,
+      "description": "Email sounds like it was written by a thoughtful person, not a sales robot. Not pushy, not needy, not overly formal. Confident and human.",
+      "scoring_guide": {
+        "10": "Warm, confident, conversational. Respects the reader's time and intelligence.",
+        "8-9": "Professional and clear, minor tone issues",
+        "6-7": "Adequate but slightly stiff or slightly pushy",
+        "4-5": "Clearly robotic, overly salesy, or condescending",
+        "2-3": "Pushy, aggressive, or dismissive of the reader",
+        "0-1": "Hostile, desperate, or deeply unprofessional"
+      },
+      "automated_checks": [
+        "Flag excessive apologies: 'I know you're busy', 'I'm sorry to bother you', 'I won't take much of your time'",
+        "Flag aggressive phrases: 'You NEED this', 'Don't miss out', 'Your competitors are already using'",
+        "Flag needy closings: 'Please, please reply', 'I really hope to hear from you'",
+        "Flag overly formal openers: 'Dear Sir/Madam', 'To Whom It May Concern'"
+      ]
+    }
+  ],
+  "output_format": {
+    "verdict": "PASS | FLAG | REJECT",
+    "total_score": "sum of all criteria scores",
+    "max_score": 70,
+    "scores": {
+      "personalization": 0,
+      "honesty": 0,
+      "brevity": 0,
+      "subject_line_relevance": 0,
+      "cta_clarity": 0,
+      "spam_risk": 0,
+      "professional_tone": 0
+    },
+    "flags": ["list of specific issues found"],
+    "reviewer_notes": "Hawk's summary verdict and key concerns",
+    "action": "what happens next"
+  }
+}

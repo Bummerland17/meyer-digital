@@ -1,0 +1,14 @@
+{
+  "product": "UnitFix",
+  "angle": "The maintenance request that cost me $3,000 (and how to prevent it)",
+  "template": "split-problem-solution",
+  "duration": 30,
+  "hook": "[SCRIPT FAILED: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBxqG1O-kz18zmdwm2vVtGqkrWfvP6aDvA]",
+  "body": "",
+  "cta": "",
+  "caption": "",
+  "hashtags": "",
+  "thumbnail_text": "UNITFIX",
+  "voiceover_text": "The maintenance request that cost me $3,000 (and how to prevent it)",
+  "raw_script": ""
+}

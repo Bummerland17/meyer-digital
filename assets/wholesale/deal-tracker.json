@@ -1,0 +1,15 @@
+{
+  "last_updated": "2026-03-05",
+  "active_sellers": [],
+  "active_buyers": [],
+  "deals_under_contract": [],
+  "closed_deals": [],
+  "total_assignment_fees_collected": 0,
+  "pipeline_summary": {
+    "leads_this_month": 0,
+    "warm_leads": 0,
+    "contracts_signed": 0,
+    "deals_assigned": 0,
+    "deals_closed": 0
+  }
+}

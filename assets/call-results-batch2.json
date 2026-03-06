@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-03-04T23:30:00.000501Z",
+  "batch1": {
+    "label": "Dental Offices - Alex Agent",
+    "count_launched": 0,
+    "calls": [],
+    "warm_leads": [],
+    "quick_hangups": []
+  },
+  "batch2": {
+    "label": "Gyms/Spas - Maya Agent",
+    "count_launched": 0,
+    "calls": []
+  },
+  "summary": {
+    "total_launched": 0,
+    "batch1_warm_leads": 0,
+    "batch1_quick_hangups": 0
+  }
+}

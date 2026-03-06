@@ -1,0 +1,750 @@
+{
+  "scheduled_for": "16:00 UTC tomorrow (2026-03-06)",
+  "scheduled_mt": "9:00 AM MT",
+  "agent_id": "95e7c636-f8e6-4801-8866-fca9d5d475d3",
+  "phone_number_id": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+  "total_leads": 103,
+  "note": "Daily outbound limit was hit during 2026-03-05 run. Most leads never reached. Voicemails also included.",
+  "leads": [
+    {
+      "name": "Altitude Medspa",
+      "phone": "+18012302822",
+      "city": "Salt Lake City",
+      "type": "Med Spa",
+      "retry_reason": "voicemail"
+    },
+    {
+      "name": "REJUV Medspa",
+      "phone": "+12088843800",
+      "city": "Boise",
+      "type": "Med Spa",
+      "retry_reason": "voicemail"
+    },
+    {
+      "name": "Smile Dental Clinics",
+      "phone": "+16232577475",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "WALK IN - SAME DAY Treatment Dental",
+      "phone": "+16023533333",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Paradise Ridge Dentistry",
+      "phone": "+16023133947",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Dental Specialty Associates",
+      "phone": "+16029627558",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Open Wide Dental - Phoenix",
+      "phone": "+16028069999",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "The Society Of St. Vincent De Paul",
+      "phone": "+16022543338",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Risas Dental and Braces - Phoenix Central",
+      "phone": "+16028455730",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "7 North Dental",
+      "phone": "+16029105700",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "24th Street Dental Biltmore",
+      "phone": "+16024681135",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Thomas Dental",
+      "phone": "+16234556668",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "North Central Family Dentistry",
+      "phone": "+16022422576",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Weekend Dental Care",
+      "phone": "+16024663001",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Downtown Phoenix Dental",
+      "phone": "+16026267952",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Westwind Dental Phoenix",
+      "phone": "+14804708781",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "All Smiles Dental Care - Phoenix",
+      "phone": "+16029609130",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "19th Ave Dental Care",
+      "phone": "+16024330313",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Central Dental",
+      "phone": "+14808089494",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Radiant Smiles Phoenix",
+      "phone": "+16024617575",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Phoenix Dental Design",
+      "phone": "+16029562241",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Arcadia Dental Group",
+      "phone": "+16029542177",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "We Care Dental Phoenix, AZ",
+      "phone": "+16027551671",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Bell Road Dental Care of Phoenix",
+      "phone": "+16024043483",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Diamond Dental",
+      "phone": "+16029001100",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Anytime Dental",
+      "phone": "+16022078528",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Downtown Smiles Phoenix Dental Care",
+      "phone": "+16025669005",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Highland Dental Studio Phoenix",
+      "phone": "+16028583028",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Brighter Way Dental Center",
+      "phone": "+16023620744",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Dental Brothers & Smile Dental Studio",
+      "phone": "+16027891131",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Family Dental Phoenix",
+      "phone": "+16028641119",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Agave Dental",
+      "phone": "+16029572411",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Encanto Family Dental Care",
+      "phone": "+16026669961",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Orthodontic Associates",
+      "phone": "+12078854850",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Vincent G. Sotero, D.M.D.",
+      "phone": "+12034839069",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Healing Dentistry Dental clinic",
+      "phone": "+16022730013",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "AZ Family Dental - Phoenix",
+      "phone": "+16028442431",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Highrise Dental",
+      "phone": "+16022301161",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Dental Therapy - Phoenix",
+      "phone": "+16029444123",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "1800 Emergency Dentist Phoenix 24 Hour",
+      "phone": "+14809143723",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "AZ DENTAL",
+      "phone": "+16024550505",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "VA Dental",
+      "phone": "+16022226424",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Phoenix Medcom Inc",
+      "phone": "+19147886777",
+      "city": "Phoenix",
+      "type": "dental"
+    },
+    {
+      "name": "Ahwatukee Dentistry",
+      "phone": "+14805824973",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Independent family dental Phoenix 85044, serves all ages, strong neighborhood practice"
+    },
+    {
+      "name": "Hi-Fi Dental",
+      "phone": "+16022425445",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Independent Phoenix dentist, offers in-house savings plan \u2014 signals private-pay focus, no insurance overhead"
+    },
+    {
+      "name": "Scottsdale Dental Studio",
+      "phone": "+14803820337",
+      "city": "Scottsdale",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Independent Scottsdale family dental, strong local search presence"
+    },
+    {
+      "name": "Scottsdale Dental Solutions",
+      "phone": "+14805369050",
+      "city": "Scottsdale",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Independent Scottsdale dentist, cosmetic + implants + general, high-value services"
+    },
+    {
+      "name": "Sonoran Desert Dentistry",
+      "phone": "+14804390117",
+      "city": "Scottsdale",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Independent affordable family dentist Scottsdale 85260, accepts multiple insurances, busy front desk"
+    },
+    {
+      "name": "Scottsdale Family Dentistry",
+      "phone": "+14804744990",
+      "city": "Scottsdale",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Independent family & emergency dentistry Scottsdale, solo practice"
+    },
+    {
+      "name": "North Scottsdale Dentistry",
+      "phone": "+14809004966",
+      "city": "Scottsdale",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Independent Scottsdale family dentist, spa-like positioning = affluent clientele, high per-patient value"
+    },
+    {
+      "name": "Dentistry of Old Town Scottsdale",
+      "phone": "+14807196994",
+      "city": "Scottsdale",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Independent, Old Town Scottsdale location = tourist + local mix, high inbound call volume"
+    },
+    {
+      "name": "Arizona Healthy Smiles",
+      "phone": "+14804565457",
+      "city": "Tempe",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Independent Tempe dental, serves Mesa/Chandler too, multi-neighborhood reach = high call volume"
+    },
+    {
+      "name": "Tempe Dental Care",
+      "phone": "+14807305000",
+      "city": "Tempe",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "30+ year independent Tempe practice, established patient base, very high call volume"
+    },
+    {
+      "name": "Tempe Smile Design",
+      "phone": "+14808298200",
+      "city": "Tempe",
+      "state": "AZ",
+      "type": "dental",
+      "notes": "Drs. Tracy & Huber, independent 2-doctor practice Tempe, cosmetic focus = high value per patient"
+    },
+    {
+      "name": "Sweet Skin Medspa",
+      "phone": "+16028251746",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "medspa",
+      "notes": "Independent Phoenix medspa, fillers/facials/lashes, owner-operated, strong social presence"
+    },
+    {
+      "name": "CNT Medspa",
+      "phone": "+14802049682",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "medspa",
+      "notes": "Independent Phoenix medspa, personalized treatments, small clinic = understaffed front desk likely"
+    },
+    {
+      "name": "Innova MedSpa",
+      "phone": "+16029731774",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "medspa",
+      "notes": "Independent Phoenix medspa, advanced laser treatments, phone prominently listed on homepage"
+    },
+    {
+      "name": "Willo MediSpa",
+      "phone": "+16022964477",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "medspa",
+      "notes": "Dr. Nello Rossi's independent medical spa Phoenix, physician-owned = decision maker on site"
+    },
+    {
+      "name": "Love Aesthetics & Wellness",
+      "phone": "+14809998383",
+      "city": "Scottsdale",
+      "state": "AZ",
+      "type": "medspa",
+      "notes": "Independent Scottsdale medspa, premier positioning, injectables + skincare, owner-operated"
+    },
+    {
+      "name": "Village Animal Clinic Phoenix",
+      "phone": "+16029388500",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "vet",
+      "notes": "Solo vet practice Dr. Ann Marie Goldhammer, Phoenix 85053, independent = owner decision maker"
+    },
+    {
+      "name": "Camelback Animal Clinic",
+      "phone": "+16025954020",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "vet",
+      "notes": "Independent vet clinic E. Camelback Rd Phoenix, prime location, high foot traffic area"
+    },
+    {
+      "name": "Central Phoenix Animal Hospital",
+      "phone": "+16022775155",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "vet",
+      "notes": "Independent Phoenix animal hospital, preventive care focused, high inbound call volume"
+    },
+    {
+      "name": "Sugarloaf Animal Clinic",
+      "phone": "+16029712720",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "vet",
+      "notes": "Independent neighborhood vet clinic Phoenix, local community-focused practice"
+    },
+    {
+      "name": "Arizona Physical Therapy Specialists",
+      "phone": "+16029977844",
+      "city": "Phoenix",
+      "state": "AZ",
+      "type": "physio",
+      "notes": "Independent PT practice Phoenix 85016, specialty in golf injuries/spine/chronic pain, active website"
+    },
+    {
+      "name": "Salt Lake City Dental Center",
+      "phone": "+18015056850",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "type": "dental",
+      "notes": "144 reviews on Yelp, cosmetic dentist SLC, established independent practice"
+    },
+    {
+      "name": "The Sugar House Dentist",
+      "phone": "+18016180197",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "type": "dental",
+      "notes": "Independent SLC dentist, Sugar House neighborhood, family dentistry + specialty services"
+    },
+    {
+      "name": "Highland Dental Center",
+      "phone": "+18014875755",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "type": "dental",
+      "notes": "Dr. Daniel J. Theurer DDS solo practice, established SLC independent dental, high-trust neighborhood office"
+    },
+    {
+      "name": "SLC Med Spa",
+      "phone": "+18014190551",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "type": "medspa",
+      "notes": "59 Yelp reviews, independent SLC medspa, 44 photos \u2014 active and busy practice"
+    },
+    {
+      "name": "RO Aesthetics",
+      "phone": "+18012338778",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "type": "medspa",
+      "notes": "Independent SLC medspa, Botox/fillers/laser, NP-owned small clinic = understaffed"
+    },
+    {
+      "name": "Pet Stop Veterinary Clinic",
+      "phone": "+18015310662",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "type": "vet",
+      "notes": "Independent SLC neighborhood vet, $10 off first visit offer signals competitive pricing = busy practice"
+    },
+    {
+      "name": "Lake City Veterinary Clinic",
+      "phone": "+18013288543",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "type": "vet",
+      "notes": "54 Yelp reviews, independent SLC vet clinic, Mon-Sat hours = high call volume"
+    },
+    {
+      "name": "OG Dental Denver",
+      "phone": "+17208157459",
+      "city": "Denver",
+      "state": "CO",
+      "type": "dental",
+      "notes": "Dr. O'Grady solo dentist Denver Highlands, honest/compassionate branding = owner-operated, decision maker"
+    },
+    {
+      "name": "RiNo Dental",
+      "phone": "+13032923120",
+      "city": "Denver",
+      "state": "CO",
+      "type": "dental",
+      "notes": "Independent dentist Denver RiNo arts district, trendy neighborhood = young professional clientele, high value"
+    },
+    {
+      "name": "Barotz Dental",
+      "phone": "+17205731500",
+      "city": "Denver",
+      "state": "CO",
+      "type": "dental",
+      "notes": "Independent cosmetic dentist Denver, implants + cosmetic = high revenue per patient, busy schedule"
+    },
+    {
+      "name": "Always Beautiful Medspa",
+      "phone": "+17202807016",
+      "city": "Denver",
+      "state": "CO",
+      "type": "medspa",
+      "notes": "Independent Denver/Aurora medspa, owner-operated, CoolSculpting/injectables, direct phone on homepage"
+    },
+    {
+      "name": "Founders Green Animal Hospital",
+      "phone": "+17207698754",
+      "city": "Denver",
+      "state": "CO",
+      "type": "vet",
+      "notes": "Independent vet Denver East 29th Ave Town Center, new/growing practice = busy but potentially understaffed"
+    },
+    {
+      "name": "Allbrick Veterinary Clinic",
+      "phone": "+13037325008",
+      "city": "Denver",
+      "state": "CO",
+      "type": "vet",
+      "notes": "Independent full-service vet Denver, LLC-owned = solo owner decision maker, direct call number"
+    },
+    {
+      "name": "Hermosa Veterinary Clinic",
+      "phone": "+13034552131",
+      "city": "Denver",
+      "state": "CO",
+      "type": "vet",
+      "notes": "115 Yelp reviews \u2014 high volume independent Denver vet, Federal Blvd location serves large community"
+    },
+    {
+      "name": "Park Hill Veterinary Medical Center",
+      "phone": "+13033882255",
+      "city": "Denver",
+      "state": "CO",
+      "type": "vet",
+      "notes": "Independent vet clinic Denver Park Hill neighborhood, established practice with Mon-Sat hours"
+    },
+    {
+      "name": "Active Solutions Physical Therapy",
+      "phone": "+13034944100",
+      "city": "Boulder",
+      "state": "CO",
+      "type": "physio",
+      "notes": "Independent Boulder PT clinic, solo practice, sports/ortho focus in high-activity Boulder market"
+    },
+    {
+      "name": "Bird Family Dental",
+      "phone": "+12083221263",
+      "city": "Boise",
+      "state": "ID",
+      "type": "dental",
+      "notes": "Dr. Bird & Dr. Hendricks, independent 20-year practice, serves Boise/Meridian/Eagle = high volume"
+    },
+    {
+      "name": "New Leaf Dental",
+      "phone": "+12088962284",
+      "city": "Meridian",
+      "state": "ID",
+      "type": "dental",
+      "notes": "Independent Meridian ID family dental, Linder/Pine location = fast-growing suburban area, busy practice"
+    },
+    {
+      "name": "Emerald Smiles Dentistry",
+      "phone": "+12085933221",
+      "city": "Boise",
+      "state": "ID",
+      "type": "dental",
+      "notes": "Independent Boise dental, in-house savings plan = private-pay focused, owner makes decisions"
+    },
+    {
+      "name": "The Spa Boise",
+      "phone": "+12085907721",
+      "city": "Boise",
+      "state": "ID",
+      "type": "medspa",
+      "notes": "Independent Boise medspa, Botox/skin care/laser, owner-operated, personal email = solo owner"
+    },
+    {
+      "name": "Prophecy Med Spa Boise",
+      "phone": "+12089996427",
+      "city": "Boise",
+      "state": "ID",
+      "type": "medspa",
+      "notes": "28 Yelp reviews, independent Boise medspa, Mon-Sat hours = very active booking schedule"
+    },
+    {
+      "name": "Bench Animal Hospital",
+      "phone": "+12083377431",
+      "city": "Boise",
+      "state": "ID",
+      "type": "vet",
+      "notes": "Independent Boise vet, full-service including dentistry, Bench district = large client base"
+    },
+    {
+      "name": "Critter Clinic Boise",
+      "phone": "+12083231210",
+      "city": "Boise",
+      "state": "ID",
+      "type": "vet",
+      "notes": "Dr. Mike Cohn solo vet practice Boise, independent neighborhood clinic, owner decision maker"
+    },
+    {
+      "name": "Southwest Vegas Smiles",
+      "phone": "+17024322223",
+      "city": "Las Vegas",
+      "state": "NV",
+      "type": "dental",
+      "notes": "Independent Las Vegas dental, 89148 zip (Summerlin adjacent), SW Vegas underserved = high demand"
+    },
+    {
+      "name": "Town Center Dental Las Vegas",
+      "phone": "+17023608696",
+      "city": "Las Vegas",
+      "state": "NV",
+      "type": "dental",
+      "notes": "Independent LV dental Del Webb area, AARP-recognized for accessible care = high senior patient volume"
+    },
+    {
+      "name": "Las Vegas Dental Group",
+      "phone": "+17028705165",
+      "city": "Las Vegas",
+      "state": "NV",
+      "type": "dental",
+      "notes": "Independent W Charleston LV dentist, near Strip = tourist + local mix, high call volume"
+    },
+    {
+      "name": "Advanced Aesthetics LV",
+      "phone": "+17028384644",
+      "city": "Las Vegas",
+      "state": "NV",
+      "type": "medspa",
+      "notes": "Independent Las Vegas premier medspa, full aesthetic menu, direct phone on homepage"
+    },
+    {
+      "name": "Simply Radiant LV",
+      "phone": "+17022746559",
+      "city": "Las Vegas",
+      "state": "NV",
+      "type": "medspa",
+      "notes": "Independent Las Vegas medspa, smaller boutique practice = likely solo owner, decision maker accessible"
+    },
+    {
+      "name": "Beauty Factory MedSpa",
+      "phone": "+17023523560",
+      "city": "Las Vegas",
+      "state": "NV",
+      "type": "medspa",
+      "notes": "Independent LV medspa, membership model ($175/month) = recurring revenue focus, already tech-forward"
+    },
+    {
+      "name": "Chic la Vie Med Spa",
+      "phone": "+17022338535",
+      "city": "Las Vegas",
+      "state": "NV",
+      "type": "medspa",
+      "notes": "Independent LV medspa W Sahara, established location, boutique aesthetics practice"
+    },
+    {
+      "name": "Performance Physical Therapy LV",
+      "phone": "+17022333288",
+      "city": "Las Vegas",
+      "state": "NV",
+      "type": "physio",
+      "notes": "66 Yelp reviews, independent LV PT, W Sahara location, Mon-Fri hours = consistently busy"
+    },
+    {
+      "name": "Achieve Physical Therapy LV",
+      "phone": "+17028769737",
+      "city": "Las Vegas",
+      "state": "NV",
+      "type": "physio",
+      "notes": "43 Yelp reviews, independent LV physio, S Rainbow Blvd, full weekday hours = high volume"
+    },
+    {
+      "name": "ABQ Dentists",
+      "phone": "+15052938011",
+      "city": "Albuquerque",
+      "state": "NM",
+      "type": "dental",
+      "notes": "Independent ABQ dental, Eubank Blvd location, extended hours Mon-Fri = high availability demand"
+    },
+    {
+      "name": "ABQ Gentle Dentistry",
+      "phone": "+15052928588",
+      "city": "Albuquerque",
+      "state": "NM",
+      "type": "dental",
+      "notes": "Dr. Dan Lafferty solo dentist ABQ, implants + whitening + aligners = high-value service mix"
+    },
+    {
+      "name": "Blue Sky Dental ABQ",
+      "phone": "+15052752492",
+      "city": "Albuquerque",
+      "state": "NM",
+      "type": "dental",
+      "notes": "Dr. Corey Woods DMD, independent ABQ dental, Montgomery Pkwy, personal branding = solo owner"
+    },
+    {
+      "name": "Riverpoint Family Dental",
+      "phone": "+15058216910",
+      "city": "Albuquerque",
+      "state": "NM",
+      "type": "dental",
+      "notes": "Independent ABQ family dental, cosmetic + implants, NW Albuquerque suburb = growing area"
+    },
+    {
+      "name": "AlluraDerm MD MedSpa",
+      "phone": "+15058219630",
+      "city": "Albuquerque",
+      "state": "NM",
+      "type": "medspa",
+      "notes": "MD-owned independent ABQ medspa, Paseo Del Norte NE, physician decision maker accessible"
+    },
+    {
+      "name": "Bair Medical Spa ABQ",
+      "phone": "+15058811532",
+      "city": "Albuquerque",
+      "state": "NM",
+      "type": "medspa",
+      "notes": "Established independent ABQ medspa, laser hair removal + skincare, long-standing practice = high call vol"
+    },
+    {
+      "name": "Look Rejuvenated Med Spa ABQ",
+      "phone": "+15057165566",
+      "city": "Albuquerque",
+      "state": "NM",
+      "type": "medspa",
+      "notes": "Boutique independent ABQ medspa, Encino Pl NE, small clinic = owner-operated, easy decision"
+    }
+  ]
+}

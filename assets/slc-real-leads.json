@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Action Mobile Repair",
+    "place_id": "ChIJ9R2mszr1UocRS9SdQDKdQxY",
+    "rating": 4.1,
+    "reviews": 71,
+    "address": "1145 Richards St, Salt Lake City, UT 84101, USA",
+    "type": "auto",
+    "phone": "(801) 220-0005",
+    "website": "",
+    "emails": []
+  },
+  {
+    "name": "Lake Effect",
+    "place_id": "ChIJ4ca-UwT1UocRrxHRZjY6hxg",
+    "rating": 4.3,
+    "reviews": 2758,
+    "address": "155 W 200 S, Salt Lake City, UT 84101, USA",
+    "type": "restaurant",
+    "phone": "(801) 532-2068",
+    "website": "http://www.lakeeffectslc.com/",
+    "emails": [
+      "johndoe@gmail.com"
+    ]
+  },
+  {
+    "name": "Copper Common",
+    "place_id": "ChIJL38_3Dj9ZUARZmqp-ww6Z54",
+    "rating": 4.3,
+    "reviews": 624,
+    "address": "111 E Broadway Suite 190, Salt Lake City, UT 84111, USA",
+    "type": "restaurant",
+    "phone": "(801) 355-0543",
+    "website": "https://coppercommon.com/",
+    "emails": [
+      "user@domain.com",
+      "info@thecopperonion.com",
+      "common@copperslc.com"
+    ]
+  },
+  {
+    "name": "From Scratch",
+    "place_id": "ChIJY3z5LA71UocReX9MwJxhMho",
+    "rating": 4.3,
+    "reviews": 1877,
+    "address": "62 E Gallivan Ave, Salt Lake City, UT 84111, USA",
+    "type": "restaurant",
+    "phone": "(801) 961-9000",
+    "website": "",
+    "emails": []
+  },
+  {
+    "name": "Ivy & Varley",
+    "place_id": "ChIJLcqR_gX1UocRG9nwIbFhWLA",
+    "rating": 4.1,
+    "reviews": 1082,
+    "address": "55 W 100 S, Salt Lake City, UT 84101, USA",
+    "type": "restaurant",
+    "phone": "(801) 895-2846",
+    "website": "https://www.ivyandvarley.com/",
+    "emails": [
+      "info@realine.com"
+    ]
+  },
+  {
+    "name": "Gracie's",
+    "place_id": "ChIJbQqgyhr1UocRKXm-haiu4M8",
+    "rating": 4.2,
+    "reviews": 4036,
+    "address": "326 S W Temple St, Salt Lake City, UT 84101, USA",
+    "type": "restaurant",
+    "phone": "(801) 819-7565",
+    "website": "http://www.graciesslc.com/",
+    "emails": []
+  },
+  {
+    "name": "The GYM",
+    "place_id": "ChIJ__-_kQX1UocRNTe87DtD1Kk",
+    "rating": 3.7,
+    "reviews": 34,
+    "address": "175 S W Temple St Level GL, Salt Lake City, UT 84101, USA",
+    "type": "gym",
+    "phone": "(385) 441-7129",
+    "website": "https://thegymslc.com/",
+    "emails": []
+  },
+  {
+    "name": "Planet Fitness",
+    "place_id": "ChIJ6Up5yBH1UocR5swVLhXmsPw",
+    "rating": 3.8,
+    "reviews": 1032,
+    "address": "175 E 400 S Ste 100, Salt Lake City, UT 84111, USA",
+    "type": "gym",
+    "phone": "(801) 521-9400",
+    "website": "https://www.planetfitness.com/gyms/salt-lake-city-ut?utm_medium=organic&utm_source=extnet",
+    "emails": []
+  }
+]

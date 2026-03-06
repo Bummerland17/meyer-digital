@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drift — Flight Deals for African Travelers</title>
+  <meta name="description" content="Find the best flight deals from 12 African cities. Honest price estimates, visa info, and the best months to book.">
+  <meta property="og:title" content="Drift — Flight Deals for African Travelers">
+  <meta property="og:description" content="Honest flight deal data from Windhoek, Nairobi, Lagos, Cairo, and 8 more African cities.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #0a0f1e;
+      --bg-card:      #0f1828;
+      --bg-card-h:    #141f33;
+      --border:       #1a2744;
+      --border-h:     #2a3d5e;
+      --gold:         #f4a832;
+      --gold-dim:     #c4872c;
+      --gold-bg:      rgba(244,168,50,0.08);
+      --gold-border:  rgba(244,168,50,0.2);
+      --text:         #e2e8f0;
+      --text-dim:     #8fa8c8;
+      --text-muted:   #4a6080;
+      --green:        #4ade80;
+      --green-bg:     rgba(34,197,94,0.12);
+      --green-border: rgba(34,197,94,0.25);
+      --yellow:       #fbbf24;
+      --yellow-bg:    rgba(245,158,11,0.12);
+      --yellow-border:rgba(245,158,11,0.25);
+      --red:          #f87171;
+      --red-bg:       rgba(239,68,68,0.1);
+      --red-border:   rgba(239,68,68,0.2);
+      --radius:       14px;
+      --radius-sm:    9px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ─── Stars ─── */
+    #stars {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      border-radius: 50%;
+      background: #fff;
+      animation: twinkle var(--d, 3s) ease-in-out infinite var(--delay, 0s);
+    }
+    @keyframes twinkle {
+      0%,100% { opacity: var(--lo, 0.1); transform: scale(1); }
+      50%      { opacity: var(--hi, 0.6); transform: scale(1.3); }
+    }
+
+    body > *:not(#stars) { position: relative; z-index: 1; }
+
+    /* ─── Header ─── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: rgba(10,15,30,0.9);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+    }
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      text-decoration: none;
+    }
+    .logo-name {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: -0.03em;
+    }
+    .logo-meta {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .logo-veldt {
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+    .header-tagline {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: none;
+    }
+    @media (min-width: 480px) { .header-tagline { display: block; } }
+
+    /* ─── Hero ─── */
+    .hero {
+      text-align: center;
+      padding: 3.5rem 1.25rem 2.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border: 1px solid var(--gold-border);
+      background: var(--gold-bg);
+      padding: 0.3rem 0.85rem;
+      border-radius: 100px;
+      margin-bottom: 1.4rem;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 5.5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+      color: var(--text);
+      margin-bottom: 0.8rem;
+    }
+    .hero h1 .accent { color: var(--gold); }
+    .hero-sub {
+      color: var(--text-dim);
+      font-size: 1.05rem;
+      max-width: 480px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+
+    /* ─── Section wrapper ─── */
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* ─── City selector ─── */
+    .city-section { padding-bottom: 0; }
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--text-muted);
+      margin-bottom: 0.9rem;
+    }
+    .city-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+      gap: 0.55rem;
+    }
+    .city-pill {
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      border-radius: var(--radius-sm);
+      padding: 0.65rem 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: border-color .15s, background .15s, box-shadow .15s;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .city-pill:hover {
+      border-color: var(--border-h);
+      background: var(--bg-card-h);
+    }
+    .city-pill.active {
+      border-color: var(--gold);
+      background: var(--gold-bg);
+      box-shadow: 0 0 0 1px var(--gold) inset;
+    }
+    .city-flag  { font-size: 1.3rem; line-height: 1; flex-shrink: 0; }
+    .city-info  { min-width: 0; }
+    .city-name  { font-size: 0.82rem; font-weight: 600; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .city-ctry  { font-size: 0.68rem; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 1px; }
+
+    /* ─── Results ─── */
+    .results-section { margin-top: 2.5rem; }
+    .results-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.1rem;
+    }
+    .results-title { font-size: 1rem; font-weight: 700; }
+    .results-title .city-accent { color: var(--gold); }
+
+    .filters { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .filter-btn {
+      cursor: pointer;
+      padding: 0.3rem 0.7rem;
+      border-radius: 100px;
+      font-size: 0.76rem;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-dim);
+      font-family: inherit;
+      transition: all .15s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover { border-color: var(--border-h); color: var(--text); }
+    .filter-btn.active { background: var(--gold); border-color: var(--gold); color: #0a0f1e; font-weight: 700; }
+
+    /* ─── Empty state ─── */
+    .empty-state {
+      text-align: center;
+      padding: 5rem 1.25rem;
+      color: var(--text-muted);
+    }
+    .empty-state .glyph { font-size: 3.5rem; display: block; margin-bottom: 1rem; opacity: 0.7; }
+    .empty-state p { font-size: 1rem; }
+
+    /* ─── Cards grid ─── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+      gap: 1rem;
+    }
+
+    /* ─── Destination card ─── */
+    .dest-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      transition: transform .18s, border-color .18s, box-shadow .18s;
+      animation: fadeUp .3s ease both;
+    }
+    .dest-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(244,168,50,0.28);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+    .card-flag { font-size: 2.1rem; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+    .card-loc  { flex: 1; min-width: 0; }
+    .card-city { font-size: 1.05rem; font-weight: 700; color: var(--text); line-height: 1.2; }
+    .card-ctry { font-size: 0.73rem; color: var(--text-muted); margin-top: 2px; }
+    .card-price {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--gold);
+      white-space: nowrap;
+      background: var(--gold-bg);
+      border: 1px solid var(--gold-border);
+      padding: 0.22rem 0.55rem;
+      border-radius: 6px;
+      flex-shrink: 0;
+      align-self: flex-start;
+    }
+    .card-why {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      line-height: 1.55;
+      font-style: italic;
+      border-left: 2px solid var(--border-h);
+      padding-left: 0.65rem;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .card-months {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.74rem;
+      color: var(--text-dim);
+      flex: 1;
+      min-width: 0;
+    }
+    .card-months svg { flex-shrink: 0; opacity: 0.5; }
+    .visa-pill {
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 0.2rem 0.5rem;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .visa-free     { background: var(--green-bg);  color: var(--green);  border: 1px solid var(--green-border); }
+    .visa-arrival  { background: var(--yellow-bg); color: var(--yellow); border: 1px solid var(--yellow-border); }
+    .visa-required { background: var(--red-bg);    color: var(--red);    border: 1px solid var(--red-border); }
+
+    .search-btn {
+      display: block;
+      width: 100%;
+      padding: 0.72rem 1rem;
+      background: var(--gold);
+      color: #0a0f1e;
+      font-weight: 700;
+      font-size: 0.84rem;
+      text-decoration: none;
+      text-align: center;
+      border-radius: var(--radius-sm);
+      transition: background .15s, transform .1s;
+      margin-top: auto;
+      letter-spacing: 0.01em;
+    }
+    .search-btn:hover { background: #ffb84d; transform: translateY(-1px); }
+    .search-btn:active { transform: translateY(0); }
+
+    /* ─── Tip banner ─── */
+    .tip-banner { margin-top: 3rem; }
+    .tip-inner {
+      background: linear-gradient(135deg, rgba(244,168,50,0.07) 0%, rgba(244,168,50,0.03) 100%);
+      border: 1px solid rgba(244,168,50,0.18);
+      border-radius: var(--radius);
+      padding: 1.3rem 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .tip-icon  { font-size: 1.4rem; line-height: 1; flex-shrink: 0; margin-top: 1px; }
+    .tip-title { font-size: 0.88rem; font-weight: 700; color: var(--gold); margin-bottom: 0.3rem; }
+    .tip-text  { font-size: 0.82rem; color: var(--text-dim); line-height: 1.6; }
+
+    /* ─── Price alert ─── */
+    .alert-section { margin-top: 3rem; }
+    .alert-inner {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .alert-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      background: var(--gold-bg);
+      border: 1px solid var(--gold-border);
+      padding: 0.22rem 0.65rem;
+      border-radius: 100px;
+      margin-bottom: 1rem;
+    }
+    .alert-inner h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+    }
+    .alert-inner p {
+      color: var(--text-dim);
+      font-size: 0.88rem;
+      max-width: 380px;
+      margin: 0 auto 1.75rem;
+    }
+    .alert-form {
+      display: flex;
+      gap: 0.65rem;
+      max-width: 420px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .alert-input {
+      flex: 1;
+      min-width: 180px;
+      padding: 0.7rem 1rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      font-size: 0.88rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color .15s;
+    }
+    .alert-input::placeholder { color: var(--text-muted); }
+    .alert-input:focus { border-color: var(--gold-dim); }
+    .alert-btn {
+      padding: 0.7rem 1.25rem;
+      background: var(--gold);
+      color: #0a0f1e;
+      font-weight: 700;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-family: inherit;
+      transition: background .15s;
+      white-space: nowrap;
+    }
+    .alert-btn:hover { background: #ffb84d; }
+
+    /* ─── Footer ─── */
+    footer {
+      margin-top: 4rem;
+      padding: 2rem 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+    .footer-inner { max-width: 1180px; margin: 0 auto; text-align: center; }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 0.65rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 0.83rem;
+      transition: color .15s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+    .footer-copy a { color: inherit; text-decoration: none; }
+    .footer-copy a:hover { color: var(--text-dim); }
+    .footer-disclaimer {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      opacity: 0.65;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 480px) {
+      .city-grid { grid-template-columns: repeat(2, 1fr); }
+      .cards-grid { grid-template-columns: 1fr; }
+      .alert-form { flex-direction: column; }
+      .alert-input { min-width: unset; }
+      .hero { padding: 2.5rem 1.25rem 2rem; }
+    }
+    @media (min-width: 768px) {
+      .city-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .city-grid { grid-template-columns: repeat(6, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<div id="stars"></div>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo" onclick="return false;">
+      <span class="logo-name">Drift</span>
+      <span class="logo-meta">by <span class="logo-veldt">Veldt</span></span>
+    </a>
+    <span class="header-tagline">Flight deals for African travelers</span>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hero-badge">✈ Africa's Flight Deal Finder</div>
+    <h1>Where are you<br><span class="accent">flying from?</span></h1>
+    <p class="hero-sub">Honest price estimates, visa reality checks, and the best months to book — from 12 African cities.</p>
+  </div>
+
+  <div class="wrap city-section">
+    <div class="section-label">Pick your departure city</div>
+    <div class="city-grid" id="cityGrid"></div>
+  </div>
+
+  <div class="wrap results-section" id="resultsSection">
+    <div class="empty-state" id="noCity">
+      <span class="glyph">🌍</span>
+      <p>Select a city above to see flight deals</p>
+    </div>
+
+    <div id="resultsContent" style="display:none">
+      <div class="results-header">
+        <div class="results-title">
+          Flights from <span class="city-accent" id="fromLabel">—</span>
+        </div>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="free">🟢 Visa Free</button>
+          <button class="filter-btn" data-filter="arrival">🟡 On Arrival</button>
+          <button class="filter-btn" data-filter="required">🔴 Visa Required</button>
+        </div>
+      </div>
+      <div class="cards-grid" id="cardsGrid"></div>
+    </div>
+  </div>
+
+  <div class="wrap tip-banner">
+    <div class="tip-inner">
+      <div class="tip-icon">💡</div>
+      <div>
+        <div class="tip-title">Best time to book African routes</div>
+        <p class="tip-text">African international fares are typically cheapest when booked 6–8 weeks out. Avoid December (holiday peak), South African school holidays (late June, late September), and Easter week — prices spike across every major route during these windows.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap alert-section">
+    <div class="alert-inner">
+      <div class="alert-badge">Coming Soon</div>
+      <h2>Get notified when prices drop</h2>
+      <p>We're building price alerts for African routes. Be first to know when your route goes cheap.</p>
+      <form class="alert-form" onsubmit="handleAlert(event)">
+        <input type="email" class="alert-input" id="alertEmail" placeholder="your@email.com" required>
+        <button type="submit" class="alert-btn">Notify me →</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://bummerland17.github.io/veldt" target="_blank" rel="noopener">Veldt</a>
+      <a href="mailto:hello@pantrymate.net">✉ hello@pantrymate.net</a>
+    </div>
+    <div class="footer-copy">
+      Built by Veldt · <a href="https://bummerland17.github.io/veldt" target="_blank" rel="noopener">bummerland17.github.io/veldt</a>
+    </div>
+    <div class="footer-disclaimer">
+      Prices are estimates based on historical averages and may vary significantly. Click to see live prices on Skyscanner.
+      Visa requirements vary by passport — always verify with the official embassy before booking.
+    </div>
+  </div>
+</footer>
+
+<script>
+// ─── Data ───────────────────────────────────────────────────────────────────
+
+const CITIES = [
+  { code:"WDH", name:"Windhoek",      country:"Namibia",       flag:"🇳🇦" },
+  { code:"JNB", name:"Johannesburg",  country:"South Africa",  flag:"🇿🇦" },
+  { code:"CPT", name:"Cape Town",     country:"South Africa",  flag:"🇿🇦" },
+  { code:"LOS", name:"Lagos",         country:"Nigeria",       flag:"🇳🇬" },
+  { code:"NBO", name:"Nairobi",       country:"Kenya",         flag:"🇰🇪" },
+  { code:"ACC", name:"Accra",         country:"Ghana",         flag:"🇬🇭" },
+  { code:"CAI", name:"Cairo",         country:"Egypt",         flag:"🇪🇬" },
+  { code:"CMN", name:"Casablanca",    country:"Morocco",       flag:"🇲🇦" },
+  { code:"ADD", name:"Addis Ababa",   country:"Ethiopia",      flag:"🇪🇹" },
+  { code:"DAR", name:"Dar es Salaam", country:"Tanzania",      flag:"🇹🇿" },
+  { code:"KGL", name:"Kigali",        country:"Rwanda",        flag:"🇷🇼" },
+  { code:"EBB", name:"Kampala",       country:"Uganda",        flag:"🇺🇬" },
+];
+
+// visa: "free" | "arrival" | "required"
+const ROUTES = {
+  WDH: [
+    { city:"Johannesburg", country:"South Africa", flag:"🇿🇦", to:"jnb", price:"$150–$280",   visa:"free",     months:"Year-round",          why:"South Africa's economic capital — fast connections, a great restaurant scene in Sandton, and the most direct gateway to Kruger." },
+    { city:"Cape Town",    country:"South Africa", flag:"🇿🇦", to:"cpt", price:"$180–$320",   visa:"free",     months:"Apr–Nov",              why:"Table Mountain, Camps Bay, world-class wine farms — arguably the most beautiful city in Africa and absolutely worth the short hop." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$580–$820",   visa:"arrival",  months:"Oct–Mar",              why:"Tax-free shopping, extraordinary food diversity, and the world's busiest international airport — visa on arrival makes it easy." },
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$680–$950", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"World-class museums (all free), the southern African diaspora is huge in London, and the city rewards repeat visits in every season." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$720–$980",   visa:"required", months:"Apr–Oct",              why:"Canals, cycling everywhere, and the Rijksmuseum. KLM's Africa network makes AMS one of the cleanest Schengen entry points." },
+    { city:"Nairobi",      country:"Kenya",        flag:"🇰🇪", to:"nbo", price:"$450–$680",   visa:"arrival",  months:"Jun–Sep",              why:"East Africa's tech and startup hub — completely different energy from southern Africa. Best gateway to the Maasai Mara." },
+    { city:"Bangkok",      country:"Thailand",     flag:"🇹🇭", to:"bkk", price:"$800–$1,100", visa:"arrival",  months:"Nov–Mar",              why:"Street food that permanently ruins your relationship with expensive restaurants. Massages for $10. Hotel value that defies belief." },
+  ],
+  JNB: [
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$520–$850",   visa:"required", months:"Apr–Jun, Sep–Oct",   why:"Direct BA and SAA flights — the South African community in London is enormous and this route is one of the world's most culturally connected." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$450–$700",   visa:"arrival",  months:"Oct–Mar",              why:"World's most connected hub — use DXB as a springboard to anywhere in Asia. The city itself is genuinely worth 48 deliberate hours." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$550–$880",   visa:"required", months:"Apr–Oct",              why:"Direct KLM flights, consistently one of the best-value European routes from JNB. Amsterdam's walkability is a relief after Joburg sprawl." },
+    { city:"New York",     country:"United States", flag:"🇺🇸", to:"nyc", price:"$880–$1,300", visa:"required", months:"May–Sep",             why:"The South African diaspora in NYC is large and passionate — Brooklyn, Harlem, and the best Afrobeats venues outside Lagos." },
+    { city:"Bangkok",      country:"Thailand",     flag:"🇹🇭", to:"bkk", price:"$620–$950",   visa:"arrival",  months:"Nov–Mar",              why:"Asia's most accessible city for African travelers. Visa on arrival, incredible value for money, temples, and food that has no equal." },
+    { city:"Singapore",    country:"Singapore",    flag:"🇸🇬", to:"sin", price:"$720–$1,050", visa:"required", months:"Year-round",           why:"One of the most livable cities on earth. Hawker centre meals that rival fine dining, and Changi Airport that makes every other airport look amateur." },
+    { city:"Nairobi",      country:"Kenya",        flag:"🇰🇪", to:"nbo", price:"$300–$500",   visa:"arrival",  months:"Year-round",           why:"Fast-growing tech and startup ecosystem — the Nairobi-Joburg corridor is one of Africa's most important and well-connected business routes." },
+    { city:"Lagos",        country:"Nigeria",      flag:"🇳🇬", to:"los", price:"$380–$620",   visa:"arrival",  months:"Year-round",           why:"West Africa's commercial capital. Business connections, Afrobeats nightlife, and a city energy that nothing else on the continent quite matches." },
+  ],
+  CPT: [
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$560–$900", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"Direct BA and Virgin Atlantic. Cape Town expats in London are everywhere — you'll run into them in any pub south of the river." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$500–$780",   visa:"arrival",  months:"Oct–Mar",              why:"Best stopover city on earth. Tax-free shopping, incredible food diversity, and airport infrastructure that sets a standard no one else meets." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$590–$920",   visa:"required", months:"May–Sep",              why:"KLM direct from CPT is one of the most reliable European long-haul routes. Amsterdam rewards walking in a way big cities rarely do." },
+    { city:"Johannesburg", country:"South Africa", flag:"🇿🇦", to:"jnb", price:"$80–$180",   visa:"free",     months:"Year-round",           why:"Quick business hop or connection point. Book early, don't overpay. Joburg adds altitude, steak, and an edge Cape Town doesn't have." },
+    { city:"Nairobi",      country:"Kenya",        flag:"🇰🇪", to:"nbo", price:"$350–$580",   visa:"arrival",  months:"Jun–Sep",              why:"Connect to East Africa's safari circuit or tap into Nairobi's booming tech scene — a genuinely different world from Cape Town." },
+    { city:"New York",     country:"United States", flag:"🇺🇸", to:"nyc", price:"$920–$1,380", visa:"required", months:"Jun–Sep",             why:"The distance is real but so is the reward. NYC's South African community is tight-knit, vocal, and genuinely welcoming to new arrivals." },
+    { city:"Doha",         country:"Qatar",        flag:"🇶🇦", to:"doh", price:"$520–$780",   visa:"arrival",  months:"Oct–Mar",              why:"Qatar Airways' flagship hub — Hamad International is worth an extended layover. The new Doha skyline is unexpectedly beautiful." },
+  ],
+  LOS: [
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$550–$900", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"The largest African diaspora community in Europe. Heathrow direct on BA and Virgin. Peckham, Brixton, and East London are basically Lagos." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$380–$650",   visa:"required", months:"Oct–Mar",              why:"Gold Souk, Dubai Mall, and Gulf business connections — the Dubai-Lagos corridor is one of the world's most active trade routes." },
+    { city:"New York",     country:"United States", flag:"🇺🇸", to:"nyc", price:"$750–$1,150", visa:"required", months:"May–Sep",             why:"Millions of Nigerians across the US — NYC, Houston, Atlanta. The transatlantic Nigeria-US route is well served and increasingly competitive." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$520–$830",   visa:"required", months:"Apr–Sep",              why:"KLM direct from Lagos — Europe's fastest hop from LOS. Consistent service and Amsterdam's canals never actually get old." },
+    { city:"Accra",        country:"Ghana",        flag:"🇬🇭", to:"acc", price:"$100–$210",   visa:"free",     months:"Year-round",           why:"ECOWAS makes this practically domestic. Accra's beach clubs, laid-back pace, and relatively lower cost are the antidote to Lagos overdrive." },
+    { city:"Johannesburg", country:"South Africa", flag:"🇿🇦", to:"jnb", price:"$380–$620",   visa:"arrival",  months:"Year-round",           why:"Business gateway to southern Africa — OR Tambo connects everywhere. Lagos-Joburg is one of Africa's most commercially important corridors." },
+    { city:"Doha",         country:"Qatar",        flag:"🇶🇦", to:"doh", price:"$350–$600",   visa:"arrival",  months:"Oct–Mar",              why:"Qatar Airways is one of the world's best airlines — Doha's Hamad International is worth a deliberate stopover, not just a missed connection." },
+    { city:"Paris",        country:"France",       flag:"🇫🇷", to:"par", price:"$530–$850",   visa:"required", months:"Apr–Oct",              why:"Significant Francophone Nigerian and West African community in Paris. The city's food scene hits different after 11 months of Lagos traffic." },
+  ],
+  NBO: [
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$500–$850", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"Direct Kenya Airways and British Airways flights. One of Africa's longest-established diaspora communities in London — the Kenyan connection runs deep." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$350–$580",   visa:"arrival",  months:"Oct–Mar",              why:"5-hour flight, minimal jet lag, visa on arrival for most — Dubai is East Africa's most popular long-weekend destination for good reason." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$520–$820",   visa:"required", months:"Apr–Oct",              why:"KLM direct from NBO is a reliable, well-priced long-haul route. NBO is increasingly well-connected to Europe as the city grows." },
+    { city:"New York",     country:"United States", flag:"🇺🇸", to:"nyc", price:"$800–$1,200", visa:"required", months:"May–Sep",             why:"NYC's East African community is one of the most vibrant anywhere — Kenyan, Somali, Ethiopian, and Ugandan communities have deep roots in the Bronx." },
+    { city:"Bangkok",      country:"Thailand",     flag:"🇹🇭", to:"bkk", price:"$550–$850",   visa:"arrival",  months:"Nov–Mar",              why:"Thai hospitality, Khao San energy, world-famous street food, and Ko Samui for the beach. Value for money is genuinely exceptional." },
+    { city:"Johannesburg", country:"South Africa", flag:"🇿🇦", to:"jnb", price:"$280–$500",   visa:"arrival",  months:"Year-round",           why:"Quick business hop or gateway to southern Africa — OR Tambo connects you everywhere on the continent from one efficient hub." },
+    { city:"Singapore",    country:"Singapore",    flag:"🇸🇬", to:"sin", price:"$650–$1,000", visa:"required", months:"Year-round",           why:"Hawker centre food that rivals any restaurant, Changi Airport that makes every other airport look unfinished, and a city that actually works." },
+    { city:"Doha",         country:"Qatar",        flag:"🇶🇦", to:"doh", price:"$400–$650",   visa:"arrival",  months:"Oct–Mar",              why:"Qatar's futuristic Hamad International is worth 24 hours deliberately — the Museum of Islamic Art alone is worth lingering for." },
+  ],
+  ACC: [
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$530–$880", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"Huge Ghanaian community across London — Peckham, Brixton, Tottenham. British Airways direct from Accra makes this a reliable, well-served route." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$500–$800",   visa:"required", months:"Apr–Sep",              why:"KLM direct makes Accra one of West Africa's best-connected cities to Europe. Amsterdam is compact, walkable, and easy to navigate alone." },
+    { city:"New York",     country:"United States", flag:"🇺🇸", to:"nyc", price:"$680–$1,100", visa:"required", months:"May–Sep",             why:"The Year of Return created a permanent wave of Ghanaian-American connections — NYC's Ghanaian community is large, passionate, and welcoming." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$450–$700",   visa:"required", months:"Oct–Mar",              why:"Middle East hub for business and layovers — increasingly popular with Accra's growing entrepreneur and trading class." },
+    { city:"Lagos",        country:"Nigeria",      flag:"🇳🇬", to:"los", price:"$100–$210",   visa:"free",     months:"Year-round",           why:"ECOWAS makes this near-seamless. Lagos's commercial energy and live music scene are worth the short hop across the border regularly." },
+    { city:"Johannesburg", country:"South Africa", flag:"🇿🇦", to:"jnb", price:"$430–$700",   visa:"arrival",  months:"Year-round",           why:"SA visa on arrival for Ghanaians — business travel and the Kruger safari circuit both make this journey worth planning." },
+    { city:"Paris",        country:"France",       flag:"🇫🇷", to:"par", price:"$500–$820",   visa:"required", months:"Apr–Oct",              why:"Air France direct and a sizeable West African community in Paris — the city is best explored in spring or early autumn." },
+  ],
+  CAI: [
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$380–$680", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"Direct EgyptAir flights to Heathrow. London's Egyptian community is well-established — this is a reliable, consistently served intercontinental route." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$220–$430",   visa:"arrival",  months:"Oct–Mar",              why:"3 hours from Cairo to the future — visa on arrival, shopping that rivals anything in the world, and extraordinary food from every cuisine." },
+    { city:"Istanbul",     country:"Turkey",       flag:"🇹🇷", to:"ist", price:"$280–$520",   visa:"arrival",  months:"Year-round",           why:"4-hour flight to one of the world's great crossroads cities — Turkish cuisine, the Bosphorus, and the Grand Bazaar. Easy e-Visa online." },
+    { city:"Paris",        country:"France",       flag:"🇫🇷", to:"par", price:"$360–$620",   visa:"required", months:"Apr–Oct",              why:"Air France and EgyptAir both fly direct. Paris's Arab-African cultural scene in Barbes and the Marais rewards genuine exploration." },
+    { city:"Frankfurt",    country:"Germany",      flag:"🇩🇪", to:"fra", price:"$350–$610",   visa:"required", months:"Apr–Oct",              why:"Business hub of Europe with strong Egyptian-German trade connections — Lufthansa and EgyptAir both fly direct and prices stay competitive." },
+    { city:"Bangkok",      country:"Thailand",     flag:"🇹🇭", to:"bkk", price:"$480–$780",   visa:"arrival",  months:"Nov–Mar",              why:"Via Dubai or Doha, Cairo to Bangkok is a natural long-haul combination — Thai visa on arrival, and Southeast Asian value is exceptional." },
+    { city:"New York",     country:"United States", flag:"🇺🇸", to:"nyc", price:"$680–$1,050", visa:"required", months:"May–Sep",             why:"Direct EgyptAir to JFK makes this surprisingly accessible. Egypt's US diaspora is well-established, concentrated in NYC and New Jersey." },
+    { city:"Nairobi",      country:"Kenya",        flag:"🇰🇪", to:"nbo", price:"$340–$600",   visa:"arrival",  months:"Jun–Sep",              why:"East Africa's wildlife and the Maasai Mara are bucket-list for good reason. Kenya eVisa is straightforward to apply for online." },
+  ],
+  CMN: [
+    { city:"Paris",        country:"France",       flag:"🇫🇷", to:"par", price:"$180–$430",   visa:"required", months:"Year-round (skip Aug)", why:"One of the world's most frequent intercontinental routes — Royal Air Maroc and Air France fly this constantly. Moroccan Paris is its own world." },
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$240–$500", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"Easy 3-hour hop to Heathrow. The UK visa is worth it — London's Moroccan community is significant, concentrated in Ladbroke Grove and Paddington." },
+    { city:"Madrid",       country:"Spain",        flag:"🇪🇸", to:"mad", price:"$130–$300",   visa:"required", months:"Year-round",           why:"90-minute flight. Spain has the largest Moroccan community in Europe outside France, and Madrid's food culture complements Moroccan palates." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$260–$520",   visa:"required", months:"Apr–Sep",              why:"Direct flights make AMS one of the best Schengen entry points from Casablanca — good value, well-connected, and genuinely compact." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$440–$720",   visa:"arrival",  months:"Oct–Mar",              why:"UAE visa on arrival for Moroccan passport holders — the 7-hour flight is worth it for Dubai's extraordinary blend of familiar and futuristic." },
+    { city:"New York",     country:"United States", flag:"🇺🇸", to:"nyc", price:"$580–$950",   visa:"required", months:"May–Sep",             why:"Royal Air Maroc direct to JFK. The Moroccan-American community in NYC and New Jersey is substantial — Paterson, NJ is practically a second Casablanca." },
+    { city:"Dakar",        country:"Senegal",      flag:"🇸🇳", to:"dkr", price:"$200–$400",   visa:"free",     months:"Nov–Apr",              why:"West Africa's coolest coastal capital — Dakar's live music scene, beach culture, and seafood are genuinely underrated by most travelers." },
+    { city:"Doha",         country:"Qatar",        flag:"🇶🇦", to:"doh", price:"$400–$680",   visa:"arrival",  months:"Oct–Mar",              why:"Qatar Airways increasingly popular from Casablanca — Doha's modern architecture and food scene are worth a deliberate stop, not just a transit." },
+  ],
+  ADD: [
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$530–$850", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"Ethiopian Airlines' flagship route — direct to Heathrow in under 8 hours. ET is consistently Africa's best airline and this route shows it." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$330–$580",   visa:"arrival",  months:"Oct–Mar",              why:"ET's most popular connection — Addis to Dubai is the natural springboard to Asia or the Gulf. Dubai's layover rewards are well documented." },
+    { city:"Washington DC",country:"United States", flag:"🇺🇸", to:"was", price:"$780–$1,200", visa:"required", months:"May–Sep",             why:"Direct ET flight to Dulles. The Ethiopian-American community in DC and Maryland is the largest outside Ethiopia — Union Market is worth it alone." },
+    { city:"Bangkok",      country:"Thailand",     flag:"🇹🇭", to:"bkk", price:"$480–$780",   visa:"arrival",  months:"Nov–Mar",              why:"ET's growing Asia network makes Addis one of Africa's best-connected cities for Southeast Asia — and Bangkok rewards every single visit." },
+    { city:"Nairobi",      country:"Kenya",        flag:"🇰🇪", to:"nbo", price:"$130–$270",   visa:"arrival",  months:"Year-round",           why:"40-minute hop to East Africa's tech capital — a completely different energy from Addis. Good for a quick business trip or as a connection." },
+    { city:"Johannesburg", country:"South Africa", flag:"🇿🇦", to:"jnb", price:"$340–$580",   visa:"arrival",  months:"Year-round",           why:"Business gateway to southern Africa — JNB connects everywhere in the region and ET's Joburg route is frequent and reliable." },
+    { city:"Beijing",      country:"China",        flag:"🇨🇳", to:"pek", price:"$580–$920",   visa:"required", months:"Mar–May, Sep–Nov",     why:"Ethiopian Airlines has more Africa-China routes than any other carrier — the ADD-PEK route reflects the real depth of Ethiopia-China ties." },
+    { city:"Singapore",    country:"Singapore",    flag:"🇸🇬", to:"sin", price:"$580–$930",   visa:"required", months:"Year-round",           why:"ET direct to Changi — Singapore's hawker centres are among the world's great food experiences and the city is the cleanest entry to Southeast Asia." },
+  ],
+  DAR: [
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$430–$700",   visa:"arrival",  months:"Oct–Mar",              why:"Emirates flies direct from Dar — the service quality is excellent and Dubai rewards both quick layovers and full dedicated weekend trips." },
+    { city:"Nairobi",      country:"Kenya",        flag:"🇰🇪", to:"nbo", price:"$140–$270",   visa:"arrival",  months:"Year-round",           why:"90-minute hop to East Africa's biggest commercial hub. Kenyan eVisa is straightforward online — book early for the best fares on this route." },
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$580–$950", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"British Airways and Kenya Airways connections via Nairobi. Tanzania's British connections run deep and London's Tanzanian community is warm." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$590–$930",   visa:"required", months:"Apr–Sep",              why:"KLM via Nairobi is one of the most reliable European connections from East Africa — good if you want to build in a deliberate NBO stopover." },
+    { city:"Bangkok",      country:"Thailand",     flag:"🇹🇭", to:"bkk", price:"$560–$890",   visa:"arrival",  months:"Nov–Mar",              why:"Thai visa on arrival for Tanzanians. Bangkok's food, temples, and extraordinary value make it the most popular Asian destination from DAR." },
+    { city:"Johannesburg", country:"South Africa", flag:"🇿🇦", to:"jnb", price:"$300–$530",   visa:"arrival",  months:"Year-round",           why:"Quick business hop or connection point for SADC routes. SA visa on arrival for Tanzanian passport holders makes this straightforward." },
+    { city:"Doha",         country:"Qatar",        flag:"🇶🇦", to:"doh", price:"$410–$670",   visa:"arrival",  months:"Oct–Mar",              why:"Qatar Airways increasingly popular from DAR — Hamad International is genuinely one of the world's best airports and connections are excellent." },
+    { city:"Singapore",    country:"Singapore",    flag:"🇸🇬", to:"sin", price:"$650–$1,000", visa:"required", months:"Year-round",           why:"Long haul from DAR but Singapore's hawker food, clean streets, and Changi experience make it genuinely worth the full journey." },
+  ],
+  KGL: [
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$630–$980", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"RwandAir's direct Heathrow flights are genuinely competitive. Rwanda's airline punches well above the country's weight — and this route proves it." },
+    { city:"Nairobi",      country:"Kenya",        flag:"🇰🇪", to:"nbo", price:"$130–$270",   visa:"free",     months:"Year-round",           why:"East African Community makes Nairobi almost domestic for Rwandans — a quick business or leisure hop with no paperwork complexity." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$480–$780",   visa:"arrival",  months:"Oct–Mar",              why:"UAE visa on arrival for Rwandan passports — perfect hub for Asia connections or a shopping and city-break weekend." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$620–$970",   visa:"required", months:"Apr–Sep",              why:"Via Nairobi or Addis — AMS is increasingly the preferred Schengen entry for Rwandan travelers heading to Europe on a budget." },
+    { city:"Brussels",     country:"Belgium",      flag:"🇧🇪", to:"bru", price:"$580–$930",   visa:"required", months:"Apr–Sep",              why:"Deep Belgium-Rwanda historical connections — a significant Rwandan community in Brussels and the city is compact and genuinely walkable." },
+    { city:"Johannesburg", country:"South Africa", flag:"🇿🇦", to:"jnb", price:"$280–$490",   visa:"arrival",  months:"Year-round",           why:"Business gateway to SADC. South Africa is Rwanda's most important southern African trade partner — this route is increasingly well-served." },
+    { city:"New York",     country:"United States", flag:"🇺🇸", to:"nyc", price:"$850–$1,300", visa:"required", months:"May–Sep",             why:"Growing Rwandan diaspora in NYC and New England — usually via Nairobi or Addis, but Rwanda's profile in the US is rising quickly." },
+    { city:"Lagos",        country:"Nigeria",      flag:"🇳🇬", to:"los", price:"$380–$630",   visa:"required", months:"Year-round",           why:"West Africa's commercial capital — Rwanda-Nigeria business connections are growing fast as Kigali establishes itself as a continental hub." },
+  ],
+  EBB: [
+    { city:"Nairobi",      country:"Kenya",        flag:"🇰🇪", to:"nbo", price:"$120–$230",   visa:"free",     months:"Year-round",           why:"EAC visa makes this borderless in practice — 45 minutes by air, often cheaper and considerably faster than the overland border crossing." },
+    { city:"Dubai",        country:"UAE",          flag:"🇦🇪", to:"dxb", price:"$440–$730",   visa:"arrival",  months:"Oct–Mar",              why:"Emirates and FlyDubai both serve Kampala — UAE remains the most accessible long-haul destination for Ugandan passport holders." },
+    { city:"London",       country:"United Kingdom", flag:"🇬🇧", to:"lon", price:"$580–$930", visa:"required", months:"Apr–Jun, Sep–Oct",     why:"Significant Ugandan community across South London and the UK. Well-served via Nairobi or Addis — the UK visa is the main barrier to plan around." },
+    { city:"Addis Ababa",  country:"Ethiopia",     flag:"🇪🇹", to:"add", price:"$180–$320",   visa:"arrival",  months:"Year-round",           why:"Ethiopian Airlines hub — use Addis as a springboard to almost anywhere in Africa, Europe, or Asia at prices that beat most alternatives." },
+    { city:"Johannesburg", country:"South Africa", flag:"🇿🇦", to:"jnb", price:"$330–$560",   visa:"arrival",  months:"Year-round",           why:"SA visa on arrival for Ugandans — business and leisure gateway to southern Africa. Joburg adds an edge that East Africa doesn't have." },
+    { city:"Amsterdam",    country:"Netherlands",  flag:"🇳🇱", to:"ams", price:"$600–$950",   visa:"required", months:"Apr–Sep",              why:"Via Nairobi or Addis — Amsterdam is the most accessible Schengen city for Ugandan travelers, with competitive connections both ways." },
+    { city:"Doha",         country:"Qatar",        flag:"🇶🇦", to:"doh", price:"$420–$690",   visa:"arrival",  months:"Oct–Mar",              why:"Qatar Airways increasingly popular from Kampala — excellent onward connections to Asia or the Americas via one of the world's best hubs." },
+    { city:"Bangkok",      country:"Thailand",     flag:"🇹🇭", to:"bkk", price:"$560–$880",   visa:"arrival",  months:"Nov–Mar",              why:"Thai visa on arrival for Ugandan passport holders. Bangkok remains the most accessible and genuinely affordable Asian city from Kampala." },
+  ],
+};
+
+// ─── State ──────────────────────────────────────────────────────────────────
+let selectedCity = null;
+let activeFilter = "all";
+
+// ─── Build city grid ─────────────────────────────────────────────────────────
+function buildCityGrid() {
+  const grid = document.getElementById("cityGrid");
+  CITIES.forEach(city => {
+    const el = document.createElement("div");
+    el.className = "city-pill";
+    el.dataset.code = city.code;
+    el.innerHTML = `
+      <span class="city-flag">${city.flag}</span>
+      <div class="city-info">
+        <div class="city-name">${city.name}</div>
+        <div class="city-ctry">${city.country}</div>
+      </div>`;
+    el.addEventListener("click", () => selectCity(city.code));
+    grid.appendChild(el);
+  });
+}
+
+// ─── Select city ─────────────────────────────────────────────────────────────
+function selectCity(code) {
+  selectedCity = code;
+  activeFilter = "all";
+
+  document.querySelectorAll(".city-pill").forEach(p =>
+    p.classList.toggle("active", p.dataset.code === code));
+  document.querySelectorAll(".filter-btn").forEach(b =>
+    b.classList.toggle("active", b.dataset.filter === "all"));
+
+  const city = CITIES.find(c => c.code === code);
+  document.getElementById("fromLabel").textContent = `${city.flag} ${city.name}`;
+  document.getElementById("noCity").style.display = "none";
+  document.getElementById("resultsContent").style.display = "block";
+
+  renderCards();
+
+  // Scroll to results on mobile
+  if (window.innerWidth < 768) {
+    setTimeout(() => {
+      document.getElementById("resultsSection").scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 60);
+  }
+}
+
+// ─── Render cards ─────────────────────────────────────────────────────────────
+function renderCards() {
+  const all = ROUTES[selectedCity] || [];
+  const filtered = activeFilter === "all" ? all : all.filter(d => d.visa === activeFilter);
+  const grid = document.getElementById("cardsGrid");
+
+  if (!filtered.length) {
+    const city = CITIES.find(c => c.code === selectedCity);
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:3rem 1rem;color:var(--text-muted);">No ${activeFilter === "free" ? "visa-free" : activeFilter === "arrival" ? "visa-on-arrival" : "visa-required"} destinations listed for ${city.name} yet.</div>`;
+    return;
+  }
+
+  const VISA_CLASS = { free: "visa-free", arrival: "visa-arrival", required: "visa-required" };
+  const VISA_LABEL = { free: "Visa Free", arrival: "Visa on Arrival", required: "Visa Required" };
+  const CAL_ICON = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
+
+  grid.innerHTML = filtered.map((d, i) => {
+    const url = `https://www.skyscanner.net/transport/flights/${selectedCity.toLowerCase()}/${d.to}/?adults=1`;
+    return `
+      <div class="dest-card" style="animation-delay:${i * 40}ms">
+        <div class="card-top">
+          <span class="card-flag">${d.flag}</span>
+          <div class="card-loc">
+            <div class="card-city">${d.city}</div>
+            <div class="card-ctry">${d.country}</div>
+          </div>
+          <span class="card-price">${d.price}</span>
+        </div>
+        <div class="card-why">${d.why}</div>
+        <div class="card-meta">
+          <span class="card-months">${CAL_ICON} ${d.months}</span>
+          <span class="visa-pill ${VISA_CLASS[d.visa]}">${VISA_LABEL[d.visa]}</span>
+        </div>
+        <a href="${url}" target="_blank" rel="noopener" class="search-btn">Search flights →</a>
+      </div>`;
+  }).join("");
+}
+
+// ─── Filter buttons ──────────────────────────────────────────────────────────
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    if (!selectedCity) return;
+    activeFilter = btn.dataset.filter;
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    renderCards();
+  });
+});
+
+// ─── Price alert ──────────────────────────────────────────────────────────────
+function handleAlert(e) {
+  e.preventDefault();
+  const email  = document.getElementById("alertEmail").value;
+  const city   = selectedCity ? CITIES.find(c => c.code === selectedCity)?.name : "African routes";
+  const subject = encodeURIComponent(`Drift Price Alert: ${city}`);
+  const body    = encodeURIComponent(`Hi,\n\nPlease add me to the price drop alert list for flights from ${city}.\n\nEmail: ${email}\n\nThanks`);
+  window.location.href = `mailto:hello@pantrymate.net?subject=${subject}&body=${body}`;
+}
+
+// ─── Stars ────────────────────────────────────────────────────────────────────
+(function createStars() {
+  const container = document.getElementById("stars");
+  const count = window.innerWidth < 480 ? 50 : 100;
+  for (let i = 0; i < count; i++) {
+    const s = document.createElement("div");
+    s.className = "star";
+    const size  = Math.random() * 1.8 + 0.5;
+    const lo    = (Math.random() * 0.15 + 0.05).toFixed(2);
+    const hi    = (Math.random() * 0.5  + 0.2 ).toFixed(2);
+    const delay = (Math.random() * 5   ).toFixed(1);
+    const dur   = (Math.random() * 4 + 2).toFixed(1);
+    s.style.cssText = `
+      width:${size}px; height:${size}px;
+      top:${Math.random()*100}%; left:${Math.random()*100}%;
+      --lo:${lo}; --hi:${hi}; --delay:-${delay}s; --d:${dur}s;
+      opacity:${lo};
+    `;
+    container.appendChild(s);
+  }
+})();
+
+// ─── Init ─────────────────────────────────────────────────────────────────────
+buildCityGrid();
+// Auto-select Windhoek on desktop (where Wolfgang lives)
+if (window.innerWidth >= 768) selectCity("WDH");
+</script>
+</body>
+</html>

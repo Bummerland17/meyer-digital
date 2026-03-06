@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; overflow: hidden; font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif; }
+  .ad { width: 1080px; height: 1080px; background: linear-gradient(160deg, #0a192f 0%, #112240 50%, #0d1b2a 100%); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 80px 80px 70px; position: relative; overflow: hidden; }
+  .grid-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(rgba(100,255,218,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(100,255,218,0.03) 1px, transparent 1px); background-size: 60px 60px; }
+  .accent-circle { position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(74,144,226,0.15), transparent 70%); }
+  .content { position: relative; z-index: 1; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 0; }
+  .tag-pill { background: rgba(74,144,226,0.2); border: 1px solid rgba(74,144,226,0.4); color: #4a90e2; padding: 8px 24px; border-radius: 30px; font-size: 16px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px; }
+  .headline { font-size: 56px; font-weight: 900; color: #ffffff; text-align: center; line-height: 1.15; letter-spacing: -1.5px; max-width: 880px; margin-bottom: 28px; }
+  .headline .accent { color: #ff6b6b; }
+  .subtext { font-size: 28px; color: #8cb4d9; text-align: center; line-height: 1.5; max-width: 760px; margin-bottom: 50px; }
+  .subtext strong { color: #64ffda; font-weight: 700; }
+  .phone-wrapper { position: relative; }
+  .phone { width: 240px; height: 380px; background: #1e2d40; border-radius: 36px; border: 5px solid #2a4a6b; box-shadow: 0 0 80px rgba(74,144,226,0.3), 0 0 160px rgba(74,144,226,0.1); display: flex; flex-direction: column; align-items: center; padding: 20px 16px 16px; gap: 12px; }
+  .ai-orb { width: 70px; height: 70px; border-radius: 50%; background: linear-gradient(135deg, #4a90e2, #64ffda); display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 0 30px rgba(74,144,226,0.6); }
+  .ai-label { color: #64ffda; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .chat-bubble { background: rgba(74,144,226,0.15); border: 1px solid rgba(74,144,226,0.3); border-radius: 14px; padding: 10px 14px; width: 100%; }
+  .chat-text { color: #ccd6f6; font-size: 12px; line-height: 1.5; }
+  .chat-bubble.reply { background: rgba(100,255,218,0.1); border-color: rgba(100,255,218,0.3); }
+  .chat-bubble.reply .chat-text { color: #64ffda; }
+  .stats-row { display: flex; gap: 40px; justify-content: center; }
+  .stat { display: flex; flex-direction: column; align-items: center; }
+  .stat-num { font-size: 44px; font-weight: 900; color: #64ffda; line-height: 1; }
+  .stat-label { color: #8892b0; font-size: 14px; margin-top: 6px; text-align: center; }
+  .bottom-section { width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  .brand { display: flex; flex-direction: column; }
+  .brand-name { font-size: 42px; font-weight: 900; color: #ffffff; letter-spacing: -1px; }
+  .brand-name span { color: #4a90e2; }
+  .brand-tag { color: #4a7fa8; font-size: 16px; margin-top: 4px; letter-spacing: 1px; }
+  .cta-btn { background: linear-gradient(135deg, #4a90e2, #357abd); color: white; padding: 22px 48px; border-radius: 16px; font-size: 24px; font-weight: 800; box-shadow: 0 8px 30px rgba(74,144,226,0.4); letter-spacing: -0.5px; }
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="grid-bg"></div>
+  <div class="accent-circle"></div>
+
+  <div class="content">
+    <div class="tag-pill">For Dental Practices</div>
+    <div class="headline">Your phones are losing you<br><span class="accent">$500/week</span> after hours.</div>
+    <div class="subtext">Patients call at 6pm. You're gone. They book <strong>your competitor</strong>.<br>SmartBook AI <strong>answers every call. Books appointments. Never sleeps.</strong></div>
+
+    <div style="display:flex; gap:50px; align-items:center;">
+      <div class="phone">
+        <div class="ai-orb">🤖</div>
+        <div class="ai-label">SmartBook AI</div>
+        <div class="chat-bubble">
+          <div class="chat-text">📞 "Hi, I need to book a cleaning for next week..."</div>
+        </div>
+        <div class="chat-bubble reply">
+          <div class="chat-text">✅ I've got Tuesday 2pm or Thursday 10am available. Which works better for you?</div>
+        </div>
+        <div class="chat-bubble">
+          <div class="chat-text">📅 "Thursday works great!"</div>
+        </div>
+        <div class="chat-bubble reply">
+          <div class="chat-text">🎉 Booked! Confirmation sent to your phone.</div>
+        </div>
+      </div>
+      <div class="stats-row" style="flex-direction:column; gap:24px;">
+        <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Always answering</div></div>
+        <div class="stat"><div class="stat-num">2min</div><div class="stat-label">Avg booking time</div></div>
+        <div class="stat"><div class="stat-num">0</div><div class="stat-label">Missed calls</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <div class="brand">
+      <div class="brand-name">Smart<span>Book</span> AI</div>
+      <div class="brand-tag">AI RECEPTIONIST · DENTAL EDITION</div>
+    </div>
+    <div class="cta-btn">Book a Demo →</div>
+  </div>
+</div>
+</body>
+</html>

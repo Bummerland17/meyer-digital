@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REPLACE: Page title -->
+  <title>{{BUSINESS_NAME}}</title>
+  <meta name="description" content="{{TAGLINE}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================
+       CSS VARIABLES — edit these to rebrand
+       ============================================ */
+    :root {
+      --color-primary:    {{PRIMARY_COLOR}};   /* Main brand color */
+      --color-primary-dark: {{PRIMARY_COLOR_DARK}}; /* Hover state */
+      --color-accent:     {{ACCENT_COLOR}};    /* Secondary accent */
+      --color-bg:         #ffffff;
+      --color-surface:    #f8fafc;
+      --color-border:     #e2e8f0;
+      --color-text:       #0f172a;
+      --color-text-muted: #64748b;
+      --font-base:        'Inter', system-ui, sans-serif;
+      --radius:           12px;
+      --shadow:           0 4px 24px rgba(0,0,0,0.08);
+      --shadow-lg:        0 12px 48px rgba(0,0,0,0.12);
+    }
+
+    /* Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-base);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Utility */
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--color-primary-dark); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+    }
+    .btn-outline:hover { background: var(--color-primary); color: #fff; }
+    .section { padding: 96px 0; }
+    .section-alt { background: var(--color-surface); }
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+    h1, h2, h3 { line-height: 1.2; font-weight: 800; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 16px; }
+    h3 { font-size: 1.25rem; margin-bottom: 8px; }
+    .text-center { text-align: center; }
+
+    /* ============================================
+       NAVIGATION
+       ============================================ */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--color-border);
+      z-index: 100;
+      padding: 0;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--color-text);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--color-primary); }
+    .nav-cta { margin-left: 16px; }
+
+    /* ============================================
+       HERO
+       ============================================ */
+    .hero {
+      padding: 100px 0 80px;
+      background: linear-gradient(135deg, var(--color-surface) 0%, #fff 60%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+      opacity: 0.06;
+      border-radius: 50%;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+      color: var(--color-primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      margin-bottom: 20px;
+      color: var(--color-text);
+    }
+    .hero-tagline {
+      font-size: 1.2rem;
+      color: var(--color-text-muted);
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+    .hero-trust span { color: #f59e0b; font-size: 1rem; }
+    .hero-image {
+      background: var(--color-surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--color-border);
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      box-shadow: var(--shadow-lg);
+      /* REPLACE: swap this div with an <img> tag */
+      background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    }
+
+    /* ============================================
+       SERVICES
+       ============================================ */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 56px;
+    }
+    .service-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      transition: all 0.3s;
+    }
+    .service-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+      border-color: var(--color-primary);
+    }
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .service-card h3 { margin-bottom: 10px; font-size: 1.15rem; }
+    .service-card p { color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; }
+
+    /* ============================================
+       ABOUT / TRUST
+       ============================================ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about-image {
+      background: linear-gradient(135deg, var(--color-surface), var(--color-border));
+      border-radius: var(--radius);
+      aspect-ratio: 4/3;
+      /* REPLACE: swap with <img> of your team or office */
+    }
+    .about-content .section-label { margin-bottom: 16px; }
+    .about-content p {
+      color: var(--color-text-muted);
+      margin-bottom: 24px;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+    .stats-row {
+      display: flex;
+      gap: 40px;
+      margin-top: 32px;
+    }
+    .stat-item {}
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--color-primary);
+    }
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-top: 4px;
+    }
+
+    /* ============================================
+       TESTIMONIALS
+       ============================================ */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 56px;
+    }
+    .testimonial-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+    .stars { color: #f59e0b; font-size: 1rem; margin-bottom: 14px; }
+    .testimonial-text {
+      font-size: 0.98rem;
+      line-height: 1.75;
+      color: var(--color-text);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+    .author-name { font-weight: 600; font-size: 0.9rem; }
+    .author-location { font-size: 0.82rem; color: var(--color-text-muted); }
+
+    /* ============================================
+       CONTACT
+       ============================================ */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      margin-top: 56px;
+    }
+    .contact-info h3 { margin-bottom: 20px; }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .contact-item-text { font-size: 0.95rem; color: var(--color-text-muted); }
+    .contact-item-text strong { display: block; color: var(--color-text); font-size: 0.95rem; }
+    .map-placeholder {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      margin-top: 24px;
+      /* REPLACE: swap with Google Maps embed iframe */
+    }
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group label { font-size: 0.9rem; font-weight: 600; color: var(--color-text); }
+    .form-group input, .form-group textarea, .form-group select {
+      padding: 12px 16px;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      font-family: var(--font-base);
+      font-size: 0.95rem;
+      color: var(--color-text);
+      transition: border-color 0.2s;
+      background: var(--color-bg);
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    footer {
+      background: var(--color-text);
+      color: #94a3b8;
+      padding: 48px 0;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer-logo { color: #fff; font-weight: 800; font-size: 1.1rem; }
+    .footer-links { display: flex; gap: 24px; font-size: 0.9rem; }
+    .footer-links a:hover { color: #fff; }
+    .footer-copy { font-size: 0.85rem; }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 900px) {
+      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
+      .hero-image, .about-image { aspect-ratio: 16/7; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 64px 0; }
+      .stats-row { flex-direction: column; gap: 20px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================
+     NAVIGATION
+     REPLACE: logo text, nav links, CTA text
+     ============================================ -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <div class="nav-logo">{{BUSINESS_NAME}}</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">{{CTA_TEXT}}</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================
+     HERO SECTION
+     REPLACE: badge text, headline, tagline, CTA text
+     The hero-image div → swap with your photo
+     ============================================ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <!-- REPLACE: trust badge text -->
+        <div class="hero-badge">⭐ {{HERO_BADGE}}</div>
+        <!-- REPLACE: main headline — make it specific to the outcome clients get -->
+        <h1>{{HEADLINE}}</h1>
+        <!-- REPLACE: supporting tagline -->
+        <p class="hero-tagline">{{TAGLINE}}</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">{{CTA_TEXT}}</a>
+          <a href="tel:{{PHONE}}" class="btn btn-outline">Call {{PHONE}}</a>
+        </div>
+        <div class="hero-trust">
+          <span>★★★★★</span>
+          <!-- REPLACE: social proof line -->
+          <span>{{SOCIAL_PROOF}}</span>
+        </div>
+      </div>
+      <!-- REPLACE: swap this div with <img src="your-hero-photo.jpg" alt="..."> -->
+      <div class="hero-image" style="min-height:380px;">
+        <!-- Hero image goes here -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SERVICES SECTION
+     REPLACE: section label, heading, service cards
+     Add/remove cards as needed
+     ============================================ -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">What We Offer</div>
+      <h2>{{SERVICES_HEADING}}</h2>
+      <p style="color:var(--color-text-muted);max-width:560px;margin:0 auto;">{{SERVICES_SUBHEADING}}</p>
+    </div>
+    <div class="services-grid">
+
+      <!-- SERVICE CARD 1 — REPLACE emoji, name, description -->
+      <div class="service-card">
+        <div class="service-icon">{{SERVICE_1_ICON}}</div>
+        <h3>{{SERVICE_1_NAME}}</h3>
+        <p>{{SERVICE_1_DESC}}</p>
+      </div>
+
+      <!-- SERVICE CARD 2 — REPLACE -->
+      <div class="service-card">
+        <div class="service-icon">{{SERVICE_2_ICON}}</div>
+        <h3>{{SERVICE_2_NAME}}</h3>
+        <p>{{SERVICE_2_DESC}}</p>
+      </div>
+
+      <!-- SERVICE CARD 3 — REPLACE -->
+      <div class="service-card">
+        <div class="service-icon">{{SERVICE_3_ICON}}</div>
+        <h3>{{SERVICE_3_NAME}}</h3>
+        <p>{{SERVICE_3_DESC}}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     ABOUT / TRUST SECTION
+     REPLACE: image, heading, body text, stats
+     ============================================ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <!-- REPLACE: swap with <img src="your-team.jpg" alt="Our team"> -->
+      <div class="about-image"></div>
+      <div class="about-content">
+        <div class="section-label">About Us</div>
+        <h2>{{ABOUT_HEADING}}</h2>
+        <!-- REPLACE: 2–3 sentences about your story, credentials, or approach -->
+        <p>{{ABOUT_TEXT_1}}</p>
+        <p>{{ABOUT_TEXT_2}}</p>
+        <a href="#contact" class="btn btn-primary">{{CTA_TEXT}}</a>
+        <div class="stats-row">
+          <!-- REPLACE: real numbers if you have them -->
+          <div class="stat-item">
+            <div class="stat-number">{{STAT_1_NUMBER}}</div>
+            <div class="stat-label">{{STAT_1_LABEL}}</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">{{STAT_2_NUMBER}}</div>
+            <div class="stat-label">{{STAT_2_LABEL}}</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">{{STAT_3_NUMBER}}</div>
+            <div class="stat-label">{{STAT_3_LABEL}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     TESTIMONIALS
+     REPLACE: testimonial text, names, locations, initials
+     ============================================ -->
+<section class="section section-alt" id="testimonials">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">What Clients Say</div>
+      <h2>{{TESTIMONIALS_HEADING}}</h2>
+    </div>
+    <div class="testimonials-grid">
+
+      <!-- TESTIMONIAL 1 — REPLACE -->
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"{{TESTIMONIAL_1_TEXT}}"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">{{TESTIMONIAL_1_INITIAL}}</div>
+          <div>
+            <div class="author-name">{{TESTIMONIAL_1_NAME}}</div>
+            <div class="author-location">{{TESTIMONIAL_1_LOCATION}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIAL 2 — REPLACE -->
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"{{TESTIMONIAL_2_TEXT}}"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">{{TESTIMONIAL_2_INITIAL}}</div>
+          <div>
+            <div class="author-name">{{TESTIMONIAL_2_NAME}}</div>
+            <div class="author-location">{{TESTIMONIAL_2_LOCATION}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIAL 3 — REPLACE -->
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"{{TESTIMONIAL_3_TEXT}}"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">{{TESTIMONIAL_3_INITIAL}}</div>
+          <div>
+            <div class="author-name">{{TESTIMONIAL_3_NAME}}</div>
+            <div class="author-location">{{TESTIMONIAL_3_LOCATION}}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CONTACT SECTION
+     REPLACE: email action, phone, address, map iframe
+     ============================================ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Get In Touch</div>
+      <h2>{{CONTACT_HEADING}}</h2>
+      <p style="color:var(--color-text-muted);max-width:480px;margin:0 auto 0;">{{CONTACT_SUBHEADING}}</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-item-text">
+            <strong>Phone</strong>
+            <!-- REPLACE: phone number -->
+            <a href="tel:{{PHONE}}">{{PHONE}}</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            <!-- REPLACE: email -->
+            <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-item-text">
+            <strong>Address</strong>
+            <!-- REPLACE: address -->
+            <span>{{ADDRESS}}</span>
+          </div>
+        </div>
+        <!-- REPLACE: insert Google Maps iframe here -->
+        <div class="map-placeholder">
+          📍 Map — replace with Google Maps embed iframe
+        </div>
+      </div>
+
+      <!-- Contact form — REPLACE action email -->
+      <form class="contact-form" action="mailto:{{EMAIL}}" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+        </div>
+        <div class="form-group">
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" placeholder="Tell us what you need..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     REPLACE: business name, links, copyright
+     ============================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">{{BUSINESS_NAME}}</div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <!-- REPLACE: link to privacy policy if needed -->
+        <a href="#">Privacy</a>
+      </div>
+      <!-- REPLACE: year and business name -->
+      <div class="footer-copy">© {{YEAR}} {{BUSINESS_NAME}}. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

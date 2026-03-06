@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landlord Maintenance Kit — $9</title>
+  <meta name="description" content="Every maintenance form a small landlord needs. Notion workspace + Google Sheets tracker + 12 email templates. $9 one-time.">
+  <meta property="og:title" content="Landlord Maintenance Kit">
+  <meta property="og:description" content="Stop tracking repairs in your head. Everything a 1-20 unit landlord needs to run maintenance without property management software.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #f9f9f7;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: #1a1a1a;
+      color: #f9f9f7;
+      padding: 80px 24px 72px;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6dcf8e;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 5vw, 2.9rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      max-width: 700px;
+      margin: 0 auto 24px;
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      opacity: 0.72;
+      max-width: 560px;
+      margin: 0 auto 40px;
+    }
+
+    .cta-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+
+    .cta-primary {
+      display: inline-block;
+      background: #6dcf8e;
+      color: #1a1a1a;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 16px 40px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .cta-primary:hover { opacity: 0.88; }
+
+    .cta-note { font-size: 0.88rem; opacity: 0.55; }
+
+    .section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    .section h2 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.05rem;
+      color: #2e2e2e;
+      margin-bottom: 18px;
+    }
+
+    .problem-box {
+      background: #fff;
+      border-left: 4px solid #e05050;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 1.05rem;
+      color: #333;
+    }
+
+    .scenario {
+      background: #fff;
+      border: 1px solid #e0e0dc;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 12px 0;
+      font-size: 0.97rem;
+    }
+
+    .scenario strong { color: #1a1a1a; }
+    .scenario .outcome { color: #2a8a4a; font-weight: 600; margin-top: 6px; display: block; }
+
+    .includes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .include-card {
+      background: #fff;
+      border: 1px solid #e0e0dc;
+      border-radius: 8px;
+      padding: 16px 18px;
+    }
+
+    .include-card h3 {
+      font-size: 0.97rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .include-card p {
+      font-size: 0.88rem;
+      color: #666;
+      margin: 0;
+    }
+
+    ul.templates {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    ul.templates li {
+      font-size: 0.92rem;
+      padding: 8px 12px 8px 24px;
+      position: relative;
+      background: #fff;
+      border: 1px solid #e8e8e4;
+      border-radius: 4px;
+    }
+    ul.templates li::before {
+      content: "✉";
+      position: absolute;
+      left: 8px;
+      color: #888;
+    }
+
+    .guarantee {
+      background: #fff;
+      border: 1px solid #e0e0dc;
+      border-radius: 8px;
+      padding: 24px 28px;
+      font-size: 0.97rem;
+      color: #444;
+      margin-top: 36px;
+    }
+    .guarantee strong { color: #1a1a1a; }
+
+    .buy-section {
+      text-align: center;
+      background: #1a1a1a;
+      color: #f9f9f7;
+      padding: 72px 24px;
+    }
+    .buy-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .buy-section p {
+      opacity: 0.65;
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .price-context {
+      display: inline-block;
+      background: rgba(255,255,255,0.08);
+      border-radius: 6px;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      margin-bottom: 28px;
+      opacity: 0.75;
+    }
+
+    .divider { border: none; border-top: 1px solid #e8e8e4; margin: 0; }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 500px) {
+      .includes-grid { grid-template-columns: 1fr; }
+      ul.templates { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="eyebrow">Notion + Google Sheets + 12 email templates · $9 one-time</p>
+  <h1>Every maintenance form a landlord needs. $9.</h1>
+  <p class="sub">Stop tracking repairs in your head. Stop rewriting the same emails. A complete maintenance system for 1-20 units — no monthly software fees.</p>
+  <div class="cta-wrap">
+    <a href="https://buy.stripe.com/9B6aEWfVyewk5w35lqbsc09" class="cta-primary">Get the kit — $9</a>
+    <span class="cta-note">Instant download · Works in Notion or Google Sheets · No setup required</span>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<div class="section">
+  <h2>Managing maintenance without a system is a slow disaster</h2>
+
+  <p>If you have 1-10 units, you're probably doing one of these:</p>
+
+  <div class="problem-box">
+    Tenants text you directly. You try to remember what you promised. You call a contractor, they're busy, you call another one. You forget to follow up. Three weeks later the tenant is annoyed and you're not sure what the status is. Something that should have taken 4 days took 3 weeks.
+  </div>
+
+  <p>Property management software like AppFolio or Buildium costs $50-200/month. That's $600-2,400/year. It makes sense at 30+ units. It doesn't make sense if you have a duplex and a rental house.</p>
+
+  <p>What you actually need is a simple tracking system and a set of email templates so you're not writing the same messages from scratch every time.</p>
+</div>
+
+<hr class="divider">
+
+<!-- HOW IT WORKS -->
+<div class="section">
+  <h2>How the system works</h2>
+
+  <p>The Landlord Maintenance Kit is built around three scenarios you deal with constantly:</p>
+
+  <div class="scenario">
+    <strong>Scenario 1: Tenant submits a repair request</strong>
+    <span class="outcome">→ Log it in 30 seconds. Assign priority. Fire off the acknowledgment email template. Done.</span>
+  </div>
+
+  <div class="scenario">
+    <strong>Scenario 2: You need to coordinate a contractor</strong>
+    <span class="outcome">→ Contractor contact book built in. Assignment email template ready. Follow-up reminder built into the board.</span>
+  </div>
+
+  <div class="scenario">
+    <strong>Scenario 3: Tenant asks "what happened to my maintenance request?"</strong>
+    <span class="outcome">→ Pull up the board. See the status in 5 seconds. Send the update template. No scrambling.</span>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- WHAT'S INCLUDED -->
+<div class="section">
+  <h2>What's included</h2>
+
+  <div class="includes-grid">
+    <div class="include-card">
+      <h3>📋 Notion Workspace</h3>
+      <p>Maintenance request board, contractor book, open/closed tracking. Duplicate and you're live.</p>
+    </div>
+    <div class="include-card">
+      <h3>📊 Google Sheets Version</h3>
+      <p>Same system in Sheets for those who don't use Notion. Same columns, same logic.</p>
+    </div>
+    <div class="include-card">
+      <h3>✉️ 12 Email Templates</h3>
+      <p>Every maintenance email you'll ever need to send — written, fill in the blanks, done.</p>
+    </div>
+    <div class="include-card">
+      <h3>📄 Maintenance Policy</h3>
+      <p>One-page policy document to add to your lease. Sets expectations before problems happen.</p>
+    </div>
+    <div class="include-card">
+      <h3>🔧 Warranty Tracker</h3>
+      <p>Appliance warranty log. Never dig through old emails to find a warranty again.</p>
+    </div>
+    <div class="include-card">
+      <h3>📱 Emergency Contact Sheet</h3>
+      <p>Template for the "who to call when X breaks" document you give every new tenant.</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top: 48px;">The 12 email templates</h2>
+  <p style="margin-bottom: 16px;">Every maintenance email situation covered:</p>
+
+  <ul class="templates">
+    <li>Initial request acknowledgment</li>
+    <li>Contractor assignment notice</li>
+    <li>Repair scheduled confirmation</li>
+    <li>Access request to unit</li>
+    <li>Work completed confirmation</li>
+    <li>Repair delayed — here's why</li>
+    <li>Tenant at fault response</li>
+    <li>Won't fix (landlord discretion)</li>
+    <li>Lease-end repair deduction notice</li>
+    <li>Emergency repair after-hours</li>
+    <li>Preventive maintenance notice</li>
+    <li>Dispute / complaint response</li>
+  </ul>
+
+  <div class="guarantee">
+    <strong>Guarantee:</strong> If it doesn't save you time on your next maintenance request, email for a full refund. At $9 there's basically no reason to ask for one, but the option is there.
+  </div>
+</div>
+
+<!-- BUY -->
+<div class="buy-section">
+  <h2>Get the Landlord Maintenance Kit</h2>
+  <div class="price-context">Property management software: $50-200/month · This kit: $9 once</div>
+  <br>
+  <p>Instant download · Notion + Google Sheets · 12 email templates</p>
+  <a href="https://buy.stripe.com/9B6aEWfVyewk5w35lqbsc09" class="cta-primary">Buy now — $9</a>
+</div>
+
+<footer>
+  Questions? Email hello@landlordkit.com &middot; &copy; 2026
+</footer>
+
+</body>
+</html>

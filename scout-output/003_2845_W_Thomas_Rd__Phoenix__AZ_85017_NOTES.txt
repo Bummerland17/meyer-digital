@@ -1,0 +1,18 @@
+ADDRESS: 2845 W Thomas Rd, Phoenix, AZ 85017, USA
+COORDS: 33.479874, -112.1212156
+SCREENED: 2026-03-04T05:10:51.090Z
+GOOGLE MAPS: https://www.google.com/maps?q=33.479874,-112.1212156
+STREET VIEW: https://www.google.com/maps/@33.479874,-112.1212156,3a,90y,0h,-10t/data=!3m4!1e1
+
+DISTRESS CHECKLIST (mark what you see):
+□ Overgrown lawn / dead grass
+□ Peeling paint / broken gutters
+□ Boarded windows or plywood
+□ Tarp on roof
+□ No curtains / no furniture visible
+□ Newspapers / mail piling up
+□ For Rent sign on vacant property
+□ Dumpster / debris in yard
+
+PRIORITY: [ ] Hot  [ ] Warm  [ ] Skip
+NOTES: 

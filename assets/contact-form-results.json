@@ -1,0 +1,61 @@
+[
+  {
+    "site": "Downtown Smiles Phoenix",
+    "status": "✅ Form submitted",
+    "url": "http://downtownsmilesphx.com/contact"
+  },
+  {
+    "site": "Downtown Phoenix Dental",
+    "status": "⚠️ Form found, no submit button",
+    "url": "https://www.downtownphoenixdental.com/contact"
+  },
+  {
+    "site": "Healing Dentistry",
+    "status": "❌ No contact form found"
+  },
+  {
+    "site": "Brighter Way Dental",
+    "status": "❌ No contact form found"
+  },
+  {
+    "site": "McDowell Road Family Dentistry",
+    "status": "✅ Form submitted",
+    "url": "http://www.1010mrd.com/contact"
+  },
+  {
+    "site": "City Creek Dental",
+    "status": "✅ Form submitted",
+    "url": "http://citycreekdental.com/contact"
+  },
+  {
+    "site": "SunDrop Dental",
+    "status": "❌ No contact form found"
+  },
+  {
+    "site": "Lakeside Dental",
+    "status": "❌ No contact form found"
+  },
+  {
+    "site": "Dental Elements Denver",
+    "status": "❌ No contact form found"
+  },
+  {
+    "site": "Idaho Street Dental",
+    "status": "✅ Form submitted",
+    "url": "http://idahostreetdental.com"
+  },
+  {
+    "site": "Capitol Dental Boise",
+    "status": "✅ Form submitted",
+    "url": "https://capitoldental.com"
+  },
+  {
+    "site": "Metropolitan Dental Denver",
+    "status": "✅ Form submitted",
+    "url": "https://www.metrodentalcare.com/contact"
+  },
+  {
+    "site": "Wynkoop Dentistry",
+    "status": "❌ No contact form found"
+  }
+]

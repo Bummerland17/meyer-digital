@@ -1,0 +1,73 @@
+{
+  "last_updated": "2026-03-05",
+  "notes": "These are investor-friendly title companies in Phoenix/Maricopa County that handle assignment of contract and/or double close transactions. Verify assignment policy with each company before opening escrow.",
+  "companies": [
+    {
+      "name": "CLOSED Title",
+      "address": "Phoenix, AZ (verify current address at closedtitle.com)",
+      "phone": "(verify at closedtitle.com)",
+      "website": "https://www.closedtitle.com/investors",
+      "handles_assignments": true,
+      "handles_double_close": true,
+      "investor_friendly": true,
+      "notes": "Explicitly markets to real estate investors and wholesalers. Their website states they handle assignments, double closings, and specialize in fast, efficient closings for investors. First call to make.",
+      "priority": 1
+    },
+    {
+      "name": "American Title Service Agency",
+      "address": "Phoenix, AZ metro (multiple locations including Arrowhead branch)",
+      "phone": "(verify on their website)",
+      "website": "https://www.atsatitle.com",
+      "handles_assignments": true,
+      "handles_double_close": true,
+      "investor_friendly": true,
+      "notes": "Local Arizona title agency. Appears in top investor-friendly title company lists for Phoenix. Has multiple branches. Ask specifically for their investor/wholesale department.",
+      "priority": 2
+    },
+    {
+      "name": "DHI Title Agency",
+      "address": "Phoenix, AZ",
+      "phone": "(verify on their website)",
+      "website": "https://www.dhititle.com",
+      "handles_assignments": "verify",
+      "handles_double_close": "verify",
+      "investor_friendly": true,
+      "notes": "Active Phoenix title company. Appeared in Yelp top 10 for Phoenix title companies. Confirm assignment policy before opening escrow.",
+      "priority": 3
+    },
+    {
+      "name": "First American Title — Phoenix (Matt Canady)",
+      "address": "Phoenix, AZ",
+      "phone": "(verify — search 'First American Title Matt Canady Phoenix')",
+      "website": "https://www.firstam.com",
+      "handles_assignments": true,
+      "handles_double_close": true,
+      "investor_friendly": true,
+      "notes": "National title company with strong Phoenix presence. Large companies like First American handle assignments at their investor/commercial divisions. Ask specifically for investor services or commercial desk. Matt Canady mentioned in local listings.",
+      "priority": 4
+    },
+    {
+      "name": "Clear Title Agency of Arizona",
+      "address": "Phoenix, AZ",
+      "phone": "(verify on their website)",
+      "website": "https://www.cleartitleaz.com",
+      "handles_assignments": "verify",
+      "handles_double_close": "verify",
+      "investor_friendly": true,
+      "notes": "Local Arizona title agency. Appeared in Yelp top 10 for Phoenix title companies. Call and ask: 'Do you handle assignment of contract transactions for real estate investors?' They'll tell you quickly.",
+      "priority": 5
+    }
+  ],
+  "intro_email_template": {
+    "subject": "Investor-Friendly Title Services Needed — Phoenix AZ",
+    "body": "Hi [NAME],\n\nMy name is Wolfgang Meyer. I'm a private real estate investor doing cash purchases and assignment of contract transactions in Maricopa County, Arizona.\n\nI'm looking to establish a working relationship with a title company experienced in:\n- Assignment of contract closings\n- Double close transactions (when needed)\n- Fast cash closings (7-14 day timelines)\n\nI typically do 2-4 deals per month and need a reliable title partner who understands investor transactions. I'm not a licensed agent or broker — I'm a private buyer/investor operating under purchase contracts.\n\nWould you or someone on your team be available for a quick 10-minute call this week to discuss whether we'd be a good fit?\n\nThank you for your time.\n\nWolfgang Meyer\nWolfgang Meyer Investments\n[PHONE]\n[EMAIL]"
+  },
+  "vetting_checklist": [
+    "Ask: 'Do you handle assignment of contract closings?'",
+    "Ask: 'Are you comfortable with the assignment fee appearing on the HUD/settlement statement?'",
+    "Ask: 'Do you require the original seller to consent to the assignment?'",
+    "Ask: 'Can you do a double close if needed, using transactional funding?'",
+    "Ask: 'What's your typical timeline for cash closings?'",
+    "Ask: 'Do you have experience working with wholesale investors in Phoenix?'"
+  ]
+}

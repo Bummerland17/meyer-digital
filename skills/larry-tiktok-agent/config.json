@@ -1,0 +1,22 @@
+{
+  "openai_api_key": "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",
+  "postiz_api_key": "",
+  "postiz_email": "hello@pantrymate.net",
+  "postiz_password": "",
+  "postiz_base_url": "http://localhost:4007/api",
+  "image_model": "dall-e-3",
+  "image_size": "1024x1792",
+  "slides_per_post": 6,
+  "posts_per_day": 2,
+  "post_times": ["09:00", "18:00"],
+  "portals": {
+    "pantrymate": {
+      "tiktok_account_id": "POSTIZ_INTEGRATION_ID",
+      "niche": "Meal Planning & Easy Dinners",
+      "site_url": "https://pantrymate.net",
+      "amazon_tag": "",
+      "style": "bright modern kitchen, colorful fresh food, warm inviting lighting, lifestyle photography",
+      "hashtags": ["#whatsfordinner", "#mealplanning", "#easydinners", "#foodhacks", "#pantrymate"]
+    }
+  }
+}

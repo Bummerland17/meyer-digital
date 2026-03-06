@@ -1,0 +1,186 @@
+{
+  "run_date": "2026-03-06",
+  "run_time_utc": "2026-03-06T09:05:49.324974+00:00",
+  "agent": "Sam",
+  "assistant_id": "ae3642d3-19f5-4d60-bd4d-cbeebe8a023e",
+  "phone_number_id": "23eacc2d-e19d-4410-98dd-aef4ab564b63",
+  "product": "UnitFix",
+  "offer": "\u00a315/month",
+  "total_leads_in_file": 50,
+  "leads_with_phones": 17,
+  "leads_skipped_no_phone": 33,
+  "dispatched": 17,
+  "errors": 0,
+  "calls": [
+    {
+      "lead_id": 1,
+      "company": "Premier Residential Lettings & Estate Agents",
+      "city": "Manchester",
+      "phone": "+441616414624",
+      "status": "dispatched",
+      "call_id": "019cc262-0e05-7222-9bf7-05ca533850f8",
+      "dispatched_at": "2026-03-06T09:02:12.035554+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 2,
+      "company": "The Letting Agent",
+      "city": "Manchester",
+      "phone": "+441618340801",
+      "status": "dispatched",
+      "call_id": "019cc262-0e97-733b-bdc9-59e795f028e2",
+      "dispatched_at": "2026-03-06T09:02:12.187008+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 3,
+      "company": "Manlets \u2013 Property Management Manchester",
+      "city": "Manchester",
+      "phone": "+441612388978",
+      "status": "dispatched",
+      "call_id": "019cc262-0f2e-7aa2-bb21-d8bb91797622",
+      "dispatched_at": "2026-03-06T09:02:12.353037+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 4,
+      "company": "Abode Property Management (NW) Ltd",
+      "city": "Manchester",
+      "phone": "+441618831886",
+      "status": "dispatched",
+      "call_id": "019cc262-0fd0-7222-9bf7-095fe2ea21ed",
+      "dispatched_at": "2026-03-06T09:02:12.503296+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 5,
+      "company": "Bentley Hurst Estate Agents",
+      "city": "Manchester",
+      "phone": "+441615430310",
+      "status": "dispatched",
+      "call_id": "019cc262-1071-7ee4-aae0-f796cec5fa1a",
+      "dispatched_at": "2026-03-06T09:02:12.657412+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 9,
+      "company": "Accord Lets Letting Agents Birmingham",
+      "city": "Birmingham",
+      "phone": "+441213690840",
+      "status": "dispatched",
+      "call_id": "019cc262-1107-733e-95d9-9636d7d68015",
+      "dispatched_at": "2026-03-06T09:02:12.807739+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 10,
+      "company": "Premier Estate Agents (Birmingham) Ltd",
+      "city": "Birmingham",
+      "phone": "+441213777868",
+      "status": "dispatched",
+      "call_id": "019cc262-1194-722c-b479-07feb5f4e523",
+      "dispatched_at": "2026-03-06T09:02:12.957885+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 17,
+      "company": "Northwood Leeds",
+      "city": "Leeds",
+      "phone": "+441132392791",
+      "status": "dispatched",
+      "call_id": "019cc262-122f-711b-9e84-71b3f4ed0408",
+      "dispatched_at": "2026-03-06T09:02:13.102486+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 18,
+      "company": "Fletcher Properties",
+      "city": "Leeds",
+      "phone": "+441132109531",
+      "status": "dispatched",
+      "call_id": "019cc262-12bb-7ee4-aae0-ffe2badbe4da",
+      "dispatched_at": "2026-03-06T09:02:13.318052+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 25,
+      "company": "The Bristol Residential Letting Co \u2013 Bishopston",
+      "city": "Bristol",
+      "phone": "+441172442040",
+      "status": "dispatched",
+      "call_id": "019cc262-139c-7000-8522-49912d2ceb7a",
+      "dispatched_at": "2026-03-06T09:02:13.517147+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 26,
+      "company": "Balloon Letting Company",
+      "city": "Bristol",
+      "phone": "+441172870015",
+      "status": "dispatched",
+      "call_id": "019cc262-9bf8-7dd3-9e3e-033884413c8e",
+      "dispatched_at": "2026-03-06T09:02:48.380396+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 33,
+      "company": "Milards",
+      "city": "Edinburgh",
+      "phone": "+441312352391",
+      "status": "dispatched",
+      "call_id": "019cc263-11ce-7222-8ba4-cd7ee7ebd77c",
+      "dispatched_at": "2026-03-06T09:03:18.549717+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 34,
+      "company": "Clan Gordon Letting Agents",
+      "city": "Edinburgh",
+      "phone": "+441315554444",
+      "status": "dispatched",
+      "call_id": "019cc263-8795-733e-95da-b9ddb7d3173a",
+      "dispatched_at": "2026-03-06T09:03:48.696655+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 35,
+      "company": "Umega Lettings",
+      "city": "Edinburgh",
+      "phone": "+441312210888",
+      "status": "dispatched",
+      "call_id": "019cc263-fd5b-7000-8524-5e8bb55527b0",
+      "dispatched_at": "2026-03-06T09:04:18.852473+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 36,
+      "company": "Clouds Property Management",
+      "city": "Edinburgh",
+      "phone": "+441315503808",
+      "status": "dispatched",
+      "call_id": "019cc264-7329-7445-8ff5-fa48f90b14ea",
+      "dispatched_at": "2026-03-06T09:04:49.008825+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 41,
+      "company": "The Letting Station Cardiff",
+      "city": "Cardiff",
+      "phone": "+442920020880",
+      "status": "dispatched",
+      "call_id": "019cc264-e8fd-7aa4-b532-8c0b131b96a0",
+      "dispatched_at": "2026-03-06T09:05:19.168654+00:00",
+      "api_status": 201
+    },
+    {
+      "lead_id": 42,
+      "company": "Hogg & Hogg Estate Agents",
+      "city": "Cardiff",
+      "phone": "+442920102525",
+      "status": "dispatched",
+      "call_id": "019cc265-5ec6-788b-be18-e663ea528973",
+      "dispatched_at": "2026-03-06T09:05:49.324930+00:00",
+      "api_status": 201
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "created": "2026-03-05",
+  "products": [
+    {
+      "name": "Caribbean Tourism Leads",
+      "description": "967 pre-qualified businesses: hotels, tour operators, dive shops, car rentals, boat charters",
+      "price_monthly": 97,
+      "product_id": "prod_U5tdXQO0bssDnN",
+      "price_id": "price_1T7hqXCRr0tlaIBCUE1Kmwqr",
+      "payment_link": "https://buy.stripe.com/8x2cN4eRu73SaQn29ebsc0c"
+    },
+    {
+      "name": "Philippines Tourism Leads",
+      "description": "619 pre-qualified businesses: resorts, activities, tour operators",
+      "price_monthly": 97,
+      "product_id": "prod_U5td9qxQSLlebg",
+      "price_id": "price_1T7hqjCRr0tlaIBCo3ZJS9lr",
+      "payment_link": "https://buy.stripe.com/28E3cu24IfAo4rZ3dibsc0d"
+    },
+    {
+      "name": "US Dental & MedSpa Leads",
+      "description": "110 dental practices and medical spas across 6 US cities",
+      "price_monthly": 97,
+      "product_id": "prod_U5tdss8NgwzuYZ",
+      "price_id": "price_1T7hqjCRr0tlaIBCYAL2DS32",
+      "payment_link": "https://buy.stripe.com/eVq00i38M0Fu8If4hmbsc0e"
+    },
+    {
+      "name": "UK Aesthetics Clinic Leads",
+      "description": "Pre-qualified UK aesthetics clinics and beauty businesses (actively building)",
+      "price_monthly": 97,
+      "product_id": "prod_U5tddboWqqk4b1",
+      "price_id": "price_1T7hqjCRr0tlaIBCt1BxgKQF",
+      "payment_link": "https://buy.stripe.com/dRm14mcJm3RG3nVdRWbsc0f"
+    },
+    {
+      "name": "Phoenix RE Wholesale Leads",
+      "description": "736 distressed properties in Phoenix metro area for wholesalers and investors",
+      "price_monthly": 147,
+      "product_id": "prod_U5td4ZntxJGMLM",
+      "price_id": "price_1T7hqkCRr0tlaIBC82M8IrII",
+      "payment_link": "https://buy.stripe.com/00w00i7p20FucYvg04bsc0g"
+    },
+    {
+      "name": "All Markets Bundle",
+      "description": "All 5 lead lists — Caribbean, Philippines, US Dental & MedSpa, UK Aesthetics, Phoenix RE",
+      "price_monthly": 297,
+      "product_id": "prod_U5tdOHiIapKx7F",
+      "price_id": "price_1T7hqkCRr0tlaIBCRzh2WF9D",
+      "payment_link": "https://buy.stripe.com/8x200i8t6gEs5w3cNSbsc0h"
+    }
+  ]
+}

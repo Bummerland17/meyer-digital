@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Aesthetic Family Dental Care",
+    "phone": "(480) 218-8800",
+    "address": "6626 E Baseline Rd STE 101, Mesa, AZ 85206",
+    "rating": 5.0,
+    "review_count": 3201,
+    "city": "Mesa",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Lakeview Dental Care in Chandler",
+    "phone": "(480) 535-8390",
+    "address": "1949 W Ray Rd UNIT 26, Chandler, AZ 85224",
+    "rating": 4.9,
+    "review_count": 2118,
+    "city": "Chandler",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Chandler Dental",
+    "phone": "(480) 917-8400",
+    "address": "2095 W Frye Rd #4, Chandler, AZ 85224",
+    "rating": 4.9,
+    "review_count": 1879,
+    "city": "Chandler",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Life Smiles Dental Care",
+    "phone": "(602) 786-5484",
+    "address": "4611 E Shea Blvd STE 250, Phoenix, AZ 85028",
+    "rating": 5.0,
+    "review_count": 1710,
+    "city": "Phoenix",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Tempe Dental Care",
+    "phone": "(480) 730-5000",
+    "address": "5801 S McClintock Dr STE 101, Tempe, AZ 85283",
+    "rating": 4.8,
+    "review_count": 1694,
+    "city": "Tempe",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Mountain View Family Dental",
+    "phone": "(480) 605-2881",
+    "address": "459 N Val Vista Dr, Mesa, AZ 85213",
+    "rating": 4.9,
+    "review_count": 1638,
+    "city": "Mesa",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "East Valley Dental Care",
+    "phone": "(480) 890-2811",
+    "address": "426 W 5th Pl, Mesa, AZ 85201",
+    "rating": 4.9,
+    "review_count": 1503,
+    "city": "Mesa",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Risas Dental and Braces - Tempe",
+    "phone": "(480) 339-3535",
+    "address": "3401 S McClintock Dr, Tempe, AZ 85282",
+    "rating": 4.8,
+    "review_count": 1513,
+    "city": "Tempe",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Desert Family Dental",
+    "phone": "(480) 485-7747",
+    "address": "1760 W Main St, Mesa, AZ 85201",
+    "rating": 4.9,
+    "review_count": 1312,
+    "city": "Mesa",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Biltmore Dental Center",
+    "phone": "(602) 954-8200",
+    "address": "4202 N 32nd St suite b, Phoenix, AZ 85018",
+    "rating": 4.9,
+    "review_count": 1259,
+    "city": "Phoenix",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Smile Dental Clinics",
+    "phone": "(623) 257-7475",
+    "address": "7102 W Thomas Rd, Phoenix, AZ 85033",
+    "rating": 4.7,
+    "review_count": 1234,
+    "city": "Phoenix",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "My Scottsdale Dentist Orthodontics & Implants",
+    "phone": "(480) 614-1122",
+    "address": "9070 E Desert Cove Ave #105, Scottsdale, AZ 85260",
+    "rating": 4.8,
+    "review_count": 1152,
+    "city": "Scottsdale",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Sonoran Desert Dentistry",
+    "phone": "(480) 439-0117",
+    "address": "9304 E Raintree Dr # 100, Scottsdale, AZ 85260",
+    "rating": 4.9,
+    "review_count": 1096,
+    "city": "Scottsdale",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Desert Sky Family Dental",
+    "phone": "(602) 833-1560",
+    "address": "7620 W Thomas Rd #102, Phoenix, AZ 85033",
+    "rating": 4.8,
+    "review_count": 1061,
+    "city": "Phoenix",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Scottsdale Family Dental",
+    "phone": "(480) 551-5141",
+    "address": "13910 N Frank Lloyd Wright Blvd #110, Scottsdale, AZ 85260",
+    "rating": 5.0,
+    "review_count": 1015,
+    "city": "Scottsdale",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Every Smile Family Dentistry",
+    "phone": "(480) 732-7874",
+    "address": "2160 W Chandler Blvd Ste 20, Chandler, AZ 85224",
+    "rating": 4.9,
+    "review_count": 1031,
+    "city": "Chandler",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "S&C Dental",
+    "phone": "(480) 691-0020",
+    "address": "17767 N Scottsdale Rd STE 110, Scottsdale, AZ 85255",
+    "rating": 5.0,
+    "review_count": 961,
+    "city": "Scottsdale",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "My Dental Dentistry & Implants Mesa",
+    "phone": "(480) 485-2760",
+    "address": "6059 E University Dr, Mesa, AZ 85205",
+    "rating": 4.9,
+    "review_count": 979,
+    "city": "Mesa",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Dentistry of Old Town Scottsdale",
+    "phone": "(480) 719-6994",
+    "address": "7449 E Osborn Rd #4, Scottsdale, AZ 85251",
+    "rating": 4.8,
+    "review_count": 925,
+    "city": "Scottsdale",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Power Road Dental Care",
+    "phone": "(480) 664-1438",
+    "address": "2500 S Power Rd STE 102, Mesa, AZ 85209",
+    "rating": 5.0,
+    "review_count": 844,
+    "city": "Mesa",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "VIBE Dental - Mesa",
+    "phone": "(480) 800-8423",
+    "address": "1855 S Country Club Dr #101, Mesa, AZ 85210",
+    "rating": 4.9,
+    "review_count": 853,
+    "city": "Mesa",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "IGO Dental & Implant Center - Tempe",
+    "phone": "(602) 755-9205",
+    "address": "512 E Southern Ave ste 101, Tempe, AZ 85282",
+    "rating": 4.9,
+    "review_count": 844,
+    "city": "Tempe",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Arizona Dental Health",
+    "phone": "(480) 926-1899",
+    "address": "2500 S Power Rd STE 105, Mesa, AZ 85209",
+    "rating": 5.0,
+    "review_count": 822,
+    "city": "Mesa",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Chandler Dental Health",
+    "phone": "(480) 899-6677",
+    "address": "1035 W Queen Creek Rd #206, Chandler, AZ 85248",
+    "rating": 4.9,
+    "review_count": 816,
+    "city": "Chandler",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Center For Progressive Dentistry",
+    "phone": "(480) 999-9472",
+    "address": "9002 E Desert Cove Ave #101, Scottsdale, AZ 85260",
+    "rating": 5.0,
+    "review_count": 797,
+    "city": "Scottsdale",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Risas Dental and Braces - Phoenix Central",
+    "phone": "(602) 845-5730",
+    "address": "4501 N 7th St, Phoenix, AZ 85014",
+    "rating": 4.7,
+    "review_count": 809,
+    "city": "Phoenix",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "North Scottsdale Dentistry",
+    "phone": "(480) 900-4966",
+    "address": "21809 N Scottsdale Rd Ste C105, Scottsdale, AZ 85255",
+    "rating": 4.9,
+    "review_count": 751,
+    "city": "Scottsdale",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Thomas Dental",
+    "phone": "(623) 455-6668",
+    "address": "2546 E Thomas Rd, Phoenix, AZ 85016",
+    "rating": 4.8,
+    "review_count": 755,
+    "city": "Phoenix",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "North Central Family Dentistry",
+    "phone": "(602) 242-2576",
+    "address": "5225 N Central Ave #102, Phoenix, AZ 85012",
+    "rating": 4.9,
+    "review_count": 713,
+    "city": "Phoenix",
+    "type": "dental_office",
+    "source": "google_places"
+  },
+  {
+    "name": "Beautiful Dentistry",
+    "phone": "(480) 831-1700",
+    "address": "2125 E Warner Rd #101, Tempe, AZ 85284",
+    "rating": 4.9,
+    "review_count": 696,
+    "city": "Tempe",
+    "type": "dental_office",
+    "source": "google_places"
+  }
+]

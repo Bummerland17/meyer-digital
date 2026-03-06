@@ -1,0 +1,8 @@
+{
+  "submitted": [],
+  "failed": [
+    "SuperCook: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href=\"/suggest_alternative/pantrymate\"]')\u001b[22m\n",
+    "Mealime: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href=\"/suggest_alternative/pantrymate\"]')\u001b[22m\n",
+    "Yummly: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href=\"/suggest_alternative/pantrymate\"]')\u001b[22m\n"
+  ]
+}
